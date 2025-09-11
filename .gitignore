@@ -1,50 +1,13 @@
-# # Ignore everything by default
-# *
-# 
-# # But don't ignore directories
-# !*/
-# 
-# # Don't ignore the following files and directories
-# !.gitignore
-# !deploy.sh
-# !README.md
-# !src/
-# 
-# # Whitelist files in the modpack_source directory, but not the placeholder files
-# !src/**
-# !/src/**/.gitkeep
-# 
-# # Ignore Minecraft launcher profiles and user-specific files
-# launcher_profiles.json
-# options.txt
-# servers.dat
-# usercache.json
-# usernamecache.json
-# 
-# # Ignore log files and crash reports
-# logs/
-# crash-reports/
-# 
-# # Ignore world saves
-# saves/
-# 
-# # Ignore resource packs and shader packs (user preference)
-# resourcepacks/
-# shaderpacks/
-# 
-# # Ignore screenshots
-# screenshots/
-# 
-# # Ignore other common Minecraft folders
-# .mixin.out/
-# journeymap/
-# schematics/
-# defaultconfigs/
-# 
-# # Ignore top-level directories that will be populated by the deployment script.
-# # The `*` at the beginning should handle this, but being explicit is good.
-# /mods/
-# /config/
-# /kubejs/
-# /datapacks/
-# 
+.minecraft/
+natives/
+patches/
+instance.cfg
+mmc-pack.json
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
