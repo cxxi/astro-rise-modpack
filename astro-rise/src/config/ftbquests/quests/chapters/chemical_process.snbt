@@ -1,0 +1,39 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chemical_process"
+	group: "333A3E778A1559F5"
+	icon: "mekanism:chemical_infuser"
+	id: "54FDCDE10C87C838"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			hide_text_until_complete: false
+			id: "6E7B008046ACBF6E"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: "mekanism:basic_chemical_tank"
+				id: "353C62430B9B1513"
+				stage: "chemical_stage"
+				title: "Chemical Process"
+				type: "gamestage"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6E7B008046ACBF6E"]
+			id: "209849ADB7F64DF4"
+			tasks: [{
+				id: "614EBC7E11F28313"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+	]
+	title: "Chemical Process"
+}

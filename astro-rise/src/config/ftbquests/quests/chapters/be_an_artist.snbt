@@ -1,0 +1,384 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "be_an_artist"
+	group: "1E2170E4CE21850C"
+	icon: "waystones:waystone"
+	id: "356DD92FBC34A5FC"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5024B32750E4439B"]
+			id: "690CAA9A44F70375"
+			tasks: [{
+				id: "5D57A5F1BF3ADB5E"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["690CAA9A44F70375"]
+			hide_until_deps_complete: true
+			id: "3163A203BBCBBC6A"
+			tasks: [{
+				id: "253E3ED3E2641BC2"
+				item: "waystones:warp_scroll"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["690CAA9A44F70375"]
+			hide_until_deps_complete: true
+			id: "342CC7ECBF6433F9"
+			tasks: [{
+				id: "441DEAC71780329A"
+				item: "waystones:bound_scroll"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["690CAA9A44F70375"]
+			hide_until_deps_complete: true
+			id: "304D9E74B582D433"
+			tasks: [{
+				id: "4780A479BCE4FAA6"
+				item: "waystones:return_scroll"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["09129100A864B85B"]
+			hide_until_deps_complete: true
+			id: "744D6B440ED80D7D"
+			tasks: [{
+				id: "307D5FECA4830CD6"
+				item: "elevatorid:elevator_white"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["1FDCFD12DC4AEFC8"]
+			id: "0CB5059BBCC57C11"
+			tasks: [{
+				id: "0CA7EF97001AA218"
+				item: {
+					Count: 1
+					id: "enderio:staff_of_travelling"
+					tag: {
+						Energy: {
+							EnergyStored: 0
+							MaxEnergyStored: 100000
+							MaxEnergyUse: 100000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"5024B32750E4439B"
+				"33612DA3CA7203D4"
+			]
+			id: "1FDCFD12DC4AEFC8"
+			tasks: [{
+				id: "0E99CCC85AB0C473"
+				item: "enderio:travel_anchor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["388E7052BD454AC9"]
+			id: "192198DD8B8F5217"
+			tasks: [{
+				id: "472BE08CB357ACD8"
+				item: {
+					Count: 1
+					id: "alexsmobs:dimensional_carver"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5024B32750E4439B"]
+			id: "7CD735E428B2E9C5"
+			tasks: [{
+				id: "438938F60CD1916E"
+				item: "immersive_aircraft:engine"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7CD735E428B2E9C5"]
+			hide_until_deps_complete: true
+			id: "2806F4606C137019"
+			tasks: [{
+				id: "73D43861CA57450F"
+				item: "immersive_aircraft:airship"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7CD735E428B2E9C5"]
+			hide_until_deps_complete: true
+			id: "1A6B5D9E33CDE7C1"
+			tasks: [{
+				id: "28A2D6A860DE3E21"
+				item: "immersive_aircraft:cargo_airship"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7CD735E428B2E9C5"]
+			hide_until_deps_complete: true
+			id: "4CE1CD88C345DC55"
+			tasks: [{
+				id: "000CBAB331A6D8EF"
+				item: "immersive_aircraft:warship"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7CD735E428B2E9C5"]
+			hide_until_deps_complete: true
+			id: "2097756B932712D4"
+			tasks: [{
+				id: "60DA4EBF582F3B8B"
+				item: "immersive_aircraft:biplane"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7CD735E428B2E9C5"]
+			hide_until_deps_complete: true
+			id: "45B744F3E6C5E468"
+			tasks: [{
+				id: "5BAED2BE73B2170A"
+				item: "immersive_aircraft:gyrodyne"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7CD735E428B2E9C5"]
+			hide_until_deps_complete: true
+			id: "7040F3D5548BDD29"
+			tasks: [{
+				id: "72B9DB08C4F6A753"
+				item: "immersive_aircraft:quadrocopter"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5024B32750E4439B"]
+			id: "388E7052BD454AC9"
+			tasks: [{
+				id: "1D4531F157143051"
+				item: "alexsmobs:void_worm_eye"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5024B32750E4439B"]
+			id: "09129100A864B85B"
+			tasks: [{
+				id: "6CC3D386E8C5C3D5"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["09129100A864B85B"]
+			hide_until_deps_complete: true
+			id: "23BB7F1C0C583F58"
+			tasks: [{
+				id: "42B50F1E3B7745C4"
+				item: "enderstorage:ender_chest"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["09129100A864B85B"]
+			hide_until_deps_complete: true
+			id: "0DC0FC79464609CF"
+			tasks: [{
+				id: "7821AFFD692D0969"
+				item: "enderstorage:ender_tank"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -10.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "minecraft:leather_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5024B32750E4439B"
+			invisible: true
+			rewards: [
+				{
+					auto: "enabled"
+					icon: "minecraft:blaze_powder"
+					id: "20B80F437E1C1FBE"
+					ignore_reward_blocking: true
+					stage: "nether_stage"
+					title: "Unlock : Nether Stage"
+					type: "gamestage"
+				}
+				{
+					auto: "enabled"
+					icon: "minecraft:chorus_fruit"
+					id: "627560F957087322"
+					ignore_reward_blocking: true
+					stage: "the_end_stage"
+					title: "Unlock : The End Stage"
+					type: "gamestage"
+				}
+				{
+					auto: "enabled"
+					icon: "twilightforest:twilight_portal_miniature_structure"
+					id: "3987AF8045EABB1C"
+					ignore_reward_blocking: true
+					stage: "twilight_forest_stage"
+					title: "Unlock : Twilight Forest"
+					type: "gamestage"
+				}
+				{
+					auto: "enabled"
+					icon: "deeperdarker:heart_of_the_deep"
+					id: "4790791F52D521AD"
+					ignore_reward_blocking: true
+					stage: "deep_dark_stage"
+					title: "Unlock : Deep Dark"
+					type: "gamestage"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:leather_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "62512305DB013CEB"
+				stage: "travelling_stage"
+				title: "Travelling Stage"
+				type: "gamestage"
+			}]
+			title: "Explore the World"
+			x: 6.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5024B32750E4439B"]
+			id: "703310E470C6F608"
+			tasks: [{
+				id: "027201A55C683CBC"
+				item: "mekanism:teleportation_core"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["703310E470C6F608"]
+			id: "379BC3038614F720"
+			tasks: [{
+				id: "4E334D6D60753BB8"
+				item: "mekanism:teleporter_frame"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["703310E470C6F608"]
+			id: "33612DA3CA7203D4"
+			tasks: [{
+				id: "76C04ADDA63F3D99"
+				item: "mekanism:teleporter"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["192198DD8B8F5217"]
+			hide_until_deps_complete: true
+			id: "3983A5AE686FAE37"
+			tasks: [{
+				id: "0BA37855954C51DC"
+				item: {
+					Count: 1
+					id: "alexsmobs:shattered_dimensional_carver"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3983A5AE686FAE37"]
+			hide_until_deps_complete: true
+			id: "4E3BCF84C94E04AD"
+			size: 1.5d
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/farseer"
+				criterion: ""
+				id: "18A3BB3BF3DB8563"
+				type: "advancement"
+			}]
+			x: 12.75d
+			y: -8.25d
+		}
+	]
+	title: "Travelling"
+}

@@ -1,0 +1,243 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism"
+	group: "333A3E778A1559F5"
+	icon: "create_connected:crank_wheel"
+	id: "3523D3376BA10F10"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1C94741F32D7C687"
+			invisible: true
+			rewards: [
+				{
+					id: "046BAA84ACFFA2D8"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					id: "2CA96B7DB234E728"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					id: "056E11E72163B452"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					id: "469FE8DF0D71FB3A"
+					item: "create:gearbox"
+					type: "item"
+				}
+				{
+					id: "0B2F59DDE8C66FF9"
+					item: "create:vertical_gearbox"
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: "create:cogwheel"
+				id: "28A6FB0D4FD8A75D"
+				stage: "energy_stage_1"
+				title: "Basic Energy"
+				type: "gamestage"
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1C94741F32D7C687"]
+			id: "549FE3BA1CB57D1A"
+			shape: "hexagon"
+			tasks: [{
+				id: "4C77E662C998D23F"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["549FE3BA1CB57D1A"]
+			id: "7632E5CCD7EDA4B0"
+			tasks: [{
+				id: "77FD072C3EAAC695"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7632E5CCD7EDA4B0"]
+			hide_until_deps_complete: true
+			id: "08B90AD9E1216185"
+			tasks: [{
+				id: "5BC823060F96F2C9"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["549FE3BA1CB57D1A"]
+			id: "44C841F03FF1E5A5"
+			tasks: [{
+				id: "59F04277D8D80F83"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["44C841F03FF1E5A5"]
+			id: "6D90074CDE2743FF"
+			tasks: [{
+				id: "0EF49E1C8966744F"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6D90074CDE2743FF"]
+			id: "75A8203216D00F14"
+			rewards: [{
+				auto: "enabled"
+				icon: "ad_astra:oil_bucket"
+				id: "46B838F24C9D93B3"
+				ignore_reward_blocking: true
+				stage: "energy_stage_2"
+				title: "Unlock : Fossil Energy"
+				type: "gamestage"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "53C894F739999E41"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1C94741F32D7C687"]
+			id: "7AC77971B5E75D85"
+			tasks: [{
+				id: "59053D2CCA2C73FC"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["549FE3BA1CB57D1A"]
+			id: "4154DF4F7D015493"
+			tasks: [{
+				id: "1D796F4E6CF8CC7F"
+				item: "create_connected:crank_wheel"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4154DF4F7D015493"]
+			hide_until_deps_complete: true
+			id: "768B7F1571D7E66A"
+			tasks: [{
+				id: "1DC819F67181BBC2"
+				item: "create_connected:large_crank_wheel"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7AC77971B5E75D85"]
+			id: "34B67B7431F7C92F"
+			tasks: [{
+				id: "1BF672374D4C532D"
+				item: "create:speedometer"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7AC77971B5E75D85"]
+			id: "27244974E585C5B4"
+			tasks: [{
+				id: "14014BD01ED699A1"
+				item: "create:stressometer"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["549FE3BA1CB57D1A"]
+			id: "70666720156A168E"
+			tasks: [{
+				id: "7C9FA846E3594016"
+				item: "create:windmill_bearing"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["70666720156A168E"]
+			id: "58B83A3656901D6C"
+			tasks: [{
+				id: "2C082BA74E11D545"
+				item: "create:radial_chassis"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["70666720156A168E"]
+			id: "15D63A441BB03E5E"
+			tasks: [{
+				id: "5388614DCD5D4606"
+				item: "create:sail_frame"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["15D63A441BB03E5E"]
+			hide_until_deps_complete: true
+			id: "25A75E23AD26F5E6"
+			tasks: [{
+				id: "70C74C4688829A50"
+				item: "create:white_sail"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6D90074CDE2743FF"]
+			id: "3334F9B9FE135E9F"
+			tasks: [{
+				id: "3F03F7B51DF62F06"
+				item: "createaddition:straw"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+	]
+	title: "Energy 1"
+}

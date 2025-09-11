@@ -1,0 +1,501 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: "333A3E778A1559F5"
+	icon: "create:wrench"
+	id: "34A90579F0E9DD72"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["72EB6EAD81F0B168"]
+			id: "15D64CF0CE8C432C"
+			tasks: [{
+				id: "4C5C8D7CE53E0461"
+				item: "chunkloaders:basic_chunk_loader"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -25.5d
+		}
+		{
+			id: "72EB6EAD81F0B168"
+			invisible: true
+			rewards: [
+				{
+					id: "3656DBB84FA69D45"
+					item: "create:brown_toolbox"
+					type: "item"
+				}
+				{
+					id: "24EA194491494122"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "01960F4989EC4286"
+					item: "create:goggles"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					icon: "create:cogwheel"
+					id: "75057D42A6EB968E"
+					ignore_reward_blocking: true
+					stage: "energy_stage_1"
+					title: "Unlock : Energy Stage 1"
+					type: "gamestage"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				icon: "create:wrench"
+				id: "15F2C8AA80F4FB70"
+				stage: "mechanical_stage"
+				title: "Start Mechanic"
+				type: "gamestage"
+			}]
+			x: 1.0d
+			y: -23.5d
+		}
+		{
+			dependencies: ["72EB6EAD81F0B168"]
+			id: "0754A52D8A2405EB"
+			tasks: [{
+				id: "080C0F764BDA42E2"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -24.0d
+		}
+		{
+			dependencies: ["57F2C399024D80AA"]
+			id: "79618A2373E5DF9B"
+			tasks: [{
+				id: "7BC8C0E7881AE21D"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -25.0d
+		}
+		{
+			dependencies: ["57F2C399024D80AA"]
+			id: "3167495CD21DC9DD"
+			tasks: [{
+				id: "7DAF962DF7794439"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -25.5d
+		}
+		{
+			dependencies: ["57F2C399024D80AA"]
+			id: "5A20278F18E113B6"
+			tasks: [{
+				id: "6D790E70D9E268ED"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -24.5d
+		}
+		{
+			dependencies: ["57F2C399024D80AA"]
+			id: "4EC78697CE936C09"
+			tasks: [{
+				id: "2C46AC3B856A7EB2"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -22.0d
+		}
+		{
+			dependencies: ["57F2C399024D80AA"]
+			id: "293BF281BB56D683"
+			tasks: [{
+				id: "49B8B2A211770FD4"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -22.5d
+		}
+		{
+			dependencies: ["57F2C399024D80AA"]
+			id: "501F05AD1EF2D9DF"
+			tasks: [{
+				id: "1A5B82B509535720"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -21.5d
+		}
+		{
+			dependencies: ["72EB6EAD81F0B168"]
+			id: "23FB63C4174C4CE0"
+			tasks: [{
+				id: "7D829C122F6EC213"
+				item: "createsifter:sifter"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -22.0d
+		}
+		{
+			dependencies: ["23FB63C4174C4CE0"]
+			id: "0772E877B385A37A"
+			tasks: [{
+				id: "5032739FD572AC7B"
+				item: "createsifter:brass_sifter"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -20.5d
+		}
+		{
+			dependencies: ["57F2C399024D80AA"]
+			id: "7ECA245F251B3209"
+			tasks: [{
+				id: "041AD3B8C1A7FFEE"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -23.5d
+		}
+		{
+			dependencies: ["71B3A8EED983C89B"]
+			id: "362BD4CDC15DC5A9"
+			tasks: [{
+				id: "4B4F3CA2819E7CF4"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -18.0d
+		}
+		{
+			dependencies: ["71B3A8EED983C89B"]
+			id: "47FCF4B75AF29233"
+			tasks: [{
+				id: "087B3D5E40BCCCA2"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -18.5d
+		}
+		{
+			dependencies: ["71B3A8EED983C89B"]
+			id: "0577F352E6B87552"
+			tasks: [{
+				id: "28DD0D7F44D806F2"
+				item: "create_mechanical_chicken:mechanical_chicken"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -19.5d
+		}
+		{
+			dependencies: ["5BB9703E63B166BC"]
+			id: "71B3A8EED983C89B"
+			tasks: [{
+				id: "258FE669ABCFF17E"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -19.5d
+		}
+		{
+			dependencies: ["72EB6EAD81F0B168"]
+			id: "57F2C399024D80AA"
+			rewards: [{
+				auto: "enabled"
+				icon: "tconstruct:sky_slime_crystal_cluster"
+				id: "42F76FA6E087C684"
+				ignore_reward_blocking: true
+				stage: "crystal_stage"
+				title: "Unlock : Crystal Growing"
+				type: "gamestage"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "08FABFE3A29B2DD0"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -23.5d
+		}
+		{
+			dependencies: ["0754A52D8A2405EB"]
+			hide_until_deps_complete: true
+			id: "0AA964618C20D50D"
+			tasks: [{
+				id: "5C3AE2C41D15A1DB"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -24.5d
+		}
+		{
+			dependencies: ["7ECA245F251B3209"]
+			id: "6A8F0051B53ED8D6"
+			tasks: [{
+				id: "2414F9032807063F"
+				item: "create_connected:empty_fan_catalyst"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -23.5d
+		}
+		{
+			dependencies: ["6A8F0051B53ED8D6"]
+			hide_until_deps_complete: true
+			id: "007F3AD600C01E9F"
+			tasks: [{
+				id: "427096220A34E63A"
+				item: "create_connected:fan_blasting_catalyst"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -25.0d
+		}
+		{
+			dependencies: ["6A8F0051B53ED8D6"]
+			hide_until_deps_complete: true
+			id: "47248622569E4A3F"
+			tasks: [{
+				id: "1C79A81DE385EEFF"
+				item: "create_connected:fan_smoking_catalyst"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -24.0d
+		}
+		{
+			dependencies: ["6A8F0051B53ED8D6"]
+			hide_until_deps_complete: true
+			id: "1E19FF9B82D9F6FA"
+			tasks: [{
+				id: "7EC27672CA9731C2"
+				item: "create_connected:fan_splashing_catalyst"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -23.0d
+		}
+		{
+			dependencies: ["6A8F0051B53ED8D6"]
+			hide_until_deps_complete: true
+			id: "7B07DE347D2AE9B2"
+			tasks: [{
+				id: "6BCF380C556D9D2F"
+				item: "create_connected:fan_haunting_catalyst"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -22.0d
+		}
+		{
+			dependencies: [
+				"293BF281BB56D683"
+				"4EC78697CE936C09"
+			]
+			id: "7840E9C826DAE448"
+			tasks: [{
+				id: "069F7E2F1285EF40"
+				item: "create:mechanical_bearing"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -20.5d
+		}
+		{
+			dependencies: ["23FB63C4174C4CE0"]
+			hide_until_deps_complete: true
+			id: "1B1B0DA4CD5E7B7B"
+			tasks: [{
+				id: "55E87F09E887272B"
+				item: {
+					Count: 1
+					id: "createsifter:string_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -23.5d
+		}
+		{
+			dependencies: ["23FB63C4174C4CE0"]
+			hide_until_deps_complete: true
+			id: "5EC0F6FB70985245"
+			tasks: [{
+				id: "4A9233A60BE88CE6"
+				item: {
+					Count: 1
+					id: "createsifter:andesite_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -22.5d
+		}
+		{
+			dependencies: ["23FB63C4174C4CE0"]
+			hide_until_deps_complete: true
+			id: "1CBB65399DFEFE4B"
+			tasks: [{
+				id: "34C6F945003FF42F"
+				item: {
+					Count: 1
+					id: "createsifter:zinc_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -21.5d
+		}
+		{
+			dependencies: ["23FB63C4174C4CE0"]
+			hide_until_deps_complete: true
+			id: "01AD233E510609FA"
+			tasks: [{
+				id: "3E5CE6A7A49884EA"
+				item: {
+					Count: 1
+					id: "createsifter:brass_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -20.5d
+		}
+		{
+			dependencies: ["0772E877B385A37A"]
+			hide_until_deps_complete: true
+			id: "31785D3C5C5DDC03"
+			tasks: [{
+				id: "3C550566DFB981A9"
+				item: "createsifter:advanced_brass_mesh"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -19.5d
+		}
+		{
+			dependencies: ["15D64CF0CE8C432C"]
+			hide_until_deps_complete: true
+			id: "4E69CED5E41D69F9"
+			tasks: [{
+				id: "037E6DD869CC6C9B"
+				item: "chunkloaders:advanced_chunk_loader"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -25.5d
+		}
+		{
+			dependencies: ["4E69CED5E41D69F9"]
+			hide_until_deps_complete: true
+			id: "25F781F6BFDE9C3B"
+			tasks: [{
+				id: "2DC5148DAAD95091"
+				item: "chunkloaders:ultimate_chunk_loader"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -25.5d
+		}
+		{
+			dependencies: ["15D64CF0CE8C432C"]
+			hide_until_deps_complete: true
+			id: "1839763C2551F41E"
+			tasks: [{
+				id: "1960B01A0F1A07D8"
+				item: "chunkloaders:single_chunk_loader"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -25.5d
+		}
+		{
+			dependencies: ["57F2C399024D80AA"]
+			id: "5BB9703E63B166BC"
+			rewards: [{
+				auto: "enabled"
+				icon: "immersive_aircraft:sturdy_pipes"
+				id: "338C17835B201B52"
+				ignore_reward_blocking: true
+				stage: "logistic_stage"
+				title: "Unlock : Logistic Stage"
+				type: "gamestage"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "2C4AA9B474D5248B"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -21.0d
+		}
+		{
+			dependencies: ["5BB9703E63B166BC"]
+			id: "1035CF45208D99E0"
+			tasks: [{
+				id: "3E153F4ACE8B26E7"
+				item: "create:hose_pulley"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["5BB9703E63B166BC"]
+			id: "2D2E1E1B3494A9FA"
+			tasks: [{
+				id: "1FDFC6D0857FD299"
+				item: "create:item_drain"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -19.5d
+		}
+		{
+			dependencies: ["5BB9703E63B166BC"]
+			id: "11F0B15259DCD42B"
+			tasks: [{
+				id: "69D37829CC58201A"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -20.5d
+		}
+		{
+			dependencies: ["71B3A8EED983C89B"]
+			id: "08E4CA46026699CB"
+			tasks: [{
+				id: "6D9978301283E0A3"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -18.5d
+		}
+	]
+	title: "Automation"
+}

@@ -1,0 +1,809 @@
+{
+	autofocus_id: "0D41CD2F93BB494E"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "feed_up"
+	group: "34235EEFFBA2CFA5"
+	icon: "minecraft:apple"
+	id: "1B38244D11752A4F"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "minecraft:apple"
+			id: "00D7C90707AE018B"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: "minecraft:apple"
+				id: "71AE4B8D98C44DF3"
+				stage: "feed_stage"
+				title: "Feed Stage"
+				type: "gamestage"
+			}]
+			title: "Feed your Soul"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7D1F26F54174A8A8"]
+			id: "4637643BF77382DA"
+			tasks: [{
+				id: "2C423F2AF33FBB24"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["546045E2BAAF6164"]
+			id: "58C3B32E2DB2063F"
+			tasks: [{
+				id: "0CC86D8AABDFB3CD"
+				item: {
+					Count: 1
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7D1F26F54174A8A8"]
+			id: "546045E2BAAF6164"
+			tasks: [{
+				id: "37558D290EC4FA85"
+				item: "farmersdelight:stove"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D1F26F54174A8A8"]
+			id: "39576179D82CF63B"
+			tasks: [{
+				id: "04BFFDC4137888B9"
+				item: "farmersdelight:cutting_board"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["39576179D82CF63B"]
+			id: "3441B6133674748C"
+			tasks: [{
+				id: "2CF2C515F04F9A36"
+				item: {
+					Count: 1
+					id: "farmersdelight:flint_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3441B6133674748C"]
+			hide_until_deps_complete: true
+			id: "70D357A30F306D6E"
+			tasks: [{
+				id: "72DF0D1A42ECED45"
+				item: {
+					Count: 1
+					id: "farmersdelight:iron_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["663C5B13D5019DEB"]
+			hide_until_deps_complete: true
+			id: "600201ADD58BCE2D"
+			tasks: [{
+				id: "582031971E710C27"
+				item: {
+					Count: 1
+					id: "farmersdelight:diamond_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["600201ADD58BCE2D"]
+			hide_until_deps_complete: true
+			id: "5F05C978E0C611C7"
+			tasks: [{
+				id: "129FBBA952EF9482"
+				item: {
+					Count: 1
+					id: "farmersdelight:netherite_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["70D357A30F306D6E"]
+			hide_until_deps_complete: true
+			id: "663C5B13D5019DEB"
+			tasks: [{
+				id: "312FF934741CF7FE"
+				item: {
+					Count: 1
+					id: "farmersdelight:golden_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0D41CD2F93BB494E"]
+			id: "6E7F5671769C2555"
+			tasks: [{
+				id: "464165E4639A9CE1"
+				item: "farmersdelight:cabbage"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6E7F5671769C2555"]
+			id: "42118D9F3E869EB8"
+			tasks: [{
+				id: "11BC6345A219F171"
+				item: "farmersdelight:cabbage_crate"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0D41CD2F93BB494E"]
+			id: "5DE13DBC59D14B73"
+			tasks: [{
+				id: "37E59ABB1826D42E"
+				item: "minecraft:beetroot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5DE13DBC59D14B73"]
+			id: "79B45ED9FA7E4BAE"
+			tasks: [{
+				id: "701B8048732F816D"
+				item: "farmersdelight:beetroot_crate"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0D41CD2F93BB494E"]
+			id: "30C5C39AAD897DEB"
+			tasks: [{
+				id: "75101166A7EF7ADC"
+				item: "minecraft:potato"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["30C5C39AAD897DEB"]
+			id: "31026D7BFAA7B8C1"
+			tasks: [{
+				id: "5BEDE19FAE438500"
+				item: "farmersdelight:potato_crate"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0D41CD2F93BB494E"]
+			id: "6CDCDAF5699C032B"
+			tasks: [{
+				id: "3AFF5E1D7EB13996"
+				item: "farmersdelight:onion"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6CDCDAF5699C032B"]
+			id: "0310E21151508624"
+			tasks: [{
+				id: "2D02E8A958995704"
+				item: "farmersdelight:onion_crate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0D41CD2F93BB494E"]
+			id: "541343510E71919C"
+			tasks: [{
+				id: "52BDD85878B7F0AD"
+				item: "minecraft:carrot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["541343510E71919C"]
+			id: "3D5CA4CB9977E6C3"
+			tasks: [{
+				id: "4A9247EB6E659508"
+				item: "farmersdelight:carrot_crate"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0D41CD2F93BB494E"]
+			id: "10402A6E51210EC1"
+			tasks: [{
+				id: "1726AE2E73CEC36F"
+				item: "farmersdelight:tomato"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["10402A6E51210EC1"]
+			id: "3E9CE1291049929C"
+			tasks: [{
+				id: "32846D161A6EE2F0"
+				item: "farmersdelight:tomato_crate"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0D41CD2F93BB494E"]
+			id: "088737F384D7FA8A"
+			tasks: [{
+				id: "4F4374C0243C8491"
+				item: "farmersdelight:rice"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["088737F384D7FA8A"]
+			id: "1D23D92981FC7808"
+			tasks: [{
+				id: "7BF9417B5060E174"
+				item: "farmersdelight:rice_bag"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3AC1E6FB5B24857B"]
+			id: "0D41CD2F93BB494E"
+			tasks: [{
+				id: "0DADB977FAD31941"
+				item: "farmersdelight:rich_soil"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["00D7C90707AE018B"]
+			id: "3AC1E6FB5B24857B"
+			tasks: [{
+				id: "2EB67A915917749F"
+				item: "farmersdelight:organic_compost"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["541343510E71919C"]
+			id: "2269F4D3A7BFF812"
+			tasks: [{
+				id: "7FBD82AFF98EEFC5"
+				item: "minecraft:golden_carrot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["00D7C90707AE018B"]
+			id: "1FB3B95ED216BFA5"
+			tasks: [{
+				id: "5120858DA663A5B0"
+				item: "minecraft:apple"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1FB3B95ED216BFA5"]
+			id: "1B5C0F283C545C31"
+			tasks: [{
+				id: "316E79FA56A4DFA9"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1FB3B95ED216BFA5"]
+			id: "424A196027B1A99A"
+			tasks: [{
+				id: "4698C05B7AD110BC"
+				item: "tconstruct:jeweled_apple"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1FB3B95ED216BFA5"]
+			id: "7053A107E53AEC0F"
+			tasks: [{
+				id: "6EA43B8600BA4B3C"
+				item: "create:honeyed_apple"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["00D7C90707AE018B"]
+			id: "7D1F26F54174A8A8"
+			tasks: [{
+				id: "2978E92F5CFF0CEA"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5DE13DBC59D14B73"]
+			id: "01B66D30891B94DA"
+			min_required_dependencies: 1
+			rewards: [{
+				auto: "enabled"
+				icon: "minecraft:cake"
+				id: "0801861E12E8FC98"
+				ignore_reward_blocking: true
+				stage: "sugar_stage"
+				title: "Unlock : Sugar Stage"
+				type: "gamestage"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "72EDED1094B33911"
+				item: "minecraft:sugar"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			icon: "minecraft:sugar_cane"
+			id: "2AD7DE559C31F3CE"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: "minecraft:cake"
+				id: "6A829E4285036243"
+				stage: "sugar_stage"
+				title: "Candy Candy"
+				type: "gamestage"
+			}]
+			title: "Candy Candy"
+			x: 1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2AD7DE559C31F3CE"]
+			id: "0D240907D6ABC134"
+			tasks: [{
+				id: "7A5D5D1FEBC3E538"
+				item: "create:blaze_cake_base"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2AD7DE559C31F3CE"]
+			id: "3A14A6EC9CE76EC9"
+			tasks: [{
+				id: "774C0C1BAD43245D"
+				item: "create_deep_dark:echo_cake_base"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2AD7DE559C31F3CE"]
+			id: "08579CEF0E002C55"
+			tasks: [{
+				id: "3BC7EB3A830A3936"
+				item: "farmersdelight:pie_crust"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2AD7DE559C31F3CE"]
+			id: "151B2B3D52B08AA1"
+			tasks: [{
+				id: "2EC11223DD9AFECF"
+				item: "createaddition:cake_base"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0D240907D6ABC134"]
+			id: "4D1536AEB9BAF414"
+			tasks: [{
+				id: "0857E5D6F55E122F"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3A14A6EC9CE76EC9"]
+			id: "31DFFCD947704069"
+			tasks: [{
+				id: "24D23E6080733515"
+				item: "create_deep_dark:echo_cake"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["08579CEF0E002C55"]
+			id: "410A83F5574795C6"
+			tasks: [{
+				id: "66B3AC1451D08253"
+				item: "farmersdelight:chocolate_pie"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["08579CEF0E002C55"]
+			id: "5F846629A569312E"
+			tasks: [{
+				id: "7E6D4A6C52FA8ECC"
+				item: "farmersdelight:apple_pie"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["08579CEF0E002C55"]
+			id: "3763BDE33772DC46"
+			tasks: [{
+				id: "305BBB2F3F338042"
+				item: "farmersdelight:sweet_berry_cheesecake"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["151B2B3D52B08AA1"]
+			id: "0EC295E7EB8763C9"
+			tasks: [{
+				id: "4F6ABE5ACE6D818D"
+				item: "createaddition:cake_base_baked"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0EC295E7EB8763C9"]
+			id: "1E5DD9DA067E3340"
+			tasks: [{
+				id: "183DA2B14F16B308"
+				item: "createaddition:chocolate_cake"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0EC295E7EB8763C9"]
+			id: "69134A3964674768"
+			tasks: [{
+				id: "29FE024AACF5F0AD"
+				item: "createaddition:honey_cake"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["0EC295E7EB8763C9"]
+			id: "2F007FB841819115"
+			tasks: [{
+				id: "4EC4E9A95A33E2F2"
+				item: "minecraft:cake"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["0EC295E7EB8763C9"]
+			id: "4C94373818AE7E00"
+			tasks: [{
+				id: "6BA51EAC2E613B0D"
+				item: "tconstruct:earth_cake"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["0EC295E7EB8763C9"]
+			id: "21816033CF5FC785"
+			tasks: [{
+				id: "3FDBB34875A78FE1"
+				item: "tconstruct:sky_cake"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["0EC295E7EB8763C9"]
+			id: "0531D930807A4094"
+			tasks: [{
+				id: "4AD75AC5B249F6A3"
+				item: "tconstruct:ichor_cake"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["0EC295E7EB8763C9"]
+			id: "6D69AFDFD51857F8"
+			tasks: [{
+				id: "7AAAE44A34AEF896"
+				item: "tconstruct:ender_cake"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["0EC295E7EB8763C9"]
+			id: "13A7C92CD9A1E67E"
+			tasks: [{
+				id: "7F38ABF30A7E6017"
+				item: "tconstruct:blood_cake"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0EC295E7EB8763C9"]
+			id: "5A91A00BF1A49D3A"
+			tasks: [{
+				id: "3CB874A9D6B2EF0C"
+				item: "tconstruct:magma_cake"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["1B5C0F283C545C31"]
+			id: "36FAB94705C1DB7A"
+			tasks: [{
+				id: "1830C0306FA9CE61"
+				item: "minecraft:enchanted_golden_apple"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3F47A99467F017FF"]
+			id: "6B6D5FCC6AD2540C"
+			tasks: [{
+				id: "6E001270EC4AFFA4"
+				item: "create_winery:apple_juice"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2AD7DE559C31F3CE"]
+			id: "3F47A99467F017FF"
+			tasks: [{
+				id: "722E4D1EBE5CD798"
+				item: "minecraft:glass_bottle"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3F47A99467F017FF"]
+			id: "2672EEB06A15B622"
+			tasks: [{
+				id: "2B6E43A0EBAAF847"
+				item: "create_winery:grape_juice"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3F47A99467F017FF"]
+			id: "775B4777B9ECF8CA"
+			tasks: [{
+				id: "576C77548381B047"
+				item: "farmersdelight:melon_juice"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3F47A99467F017FF"]
+			id: "5E4EF4F8ABA6B2A1"
+			tasks: [{
+				id: "5E55CAAD49A008B3"
+				item: "farmersdelight:hot_cocoa"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3F47A99467F017FF"]
+			id: "73EB6BB8E4CC29AE"
+			tasks: [{
+				id: "42C638DBA730B70D"
+				item: "farmersdelight:apple_cider"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"3441B6133674748C"
+				"58C3B32E2DB2063F"
+			]
+			id: "2D25A4458F48B4C4"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					Count: 1
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "63265233EA13B156"
+				ignore_reward_blocking: true
+				stage: "cooked_meal_collection"
+				title: "Unlock : Cooked Meals Collection"
+				type: "gamestage"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "70317D6750177066"
+				item: "farmersdelight:smoked_ham"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F47A99467F017FF"]
+			id: "6EC9E8660BBE345C"
+			tasks: [{
+				id: "6B740339CB9283A5"
+				item: "create:builders_tea"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2AD7DE559C31F3CE"]
+			id: "51646D6508C5E62B"
+			tasks: [{
+				id: "60E66C18478ACEC3"
+				item: "create:bar_of_chocolate"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2AD7DE559C31F3CE"]
+			id: "3D14F160632DBAB0"
+			tasks: [{
+				id: "2904A058CEFDBE33"
+				item: "create:sweet_roll"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2AD7DE559C31F3CE"]
+			id: "0E6F815AF629CFDF"
+			tasks: [{
+				id: "6BD10B387B1CFD80"
+				item: "create:chocolate_glazed_berries"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+	title: "Food"
+}

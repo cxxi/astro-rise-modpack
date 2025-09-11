@@ -1,0 +1,381 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_nether"
+	group: "1E2170E4CE21850C"
+	icon: "minecraft:blaze_powder"
+	id: "6A8CEE6C331777F5"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4F7FFEA1EE5EB5F4"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: "minecraft:blaze_powder"
+				id: "76E87BD794109838"
+				stage: "nether_stage"
+				title: "A Hot World"
+				type: "gamestage"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1DEFC154E8FA75F6"]
+			hide_until_deps_complete: true
+			id: "46B41DE86D4AD783"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "70413DF7DA327E44"
+				type: "dimension"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4F7FFEA1EE5EB5F4"]
+			id: "1DEFC154E8FA75F6"
+			tasks: [{
+				id: "170CAACC287A2570"
+				item: {
+					Count: 1
+					id: "minecraft:flint_and_steel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["46B41DE86D4AD783"]
+			id: "11F180015ED06206"
+			tasks: [{
+				entity: "alexsmobs:laviathan"
+				icon: "alexsmobs:spawn_egg_laviathan"
+				id: "28719ACF41BF0CED"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["46B41DE86D4AD783"]
+			id: "719E80C5D70CE3A8"
+			tasks: [{
+				biome: "minecraft:basalt_deltas"
+				icon: "minecraft:basalt"
+				id: "6B0439C6FB88ABBA"
+				type: "biome"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["719E80C5D70CE3A8"]
+			hide_until_deps_complete: true
+			id: "11C266F6B8EF18EE"
+			tasks: [{
+				id: "41617BCA1C38F840"
+				item: "alexsmobs:stradpole_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0DF69A317DBD6164"]
+			hide_until_deps_complete: true
+			id: "3198B73CB43CF9BB"
+			tasks: [{
+				entity: "alexsmobs:straddler"
+				icon: "alexsmobs:spawn_egg_straddler"
+				id: "036624C938E61F10"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["46B41DE86D4AD783"]
+			id: "44FB29E42A4ABEE0"
+			tasks: [{
+				biome: "minecraft:warped_forest"
+				icon: "minecraft:warped_stem"
+				id: "1D945314F7FC455E"
+				type: "biome"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["46B41DE86D4AD783"]
+			id: "24037F9E7512F223"
+			tasks: [{
+				biome: "minecraft:crimson_forest"
+				icon: "minecraft:crimson_stem"
+				id: "012026A94C0DE2CA"
+				type: "biome"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["44FB29E42A4ABEE0"]
+			id: "12236ACF5D93262D"
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_warped_toad"
+				criterion: ""
+				id: "77ABB962780F9A70"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["11C266F6B8EF18EE"]
+			hide_until_deps_complete: true
+			id: "0DF69A317DBD6164"
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/stradpole_feed"
+				criterion: ""
+				id: "3D736D32B320453E"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["46B41DE86D4AD783"]
+			id: "1474D45EF17AF0DC"
+			tasks: [{
+				id: "2F33FF98C0F403AA"
+				item: "alexsmobs:bone_serpent_tooth"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["24037F9E7512F223"]
+			id: "02D2FFA51D444F4B"
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/crimson_mosquito"
+				criterion: ""
+				id: "0DA2D482A681D643"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["02D2FFA51D444F4B"]
+			hide_until_deps_complete: true
+			id: "6D0BAB4DAC41E2DC"
+			tasks: [{
+				id: "548F30A3B9C18EDE"
+				item: "alexsmobs:warped_mixture"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6D0BAB4DAC41E2DC"]
+			hide_until_deps_complete: true
+			id: "7E9A20EE38CE6052"
+			size: 1.5d
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/warped_mosco_kill"
+				criterion: ""
+				id: "38B88EEC6F40C53E"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["46B41DE86D4AD783"]
+			id: "2D1EDF676038F2D6"
+			tasks: [{
+				biome: "minecraft:soul_sand_valley"
+				icon: "minecraft:soul_sand"
+				id: "4C88CF7EF96B729B"
+				type: "biome"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4A2FF6BACEB3696F"]
+			id: "2AED2B9666DB9A82"
+			tasks: [{
+				id: "3EAA68903B9E30BB"
+				item: "alexsmobs:soul_heart"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"3198B73CB43CF9BB"
+				"11F180015ED06206"
+			]
+			hide_until_deps_complete: true
+			id: "6CBE759C25AE2E4B"
+			tasks: [{
+				id: "6F115575F469D6A4"
+				item: "alexsmobs:straddle_saddle"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3198B73CB43CF9BB"]
+			hide_until_deps_complete: true
+			id: "777576DB48DBEF47"
+			tasks: [{
+				id: "448C72AB23525BCF"
+				item: {
+					Count: 1
+					id: "alexsmobs:straddleboard"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2D1EDF676038F2D6"]
+			id: "4A2FF6BACEB3696F"
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/soul_vulture"
+				criterion: ""
+				id: "6DD5C8EB58C5E37E"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["46B41DE86D4AD783"]
+			id: "421EE189E16B16BE"
+			tasks: [{
+				icon: "minecraft:chiseled_nether_bricks"
+				id: "309967E96D9E8F20"
+				structure: "minecraft:fortress"
+				type: "structure"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["539CFF041531D7DC"]
+			id: "25A4CCE7FC9152CE"
+			tasks: [{
+				id: "593BCB9BDEDDDB5D"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["719B7AE2C77306F5"]
+			id: "177B8C0B0A6004CB"
+			tasks: [{
+				id: "416EF0798C5CC15D"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["421EE189E16B16BE"]
+			id: "0980F78505224601"
+			tasks: [{
+				id: "5D4D96B4F2AC038A"
+				item: "minecraft:nether_wart"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["421EE189E16B16BE"]
+			id: "719B7AE2C77306F5"
+			tasks: [{
+				entity: "minecraft:blaze"
+				icon: "minecraft:blaze_spawn_egg"
+				id: "45269B6E324ABD23"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["421EE189E16B16BE"]
+			id: "539CFF041531D7DC"
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				icon: "minecraft:wither_skeleton_spawn_egg"
+				id: "6BB7759DAD194E5A"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["25A4CCE7FC9152CE"]
+			id: "54EB5009922D89A3"
+			size: 1.5d
+			tasks: [{
+				advancement: "minecraft:nether/summon_wither"
+				criterion: ""
+				id: "20B7903C7671DE5E"
+				type: "advancement"
+			}]
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["46B41DE86D4AD783"]
+			id: "4C29D0C065A0BAC2"
+			tasks: [{
+				icon: "minecraft:chiseled_polished_blackstone"
+				id: "7F47591543A96769"
+				structure: "minecraft:bastion_remnant"
+				type: "structure"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4C29D0C065A0BAC2"]
+			id: "646853C28148A063"
+			tasks: [{
+				advancement: "minecraft:nether/find_bastion"
+				criterion: ""
+				id: "25A094CB0243FDCF"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+	]
+	title: "The Nether"
+}

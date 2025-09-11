@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "industrial_production"
+	group: "333A3E778A1559F5"
+	icon: "tconstruct:steel_ingot"
+	id: "20E1093738BF81E4"
+	order_index: 8
+	quest_links: [ ]
+	quests: [ ]
+	title: "Industrial Production"
+}

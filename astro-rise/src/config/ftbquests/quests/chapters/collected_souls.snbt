@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "collected_souls"
+	group: "5019398956D3E905"
+	icon: "alexsmobs:skreecher_soul"
+	id: "4FA59C792B7B61D6"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Collected Souls"
+}

@@ -1,0 +1,16 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "on_the_way_to_space"
+	group: "333A3E778A1559F5"
+	icon: {
+		Count: 1
+		id: "ad_astra:tier_1_rocket"
+		tag: { }
+	}
+	id: "0F6C3F2838433CAF"
+	order_index: 12
+	quest_links: [ ]
+	quests: [ ]
+	title: "On the Way to Space"
+}

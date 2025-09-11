@@ -1,0 +1,565 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "enderio"
+	group: "333A3E778A1559F5"
+	icon: "minecraft:chest"
+	id: "68A13C6342D6A8B2"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5AC50B0CA0C4AF69"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: "minecraft:chest"
+				id: "5D34098D9C4D4F9E"
+				stage: "storage_stage"
+				title: "Storage Alternate"
+				type: "gamestage"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5AC50B0CA0C4AF69"]
+			id: "3F5075951486F047"
+			tasks: [{
+				id: "425CFABBADDE43C8"
+				item: "storagedrawers:oak_full_drawers_1"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3F5075951486F047"]
+			id: "45BD449504B3ADAB"
+			tasks: [{
+				id: "3BCC52DB1CC78CC9"
+				item: "storagedrawers:compacting_drawers_3"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3F5075951486F047"]
+			id: "1467573E6E8C535F"
+			tasks: [{
+				id: "730A9D7C18A11AFC"
+				item: "storagedrawers:controller"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1467573E6E8C535F"]
+			id: "1407E76D3C99A714"
+			tasks: [{
+				id: "42ADA50F429F3B46"
+				item: "storagedrawers:controller_slave"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F5075951486F047"]
+			id: "541CA1D55E67CF59"
+			tasks: [{
+				id: "7FA9137F7FB0746F"
+				item: "storagedrawers:keyring"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["541CA1D55E67CF59"]
+			id: "720B9CB7CD3094C4"
+			tasks: [{
+				id: "4BDF283BF56328C2"
+				item: "storagedrawers:drawer_key"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["541CA1D55E67CF59"]
+			id: "48DBB9186BE901F4"
+			tasks: [{
+				id: "1E25D83E2B5290F3"
+				item: "storagedrawers:quantify_key"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["541CA1D55E67CF59"]
+			id: "3E2A41FE38699671"
+			tasks: [{
+				id: "0D710896ABC521EB"
+				item: "storagedrawers:shroud_key"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5AC50B0CA0C4AF69"]
+			id: "6D838C8F333ADE07"
+			tasks: [{
+				id: "2A3873FFF83617CF"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:chest"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6D838C8F333ADE07"]
+			hide_until_deps_complete: true
+			id: "7C2591AD64ABB0E4"
+			tasks: [{
+				id: "7C9996864F384FD0"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:copper_chest"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7C2591AD64ABB0E4"]
+			hide_until_deps_complete: true
+			id: "5A468E46B7D23478"
+			tasks: [{
+				id: "0D03FC2B8D189F36"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:iron_chest"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5A468E46B7D23478"]
+			hide_until_deps_complete: true
+			id: "14405B92ECBBDC7C"
+			tasks: [{
+				id: "7547746CBBA32BC8"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:gold_chest"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["14405B92ECBBDC7C"]
+			hide_until_deps_complete: true
+			id: "51926DB75E3909F6"
+			tasks: [{
+				id: "3276B9F73BA7BED3"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:diamond_chest"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["51926DB75E3909F6"]
+			hide_until_deps_complete: true
+			id: "3CE1B299D9D79C57"
+			tasks: [{
+				id: "69835A2A7BA4BCFA"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:netherite_chest"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5AC50B0CA0C4AF69"]
+			id: "36E49FB17C61FD66"
+			tasks: [{
+				id: "3DCF184EF6264EC1"
+				item: "enderio:vacuum_chest"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5AC50B0CA0C4AF69"]
+			id: "7DA44B3BCD519172"
+			tasks: [{
+				id: "76F6C898723405D7"
+				item: "create_connected:item_silo"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5AC50B0CA0C4AF69"]
+			id: "56D26E2D02151418"
+			tasks: [{
+				id: "6E21A12547FFF4D9"
+				item: "trashcans:item_trash_can"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5AC50B0CA0C4AF69"]
+			id: "0DA4A7ECB0965010"
+			tasks: [{
+				id: "4845AD0E10AFA19D"
+				item: "trashcans:liquid_trash_can"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5AC50B0CA0C4AF69"]
+			id: "2BF1968D7FB45FF8"
+			tasks: [{
+				id: "25A90D827A4589B8"
+				item: "trashcans:energy_trash_can"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"56D26E2D02151418"
+				"0DA4A7ECB0965010"
+				"2BF1968D7FB45FF8"
+			]
+			hide_until_deps_complete: true
+			id: "3FE7F1B663F9A930"
+			tasks: [{
+				id: "10570B20BACC6E2C"
+				item: "trashcans:ultimate_trash_can"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5AC50B0CA0C4AF69"]
+			id: "528B53711E301FE0"
+			tasks: [{
+				id: "3F6727E2B0A15F34"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["528B53711E301FE0"]
+			hide_until_deps_complete: true
+			id: "6FE8A826411D09D5"
+			tasks: [{
+				id: "1807EF264E34C42E"
+				item: "mekanism:basic_fluid_tank"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6FE8A826411D09D5"]
+			hide_until_deps_complete: true
+			id: "6B3509CD188D7A53"
+			tasks: [{
+				id: "27F270DC92BC74E7"
+				item: "mekanism:advanced_fluid_tank"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6B3509CD188D7A53"]
+			hide_until_deps_complete: true
+			id: "3E8B984E55852754"
+			tasks: [{
+				id: "5EF09736062A69C7"
+				item: "mekanism:elite_fluid_tank"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3E8B984E55852754"]
+			hide_until_deps_complete: true
+			id: "743B2D3CCF86A482"
+			tasks: [{
+				id: "238F69F9413871D8"
+				item: "mekanism:ultimate_fluid_tank"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["528B53711E301FE0"]
+			id: "47F0B2505F5926B7"
+			tasks: [{
+				id: "6C41BEF507B18676"
+				item: "createdieselgenerators:oil_barrel"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["47F0B2505F5926B7"]
+			id: "0F238AB0CD21BE48"
+			tasks: [{
+				id: "6FC74B36629FFDD9"
+				item: {
+					Count: 1
+					id: "createdieselgenerators:canister"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["29047835CD41B86C"]
+			hide_until_deps_complete: true
+			id: "4A791CE60B2ED905"
+			tasks: [{
+				id: "4542839F19886E42"
+				item: "enderio:basic_capacitor_bank"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A791CE60B2ED905"]
+			hide_until_deps_complete: true
+			id: "668235A9D4D2E590"
+			tasks: [{
+				id: "312855FC11C58BEB"
+				item: "enderio:advanced_capacitor_bank"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["668235A9D4D2E590"]
+			hide_until_deps_complete: true
+			id: "265879814F70CD31"
+			tasks: [{
+				id: "2C48E779D73316DD"
+				item: "enderio:vibrant_capacitor_bank"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5AC50B0CA0C4AF69"]
+			id: "29047835CD41B86C"
+			tasks: [{
+				id: "373C76DB40E87527"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["29047835CD41B86C"]
+			hide_until_deps_complete: true
+			id: "59C80142955D8D00"
+			tasks: [{
+				id: "195D0464DCC3B9E9"
+				item: "mekanism:basic_energy_cube"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["59C80142955D8D00"]
+			hide_until_deps_complete: true
+			id: "38B4DC47BBCC5223"
+			tasks: [{
+				id: "4F6CB039FA0F1D2A"
+				item: "mekanism:advanced_energy_cube"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["38B4DC47BBCC5223"]
+			hide_until_deps_complete: true
+			id: "2F7F9EEA9019A521"
+			tasks: [{
+				id: "6F8CE98C52D317CD"
+				item: "mekanism:elite_energy_cube"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2F7F9EEA9019A521"]
+			hide_until_deps_complete: true
+			id: "5640EF1CB0964010"
+			tasks: [{
+				id: "0E3C95007013550F"
+				item: "mekanism:ultimate_energy_cube"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3F5075951486F047"]
+			id: "1EDADE759A690E1E"
+			tasks: [{
+				id: "05D379E426E30DEA"
+				item: "storagedrawers:upgrade_template"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1EDADE759A690E1E"]
+			id: "59A58F033119AD7D"
+			tasks: [{
+				id: "0CD50707F5F178B1"
+				item: "storagedrawers:void_upgrade"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1EDADE759A690E1E"]
+			id: "36DB8E015718F85C"
+			tasks: [{
+				id: "39ECB9656906D4C3"
+				item: "storagedrawers:emerald_storage_upgrade"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7DA44B3BCD519172"]
+			hide_until_deps_complete: true
+			id: "7F92BD99E6C7DADF"
+			tasks: [{
+				id: "03D779910E6EF796"
+				item: "mekanism:basic_bin"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["36A1B3338E1FC34C"]
+			hide_until_deps_complete: true
+			id: "4D2F23849AB61E17"
+			tasks: [{
+				id: "60FDADC5E537FB4B"
+				item: "mekanism:elite_bin"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7F92BD99E6C7DADF"]
+			hide_until_deps_complete: true
+			id: "36A1B3338E1FC34C"
+			tasks: [{
+				id: "36581BC79A6B8B03"
+				item: "mekanism:advanced_bin"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4D2F23849AB61E17"]
+			hide_until_deps_complete: true
+			id: "266101F566E3F400"
+			tasks: [{
+				id: "417AE20D76848E28"
+				item: "mekanism:ultimate_bin"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5AC50B0CA0C4AF69"]
+			id: "7F706AD984168FFA"
+			tasks: [{
+				id: "099DD049810080C5"
+				item: "enderio:xp_vacuum"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+	]
+	title: "Storage"
+}

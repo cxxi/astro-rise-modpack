@@ -1,0 +1,221 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_end"
+	group: "1E2170E4CE21850C"
+	icon: "minecraft:chorus_fruit"
+	id: "69C462998EB54465"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0BFB066C695229EA"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: "minecraft:chorus_fruit"
+				id: "59AF451D1A696C9E"
+				stage: "the_end_stage"
+				title: "A Void World"
+				type: "gamestage"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4CDCCA6869032D1D"]
+			hide_until_deps_complete: true
+			id: "6C2C985D6B6DC09F"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "52EE967A91727479"
+				type: "dimension"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5C0A5193B73FC47A"]
+			id: "4D1400987D06B67A"
+			tasks: [{
+				id: "4CB8D498EED36157"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5C0A5193B73FC47A"]
+			id: "78C3E08AA3E23B92"
+			tasks: [{
+				id: "467A1305362834AD"
+				item: "minecraft:shulker_shell"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["76BFBF2556BC193C"]
+			id: "49F814FCFEA4B250"
+			tasks: [{
+				biome: "minecraft:end_midlands"
+				icon: "minecraft:end_stone"
+				id: "03D7CBB1025DA70E"
+				type: "biome"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["49F814FCFEA4B250"]
+			id: "537227324B518121"
+			tasks: [{
+				entity: "alexsmobs:enderiophage"
+				icon: "alexsmobs:spawn_egg_enderiophage"
+				id: "3EB19B7F146C745B"
+				title: "Kill 5 Enderiophages"
+				type: "kill"
+				value: 5L
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0BFB066C695229EA"]
+			id: "15E76B9D668C518F"
+			tasks: [{
+				id: "7C40AF2E5A60ADE1"
+				item: "alexsmobs:mosquito_larva"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["537227324B518121"]
+			hide_until_deps_complete: true
+			id: "52CB79FA6371739F"
+			tasks: [{
+				id: "13AA4145DB366411"
+				item: "alexsmobs:capsid"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["76BFBF2556BC193C"]
+			id: "5C0A5193B73FC47A"
+			tasks: [{
+				icon: "minecraft:purpur_block"
+				id: "6774D4BB92A25E70"
+				structure: "minecraft:end_city"
+				type: "structure"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6C2C985D6B6DC09F"]
+			id: "76BFBF2556BC193C"
+			size: 1.5d
+			tasks: [{
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+				id: "63D25CADED5FB898"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["537227324B518121"]
+			hide_until_deps_complete: true
+			id: "0361B17C4F7B0D73"
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/ender_flu"
+				criterion: ""
+				id: "71BE9AF3D7A07265"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"15E76B9D668C518F"
+				"52CB79FA6371739F"
+			]
+			hide_until_deps_complete: true
+			id: "19A57D9BA0AFE16C"
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/mysterious_worm"
+				criterion: ""
+				id: "03DEFD1D0FC36213"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["19A57D9BA0AFE16C"]
+			hide_until_deps_complete: true
+			id: "6630E4C5EF5E55D6"
+			size: 1.5d
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/void_worm_summon"
+				criterion: ""
+				id: "54508527C9291ECA"
+				type: "advancement"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["52CB79FA6371739F"]
+			hide_until_deps_complete: true
+			id: "6D3597646FD89DCC"
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/cosmic_cod"
+				criterion: ""
+				id: "66F2EC14F9193129"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6D3597646FD89DCC"]
+			hide_until_deps_complete: true
+			id: "53DE3291C6D24373"
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_cosmaw"
+				criterion: ""
+				id: "27A0E7CAE9B2AD55"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0BFB066C695229EA"]
+			id: "4CDCCA6869032D1D"
+			tasks: [{
+				id: "6C75316A5CFE5538"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+	]
+	title: "The End"
+}

@@ -1,0 +1,328 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "energy__3"
+	group: "333A3E778A1559F5"
+	icon: "ad_astra:oil_bucket"
+	id: "1AC6C55EEE1FB1BE"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "52EACDB12E6FC64E"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: "ad_astra:oil_bucket"
+				id: "2F73DA72439CF489"
+				stage: "energy_stage_2"
+				title: "Fossil Energy"
+				type: "gamestage"
+			}]
+			x: -1.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["52EACDB12E6FC64E"]
+			id: "7293D636D243AFC9"
+			tasks: [{
+				id: "073A3F5FC4A82B7E"
+				item: "createdieselgenerators:oil_scanner"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -12.5d
+		}
+		{
+			dependencies: [
+				"3493023BED0EA5B1"
+				"56C1A4F3EE2150C7"
+			]
+			id: "4A3423B3B5B3FD7C"
+			tasks: [{
+				id: "0ACDE4CADE7A6F0C"
+				item: "createdieselgenerators:diesel_engine"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["4A3423B3B5B3FD7C"]
+			id: "377186AF02C054C2"
+			tasks: [{
+				id: "55A2B9AC69C83E85"
+				item: "createdieselgenerators:large_diesel_engine"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4A3423B3B5B3FD7C"]
+			id: "539C44D3C38C6126"
+			tasks: [{
+				id: "375A862AC4707089"
+				item: "createdieselgenerators:huge_diesel_engine"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4A3423B3B5B3FD7C"]
+			id: "3D2DB4935B2C5E33"
+			tasks: [{
+				id: "14E9FD80E145C568"
+				item: "createdieselgenerators:engine_silencer"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["4A3423B3B5B3FD7C"]
+			id: "18564835A49833C8"
+			tasks: [{
+				id: "0DE5C2F8F7C7C56F"
+				item: "createdieselgenerators:engine_turbocharger"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["2C6070D91359FBF8"]
+			id: "52F4D6416BBBBBAA"
+			tasks: [{
+				id: "09A366C7EB6209F7"
+				item: "createdieselgenerators:distillation_controller"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["7293D636D243AFC9"]
+			id: "115F92CE8702F95A"
+			tasks: [{
+				id: "00652F2EFC2017D4"
+				item: "createdieselgenerators:pumpjack_hole"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["115F92CE8702F95A"]
+			id: "3C343DDEFF801B76"
+			tasks: [{
+				id: "4858E8F0447F0264"
+				item: "createdieselgenerators:pumpjack_bearing"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["115F92CE8702F95A"]
+			id: "4DAF455AE3AF404A"
+			tasks: [{
+				id: "41145F5F9790A07E"
+				item: "createdieselgenerators:pumpjack_crank"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["115F92CE8702F95A"]
+			id: "31079B0492D08364"
+			tasks: [{
+				id: "7941811477721FD6"
+				item: "createdieselgenerators:pumpjack_head"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["115F92CE8702F95A"]
+			id: "2C6070D91359FBF8"
+			tasks: [{
+				id: "5ABDA179516878BB"
+				item: "createdieselgenerators:crude_oil_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["52F4D6416BBBBBAA"]
+			id: "3493023BED0EA5B1"
+			tasks: [{
+				id: "15ACE6CF973EFF0D"
+				item: "createdieselgenerators:diesel_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["52F4D6416BBBBBAA"]
+			id: "56C1A4F3EE2150C7"
+			tasks: [{
+				id: "4115F56F46AA6C0A"
+				item: "createdieselgenerators:gasoline_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["377186AF02C054C2"]
+			id: "073A829C714662EE"
+			tasks: [{
+				id: "67D06C98908F108A"
+				item: "createdieselgenerators:burner"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2C6070D91359FBF8"]
+			id: "401B2D045B19992B"
+			tasks: [{
+				id: "7C3594A8405CDB1D"
+				item: "createdieselgenerators:asphalt_block"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["4C8F5420D6B16A38"]
+			id: "7544007D504B87CF"
+			rewards: [
+				{
+					auto: "enabled"
+					icon: "mekanismgenerators:solar_panel"
+					id: "124A50292200CDE4"
+					ignore_reward_blocking: true
+					stage: "energy_stage_3"
+					title: "Unlock : Modern Energy"
+					type: "gamestage"
+				}
+				{
+					auto: "enabled"
+					icon: "mekanism:basic_chemical_tank"
+					id: "3625814DC465547A"
+					ignore_reward_blocking: true
+					stage: "chemical_stage"
+					title: "Unlock : Chemical Process"
+					type: "gamestage"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "2237578046825F19"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["539C44D3C38C6126"]
+			id: "02196A8D45747BF7"
+			tasks: [{
+				id: "48605B5D0B879CD5"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["02196A8D45747BF7"]
+			id: "67B919C417407747"
+			tasks: [{
+				id: "52D996739CDA2C47"
+				item: "createaddition:connector"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["02196A8D45747BF7"]
+			id: "38ABC1811BBC5706"
+			tasks: [{
+				id: "0481B3241672A351"
+				item: "createaddition:small_light_connector"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["02196A8D45747BF7"]
+			id: "01D29F44BB0CBBB9"
+			tasks: [{
+				id: "7FFDF5DDFD3D2068"
+				item: "createaddition:large_connector"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7544007D504B87CF"]
+			id: "7FFA5CF97D668970"
+			tasks: [{
+				id: "7947C12AC28B0EA9"
+				item: "createaddition:tesla_coil"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["67B919C417407747"]
+			id: "4C8F5420D6B16A38"
+			tasks: [{
+				id: "3F27F184448535FF"
+				item: "createaddition:copper_spool"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["67B919C417407747"]
+			hide_until_deps_complete: true
+			id: "2DA5170F6D4AA721"
+			tasks: [{
+				id: "3537D82D176EC0C0"
+				item: "createaddition:gold_spool"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["67B919C417407747"]
+			hide_until_deps_complete: true
+			id: "691D90EF0FD84841"
+			tasks: [{
+				id: "49E3C4093D8F5335"
+				item: "createaddition:electrum_spool"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+	]
+	title: "Energy 2"
+}

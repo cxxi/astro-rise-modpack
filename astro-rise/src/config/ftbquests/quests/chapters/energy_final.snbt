@@ -1,0 +1,204 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "energy_final"
+	group: "333A3E778A1559F5"
+	icon: "mekanismgenerators:fusion_reactor_port"
+	id: "4B3C6DEF5C8B4CD4"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			id: "10C5ED3A4131E989"
+			tasks: [{
+				id: "314AA29B57ADB923"
+				item: "mekanismgenerators:fission_fuel_assembly"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			id: "2FFF68B78A3A993D"
+			tasks: [{
+				id: "016964D6D6626819"
+				item: "mekanismgenerators:control_rod_assembly"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			id: "3626A5629A326B44"
+			tasks: [{
+				id: "7B3A33D3F4080BA5"
+				item: "mekanismgenerators:fission_reactor_logic_adapter"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			id: "5FD9E8DDDFEA3601"
+			tasks: [{
+				id: "0290C0279B60FA8D"
+				item: "mekanismgenerators:fission_reactor_port"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			id: "65CD3CF99B5CAA0F"
+			tasks: [{
+				id: "5A577ED5E2AAD5C6"
+				item: "mekanismgenerators:fission_reactor_casing"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			id: "358F10394461483F"
+			tasks: [{
+				id: "1C29AD2D0B223CC6"
+				item: "mekanismgenerators:reactor_glass"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			id: "67129D297CD75938"
+			tasks: [{
+				id: "27729CD2E231CA06"
+				item: "mekanismgenerators:laser_focus_matrix"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			id: "269FC386B2BB94D4"
+			tasks: [{
+				id: "076FCE0DDB94B50B"
+				item: "mekanismgenerators:fusion_reactor_logic_adapter"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			id: "468992D84A0F8502"
+			tasks: [{
+				id: "688DC2A98698A4D3"
+				item: "mekanismgenerators:fusion_reactor_controller"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			id: "1032906A5057D1B7"
+			tasks: [{
+				id: "00EE72FC52A74865"
+				item: "mekanismgenerators:fusion_reactor_frame"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			id: "4A9593E7195817E9"
+			tasks: [{
+				id: "48768096FB8960B2"
+				item: "mekanismgenerators:fusion_reactor_port"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			id: "3CBAB3C4318582AC"
+			tasks: [{
+				id: "6519DBE5DCE94ABE"
+				item: "mekanismgenerators:electromagnetic_coil"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			id: "41FBE78D96C83125"
+			tasks: [{
+				id: "342908EACA7194B0"
+				item: "mekanismgenerators:rotational_complex"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			id: "4BBCB3D4E927EE06"
+			tasks: [{
+				id: "75A5A3377846C22B"
+				item: "mekanismgenerators:turbine_blade"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			id: "39DF8C6ACB99C71D"
+			tasks: [{
+				id: "4C9D2D68B2E69554"
+				item: "mekanismgenerators:saturating_condenser"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			id: "797D1F4283518BC4"
+			tasks: [{
+				id: "339E2D14CC91F0F6"
+				item: "mekanismgenerators:turbine_rotor"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			id: "36408A5495F5CD15"
+			tasks: [{
+				id: "3C17A0B63F5B128A"
+				item: "mekanismgenerators:turbine_casing"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			id: "1E0389ED0F632A25"
+			tasks: [{
+				id: "2AD8D8E9F1F48EA2"
+				item: "mekanismgenerators:turbine_vent"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			id: "1330C87654D82521"
+			tasks: [{
+				id: "6E663A1218AA8DBA"
+				item: "mekanismgenerators:turbine_valve"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+	]
+	title: "Energy Final"
+}

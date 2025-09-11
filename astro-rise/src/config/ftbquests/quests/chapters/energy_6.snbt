@@ -1,0 +1,435 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "energy_6"
+	group: "333A3E778A1559F5"
+	icon: "mekanismgenerators:advanced_solar_generator"
+	id: "38D36FEBAE564B20"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "748FD5EAFB55480A"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: "mekanismgenerators:solar_panel"
+				id: "05DEEFCD40BAFA7A"
+				stage: "energy_stage_3"
+				title: "Modern Energy"
+				type: "gamestage"
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["748FD5EAFB55480A"]
+			id: "094358A78400E287"
+			tasks: [{
+				id: "1448B92CF81366E4"
+				item: "mekanismgenerators:heat_generator"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["748FD5EAFB55480A"]
+			id: "58483990BF76A3BD"
+			tasks: [{
+				id: "2B9341738C0045D3"
+				item: "mekanismgenerators:solar_generator"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["58483990BF76A3BD"]
+			id: "5B2544B47F0ACE21"
+			tasks: [{
+				id: "748BD9890DA2B444"
+				item: "mekanismgenerators:advanced_solar_generator"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["748FD5EAFB55480A"]
+			id: "01716952F91BF063"
+			tasks: [{
+				id: "7209FC1DC5F0A85C"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["748FD5EAFB55480A"]
+			id: "4239D8DABAEA7294"
+			tasks: [{
+				id: "7CDB4C051BF1246D"
+				item: "mekanismgenerators:bio_generator"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["748FD5EAFB55480A"]
+			id: "7C740D45A6B5583B"
+			tasks: [{
+				id: "3AEA04E9C262C25B"
+				item: "mekanismgenerators:wind_generator"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["748FD5EAFB55480A"]
+			id: "5B5DBC0FB4465B3D"
+			tasks: [{
+				id: "4983188C5ADE6C18"
+				item: "enderio:stirling_generator"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"4E2A208066187A58"
+				"32B4392C9B50BE3B"
+			]
+			id: "7DC8A1C09BE945AD"
+			tasks: [{
+				id: "615CCD64578EA5D1"
+				item: "bigreactors:basic_reactorcontroller"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7DC8A1C09BE945AD"]
+			id: "0195E49E43F2FEBA"
+			tasks: [{
+				id: "3B04BC19E7373D92"
+				item: "bigreactors:basic_reactorcasing"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0195E49E43F2FEBA"]
+			id: "6E58EAB93685CE14"
+			tasks: [{
+				id: "102E43D629B8ECB9"
+				item: "bigreactors:basic_reactorglass"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0195E49E43F2FEBA"]
+			id: "2B083DEA515F746A"
+			tasks: [{
+				id: "5CD780530FC90610"
+				item: "bigreactors:basic_reactorcontrolrod"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0195E49E43F2FEBA"]
+			id: "709D06BBDC039D35"
+			tasks: [{
+				id: "50035E76BB4DCCA6"
+				item: "bigreactors:basic_reactorsolidaccessport"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0195E49E43F2FEBA"]
+			id: "0787F27DC836FAE6"
+			tasks: [{
+				id: "22A01FADA01A4CDA"
+				item: "bigreactors:basic_reactorchargingportfe"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0195E49E43F2FEBA"]
+			id: "4E02476FC3AABDDB"
+			tasks: [{
+				id: "4F5B36FCA3657FCE"
+				item: "bigreactors:basic_reactorpowertapfe_active"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0195E49E43F2FEBA"]
+			id: "4467C73320F88F27"
+			tasks: [{
+				id: "296C65D90997EF49"
+				item: "bigreactors:basic_reactorpowertapfe_passive"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0195E49E43F2FEBA"]
+			id: "4CD35732993559B8"
+			tasks: [{
+				id: "55C2D7C0C337FE1B"
+				item: "bigreactors:basic_reactorredstoneport"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2B083DEA515F746A"
+				"20FB0C744AD170D1"
+			]
+			id: "14D3D6913E1E7AEA"
+			tasks: [{
+				id: "57849A81BB54E200"
+				item: "bigreactors:basic_turbinecontroller"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["14D3D6913E1E7AEA"]
+			id: "624B5581F328E514"
+			tasks: [{
+				id: "7FF45FA9D457466D"
+				item: "bigreactors:basic_turbinecasing"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["624B5581F328E514"]
+			id: "1902F48CAA7FCFB7"
+			tasks: [{
+				id: "157C2C39D7A87732"
+				item: "bigreactors:basic_turbineglass"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["624B5581F328E514"]
+			id: "581FDF41AEB42BE0"
+			tasks: [{
+				id: "2D13251097437279"
+				item: "bigreactors:basic_turbinerotorbearing"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["624B5581F328E514"]
+			id: "623B2AC98D33307F"
+			tasks: [{
+				id: "376C361839539E7E"
+				item: "bigreactors:basic_turbinerotorshaft"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["624B5581F328E514"]
+			id: "2556A9322A40F399"
+			tasks: [{
+				id: "1F577FCD3C8060F1"
+				item: "bigreactors:basic_turbinerotorblade"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["624B5581F328E514"]
+			id: "5F6DD738F00A94B0"
+			tasks: [{
+				id: "4574C61D8A95793D"
+				item: "bigreactors:basic_turbinepowertapfe_active"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["624B5581F328E514"]
+			id: "5C875E90C8469FFF"
+			tasks: [{
+				id: "5BDB6EBB16DD5FFA"
+				item: "bigreactors:basic_turbinepowertapfe_passive"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["624B5581F328E514"]
+			id: "4C4CB80CFA166BB3"
+			tasks: [{
+				id: "29853677BE513668"
+				item: "bigreactors:basic_turbinechargingportfe"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["624B5581F328E514"]
+			id: "6ED60180F820E0DD"
+			tasks: [{
+				id: "377F553E919E2380"
+				item: "bigreactors:basic_turbineredstoneport"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["624B5581F328E514"]
+			dependency_requirement: "all_started"
+			id: "360F05F6DB30CE87"
+			tasks: [{
+				id: "7410E0A670B386D2"
+				item: "bigreactors:basic_turbinefluidport_forge_active"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["624B5581F328E514"]
+			id: "32864320FEE55724"
+			tasks: [{
+				id: "61A970C1D50D85E5"
+				item: "bigreactors:basic_turbinefluidport_forge_passive"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0195E49E43F2FEBA"]
+			id: "20FB0C744AD170D1"
+			tasks: [{
+				id: "049D11FBA6E68FFD"
+				item: "bigreactors:basic_reactorfuelrod"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["748FD5EAFB55480A"]
+			id: "4E2A208066187A58"
+			tasks: [{
+				id: "06F2F832C0C294E7"
+				item: "bigreactors:blutonium_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["748FD5EAFB55480A"]
+			id: "32B4392C9B50BE3B"
+			tasks: [{
+				id: "626772E9670F3C09"
+				item: "mekanism:ingot_uranium"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["748FD5EAFB55480A"]
+			hide_until_deps_complete: true
+			id: "0ADC4A74024DD41D"
+			tasks: [{
+				id: "7A255652B0DEFA2F"
+				item: "enderio:energetic_photovoltaic_module"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0ADC4A74024DD41D"]
+			hide_until_deps_complete: true
+			id: "0CC1D1EB89CD2C3B"
+			tasks: [{
+				id: "2EA72BA7430C1409"
+				item: "enderio:pulsating_photovoltaic_module"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0CC1D1EB89CD2C3B"]
+			hide_until_deps_complete: true
+			id: "098D7A14C7F09145"
+			tasks: [{
+				id: "6E853579A7649488"
+				item: "enderio:vibrant_photovoltaic_module"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["748FD5EAFB55480A"]
+			hide_until_deps_complete: true
+			id: "028CBAAC565D5660"
+			tasks: [{
+				id: "5C725C85EE18CF2B"
+				item: "mekanism:chargepad"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["028CBAAC565D5660"]
+			hide_until_deps_complete: true
+			id: "560BF3222C3A5899"
+			tasks: [{
+				id: "5668F951DA1DC0A7"
+				item: "mekanism:robit"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.5d
+		}
+	]
+	title: "Energy 3"
+}

@@ -1,0 +1,348 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "music_disks"
+	group: "5019398956D3E905"
+	icon: "minecraft:music_disc_13"
+	id: "128C93C400D4B844"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "0FDC21B4C6A3D910"
+			tasks: [{
+				id: "334B2E7378C41E3F"
+				item: "minecraft:music_disc_13"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "31F5F726FB1F4820"
+			tasks: [{
+				id: "4D5610DB27A4F7D0"
+				item: "minecraft:music_disc_cat"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "58F4F89FD1E348B9"
+			tasks: [{
+				id: "6F783BD7A018E361"
+				item: "minecraft:music_disc_blocks"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "725CEB83136B1AD8"
+			tasks: [{
+				id: "6A764FCF9E67FFC0"
+				item: "minecraft:music_disc_chirp"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "0FFD11643493F878"
+			tasks: [{
+				id: "3EBA2F8D19775BE2"
+				item: "minecraft:music_disc_far"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "74261AE2C1263D88"
+			tasks: [{
+				id: "03D3C36F38C984C9"
+				item: "minecraft:music_disc_mall"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "534FF24DD2E5EFB6"
+			tasks: [{
+				id: "7C96C4DDF217457F"
+				item: "minecraft:music_disc_mellohi"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "2C9622E61CE90E61"
+			tasks: [{
+				id: "68429ADC3BE16E03"
+				item: "minecraft:music_disc_stal"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "00809F98824E5758"
+			tasks: [{
+				id: "3F5A695A10A35CE9"
+				item: "minecraft:music_disc_strad"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "7AC51DE87376B3E3"
+			tasks: [{
+				id: "038DF2B591982856"
+				item: "minecraft:music_disc_ward"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "5E1046FCA9B5928A"
+			tasks: [{
+				id: "66853EACCAC937BC"
+				item: "minecraft:music_disc_11"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "3A0F30CC59A69FB7"
+			tasks: [{
+				id: "4E3E776A0FB2EC0E"
+				item: "minecraft:music_disc_wait"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "46CA2B33F9F2B4A4"
+			tasks: [{
+				id: "5E153C6142AD51A9"
+				item: "minecraft:music_disc_otherside"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "6E2650A9EC4E087C"
+			tasks: [{
+				id: "4C59A16B5732DE2D"
+				item: "minecraft:music_disc_5"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "39AAB6501943EA8E"
+			tasks: [{
+				id: "09FBB9DF7AD071A4"
+				item: "minecraft:music_disc_pigstep"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "48AA6DE4B204CB5C"
+			tasks: [{
+				id: "421FB13C5D905EBB"
+				item: "minecraft:music_disc_relic"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "04DE88D4532A720E"
+			tasks: [{
+				id: "10FEC292C1D4D64A"
+				item: "alexsmobs:music_disc_thime"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "52A4B8F62CD0773E"
+			tasks: [{
+				id: "1BDA8EB2F1EF3D5C"
+				item: "alexsmobs:music_disc_daze"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "528A2F19A2694CA7"
+			tasks: [{
+				id: "0378B36C6F8EAED4"
+				item: "twilightforest:music_disc_thread"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "12DDBCA073F8B494"
+			tasks: [{
+				id: "688EDD12CBAAD587"
+				item: "twilightforest:music_disc_findings"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "20530D2818293BF6"
+			tasks: [{
+				id: "4417C584D291E3E6"
+				item: "twilightforest:music_disc_radiance"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "56F9A3E83DFEA44C"
+			tasks: [{
+				id: "39FABD8693F37C35"
+				item: "twilightforest:music_disc_steps"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "3560AA9F68F4C392"
+			tasks: [{
+				id: "6AAFBF229B95A449"
+				item: "twilightforest:music_disc_motion"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "16A8792C6F62D561"
+			tasks: [{
+				id: "7C9555A8750C2737"
+				item: "twilightforest:music_disc_wayfarer"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "568C06A1CF551E36"
+			tasks: [{
+				id: "27917E0C10E821B2"
+				item: "twilightforest:music_disc_home"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "0F0A54367594C3B6"
+			tasks: [{
+				id: "3D241EF3E6FD1546"
+				item: "twilightforest:music_disc_maker"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "12C302220D57E61C"
+			tasks: [{
+				id: "09667593C2A08248"
+				item: "twilightforest:music_disc_superstitious"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "4A1A9688696DD178"
+			tasks: [{
+				id: "75E36A0C83DA9A2F"
+				item: "create_connected:music_disc_elevator"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4ADF6324F31AB0DE"]
+			id: "2F4272455CB23541"
+			tasks: [{
+				id: "030AFBBEC134D9BE"
+				item: "create_connected:music_disc_interlude"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			icon: "minecraft:jukebox"
+			id: "4ADF6324F31AB0DE"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: "minecraft:jukebox"
+				id: "18E7E95298550486"
+				stage: "music_collection"
+				title: "Music Collection"
+				type: "gamestage"
+			}]
+			title: "Music Collection"
+			x: 2.0d
+			y: -1.5d
+		}
+	]
+	title: "Music Discs"
+}

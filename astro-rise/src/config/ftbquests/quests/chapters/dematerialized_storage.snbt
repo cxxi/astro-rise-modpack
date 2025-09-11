@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dematerialized_storage"
+	group: "333A3E778A1559F5"
+	icon: "ae2:controller"
+	id: "30F174456FE6CA7E"
+	order_index: 9
+	quest_links: [ ]
+	quests: [ ]
+	title: "Cloud Storage"
+}

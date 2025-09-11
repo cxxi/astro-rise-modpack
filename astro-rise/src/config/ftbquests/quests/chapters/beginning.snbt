@@ -1,0 +1,490 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "beginning"
+	group: "34235EEFFBA2CFA5"
+	icon: "minecraft:compass"
+	id: "3BB6824977CBF463"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["19C00B72353B3CB6"]
+			id: "655AED52072B02C2"
+			tasks: [{
+				id: "0AE54771240CE200"
+				item: "sleeping_bags:white_sleeping_bag"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1DAEC1BEBEFA6630"]
+			id: "19C00B72353B3CB6"
+			tasks: [{
+				id: "796BF9BDC8345B3A"
+				item: "minecraft:white_bed"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 0.5d
+		}
+		{
+			id: "736B4AEFEC2A7F8C"
+			tasks: [{
+				id: "716CBF3A5A3C3581"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"736B4AEFEC2A7F8C"
+				"1EF7F80CB7F8FF66"
+			]
+			id: "526E5BCAF9EF534F"
+			rewards: [
+				{
+					auto: "enabled"
+					icon: "minecraft:torchflower"
+					id: "7319E44C89C22114"
+					ignore_reward_blocking: true
+					stage: "decoration_stage"
+					title: "Unlock : Decoration Stage"
+					type: "gamestage"
+				}
+				{
+					auto: "enabled"
+					icon: {
+						Count: 1
+						id: "tconstruct:creative_slot"
+						tag: {
+							slot: "upgrades"
+						}
+					}
+					id: "2E4E3295EDACDE50"
+					ignore_reward_blocking: true
+					stage: "black_smith_stage"
+					title: "Unlock : Black Smith Stage"
+					type: "gamestage"
+				}
+				{
+					auto: "enabled"
+					icon: "minecraft:apple"
+					id: "41A87C1BB2D606FB"
+					ignore_reward_blocking: true
+					stage: "feed_stage"
+					title: "Unlock : Feed Stage"
+					type: "gamestage"
+				}
+				{
+					auto: "enabled"
+					icon: "minecraft:player_head"
+					id: "1053610CEC7C52B5"
+					ignore_reward_blocking: true
+					stage: "miscellaneous_stage"
+					title: "Unlock : Miscellaneous Stage"
+					type: "gamestage"
+				}
+				{
+					auto: "enabled"
+					icon: "create:wrench"
+					id: "66D3D782E6803F12"
+					ignore_reward_blocking: true
+					stage: "mechanical_stage"
+					title: "Unlock : Mechanical Stage"
+					type: "gamestage"
+				}
+				{
+					auto: "enabled"
+					icon: "minecraft:chest"
+					id: "2AA4837FD97BB875"
+					ignore_reward_blocking: true
+					stage: "storage_stage"
+					title: "Unlock : Storage Stage"
+					type: "gamestage"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "7A0183DAD96973C1"
+				item: "tconstruct:crafting_station"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			id: "1EF7F80CB7F8FF66"
+			tasks: [{
+				id: "2B3C1DFDC2F91CC6"
+				item: "tconstruct:pattern"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"6E6DE6E3B9C2FE85"
+				"18772DA118249144"
+			]
+			id: "38D47B1D2BC2091D"
+			tasks: [{
+				id: "40A17BA2BD4DF49D"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			id: "1DAEC1BEBEFA6630"
+			rewards: [{
+				count: 3
+				id: "11E2CC8259A6B93E"
+				item: "minecraft:white_wool"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:sheep"
+				icon: "minecraft:sheep_spawn_egg"
+				id: "43C12EE35ED5CD16"
+				title: "Kill a Sheep"
+				type: "kill"
+				value: 1L
+			}]
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			id: "18772DA118249144"
+			rewards: [{
+				count: 3
+				id: "4093D451CA7CA370"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:cow"
+				icon: "minecraft:cow_spawn_egg"
+				id: "7CF649A60845BB20"
+				title: "Kill a Cow"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			id: "6E6DE6E3B9C2FE85"
+			rewards: [{
+				count: 3
+				id: "1D4BC20D4BD463E7"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:spider"
+				icon: "minecraft:spider_spawn_egg"
+				id: "6C7C1D6AC4CD98F3"
+				title: "Kill a Spider"
+				type: "kill"
+				value: 1L
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["38D47B1D2BC2091D"]
+			hide_until_deps_complete: true
+			id: "4E8323AABE9B80A3"
+			tasks: [{
+				id: "0680F669B634202A"
+				item: "sophisticatedbackpacks:copper_backpack"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4E8323AABE9B80A3"]
+			hide_until_deps_complete: true
+			id: "4F788815F8435C83"
+			tasks: [{
+				id: "3DA2040D853C28A2"
+				item: "sophisticatedbackpacks:iron_backpack"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4F788815F8435C83"]
+			hide_until_deps_complete: true
+			id: "77F80D96752705F7"
+			tasks: [{
+				id: "1BFD90D5D0859318"
+				item: "sophisticatedbackpacks:gold_backpack"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["77F80D96752705F7"]
+			hide_until_deps_complete: true
+			id: "30CC70F983B5C9B1"
+			tasks: [{
+				id: "3548EFFDBDD8F265"
+				item: "sophisticatedbackpacks:diamond_backpack"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["30CC70F983B5C9B1"]
+			hide_until_deps_complete: true
+			id: "3F265D29D2D4B5D7"
+			tasks: [{
+				id: "599ED5BC27AF8CF4"
+				item: "sophisticatedbackpacks:netherite_backpack"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"38D47B1D2BC2091D"
+				"655AED52072B02C2"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:leather_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1717BE5D4B3CB30A"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					Count: 1
+					id: "minecraft:leather_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "2360715A88FC3936"
+				ignore_reward_blocking: true
+				stage: "travelling_stage"
+				team_reward: false
+				title: "Unlock : Travelling Stage"
+				type: "gamestage"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "5201C2ECAEAA470D"
+				title: "I'm Ready !"
+				type: "checkmark"
+			}]
+			title: "Ready to Travelling"
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1DAEC1BEBEFA6630"]
+			id: "10ABA9D1D498581D"
+			tasks: [{
+				id: "41D639D8A91CB7E2"
+				item: "tconstruct:piggy_backpack"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0845E62535D99076"]
+			id: "04BA23DE02C8677E"
+			tasks: [{
+				id: "0B9ABED97DD389E8"
+				item: {
+					Count: 1
+					id: "bedrockbreakers:obsidian_infused_diamond_breaker"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["04BA23DE02C8677E"]
+			id: "6248F6DA42843490"
+			tasks: [{
+				id: "1BDB26E062D2844A"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"04BA23DE02C8677E"
+				"6248F6DA42843490"
+			]
+			id: "3C3A5AE9BD993585"
+			tasks: [{
+				id: "5609A1A2DDBA757B"
+				item: {
+					Count: 1
+					id: "bedrockbreakers:bedrock_plated_obsidian_infused_diamond_breaker"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0845E62535D99076"]
+			id: "4A52C3BAFAA11235"
+			tasks: [{
+				id: "2E1CDA4E9900F79A"
+				item: "twilightforest:uncrafting_table"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 8.5d
+		}
+		{
+			id: "0845E62535D99076"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: "minecraft:player_head"
+				id: "4A814B260DDDC45D"
+				stage: "miscellaneous_stage"
+				title: "Quality of Life"
+				type: "gamestage"
+			}]
+			x: 11.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0845E62535D99076"]
+			id: "1E30B524EADB0FE0"
+			tasks: [{
+				id: "2986492E274790D2"
+				item: "enderstorage:ender_pouch"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0845E62535D99076"]
+			id: "667F7184FAB3580E"
+			tasks: [{
+				id: "5C73954295892E77"
+				item: "mekanism:cardboard_box"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0845E62535D99076"]
+			id: "0BD1109964A48FC5"
+			tasks: [{
+				id: "28DB01F3D5605D9F"
+				item: "create:empty_schematic"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0BD1109964A48FC5"]
+			id: "5DB40DC611470C69"
+			tasks: [{
+				id: "1BDA2A4A4391A4B8"
+				item: "create:schematicannon"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0BD1109964A48FC5"]
+			id: "1169E6365573A762"
+			tasks: [{
+				id: "1433C2A7DB24A080"
+				item: "create:schematic_table"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0845E62535D99076"]
+			id: "320253341D2FDE7B"
+			tasks: [{
+				id: "3B6725BE65C9A25F"
+				item: "create:crafting_blueprint"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0845E62535D99076"]
+			id: "37935C96D5A28875"
+			rewards: [{
+				auto: "enabled"
+				icon: "minecraft:music_disc_13"
+				id: "75E6C46A5C171B12"
+				ignore_reward_blocking: true
+				stage: "music_collection"
+				title: "Unlock : Music Collection"
+				type: "gamestage"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "1022283E93A30AEE"
+				item: "minecraft:jukebox"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0845E62535D99076"]
+			id: "7041C98100DB18D3"
+			tasks: [{
+				id: "0CC3F1CDE1A4A542"
+				item: {
+					Count: 1
+					id: "alexsmobs:unsettling_kimono"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 8.0d
+		}
+	]
+	title: "First Step"
+}

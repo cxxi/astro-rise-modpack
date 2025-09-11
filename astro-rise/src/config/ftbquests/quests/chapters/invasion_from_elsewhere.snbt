@@ -1,0 +1,18 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "invasion_from_elsewhere"
+	group: "1E2170E4CE21850C"
+	icon: {
+		Count: 1
+		id: "gateways:gate_pearl"
+		tag: {
+			gateway: "gateways:overworldian_nights"
+		}
+	}
+	id: "4C8F76344C621EC2"
+	order_index: 5
+	quest_links: [ ]
+	quests: [ ]
+	title: "Dimensional invasion"
+}

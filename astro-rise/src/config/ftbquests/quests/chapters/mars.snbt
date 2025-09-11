@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mars"
+	group: "4C85B5289DCCBA8E"
+	icon: "ad_astra:mars_globe"
+	id: "3C59E30A9EA32F94"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Mars"
+}

@@ -1,0 +1,267 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_deep_dark"
+	group: "1E2170E4CE21850C"
+	icon: "deeperdarker:heart_of_the_deep"
+	id: "080AD6A5FBF9369C"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "77D047DD85BFA393"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: "minecraft:reinforced_deepslate"
+				id: "716F8C1972865788"
+				stage: "deep_dark_stage"
+				title: "A Dark and Deep World"
+				type: "gamestage"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2763FF0097561A96"]
+			hide_until_deps_complete: true
+			id: "73BB09B4C73481EE"
+			tasks: [{
+				dimension: "deeperdarker:otherside"
+				id: "27F62C83C79031DF"
+				type: "dimension"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["08BB4F75016FA332"]
+			id: "2763FF0097561A96"
+			tasks: [{
+				id: "3D5837D3F2C5C039"
+				item: "deeperdarker:heart_of_the_deep"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["77D047DD85BFA393"]
+			id: "08BB4F75016FA332"
+			tasks: [{
+				entity: "minecraft:warden"
+				icon: "minecraft:warden_spawn_egg"
+				id: "24DCC979BAE6D931"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1CFA2952ADA66917"
+				"51B99C314C02BFB6"
+			]
+			id: "7B38A97C47416257"
+			tasks: [{
+				id: "20FD879D73A437AE"
+				item: {
+					Count: 1
+					id: "deeperdarker:warden_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["41980DDC066E351B"]
+			id: "0FC2D2BEA3A9450A"
+			tasks: [{
+				id: "2F4E61002EE2F66F"
+				item: "deeperdarker:soul_crystal"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0FC2D2BEA3A9450A"]
+			dependency_requirement: "all_started"
+			hide_until_deps_complete: true
+			id: "61C0052002BA19C5"
+			tasks: [{
+				id: "2615185A61C5B305"
+				item: {
+					Count: 1
+					id: "deeperdarker:soul_elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["23CE09734A254C85"]
+			hide_until_deps_complete: true
+			id: "41980DDC066E351B"
+			size: 1.5d
+			tasks: [{
+				entity: "deeperdarker:stalker"
+				icon: "deeperdarker:stalker_spawn_egg"
+				id: "5B5304D1F4383BD4"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["495EBBCBD5220447"]
+			id: "23CE09734A254C85"
+			tasks: [{
+				id: "23559E868797E28B"
+				item: "deeperdarker:ancient_vase"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["23CE09734A254C85"]
+			hide_until_deps_complete: true
+			id: "0A806448044CED62"
+			tasks: [{
+				entity: "deeperdarker:sculk_leech"
+				icon: "deeperdarker:sculk_leech_spawn_egg"
+				id: "7107748E53120189"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0FC2D2BEA3A9450A"]
+			hide_until_deps_complete: true
+			id: "6463F9768D52136C"
+			tasks: [{
+				id: "3E8CD5BC071653CB"
+				item: {
+					Count: 1
+					id: "deeperdarker:sonorous_staff"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["73BB09B4C73481EE"]
+			id: "495EBBCBD5220447"
+			tasks: [{
+				icon: "deeperdarker:sculk_stone_bricks"
+				id: "13D1E838EA802333"
+				structure: "deeperdarker:ancient_temple"
+				type: "structure"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["495EBBCBD5220447"]
+			hide_until_deps_complete: true
+			id: "52CD7B824A979200"
+			tasks: [{
+				id: "4FB5D57F4626FA32"
+				item: "deeperdarker:sculk_transmitter"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["495EBBCBD5220447"]
+			id: "67D9B9D384049A32"
+			tasks: [{
+				entity: "deeperdarker:shattered"
+				icon: "deeperdarker:shattered_spawn_egg"
+				id: "169987986CA31012"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["67D9B9D384049A32"]
+			id: "59C2C9048B3D0CFC"
+			tasks: [{
+				id: "152D5FBAEA279D3E"
+				item: "deeperdarker:sculk_bone"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0A806448044CED62"]
+			id: "3BEA32777E82D0AC"
+			tasks: [{
+				id: "02F844E1DE048282"
+				item: "deeperdarker:soul_dust"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["495EBBCBD5220447"]
+			id: "51B99C314C02BFB6"
+			tasks: [{
+				id: "55B07E3DECBCB38C"
+				item: "deeperdarker:warden_upgrade_smithing_template"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"552B458A37D5987E"
+				"73BB09B4C73481EE"
+			]
+			hide_until_deps_complete: true
+			id: "1CFA2952ADA66917"
+			tasks: [{
+				id: "0E8643F94970696D"
+				item: "deeperdarker:reinforced_echo_shard"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["08BB4F75016FA332"]
+			id: "552B458A37D5987E"
+			tasks: [{
+				id: "2633872919D8BED5"
+				item: "deeperdarker:warden_carapace"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+	]
+	title: "The Deep Dark"
+}

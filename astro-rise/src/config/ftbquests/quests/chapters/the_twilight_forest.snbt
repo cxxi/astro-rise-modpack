@@ -1,0 +1,653 @@
+{
+	autofocus_id: "06F05B2DB711A8C0"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_twilight_forest"
+	group: "1E2170E4CE21850C"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	id: "2191A0B8DA71DE77"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "06F05B2DB711A8C0"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: "twilightforest:twilight_portal_miniature_structure"
+				id: "1BE30C2F6A964409"
+				stage: "twilight_forest_stage"
+				title: "A Faery World"
+				type: "gamestage"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["043AFD86FF9354CD"]
+			hide_until_deps_complete: true
+			id: "788AB8B9B9547AC1"
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				id: "562B1D98AE8CCEBB"
+				type: "dimension"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["788AB8B9B9547AC1"]
+			id: "09A9A68029A2C53E"
+			tasks: [{
+				id: "5CBB8FD49A39FD58"
+				item: "twilightforest:magic_map"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2FD611B1CBC16C70"]
+			id: "2B7D549FDC00AFE2"
+			size: 1.5d
+			tasks: [{
+				id: "45ABBAAA760894AC"
+				item: "twilightforest:naga_trophy"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1B5916C043620E6B"]
+			id: "1F21EC2FEFA4BACB"
+			size: 1.5d
+			tasks: [{
+				id: "0D8432D7A20D18E6"
+				item: "twilightforest:lich_trophy"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["788AB8B9B9547AC1"]
+			id: "321A36BA9D410E88"
+			tasks: [{
+				biome: "twilightforest:forest"
+				id: "517CFF6BFBD5A11E"
+				type: "biome"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1F21EC2FEFA4BACB"]
+			hide_until_deps_complete: true
+			id: "1CFB88667189377F"
+			tasks: [{
+				biome: "twilightforest:swamp"
+				icon: "twilightforest:mangrove_sapling"
+				id: "08C5BFC8E4016C45"
+				type: "biome"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["321A36BA9D410E88"]
+			icon: "twilightforest:naga_courtyard_miniature_structure"
+			id: "2FD611B1CBC16C70"
+			tasks: [{
+				id: "63596B3E31E36D58"
+				structure: "twilightforest:naga_courtyard"
+				type: "structure"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2B7D549FDC00AFE2"]
+			hide_until_deps_complete: true
+			id: "1B5916C043620E6B"
+			tasks: [{
+				icon: "twilightforest:lich_tower_miniature_structure"
+				id: "7B91CA7501535FD9"
+				structure: "twilightforest:lich_tower"
+				type: "structure"
+			}]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4251EF89128BAE00"]
+			hide_until_deps_complete: true
+			id: "0C6D080718498DB2"
+			size: 1.5d
+			tasks: [{
+				id: "55AC61AA92CB847C"
+				item: "twilightforest:minoshroom_trophy"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0C6D080718498DB2"]
+			hide_until_deps_complete: true
+			id: "69127C803FCAC579"
+			tasks: [{
+				id: "43AFF6C021ADBC4C"
+				item: "twilightforest:meef_stroganoff"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["1CFB88667189377F"]
+			id: "4251EF89128BAE00"
+			tasks: [{
+				icon: "twilightforest:mazestone_brick"
+				id: "7EB8DA0A1E298111"
+				structure: "twilightforest:labyrinth"
+				type: "structure"
+			}]
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"1CFB88667189377F"
+				"69127C803FCAC579"
+			]
+			hide_until_deps_complete: true
+			id: "7BCEF90C63D49BE3"
+			tasks: [{
+				biome: "twilightforest:fire_swamp"
+				icon: "twilightforest:smoker"
+				id: "1853FABACE628300"
+				type: "biome"
+			}]
+			x: 3.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7BCEF90C63D49BE3"]
+			hide_until_deps_complete: true
+			id: "709463E064C3A0B0"
+			tasks: [{
+				icon: "minecraft:dirt"
+				id: "4F908791E229845D"
+				structure: "twilightforest:hydra_lair"
+				type: "structure"
+			}]
+			x: 3.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["709463E064C3A0B0"]
+			hide_until_deps_complete: true
+			id: "09DF3990CF031F46"
+			size: 1.5d
+			tasks: [{
+				id: "29D82DB28AA3D899"
+				item: "twilightforest:hydra_trophy"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["1F21EC2FEFA4BACB"]
+			hide_until_deps_complete: true
+			id: "4AEE7E681D560DD4"
+			tasks: [{
+				biome: "twilightforest:dark_forest"
+				icon: "twilightforest:darkwood_sapling"
+				id: "3AB4D5A6B17E3CFB"
+				type: "biome"
+			}]
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["4AEE7E681D560DD4"]
+			hide_until_deps_complete: true
+			id: "4C4449D54E279960"
+			tasks: [{
+				icon: "twilightforest:underbrick"
+				id: "5E50DD2240D74B05"
+				structure: "twilightforest:knight_stronghold"
+				type: "structure"
+			}]
+			x: 3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4C4449D54E279960"]
+			hide_until_deps_complete: true
+			id: "66259EA05BE27671"
+			tasks: [{
+				id: "57EC6505F03D8633"
+				item: "twilightforest:knight_phantom_trophy"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["71536D3280C1D86F"]
+			hide_until_deps_complete: true
+			id: "4264D41185D8780E"
+			tasks: [{
+				icon: "twilightforest:towerwood"
+				id: "1AF88956A8D5CD16"
+				structure: "twilightforest:dark_tower"
+				type: "structure"
+			}]
+			x: 6.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["4AEE7E681D560DD4"]
+			hide_until_deps_complete: true
+			id: "71536D3280C1D86F"
+			tasks: [{
+				biome: "twilightforest:dark_forest_center"
+				icon: "twilightforest:canopy_sapling"
+				id: "3822FB1159015E83"
+				type: "biome"
+			}]
+			x: 6.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4264D41185D8780E"]
+			hide_until_deps_complete: true
+			id: "3988F21C0D24224F"
+			size: 1.5d
+			tasks: [{
+				id: "62490D138D20399C"
+				item: "twilightforest:ur_ghast_trophy"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"09DF3990CF031F46"
+				"3988F21C0D24224F"
+			]
+			id: "11929057B7EA5431"
+			tasks: [{
+				id: "22E97FA78305490A"
+				item: "twilightforest:fiery_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["1F21EC2FEFA4BACB"]
+			hide_until_deps_complete: true
+			icon: "minecraft:spruce_sapling"
+			id: "02884D8D3413C783"
+			tasks: [{
+				biome: "twilightforest:snowy_forest"
+				id: "1C89CA24ED4C766E"
+				type: "biome"
+			}]
+			x: -0.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["02884D8D3413C783"]
+			hide_until_deps_complete: true
+			id: "00778C5C36E71E0B"
+			tasks: [{
+				icon: "minecraft:packed_ice"
+				id: "6BB3890637336DC5"
+				structure: "twilightforest:yeti_cave"
+				type: "structure"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["00778C5C36E71E0B"]
+			hide_until_deps_complete: true
+			id: "4752E2DDC28AF8A3"
+			size: 1.5d
+			tasks: [{
+				id: "4A112DC779AC5846"
+				item: "twilightforest:alpha_yeti_trophy"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4752E2DDC28AF8A3"]
+			hide_until_deps_complete: true
+			id: "20D8C8A773A0B793"
+			tasks: [{
+				biome: "twilightforest:glacier"
+				icon: "minecraft:blue_ice"
+				id: "660250B2171BA027"
+				type: "biome"
+			}]
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["20D8C8A773A0B793"]
+			hide_until_deps_complete: true
+			id: "081CDAC1DEAFD79B"
+			tasks: [{
+				icon: "twilightforest:aurora_block"
+				id: "59A1BC533A7D320C"
+				structure: "twilightforest:aurora_palace"
+				type: "structure"
+			}]
+			x: -3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["081CDAC1DEAFD79B"]
+			hide_until_deps_complete: true
+			id: "43E785B44DBB56B9"
+			size: 1.5d
+			tasks: [{
+				id: "02543321B40E261A"
+				item: "twilightforest:snow_queen_trophy"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"3988F21C0D24224F"
+				"43E785B44DBB56B9"
+				"09DF3990CF031F46"
+			]
+			hide_until_deps_complete: true
+			id: "6369B79795816189"
+			tasks: [{
+				biome: "twilightforest:highlands"
+				icon: "minecraft:podzol"
+				id: "6B564F84DF2BEA6C"
+				type: "biome"
+			}]
+			x: 1.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["6369B79795816189"]
+			id: "7D2037CBB976051D"
+			tasks: [{
+				icon: "twilightforest:trollvidr"
+				id: "7816119D20BABA10"
+				structure: "twilightforest:troll_cave"
+				type: "structure"
+			}]
+			x: -3.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["7D2037CBB976051D"]
+			id: "1DA2A7C8351BE143"
+			tasks: [{
+				entity: "twilightforest:troll"
+				icon: "twilightforest:troll_spawn_egg"
+				id: "174DA7D76F6B8E1C"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["1DA2A7C8351BE143"]
+			hide_until_deps_complete: true
+			id: "26E5AB7964682C0A"
+			tasks: [{
+				id: "5EE9C8FDDB60F73E"
+				item: "twilightforest:magic_beans"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["522B73F3D0F80A19"]
+			id: "7AF853AD90CA92CB"
+			tasks: [{
+				id: "085DF80226A87A9F"
+				item: "twilightforest:charm_of_keeping_1"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["522B73F3D0F80A19"]
+			hide_until_deps_complete: true
+			id: "261D4244E72F8371"
+			tasks: [{
+				id: "6EE6B3DE74B68F76"
+				item: {
+					Count: 1
+					id: "twilightforest:lamp_of_cinders"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["2F83E4D0506E2E73"]
+			hide_until_deps_complete: true
+			id: "522B73F3D0F80A19"
+			tasks: [{
+				id: "3468C069BE96F988"
+				item: {
+					Count: 1
+					id: "twilightforest:giant_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["261D4244E72F8371"]
+			id: "487D633B643D16A0"
+			tasks: [{
+				biome: "twilightforest:thornlands"
+				icon: "twilightforest:brown_thorns"
+				id: "6F261F96B33E8CF2"
+				type: "biome"
+			}]
+			x: -1.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["788AB8B9B9547AC1"]
+			id: "7E4D6F08ACF84B3C"
+			tasks: [{
+				id: "0F385537F2889591"
+				item: "twilightforest:quest_ram_trophy"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["487D633B643D16A0"]
+			id: "5E9EE8FE2DE317AF"
+			tasks: [{
+				icon: "twilightforest:castle_brick"
+				id: "68F595C689236767"
+				structure: "twilightforest:final_castle"
+				type: "structure"
+			}]
+			x: -3.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["7AF853AD90CA92CB"]
+			hide_until_deps_complete: true
+			id: "40A9FCD6922E089F"
+			tasks: [{
+				id: "0BEE95815BB473FC"
+				item: "twilightforest:charm_of_keeping_2"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 20.5d
+		}
+		{
+			dependencies: ["40A9FCD6922E089F"]
+			hide_until_deps_complete: true
+			id: "41B7E09FEAE30BD4"
+			tasks: [{
+				id: "39BEC97AFFE62A2D"
+				item: "twilightforest:charm_of_keeping_3"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 20.5d
+		}
+		{
+			dependencies: ["66259EA05BE27671"]
+			id: "626F2B7E516235F0"
+			tasks: [{
+				id: "0B7D60C5469D3C5E"
+				item: "twilightforest:knightmetal_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4264D41185D8780E"]
+			id: "208D814D40BD1FBE"
+			tasks: [{
+				id: "512A461B98AC5282"
+				item: "twilightforest:carminite"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["788AB8B9B9547AC1"]
+			id: "7DA6C88314A1D3FB"
+			tasks: [{
+				id: "50C98254CB343DE2"
+				item: "twilightforest:firefly"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7DA6C88314A1D3FB"]
+			id: "0D6A90897049A16F"
+			tasks: [{
+				id: "41BB0C8CB20F2082"
+				item: "twilightforest:firefly_particle_spawner"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["788AB8B9B9547AC1"]
+			id: "137084D13CD55D9D"
+			tasks: [{
+				id: "065D2F9293F4AC3B"
+				item: "twilightforest:liveroot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["137084D13CD55D9D"]
+			id: "7098343B7679C17B"
+			tasks: [{
+				id: "1A78BA43E37D59CB"
+				item: "twilightforest:ironwood_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["26E5AB7964682C0A"]
+			id: "3BA031B83B5BA745"
+			tasks: [{
+				entity: "twilightforest:armored_giant"
+				icon: "twilightforest:armored_giant_spawn_egg"
+				id: "3A1D1DDADE938865"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["26E5AB7964682C0A"]
+			id: "2F83E4D0506E2E73"
+			tasks: [{
+				entity: "twilightforest:giant_miner"
+				icon: "twilightforest:giant_miner_spawn_egg"
+				id: "06F7FA3894491D30"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["3BA031B83B5BA745"]
+			hide_until_deps_complete: true
+			id: "1336555AB26C7069"
+			tasks: [{
+				id: "71351D34B8552663"
+				item: {
+					Count: 1
+					id: "twilightforest:giant_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["06F05B2DB711A8C0"]
+			id: "043AFD86FF9354CD"
+			tasks: [{
+				id: "5617C4A8AEDB0562"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+	]
+	title: "The Twilight Forest"
+}

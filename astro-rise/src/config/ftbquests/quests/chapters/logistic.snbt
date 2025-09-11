@@ -1,0 +1,481 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "logistic"
+	group: "333A3E778A1559F5"
+	icon: "immersive_aircraft:sturdy_pipes"
+	id: "07FB083DF990AA50"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5DB6526B89E594C2"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: "immersive_aircraft:sturdy_pipes"
+				id: "04A9D5272EDEF8AE"
+				stage: "logistic_stage"
+				title: "Logistic Flux"
+				type: "gamestage"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5DB6526B89E594C2"]
+			id: "1DDC07966FEB7AC3"
+			tasks: [{
+				id: "773A002CD7C64085"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1DDC07966FEB7AC3"]
+			id: "5B93FF9291E730E9"
+			tasks: [{
+				id: "1F0879C088C27CAD"
+				item: "create:smart_fluid_pipe"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1DDC07966FEB7AC3"]
+			id: "173740CA2316EAE8"
+			tasks: [{
+				id: "2DE75E985072CC59"
+				item: "create:mechanical_pump"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1DDC07966FEB7AC3"]
+			id: "15D28ADD16310F91"
+			tasks: [{
+				id: "5C982CE52A2409A5"
+				item: "create:fluid_valve"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["15D28ADD16310F91"]
+			id: "59FF1E8F62ACB9E0"
+			tasks: [{
+				id: "75B081902A3E9FB8"
+				item: "create:copper_valve_handle"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5DB6526B89E594C2"]
+			id: "65F1D9D8EA41D8E9"
+			tasks: [{
+				id: "3F65B7AD8992DA8C"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5B93FF9291E730E9"
+				"7469070F5A2E73CF"
+				"5B71EACD7AAE81CA"
+				"4E0DD8AF22537067"
+			]
+			id: "12BA79CE72D3E281"
+			tasks: [{
+				id: "606E7C3DBDE91882"
+				item: "create:filter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["65F1D9D8EA41D8E9"]
+			id: "154861D0FF1A7B54"
+			tasks: [{
+				id: "47EB86B625C8D294"
+				item: "create:andesite_funnel"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["154861D0FF1A7B54"]
+			id: "5B71EACD7AAE81CA"
+			tasks: [{
+				id: "15486B67E240736E"
+				item: "create:brass_funnel"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["65F1D9D8EA41D8E9"]
+			id: "29A59D5D1B2C5C80"
+			tasks: [{
+				id: "0D17D4EAB6653A45"
+				item: "create:andesite_tunnel"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["29A59D5D1B2C5C80"]
+			id: "4E0DD8AF22537067"
+			tasks: [{
+				id: "764FAC49F8CDD699"
+				item: "create:brass_tunnel"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["65F1D9D8EA41D8E9"]
+			id: "38811293B8391077"
+			tasks: [{
+				id: "21881224339EB9B6"
+				item: "create:chute"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["38811293B8391077"]
+			id: "7469070F5A2E73CF"
+			tasks: [{
+				id: "70D91C7B89D62F7E"
+				item: "create:smart_chute"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5DB6526B89E594C2"]
+			id: "6E95DFBC57D3E6BB"
+			tasks: [{
+				id: "2AE21757FDC3EECB"
+				item: "mekanism:basic_mechanical_pipe"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6E95DFBC57D3E6BB"]
+			hide_until_deps_complete: true
+			id: "64FC143B6893D1DA"
+			tasks: [{
+				id: "741CB4108F191575"
+				item: "mekanism:advanced_mechanical_pipe"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["64FC143B6893D1DA"]
+			hide_until_deps_complete: true
+			id: "02610211BC82AFE7"
+			tasks: [{
+				id: "073309FF437BF4B0"
+				item: "mekanism:elite_mechanical_pipe"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["02610211BC82AFE7"]
+			hide_until_deps_complete: true
+			id: "77AF05DEEF3262F8"
+			tasks: [{
+				id: "394E4D8BE4F66307"
+				item: "mekanism:ultimate_mechanical_pipe"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5DB6526B89E594C2"]
+			id: "250387974C8C309A"
+			tasks: [{
+				id: "5BF4B69DAD43600A"
+				item: "mekanism:basic_pressurized_tube"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["250387974C8C309A"]
+			hide_until_deps_complete: true
+			id: "096493C92917F79B"
+			tasks: [{
+				id: "76F38A18373B6091"
+				item: "mekanism:advanced_pressurized_tube"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["096493C92917F79B"]
+			hide_until_deps_complete: true
+			id: "2C2C0F49F249EE53"
+			tasks: [{
+				id: "369926B5004B8968"
+				item: "mekanism:elite_pressurized_tube"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2C2C0F49F249EE53"]
+			hide_until_deps_complete: true
+			id: "10BB3CD3368E0B63"
+			tasks: [{
+				id: "72EA71B5E2F62C1E"
+				item: "mekanism:ultimate_pressurized_tube"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5DB6526B89E594C2"]
+			id: "31F8E855BC741AB4"
+			tasks: [{
+				id: "4948ECB2076078F3"
+				item: "mekanism:basic_logistical_transporter"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["31F8E855BC741AB4"]
+			hide_until_deps_complete: true
+			id: "67AE8B0318B82DBC"
+			tasks: [{
+				id: "3505DA9C8EC59026"
+				item: "mekanism:advanced_logistical_transporter"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["67AE8B0318B82DBC"]
+			hide_until_deps_complete: true
+			id: "05BB7E30467B0705"
+			tasks: [{
+				id: "1A6F35780A496E4F"
+				item: "mekanism:elite_logistical_transporter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["05BB7E30467B0705"]
+			hide_until_deps_complete: true
+			id: "0239A5E821396F04"
+			tasks: [{
+				id: "0441E83031B75A82"
+				item: "mekanism:ultimate_logistical_transporter"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["31F8E855BC741AB4"]
+			id: "47E52E1265AEA586"
+			tasks: [{
+				id: "6351D13CAF441348"
+				item: "mekanism:restrictive_transporter"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["47E52E1265AEA586"]
+			id: "58BDBF592DAF79C0"
+			tasks: [{
+				id: "35BB5B6660CA8B7F"
+				item: "mekanism:diversion_transporter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5DB6526B89E594C2"]
+			id: "4D09FB139A494621"
+			tasks: [{
+				id: "4B2795C4BDF19A89"
+				item: "mekanism:basic_thermodynamic_conductor"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D09FB139A494621"]
+			hide_until_deps_complete: true
+			id: "6F2BA843C99F2999"
+			tasks: [{
+				id: "044D7C277D921BB2"
+				item: "mekanism:advanced_thermodynamic_conductor"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6F2BA843C99F2999"]
+			hide_until_deps_complete: true
+			id: "4B9BF615BCF5B47F"
+			tasks: [{
+				id: "2909ED69F1CBE2CE"
+				item: "mekanism:elite_thermodynamic_conductor"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4B9BF615BCF5B47F"]
+			hide_until_deps_complete: true
+			id: "0CE95C9EF974DB3D"
+			tasks: [{
+				id: "00CC769C91FC5C12"
+				item: "mekanism:ultimate_thermodynamic_conductor"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["77AF05DEEF3262F8"]
+			hide_until_deps_complete: true
+			id: "20DC5331E0B7C75A"
+			tasks: [{
+				id: "7E65E19842A21991"
+				item: "enderio:fluid_conduit"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["10BB3CD3368E0B63"]
+			hide_until_deps_complete: true
+			id: "0114EDEF55B81706"
+			tasks: [{
+				id: "6714609E4862F7DF"
+				item: "enderio:pressurized_fluid_conduit"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["20DC5331E0B7C75A"]
+			hide_until_deps_complete: true
+			id: "2DA9D731CA8876D7"
+			tasks: [{
+				id: "088B8D553F59AD6D"
+				item: "enderio:ender_fluid_conduit"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0239A5E821396F04"]
+			dependency_requirement: "one_completed"
+			hide_until_deps_complete: true
+			id: "6D276C94E03D2B17"
+			tasks: [{
+				id: "279392AC61777170"
+				item: "enderio:item_conduit"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5DB6526B89E594C2"]
+			id: "3F08DFE899BED069"
+			tasks: [{
+				id: "2F8849A6810006E2"
+				item: "enderio:chemical_conduit"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3F08DFE899BED069"]
+			hide_until_deps_complete: true
+			id: "21F91DC75F356F62"
+			tasks: [{
+				id: "5F1E8E2C49EE34E6"
+				item: "enderio:pressurized_chemical_conduit"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21F91DC75F356F62"]
+			hide_until_deps_complete: true
+			id: "0B4A50862D9BAE01"
+			tasks: [{
+				id: "3B461BF5CC64A9A5"
+				item: "enderio:ender_chemical_conduit"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0CE95C9EF974DB3D"]
+			hide_until_deps_complete: true
+			id: "3E1126D2CCE1D1C2"
+			tasks: [{
+				id: "5BA5D42CF3843873"
+				item: "enderio:heat_conduit"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+	]
+	title: "Logistic"
+}

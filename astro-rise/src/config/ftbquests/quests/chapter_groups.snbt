@@ -1,0 +1,9 @@
+{
+	chapter_groups: [
+		{ id: "34235EEFFBA2CFA5", title: "Beginning" }
+		{ id: "333A3E778A1559F5", title: "Industrialization" }
+		{ id: "1E2170E4CE21850C", title: "Exploration" }
+		{ id: "4C85B5289DCCBA8E", title: "Path to the Stars" }
+		{ id: "5019398956D3E905", title: "Collections" }
+	]
+}

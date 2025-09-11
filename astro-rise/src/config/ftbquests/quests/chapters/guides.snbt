@@ -1,0 +1,193 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "guides"
+	group: "34235EEFFBA2CFA5"
+	icon: "minecraft:writable_book"
+	id: "0BCCF8593F11E0FA"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			icon: "ae2:guide"
+			id: "67D2E63514842E3B"
+			optional: true
+			rewards: [{
+				id: "48A0B5D084006FC7"
+				item: "ae2:guide"
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "6C9E15CB24BDCAE5"
+				title: "Give me the book"
+				type: "checkmark"
+			}]
+			title: "Apply Energestic Guide"
+			x: 5.5d
+			y: -4.5d
+		}
+		{
+			can_repeat: true
+			icon: "alexsmobs:animal_dictionary"
+			id: "4800D5C5EEDAB86B"
+			optional: true
+			rewards: [{
+				id: "5E40598EECE6EA23"
+				item: "alexsmobs:animal_dictionary"
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "284AEEA6A79831A4"
+				title: "I need the book"
+				type: "checkmark"
+			}]
+			title: "Animal Dictionary"
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			can_repeat: true
+			icon: "tconstruct:materials_and_you"
+			id: "635CBC90134878C9"
+			optional: true
+			rewards: [{
+				id: "25A38D508A71A1A8"
+				item: "tconstruct:materials_and_you"
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "1960D40B2AD627B1"
+				title: "Give me the book"
+				type: "checkmark"
+			}]
+			title: "Materials And You"
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			icon: "tconstruct:puny_smelting"
+			id: "0EC8ABA6488A1C68"
+			optional: true
+			rewards: [{
+				id: "00F53211B85A1119"
+				item: "tconstruct:puny_smelting"
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "6F861A61524366F0"
+				title: "Give me the book"
+				type: "checkmark"
+			}]
+			title: "Puny Smelting"
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			icon: "tconstruct:mighty_smelting"
+			id: "2556535F9F02C75E"
+			optional: true
+			rewards: [{
+				id: "340156E16A1B6C69"
+				item: "tconstruct:mighty_smelting"
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "4B1F5FEC19DBC8BA"
+				title: "Give me the book"
+				type: "checkmark"
+			}]
+			title: "Mighty Smelting"
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			icon: "tconstruct:tinkers_gadgetry"
+			id: "4F48392A3881C7D5"
+			optional: true
+			rewards: [{
+				id: "785D72DBB0B07732"
+				item: "tconstruct:tinkers_gadgetry"
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "0AA3425E67C3416D"
+				title: "Give me the book"
+				type: "checkmark"
+			}]
+			title: "Tinker(s Gadgetry"
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			icon: "tconstruct:fantastic_foundry"
+			id: "25A9D6C4C6460F82"
+			optional: true
+			rewards: [{
+				id: "2129B5B9BEEEDDEE"
+				item: "tconstruct:fantastic_foundry"
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "572089734C999421"
+				title: "Give me the book"
+				type: "checkmark"
+			}]
+			title: "Fantastic Foundry"
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			icon: "tconstruct:encyclopedia"
+			id: "3C398538B12E5A8F"
+			optional: true
+			rewards: [{
+				id: "10C9C20857FC723F"
+				item: "tconstruct:encyclopedia"
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "58A639F6E6209481"
+				title: "Give me the book"
+				type: "checkmark"
+			}]
+			title: "Encyclopedia of Tinkering"
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			icon: "ftbquests:book"
+			id: "0EC097C6CAB37399"
+			optional: true
+			rewards: [{
+				id: "0CD5F235223D360D"
+				item: "ftbquests:book"
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "69B8EF9FFEE2608E"
+				title: "Give me the Book"
+				type: "checkmark"
+			}]
+			title: "Quest Book"
+			x: 2.5d
+			y: -7.0d
+		}
+	]
+	title: "Guides"
+}

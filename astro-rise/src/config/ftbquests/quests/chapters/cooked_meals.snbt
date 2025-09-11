@@ -1,0 +1,567 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cooked_meals"
+	group: "5019398956D3E905"
+	icon: {
+		Count: 1
+		id: "farmersdelight:skillet"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "5FB6CCAFB2A64069"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "40E8925195AB3BB3"
+			tasks: [{
+				id: "19176AE448A87554"
+				item: "farmersdelight:sweet_berry_cookie"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "66471EC73EDA78B8"
+			tasks: [{
+				id: "722917ED9CEDA072"
+				item: "farmersdelight:honey_cookie"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "52119F4AD821E784"
+			tasks: [{
+				id: "56C2017040D73777"
+				item: "minecraft:cookie"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "489331A80C46BB30"
+			tasks: [{
+				id: "587147EE3EF3206B"
+				item: "farmersdelight:melon_popsicle"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "291C263025CBFF1E"
+			tasks: [{
+				id: "0EBFBDE682DECA5E"
+				item: "farmersdelight:glow_berry_custard"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "41D56143AA111C29"
+			tasks: [{
+				id: "396419A6F3435C0F"
+				item: "farmersdelight:fruit_salad"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "439900252B05E97A"
+			tasks: [{
+				id: "0382D3D31339B384"
+				item: "farmersdelight:mixed_salad"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "694A12FD236E5846"
+			tasks: [{
+				id: "16488FCECACB2068"
+				item: "farmersdelight:nether_salad"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "6078D2822E3FD9EB"
+			tasks: [{
+				id: "0371FA98A061C5C6"
+				item: "farmersdelight:barbecue_stick"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "76334D2FD0237B0D"
+			tasks: [{
+				id: "43899C04F9664159"
+				item: "farmersdelight:egg_sandwich"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "17D1E1363336672B"
+			tasks: [{
+				id: "4D841483124AB876"
+				item: "farmersdelight:chicken_sandwich"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "594D14841AF9AD20"
+			tasks: [{
+				id: "151FD7A152F75359"
+				item: "farmersdelight:hamburger"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "55A7B4999D5FA8B4"
+			tasks: [{
+				id: "15F1D551D9A35101"
+				item: "farmersdelight:bacon_sandwich"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "62406B7C27736A03"
+			tasks: [{
+				id: "1FB00405F4C965D2"
+				item: "farmersdelight:mutton_wrap"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "6CC343A4BD8A87FB"
+			tasks: [{
+				id: "375123DB0403B31A"
+				item: "farmersdelight:dumplings"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "033D832668FFA7DC"
+			tasks: [{
+				id: "060A8AC81F6AA64D"
+				item: "farmersdelight:stuffed_potato"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "6E0A75443CE3CACB"
+			tasks: [{
+				id: "115304BD269D3E00"
+				item: "farmersdelight:cabbage_rolls"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "49046357B9A51EE6"
+			tasks: [{
+				id: "411D313E253E7CE1"
+				item: "farmersdelight:salmon_roll"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "60AE480A71D6B269"
+			tasks: [{
+				id: "1E5FEFDF18D1CB5D"
+				item: "farmersdelight:cod_roll"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "55C14FAF4FF224D3"
+			tasks: [{
+				id: "6902F02F6D215BEC"
+				item: "farmersdelight:kelp_roll"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "60F30A3589FA00D3"
+			tasks: [{
+				id: "7B5AF1919E090625"
+				item: "farmersdelight:cooked_rice"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "502B973FEF3D8598"
+			tasks: [{
+				id: "522F35883824C88B"
+				item: "farmersdelight:bone_broth"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "6574DA715124C571"
+			tasks: [{
+				id: "20DF2FFF045E9E88"
+				item: "farmersdelight:beef_stew"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "430540F831242829"
+			tasks: [{
+				id: "28145641A3088BB4"
+				item: "farmersdelight:chicken_soup"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "212B20BD921E5ED6"
+			tasks: [{
+				id: "171051CE0E4424D6"
+				item: "farmersdelight:vegetable_soup"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "7B3D5BAEF2E4FCFF"
+			tasks: [{
+				id: "0982139FEA516EB3"
+				item: "farmersdelight:fish_stew"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "43A4785CA9D766DA"
+			tasks: [{
+				id: "6B945808A36A7D7E"
+				item: "farmersdelight:fried_rice"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "242EFE05346E417C"
+			tasks: [{
+				id: "477DCE1308D45130"
+				item: "farmersdelight:pumpkin_soup"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "10BF8000C4ED4947"
+			tasks: [{
+				id: "357CFFB50C64F7CB"
+				item: "farmersdelight:baked_cod_stew"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "0DB3A1C32E0812BB"
+			tasks: [{
+				id: "7CFBC2B2CF0DE0C0"
+				item: "farmersdelight:noodle_soup"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "6DA0D72FE2F4B95E"
+			tasks: [{
+				id: "5B61B221B4B2ACC8"
+				item: "farmersdelight:bacon_and_eggs"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "03DE8AFBE8CD5140"
+			tasks: [{
+				id: "7BEB24499C84BCC1"
+				item: "farmersdelight:pasta_with_meatballs"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "28716BB5CAA451F4"
+			tasks: [{
+				id: "0DCB4368BE071279"
+				item: "farmersdelight:pasta_with_mutton_chop"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "5B322D1CFEE1F53F"
+			tasks: [{
+				id: "2FE12AFCFE5EFEA4"
+				item: "farmersdelight:mushroom_rice"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "02BDC40EE775AB69"
+			tasks: [{
+				id: "4A067B08E65FA8B3"
+				item: "farmersdelight:roasted_mutton_chops"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "6FE2FB51DDB494FB"
+			tasks: [{
+				id: "163B0950DAA28F1B"
+				item: "farmersdelight:vegetable_noodles"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "1D7FA6E956C843C7"
+			tasks: [{
+				id: "378C699BC6D5C801"
+				item: "farmersdelight:steak_and_potatoes"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "30D6D6B32CFA88B7"
+			tasks: [{
+				id: "45D5C216E9B6FEFF"
+				item: "farmersdelight:ratatouille"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "5C718B58E0EA1B6D"
+			tasks: [{
+				id: "5FC7064A003644E6"
+				item: "farmersdelight:squid_ink_pasta"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "168F41984838FE92"
+			tasks: [{
+				id: "6208EA81FC8D2E17"
+				item: "farmersdelight:grilled_salmon"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "3DFEA7A76AD58DA1"
+			tasks: [{
+				id: "62FC897E4E6F3DE7"
+				item: "farmersdelight:roast_chicken_block"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "596A4F2E68B26A9E"
+			tasks: [{
+				id: "5C68068FFA82F7F0"
+				item: "farmersdelight:stuffed_pumpkin_block"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "419882C3F9838A22"
+			tasks: [{
+				id: "782F68EADCC5C3F3"
+				item: "farmersdelight:stuffed_pumpkin"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "0AD7D9072AA0A929"
+			tasks: [{
+				id: "74E16EB2E4AC8D83"
+				item: "farmersdelight:honey_glazed_ham_block"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "09D10892A3DA5312"
+			tasks: [{
+				id: "43E0563D8F251D16"
+				item: "farmersdelight:shepherds_pie_block"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "675667F6745F4878"
+			tasks: [{
+				id: "2BB68D2F3CF7E12E"
+				item: "farmersdelight:rice_roll_medley_block"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "639F3BCC5591972E"
+			tasks: [{
+				id: "42047628B1404CCC"
+				item: "farmersdelight:dog_food"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1567F5DADC5C991E"]
+			id: "3285344A80CB40A7"
+			tasks: [{
+				id: "692EFE95C83331D4"
+				item: "farmersdelight:horse_feed"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			id: "1567F5DADC5C991E"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "5B439E091F754FB7"
+				stage: "cooked_meal_collection"
+				title: "Cooked Meals Collection"
+				type: "gamestage"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+	]
+	title: "Cooked Meals"
+}

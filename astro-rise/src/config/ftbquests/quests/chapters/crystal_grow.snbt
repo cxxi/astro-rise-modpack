@@ -1,0 +1,243 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "crystal_grow"
+	group: "333A3E778A1559F5"
+	icon: "minecraft:amethyst_shard"
+	id: "32B4794AA5328FBD"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			id: "38B729F6F4E3CF20"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: "tconstruct:sky_slime_crystal_cluster"
+				id: "39699A187C59FB01"
+				stage: "crystal_stage"
+				title: "Crystal Growing"
+				type: "gamestage"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["38B729F6F4E3CF20"]
+			icon: "tconstruct:budding_earth_slime_crystal"
+			id: "7A6BBC7E75DC63AE"
+			tasks: [{
+				id: "145C4E1B43D7E4FA"
+				item: "tconstruct:earth_slime_crystal_cluster"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["38B729F6F4E3CF20"]
+			icon: "tconstruct:budding_sky_slime_crystal"
+			id: "7318064F34BDC22C"
+			tasks: [{
+				id: "53F2385368DBBB8A"
+				item: "tconstruct:sky_slime_crystal_cluster"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["38B729F6F4E3CF20"]
+			icon: "tconstruct:budding_ichor_slime_crystal"
+			id: "55D5D312C5AFD237"
+			tasks: [{
+				id: "5EBD1E21B047A78F"
+				item: "tconstruct:ichor_slime_crystal_cluster"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["38B729F6F4E3CF20"]
+			icon: "tconstruct:budding_ender_slime_crystal"
+			id: "31830DC2B24E1C37"
+			tasks: [{
+				id: "5F07ACA809C164A6"
+				item: "tconstruct:ender_slime_crystal_cluster"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["38B729F6F4E3CF20"]
+			icon: "ae2:flawless_budding_quartz"
+			id: "5F2D790E014BB507"
+			tasks: [{
+				id: "3AFE43338E8E18CB"
+				item: "ae2:quartz_cluster"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["38B729F6F4E3CF20"]
+			icon: "minecraft:budding_amethyst"
+			id: "0A1E5783C833C845"
+			tasks: [{
+				id: "7859B6BA963E40E1"
+				item: "minecraft:amethyst_cluster"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0A1E5783C833C845"]
+			hide_until_deps_complete: true
+			id: "7635F3761CA1EC13"
+			tasks: [{
+				id: "3414D0AC079942C0"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7A6BBC7E75DC63AE"]
+			hide_until_deps_complete: true
+			id: "499A139DFA00D83F"
+			tasks: [{
+				id: "59CFE804FCFB3A44"
+				item: "tconstruct:earth_slime_crystal"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7318064F34BDC22C"]
+			hide_until_deps_complete: true
+			id: "09C4C6E31423A406"
+			tasks: [{
+				id: "46A518C70181F084"
+				item: "tconstruct:sky_slime_crystal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["55D5D312C5AFD237"]
+			hide_until_deps_complete: true
+			id: "7EDD2717CFB6784B"
+			tasks: [{
+				id: "6DE6E8C2A7507B57"
+				item: "tconstruct:ichor_slime_crystal"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["31830DC2B24E1C37"]
+			hide_until_deps_complete: true
+			id: "09CA7E0788B3FFF5"
+			tasks: [{
+				id: "18B19BDD46E199E1"
+				item: "tconstruct:ender_slime_crystal"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5F2D790E014BB507"]
+			hide_until_deps_complete: true
+			id: "342D4636900A77FC"
+			tasks: [{
+				id: "3C18CCF9C9B11FD9"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["342D4636900A77FC"]
+			hide_until_deps_complete: true
+			id: "64B1818157D87D60"
+			tasks: [{
+				id: "704C63ED41BE30C0"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["64B1818157D87D60"]
+			hide_until_deps_complete: true
+			id: "1F28AAFDF714EBA2"
+			tasks: [{
+				id: "60AD3A1BB349808F"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["09C4C6E31423A406"]
+			hide_until_deps_complete: true
+			id: "0E845294E4205596"
+			tasks: [{
+				id: "7556D6518A3E0AE6"
+				item: "tconstruct:sky_slime_ball"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7EDD2717CFB6784B"]
+			hide_until_deps_complete: true
+			id: "169CFE22D17CBCEF"
+			tasks: [{
+				id: "6E4741F4E257CD28"
+				item: "tconstruct:ichor_slime_ball"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["09CA7E0788B3FFF5"]
+			hide_until_deps_complete: true
+			id: "42AAE4DAC05F8017"
+			tasks: [{
+				id: "0EFA0FE98305558E"
+				item: "tconstruct:ender_slime_ball"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["499A139DFA00D83F"]
+			hide_until_deps_complete: true
+			id: "4DB113F96ADF56B8"
+			tasks: [{
+				id: "1A5715D5D4868CF3"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+	]
+	title: "Crystal Grow"
+}

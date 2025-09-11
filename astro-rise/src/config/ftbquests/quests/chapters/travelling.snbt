@@ -1,0 +1,875 @@
+{
+	autofocus_id: "3E96EC77C2AF2875"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "travelling"
+	group: "34235EEFFBA2CFA5"
+	icon: "minecraft:light_blue_glazed_terracotta"
+	id: "2F1294385DAF524C"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["622CE7B7211AD336"]
+			id: "566C619C279A1F91"
+			tasks: [{
+				id: "5114F5BD044A9C4B"
+				item: "chipped:botanist_workbench"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["029919A87A8AEC26"]
+			id: "59DF09565A1E912F"
+			tasks: [{
+				id: "096E004E7764B02D"
+				item: "chipped:glassblower"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4994D6B07514C258"]
+			id: "12B191BF257C8B48"
+			tasks: [{
+				id: "4BF5280967333659"
+				item: "chipped:carpenters_table"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["76DE9FC58CF9C20F"]
+			id: "6DF4B0F21807D293"
+			tasks: [{
+				id: "14E3D9CBCB6926BF"
+				item: "chipped:loom_table"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["514FF8D973F2505D"]
+			id: "2281198AA55A74AB"
+			tasks: [{
+				id: "5C76D9CCB50491F8"
+				item: "chipped:mason_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5C2F5978968639BD"]
+			id: "73A0551F53A8C663"
+			tasks: [{
+				id: "3A075B1AF39815F0"
+				item: "chipped:alchemy_bench"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6FC521F21ED92A15"]
+			id: "16EAE903DD862233"
+			tasks: [{
+				id: "3253624D6C1F9DD1"
+				item: "chipped:tinkering_table"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["775949BACFFDF923"]
+			id: "029919A87A8AEC26"
+			tasks: [{
+				id: "19838D724D7E2481"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["775949BACFFDF923"]
+			id: "76DE9FC58CF9C20F"
+			tasks: [{
+				id: "65325CA54C540745"
+				item: "minecraft:white_wool"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["775949BACFFDF923"]
+			id: "6FC521F21ED92A15"
+			tasks: [{
+				id: "03C20E2FF361714E"
+				item: "minecraft:redstone_lamp"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["775949BACFFDF923"]
+			id: "5C2F5978968639BD"
+			tasks: [{
+				id: "6DF4930A06E0E88B"
+				item: "minecraft:glowstone"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["775949BACFFDF923"]
+			id: "514FF8D973F2505D"
+			tasks: [{
+				id: "26670FEF64B2A8A2"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["775949BACFFDF923"]
+			id: "622CE7B7211AD336"
+			tasks: [{
+				id: "3E47840350E1ACA9"
+				item: "minecraft:moss_block"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["775949BACFFDF923"]
+			id: "4994D6B07514C258"
+			tasks: [{
+				id: "7339F2F1F5484449"
+				item: "minecraft:oak_planks"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.5d
+		}
+		{
+			icon: "minecraft:torchflower"
+			id: "775949BACFFDF923"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: "minecraft:torchflower"
+				id: "12BEFF7A91ADEF06"
+				stage: "decoration_stage"
+				title: "Decoration Stage"
+				type: "gamestage"
+			}]
+			title: "Brings Beauty in this World"
+			x: 1.0d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"12B191BF257C8B48"
+				"6DF4B0F21807D293"
+				"16EAE903DD862233"
+				"2281198AA55A74AB"
+				"566C619C279A1F91"
+				"59DF09565A1E912F"
+				"73A0551F53A8C663"
+			]
+			hide_until_deps_complete: true
+			id: "3E96EC77C2AF2875"
+			tasks: [{
+				id: "39CD030481B0B60D"
+				item: "mekanism:dye_base"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7D51F76D8901AB56"]
+			hide_until_deps_complete: true
+			id: "0E3EA285D7C96A22"
+			tasks: [{
+				id: "110BAE319EA42143"
+				item: "mekanism:painting_machine"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "7D51F76D8901AB56"
+			tasks: [{
+				id: "5B85A54D3222F74E"
+				item: "mekanism:pigment_extractor"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7D51F76D8901AB56"]
+			hide_until_deps_complete: true
+			id: "7E2F39CB5B0AECC6"
+			tasks: [{
+				id: "73DC7E5DA339B3DA"
+				item: "mekanism:pigment_mixer"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7D51F76D8901AB56"]
+			hide_until_deps_complete: true
+			id: "3E45053450D09FC2"
+			tasks: [{
+				id: "1D7CD2118B8658B0"
+				item: "enderio:painting_machine"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7D51F76D8901AB56"]
+			hide_until_deps_complete: true
+			id: "7FAAFF14407A6166"
+			tasks: [{
+				id: "085F78E0F07C8C19"
+				item: "sophisticatedstorage:paintbrush"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "7167087B4203D5AE"
+			tasks: [{
+				id: "26D4673AF34657A5"
+				item: "minecraft:white_dye"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "3ABC9000B6FEABA7"
+			tasks: [{
+				id: "5F2222EE0AFFCFCF"
+				item: "minecraft:light_gray_dye"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "04E5C7BB1B5AEFE7"
+			tasks: [{
+				id: "081B58BD74ABA854"
+				item: "minecraft:gray_dye"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "1C03D413D92D74CD"
+			tasks: [{
+				id: "6F9F9ABB8F4F85C8"
+				item: "minecraft:black_dye"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "271D6C1C7EC204F3"
+			tasks: [{
+				id: "0A9D3585D9C7D21A"
+				item: "minecraft:brown_dye"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "7DA855B9A030DE6B"
+			tasks: [{
+				id: "4394E8ED7DB61A68"
+				item: "minecraft:red_dye"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "483B0E7C2B184AC6"
+			tasks: [{
+				id: "2D2F75EF3CA97716"
+				item: "minecraft:orange_dye"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "67A9E53190753D57"
+			tasks: [{
+				id: "0A930C258AE13ED3"
+				item: "minecraft:yellow_dye"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "0783281E0C70D63A"
+			tasks: [{
+				id: "66AE542809EF773A"
+				item: "minecraft:lime_dye"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "61EBFF0EE49ABE2E"
+			tasks: [{
+				id: "57D067B1705A2B09"
+				item: "minecraft:green_dye"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "70D06EF5A101A498"
+			tasks: [{
+				id: "09C8533DE36CAE34"
+				item: "minecraft:cyan_dye"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "13287D468DB8E633"
+			tasks: [{
+				id: "3D097BF2E2571F77"
+				item: "minecraft:light_blue_dye"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "6730AD4776A04990"
+			tasks: [{
+				id: "291719086C8C9786"
+				item: "minecraft:blue_dye"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "5F0CB8EAFEC959D9"
+			tasks: [{
+				id: "4332E049729F370B"
+				item: "minecraft:purple_dye"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "421A281B27F68E28"
+			tasks: [{
+				id: "3D865CDA1E6931F2"
+				item: "minecraft:magenta_dye"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			id: "7BDFAA35C5C1AD38"
+			tasks: [{
+				id: "3EF233D4A1C2E376"
+				item: "minecraft:pink_dye"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			hide_until_deps_complete: true
+			id: "473EB344F41E8058"
+			tasks: [{
+				id: "51D3E2B768A85A41"
+				item: "enderio:organic_green_dye"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			hide_until_deps_complete: true
+			id: "1398C57D483F4C96"
+			tasks: [{
+				id: "206DA74FFAA37E77"
+				item: "enderio:organic_brown_dye"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3E96EC77C2AF2875"]
+			hide_until_deps_complete: true
+			id: "33C79EB90C83C8C3"
+			tasks: [{
+				id: "381B531E19C9D33E"
+				item: "enderio:organic_black_dye"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7D51F76D8901AB56"]
+			hide_until_deps_complete: true
+			id: "63B3D67817066EE2"
+			tasks: [{
+				id: "0F95D3B6F161C3DC"
+				item: {
+					Count: 1
+					id: "ae2:color_applicator"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7167087B4203D5AE"]
+			hide_until_deps_complete: true
+			id: "3D0C4118F53D7B59"
+			tasks: [{
+				id: "555E8D525E7F46E5"
+				item: "ae2:white_paint_ball"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["483B0E7C2B184AC6"]
+			hide_until_deps_complete: true
+			id: "4568B3CED10FB232"
+			tasks: [{
+				id: "2A395B1A6132FF4B"
+				item: "ae2:orange_paint_ball"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["421A281B27F68E28"]
+			hide_until_deps_complete: true
+			id: "5F60E3A7F95AE63F"
+			tasks: [{
+				id: "5C46FC6C26A6E630"
+				item: "ae2:magenta_paint_ball"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["67A9E53190753D57"]
+			hide_until_deps_complete: true
+			id: "177DCF88AA973A52"
+			tasks: [{
+				id: "57DF33BB0202A486"
+				item: "ae2:yellow_paint_ball"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0783281E0C70D63A"]
+			hide_until_deps_complete: true
+			id: "77AF59C3A5A85842"
+			tasks: [{
+				id: "3A8778C62399623B"
+				item: "ae2:lime_paint_ball"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7BDFAA35C5C1AD38"]
+			hide_until_deps_complete: true
+			id: "1C8C29B400C0C129"
+			tasks: [{
+				id: "2A2A4099B83F33D7"
+				item: "ae2:pink_paint_ball"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["04E5C7BB1B5AEFE7"]
+			hide_until_deps_complete: true
+			id: "2C841C6B51499163"
+			tasks: [{
+				id: "5A151280288FCBF7"
+				item: "ae2:gray_paint_ball"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3ABC9000B6FEABA7"]
+			hide_until_deps_complete: true
+			id: "51B285473CC820AE"
+			tasks: [{
+				id: "2CC6F11780386922"
+				item: "ae2:light_gray_paint_ball"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["70D06EF5A101A498"]
+			hide_until_deps_complete: true
+			id: "3CF0494379D8682F"
+			tasks: [{
+				id: "18A7228C02F83140"
+				item: "ae2:cyan_paint_ball"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5F0CB8EAFEC959D9"]
+			hide_until_deps_complete: true
+			id: "090FBFF2D6094690"
+			tasks: [{
+				id: "698C3BF8C23F3352"
+				item: "ae2:purple_paint_ball"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6730AD4776A04990"]
+			hide_until_deps_complete: true
+			id: "45FFD544C809B4B7"
+			tasks: [{
+				id: "695EEB683B04AA8B"
+				item: "ae2:blue_paint_ball"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["271D6C1C7EC204F3"]
+			hide_until_deps_complete: true
+			id: "1625556D9CAC4E15"
+			tasks: [{
+				id: "2AA042328FED5BA9"
+				item: "ae2:brown_paint_ball"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["61EBFF0EE49ABE2E"]
+			hide_until_deps_complete: true
+			id: "2A7E7888F19BA845"
+			tasks: [{
+				id: "64E7AF38BF9CB04A"
+				item: "ae2:green_paint_ball"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1C03D413D92D74CD"]
+			hide_until_deps_complete: true
+			id: "5A0539E49BE1B5D3"
+			tasks: [{
+				id: "3EFF3729FF0E3F5F"
+				item: "ae2:black_paint_ball"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7DA855B9A030DE6B"]
+			hide_until_deps_complete: true
+			id: "55BA313858D0EA80"
+			tasks: [{
+				id: "043283101C737036"
+				item: "ae2:red_paint_ball"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["13287D468DB8E633"]
+			hide_until_deps_complete: true
+			id: "4EA5111B8D18E59A"
+			tasks: [{
+				id: "4EE12420A31B1C0B"
+				item: "ae2:light_blue_paint_ball"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3D0C4118F53D7B59"]
+			hide_until_deps_complete: true
+			id: "71DD2C55505C9426"
+			tasks: [{
+				id: "5DC863226BCB3461"
+				item: "ae2:white_lumen_paint_ball"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["51B285473CC820AE"]
+			hide_until_deps_complete: true
+			id: "21261898C0DB9469"
+			tasks: [{
+				id: "3D3FF9B98A2B5CBF"
+				item: "ae2:light_gray_lumen_paint_ball"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2C841C6B51499163"]
+			hide_until_deps_complete: true
+			id: "48C41A07BF9BECC7"
+			tasks: [{
+				id: "33CBCA822CD00DD5"
+				item: "ae2:gray_lumen_paint_ball"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5A0539E49BE1B5D3"]
+			hide_until_deps_complete: true
+			id: "2D6B64BA72ED254C"
+			tasks: [{
+				id: "6DFD03387697287A"
+				item: "ae2:black_lumen_paint_ball"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1625556D9CAC4E15"]
+			hide_until_deps_complete: true
+			id: "71501B8844CE5F06"
+			tasks: [{
+				id: "407EC37439DA353A"
+				item: "ae2:brown_lumen_paint_ball"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["55BA313858D0EA80"]
+			hide_until_deps_complete: true
+			id: "6E4176E59FCC2614"
+			tasks: [{
+				id: "6E5BE7568997ABA6"
+				item: "ae2:red_lumen_paint_ball"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4568B3CED10FB232"]
+			hide_until_deps_complete: true
+			id: "7E9870369C360552"
+			tasks: [{
+				id: "7E18CEF64D5727CC"
+				item: "ae2:orange_lumen_paint_ball"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["77AF59C3A5A85842"]
+			hide_until_deps_complete: true
+			id: "0DF1799DD8AEEC99"
+			tasks: [{
+				id: "569F0B0E35C6ED66"
+				item: "ae2:lime_lumen_paint_ball"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["177DCF88AA973A52"]
+			hide_until_deps_complete: true
+			id: "63CF023B92526622"
+			tasks: [{
+				id: "7513F46EE0B9AF09"
+				item: "ae2:yellow_lumen_paint_ball"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2A7E7888F19BA845"]
+			hide_until_deps_complete: true
+			id: "162CAE8AD4C44BA0"
+			tasks: [{
+				id: "7627B126C8952EFC"
+				item: "ae2:green_lumen_paint_ball"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3CF0494379D8682F"]
+			hide_until_deps_complete: true
+			id: "06873B0925FC7DA9"
+			tasks: [{
+				id: "235B49024DD95D46"
+				item: "ae2:cyan_lumen_paint_ball"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4EA5111B8D18E59A"]
+			hide_until_deps_complete: true
+			id: "1C4204981F9C1642"
+			tasks: [{
+				id: "781876753377D581"
+				item: "ae2:light_blue_lumen_paint_ball"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["45FFD544C809B4B7"]
+			hide_until_deps_complete: true
+			id: "0E1CFB230AFB2DC7"
+			tasks: [{
+				id: "1732DD0C1F850233"
+				item: "ae2:blue_lumen_paint_ball"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["090FBFF2D6094690"]
+			hide_until_deps_complete: true
+			id: "7B90B51A1C6C26AD"
+			tasks: [{
+				id: "4157834196797D73"
+				item: "ae2:purple_lumen_paint_ball"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5F60E3A7F95AE63F"]
+			hide_until_deps_complete: true
+			id: "31B3277EE8A1F0EF"
+			tasks: [{
+				id: "5336BFA62FA8612C"
+				item: "ae2:magenta_lumen_paint_ball"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1C8C29B400C0C129"]
+			hide_until_deps_complete: true
+			id: "3B6F9766B329FE65"
+			tasks: [{
+				id: "4102DF84C8DB59BC"
+				item: "ae2:pink_lumen_paint_ball"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 5.5d
+		}
+	]
+	title: "Be an Artist"
+}

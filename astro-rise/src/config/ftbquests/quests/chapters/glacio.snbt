@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "glacio"
+	group: "4C85B5289DCCBA8E"
+	icon: "ad_astra:glacio_globe"
+	id: "135F5C306CD5C14A"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "Glacio"
+}

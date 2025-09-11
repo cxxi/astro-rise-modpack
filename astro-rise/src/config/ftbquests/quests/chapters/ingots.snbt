@@ -1,0 +1,665 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ingots"
+	group: "5019398956D3E905"
+	icon: "advanced_ae:quantum_alloy"
+	id: "57079FADE6D0A714"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "7208AC819CECA2C1"
+			tasks: [{
+				id: "4F513E16E14458B4"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "19A135AF79EF267B"
+			tasks: [{
+				id: "48F9E965C3C608B8"
+				item: "megacells:sky_steel_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "6B345B4DD4EE6042"
+			tasks: [{
+				id: "11A65F1CF84BC086"
+				item: "createaddition:electrum_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "59687121825C5540"
+			tasks: [{
+				id: "769781D8CFA5520B"
+				item: "ad_astra:etrium_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "5DDE70049C9801D6"
+			tasks: [{
+				id: "3BE7C3AC73B2E91B"
+				item: "ad_astra:desh_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "52E493A3F75A96A8"
+			tasks: [{
+				id: "172A0C380E6DF76D"
+				item: "ad_astra:ostrum_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "6F5C1A9A7AB00A72"
+			tasks: [{
+				id: "3EFA691DACE61244"
+				item: "create:zinc_ingot"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "20C4D6DF580B244C"
+			tasks: [{
+				id: "4655304D5C679F7F"
+				item: "enderio:end_steel_ingot"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "524ECEC85BE438D1"
+			tasks: [{
+				id: "49D4B4058561A4B5"
+				item: "enderio:soularium_ingot"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "1AAAC2444CF3338B"
+			tasks: [{
+				id: "6178D61139407A0F"
+				item: "enderio:dark_steel_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "153AE6ACBA444F08"
+			tasks: [{
+				id: "19848995AED05A8C"
+				item: "enderio:pulsating_alloy_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "5A99A4C409550151"
+			tasks: [{
+				id: "56306EE966B38BCD"
+				item: "enderio:copper_alloy_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "7CCBB7D42D68AE99"
+			tasks: [{
+				id: "0F7F83DDA836607D"
+				item: "enderio:energetic_alloy_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "5EA00B430E0BC022"
+			tasks: [{
+				id: "5157A5E579731D79"
+				item: "enderio:vibrant_alloy_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "6B945E9B075A15A3"
+			tasks: [{
+				id: "3B7694A6FF36414D"
+				item: "enderio:redstone_alloy_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "3349D40D8C22139A"
+			tasks: [{
+				id: "0AF4D47E59C3291B"
+				item: "enderio:conductive_alloy_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "37E98004735F176E"
+			tasks: [{
+				id: "0CE717E4BC8DC47E"
+				item: "ad_astra:calorite_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "793DB71D3A503A53"
+			tasks: [{
+				id: "73D7BFC3D76B5210"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "61CFE21A033A926D"
+			tasks: [{
+				id: "4AEA7A8C1BA203C6"
+				item: "tconstruct:hepatizon_ingot"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "576089F326643E3F"
+			tasks: [{
+				id: "6D05D31303BC0BFA"
+				item: "tconstruct:manyullyn_ingot"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "341E216A208DEB60"
+			tasks: [{
+				id: "76E3F29174AB442A"
+				item: "tconstruct:queens_slime_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "0DD79A4A6655A30A"
+			tasks: [{
+				id: "7684F3C0772ADAE3"
+				item: "tconstruct:cinderslime_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "286F3116F37F5DDB"
+			tasks: [{
+				id: "50F7685C43E96C18"
+				item: "tconstruct:pig_iron_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "691CA30F10B66CF9"
+			tasks: [{
+				id: "08AFE96597B8D74D"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "555B2E31A743A818"
+			tasks: [{
+				id: "2FBB26C509905983"
+				item: "mekanism:alloy_reinforced"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "16E9BB9F1705DB9A"
+			tasks: [{
+				id: "50FD0983B83A8D7F"
+				item: "mekanism:ingot_refined_glowstone"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "2D165DB1BF78AF61"
+			tasks: [{
+				id: "7A13F0F71872A36C"
+				item: "advanced_ae:quantum_alloy"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "3EDE64E0F06D9E08"
+			tasks: [{
+				id: "37269406E1879D1F"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "628F8CEABDC49299"
+			tasks: [{
+				id: "6A14BDA117A45579"
+				item: "tconstruct:slimesteel_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "508E85788D167037"
+			tasks: [{
+				id: "26B8510458736A1C"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "510CC1F4A58EDED2"
+			tasks: [{
+				id: "5CFCA2956608594D"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "6C8D100586E830C9"
+			tasks: [{
+				id: "3BDD3FF38285FCB3"
+				item: "tconstruct:cobalt_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "30A04ED9446EB971"
+			tasks: [{
+				id: "045BE499D85D5481"
+				item: "mekanism:ingot_bronze"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "1D6253594C7D93E5"
+			tasks: [{
+				id: "19075B86F458DB2B"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "4DD08C98BC1E8BCF"
+			tasks: [{
+				id: "43262AAC908F4328"
+				item: "bigreactors:insanite_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "15FCCACFFB88D83F"
+			tasks: [{
+				id: "2E4B14E4853D2C48"
+				item: "bigreactors:inanite_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "6B9FAF65BE9A278C"
+			tasks: [{
+				id: "19BB50AD7870F650"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "172F88EC284C9D80"
+			tasks: [{
+				id: "429C7FAC45EB83A6"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "6580E3CE5775DF95"
+			tasks: [{
+				id: "3AAC5A4967853F72"
+				item: "bigreactors:ridiculite_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "62293F1745F79D6C"
+			tasks: [{
+				id: "4001044103343C0A"
+				item: "bigreactors:ludicrite_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "54808A5DAAC5FFE1"
+			tasks: [{
+				id: "750D823D10BEC36E"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "7702930A7AC55D5D"
+			tasks: [{
+				id: "0E93E264411C3027"
+				item: "tconstruct:cheese_ingot"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "267933F5113CCF13"
+			tasks: [{
+				id: "4F9A473156186850"
+				item: "bigreactors:cyanite_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "3ED91C9A669171DD"
+			tasks: [{
+				id: "3ED9F45B2AAF9A52"
+				item: "bigreactors:magentite_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "704710A7355490F1"
+			tasks: [{
+				id: "465B5C9BCA113E71"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "78F93F09EAE8C43B"
+			tasks: [{
+				id: "0F808D950090339C"
+				item: "bigreactors:blutonium_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "0C815BAA3FDEE108"
+			tasks: [{
+				id: "77881FDA93B93884"
+				item: "tconstruct:amethyst_bronze_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "3339AC0D7426621C"
+			tasks: [{
+				id: "7133190FA3738490"
+				item: "tconstruct:rose_gold_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "5D1B74C7D1C1F439"
+			tasks: [{
+				id: "242BA4B2D54477BD"
+				item: "twilightforest:knightmetal_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "585D11E93F0CB0AF"
+			tasks: [{
+				id: "196BBC66AC0C86D7"
+				item: "create_deep_dark:echo_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "68C585CA6FEB2E5D"
+			tasks: [{
+				id: "25737EEDF32171E3"
+				item: "twilightforest:ironwood_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "4CDDD9E40B950D5D"
+			tasks: [{
+				id: "423A9338F72ABA90"
+				item: "twilightforest:fiery_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "4478CBB84384F351"
+			tasks: [{
+				id: "5A88718EFCD110A8"
+				item: "mekanism:ingot_uranium"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "2B906727C87F5D9B"
+			tasks: [{
+				id: "22CEF499BA6AB246"
+				item: "mekanism:ingot_tin"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "2B27BA21E07CB364"
+			tasks: [{
+				id: "64B924BB14483093"
+				item: "mekanism:ingot_lead"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "0148EEEFD44CBE17"
+			tasks: [{
+				id: "310752CD7A0C8876"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			id: "7CC936D273EBD167"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: "minecraft:blast_furnace"
+				id: "2894692D96C28B23"
+				stage: "ingot_collection"
+				title: "Ingots Collection"
+				type: "gamestage"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "184F8822B7B5A9A1"
+			tasks: [{
+				id: "0E4DEDEA82760341"
+				item: "bigreactors:graphite_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CC936D273EBD167"]
+			id: "69A1A7F8D5B93FBA"
+			tasks: [{
+				id: "09CBEF7FFA0F3A37"
+				item: "enderio:nethercotta"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 3.0d
+		}
+	]
+	title: "Ingots"
+}

@@ -1,0 +1,407 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "armory"
+	group: "34235EEFFBA2CFA5"
+	icon: {
+		Count: 1
+		id: "tconstruct:creative_slot"
+		tag: {
+			slot: "upgrades"
+		}
+	}
+	id: "454C439C10A20E72"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "13C4D06DED00E866"
+			invisible: true
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:creative_slot"
+					tag: {
+						slot: "upgrades"
+					}
+				}
+				id: "230181139B76E943"
+				stage: "black_smith_stage"
+				title: "Black Smith Stage"
+				type: "gamestage"
+			}]
+			title: "Smelt Everything"
+			x: -4.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["13C4D06DED00E866"]
+			id: "4562A31FBCD830F9"
+			tasks: [{
+				id: "3862496ED6F766E5"
+				item: "tconstruct:grout"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4562A31FBCD830F9"]
+			id: "34DF7DBAB22CB3CD"
+			tasks: [{
+				id: "3B46FF904C4F1324"
+				item: "tconstruct:seared_brick"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["34DF7DBAB22CB3CD"]
+			id: "45CD98F8603E8D8C"
+			tasks: [{
+				id: "37700D3C84AEBD39"
+				item: "tconstruct:seared_melter"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["34DF7DBAB22CB3CD"]
+			id: "5252D5AEE09B57FD"
+			tasks: [{
+				id: "39A9105BA990BF34"
+				item: "tconstruct:seared_heater"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["23E0CB3DCEDC5728"]
+			id: "37F6102E69ED4C06"
+			tasks: [{
+				id: "158EAF8CDA6C2F38"
+				item: "tconstruct:seared_drain"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"5252D5AEE09B57FD"
+				"45CD98F8603E8D8C"
+			]
+			hide_until_deps_complete: true
+			id: "1EA12470C65992BE"
+			tasks: [{
+				id: "527FC3B43B3859B2"
+				item: "tconstruct:seared_bricks"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["23E0CB3DCEDC5728"]
+			id: "583AA83235F8B9D5"
+			tasks: [{
+				id: "32F279D804F121B2"
+				item: "tconstruct:seared_fuel_tank"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["23E0CB3DCEDC5728"]
+			id: "69D293A4E2D2752D"
+			tasks: [{
+				id: "259AB83D30294433"
+				item: "tconstruct:seared_faucet"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["23E0CB3DCEDC5728"]
+			id: "46ACF973EC0ED16D"
+			tasks: [{
+				id: "6468EA0B0C7CB95A"
+				item: "tconstruct:seared_table"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["23E0CB3DCEDC5728"]
+			id: "0D0DB6DFE5831F52"
+			tasks: [{
+				id: "246D4C9FDCAEC0D6"
+				item: "tconstruct:seared_basin"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1EA12470C65992BE"]
+			id: "23E0CB3DCEDC5728"
+			tasks: [{
+				id: "290D96F56B6C6BFA"
+				item: "tconstruct:smeltery_controller"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["33FEC5889FF20785"]
+			id: "4A24B3257E2C0AAB"
+			rewards: [{
+				auto: "enabled"
+				icon: "advanced_ae:quantum_alloy"
+				id: "6FB6523736DBC858"
+				ignore_reward_blocking: true
+				stage: "ingot_collection"
+				title: "Unlock : Ingot Collection"
+				type: "gamestage"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "484792411BAA4E26"
+				item: "tconstruct:ingot_cast"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["13C4D06DED00E866"]
+			id: "6AB032A1C68C3854"
+			tasks: [{
+				id: "5B7A0CD08C83C47A"
+				item: "tconstruct:part_builder"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["13C4D06DED00E866"]
+			id: "19A0177AC3421720"
+			tasks: [{
+				id: "34D37A759F5E6415"
+				item: "tconstruct:tinker_station"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["19A0177AC3421720"]
+			id: "224E62773B5A5BCF"
+			tasks: [{
+				id: "7EA6A8BFFEA44596"
+				item: "tconstruct:modifier_worktable"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["13C4D06DED00E866"]
+			id: "699D1B7FA2D21702"
+			tasks: [{
+				id: "50A57DE80459ACED"
+				item: {
+					Count: 1
+					id: "tconstruct:tinkers_anvil"
+					tag: {
+						texture: "create:brass_block"
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"583AA83235F8B9D5"
+				"37F6102E69ED4C06"
+			]
+			id: "67A796F152AC308F"
+			tasks: [{
+				id: "4C0A57735FEF9E28"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["67A796F152AC308F"]
+			id: "7A0374D0AA90A9CF"
+			tasks: [{
+				id: "37D3F5DC0BF14646"
+				item: "tconstruct:blazing_blood_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"69D293A4E2D2752D"
+				"46ACF973EC0ED16D"
+			]
+			id: "33FEC5889FF20785"
+			tasks: [{
+				id: "5E73E4EBA3776EDA"
+				item: "minecraft:brick"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4A24B3257E2C0AAB"]
+			id: "02ED65D3E324C70E"
+			tasks: [{
+				advancement: "tconstruct:smeltery/cast_collector"
+				criterion: ""
+				id: "00537499BA2202AE"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["6AB032A1C68C3854"]
+			id: "41E3AD9243B8B5AE"
+			tasks: [{
+				advancement: "tconstruct:tools/make_part"
+				criterion: ""
+				id: "2326C3CD065709CF"
+				type: "advancement"
+			}]
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["699D1B7FA2D21702"]
+			id: "675308477F622AC2"
+			tasks: [{
+				advancement: "tconstruct:smeltery/tool_forge"
+				criterion: ""
+				id: "04F31E1F6D0791A0"
+				type: "advancement"
+			}]
+			x: -5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["73330C3482C83A27"]
+			id: "2EBE48EB79C37DFB"
+			tasks: [{
+				advancement: "tconstruct:tools/tool_smith"
+				criterion: ""
+				id: "282730BE3C6E4229"
+				type: "advancement"
+			}]
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["73330C3482C83A27"]
+			id: "3F6EEF9B67CDB4BC"
+			tasks: [{
+				advancement: "tconstruct:foundry/plate_armor"
+				criterion: ""
+				id: "65C2C5E065B4209E"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["73330C3482C83A27"]
+			id: "4C2FCA42C429E76C"
+			tasks: [{
+				advancement: "tconstruct:tools/modified"
+				criterion: ""
+				id: "123BACBEEE513CF3"
+				type: "advancement"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["41E3AD9243B8B5AE"]
+			id: "73330C3482C83A27"
+			tasks: [{
+				advancement: "tconstruct:tools/tinker_tool"
+				criterion: ""
+				id: "62323D609A376E81"
+				type: "advancement"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["73330C3482C83A27"]
+			id: "33B7A286AB2B3FBE"
+			tasks: [{
+				id: "365DBA111BF62610"
+				item: "tconstruct:silky_cloth"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["69D293A4E2D2752D"]
+			id: "253F0A5EF9EBE823"
+			tasks: [{
+				id: "135A6757F7F2C719"
+				item: "tconstruct:obsidian_pane"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"253F0A5EF9EBE823"
+				"73330C3482C83A27"
+			]
+			id: "293FDC17655E60B7"
+			tasks: [{
+				id: "3574940DFC36A114"
+				item: "tconstruct:emerald_reinforcement"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7A0374D0AA90A9CF"]
+			id: "074EB9E3FC48A749"
+			tasks: [{
+				advancement: "tconstruct:foundry/blaze"
+				criterion: ""
+				id: "1F600B20CC993A12"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+	]
+	title: "Smelting"
+}
