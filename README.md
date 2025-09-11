@@ -48,4 +48,3 @@ To make it easier for users who do not have Python installed, you can compile th
 
 3.  **Distribute the Executable:**
     After PyInstaller finishes, you will find the `AstroRiseInstaller.exe` file inside a new `dist` directory. You can share this single file with your users. They can place it in their MultiMC instance folder and run it without needing to install Python.
->>>>>>> 2bf29f9e14e43e035609d5c74f23cccd99c17f12
