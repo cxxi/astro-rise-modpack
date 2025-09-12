@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'installer.py'
+      - 'astro-rise/devtool/installer.py'
   workflow_dispatch:
 
 permissions:
@@ -33,7 +33,7 @@ jobs:
         pip install pyinstaller
 
     - name: Build executable with PyInstaller
-      run: pyinstaller --onefile --name AstroRiseInstaller installer.py
+      run: pyinstaller --onefile --name AstroRiseInstaller astro-rise/devtool/installer.py
 
     - name: Prepare Linux Artifacts
       if: runner.os == 'Linux'

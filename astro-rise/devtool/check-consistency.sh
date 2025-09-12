@@ -99,5 +99,5 @@ fi
 
 # --- Script Execution ---
 check_consistency "Mods" ".client_mods[], .server_mods[], .mods[]" "astro-rise/src/mods" "*.jar"
-check_consistency "Resource Packs" ".resource_packs[]" "astro-rise/src/resourcepacks" "*.zip"
+check_consistency "Resource Packs" ".resourcepacks[]" "astro-rise/src/resourcepacks" "*.zip"
 check_consistency "Datapacks" ".datapacks[]" "astro-rise/src/datapacks" "*.zip"
