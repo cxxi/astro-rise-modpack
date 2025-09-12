@@ -5,7 +5,7 @@
 # It performs a case-insensitive comparison and provides a colorized, diff-like output.
 
 # --- Configuration ---
-MODS_DIR="astro-rise/mods"
+MODS_DIR="astro-rise/src/mods"
 MANIFEST_FILE="manifest.json"
 
 # --- Colors ---

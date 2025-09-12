@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 # AstroRise Modpack
 
 `minecraft 1.20.1` `forge 47.4.0`
 
 ![astro-rise-logo](astro-rise/astro-rise.png)
+=======
+# Astro Rise Modpack
+>>>>>>> c72578d3b4c0286e1106aef12bf6dc59c093e2c2
 
 This repository contains the files for the Astro Rise modpack, along with a Python-based installer to help set it up.
 
