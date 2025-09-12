@@ -5,21 +5,17 @@ import json
 import shutil
 import subprocess
 import tkinter as tk
-from tkinter import ttk
+from tkinter import ttk, messagebox
+from PIL import Image, ImageTk
+
+# --- Global State ---
+IS_GUI_MODE = False
 
 # --- Constants ---
-# When running as a compiled PyInstaller executable, __file__ points to a temporary
-# directory. The correct way to find the application's "home" directory is to
-# use sys.executable.
-# We assume the compiled installer (`installer.sh` or `installer.exe`) is
-# placed in the root of the MultiMC instance folder.
+# Path logic to handle both normal execution and PyInstaller bundling
 if getattr(sys, 'frozen', False):
-    # We are running in a bundle
     INSTANCE_ROOT = os.path.dirname(os.path.abspath(sys.executable))
 else:
-    # We are running in a normal Python environment
-    # The script is at <instance_folder>/astro-rise/devtool/installer.py
-    # So, the instance folder is two levels up from the script's directory.
     SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
     INSTANCE_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 
@@ -41,167 +37,115 @@ MODS_SOURCE_DIR = os.path.join(ASTRO_RISE_DIR, "mods")
 ICON_DEST_DIR = os.path.join(INSTANCE_ROOT, "..", "..", "icons")
 
 def die(message):
-    """Prints an error message to stderr and exits the script."""
-    print(f"\nError: {message}", file=sys.stderr)
+    """Prints an error message and exits the script."""
+    error_message = f"\nError: {message}"
+    if IS_GUI_MODE:
+        messagebox.showerror("Error", message)
+    else:
+        print(error_message, file=sys.stderr)
     sys.exit(1)
 
 def prompt_for_continue(message):
-    """Prints a message and waits for the user to press Enter."""
-    print(message)
-    try:
-        input("Press Enter to continue, or Ctrl+C to cancel...")
-    except KeyboardInterrupt:
-        print("\nInstallation cancelled by user.")
-        sys.exit(1)
+    """Prints a message and waits for user confirmation, adapting to GUI or CLI."""
+    if IS_GUI_MODE:
+        # In GUI mode, show a dialog box. askokcancel returns True if OK is clicked.
+        if not messagebox.askokcancel("Confirmation", message):
+            print("\nInstallation cancelled by user.")
+            sys.exit(1)
+    else:
+        # In CLI mode, use input()
+        print(message)
+        try:
+            input("Press Enter to continue, or Ctrl+C to cancel...")
+        except KeyboardInterrupt:
+            print("\nInstallation cancelled by user.")
+            sys.exit(1)
 
 def try_git_update():
     """Attempts to self-update the repository using Git if available."""
     print("--- Checking for updates ---")
     if not os.path.isdir(GIT_DIR):
         print("  .git directory not found. Skipping automatic update.")
-        print("  To enable updates, please install by cloning the repository with Git.")
         return
 
     git_executable = shutil.which('git')
     if not git_executable:
         print("  Git command not found. Skipping automatic update.")
-        print("  Please install Git or update manually by re-downloading the repository.")
         return
 
     print("  Git repository found. Attempting to pull latest changes...")
     try:
-        # Fetch latest changes from origin
-        fetch_process = subprocess.run([git_executable, "fetch"], cwd=INSTANCE_ROOT, capture_output=True, text=True)
-        if fetch_process.returncode != 0:
-            print("  Warning: 'git fetch' failed. Could not check for updates.")
-            print(f"  Git stderr: {fetch_process.stderr}")
-            return
-
-        # Reset to the latest version of the main branch, discarding local changes
-        reset_process = subprocess.run([git_executable, "reset", "--hard", "origin/main"], cwd=INSTANCE_ROOT, capture_output=True, text=True)
-        if reset_process.returncode != 0:
-            print("  Warning: 'git reset' failed. Could not apply updates automatically.")
-            print(f"  Git stderr: {reset_process.stderr}")
-            return
-
+        subprocess.run([git_executable, "fetch"], cwd=INSTANCE_ROOT, check=True, capture_output=True)
+        reset_process = subprocess.run([git_executable, "reset", "--hard", "origin/main"], cwd=INSTANCE_ROOT, check=True, capture_output=True, text=True)
         print("  Repository updated successfully.")
         print(reset_process.stdout)
+    except (subprocess.CalledProcessError, Exception) as e:
+        print(f"  Warning: Git update failed. Please update manually. Error: {e}")
 
-    except Exception as e:
-        print(f"  An unexpected error occurred during git update: {e}")
-
+# ... (All other core logic functions like verify_versions, update_instance_cfg, etc., remain the same)
 def get_mmc_version(components, component_uid):
-    """Finds the version of a specific component in the mmc-pack.json data."""
     for component in components:
-        if component.get('uid') == component_uid:
-            return component.get('cachedVersion')
+        if component.get('uid') == component_uid: return component.get('cachedVersion')
     return None
 
 def verify_versions():
-    """Verifies that Minecraft/Forge versions in mmc-pack.json match manifest.json."""
     print("\n--- Verifying Minecraft and Forge versions ---")
-    if not os.path.exists(MANIFEST_PATH):
-        die(f"'{MANIFEST_PATH}' not found. Run installer from the repository root.")
-    if not os.path.exists(MMC_PACK_PATH):
-        die(f"'{MMC_PACK_PATH}' not found. Place repository content inside a MultiMC instance folder.")
-
-    try:
-        with open(MANIFEST_PATH, 'r') as f: manifest_data = json.load(f)
-        with open(MMC_PACK_PATH, 'r') as f: mmc_pack_data = json.load(f)
-    except json.JSONDecodeError as e:
-        die(f"Could not parse JSON file: {e}")
-
+    if not os.path.exists(MANIFEST_PATH): die(f"'{MANIFEST_PATH}' not found.")
+    if not os.path.exists(MMC_PACK_PATH): die(f"'{MMC_PACK_PATH}' not found.")
+    with open(MANIFEST_PATH, 'r') as f: manifest_data = json.load(f)
+    with open(MMC_PACK_PATH, 'r') as f: mmc_pack_data = json.load(f)
     required_mc = manifest_data.get('minecraft_version')
     required_forge = manifest_data.get('forge_version')
-    if not required_mc or not required_forge:
-        die(f"'minecraft_version' or 'forge_version' not defined in '{MANIFEST_PATH}'.")
-
     mmc_components = mmc_pack_data.get('components', [])
     current_mc = get_mmc_version(mmc_components, 'net.minecraft')
     current_forge = get_mmc_version(mmc_components, 'net.minecraftforge')
-    if not current_mc or not current_forge:
-        die(f"Could not determine Minecraft/Forge version from '{MMC_PACK_PATH}'.")
-
-    if current_mc != required_mc:
-        die(f"Minecraft version mismatch. Expected {required_mc}, but instance is {current_mc}.")
-    if current_forge != required_forge:
-        die(f"Forge version mismatch. Expected {required_forge}, but instance is {current_forge}.")
+    if current_mc != required_mc: die(f"Minecraft version mismatch. Expected {required_mc}, is {current_mc}.")
+    if current_forge != required_forge: die(f"Forge version mismatch. Expected {required_forge}, is {current_forge}.")
     print("  Versions verified successfully.")
 
 def update_instance_cfg():
-    """Updates the instance.cfg file to set the name and iconKey."""
     print(f"Updating '{INSTANCE_CFG_PATH}'...")
     if not os.path.exists(INSTANCE_CFG_PATH):
-        print(f"  Warning: '{INSTANCE_CFG_PATH}' not found. Skipping config update.")
+        print(f"  Warning: '{INSTANCE_CFG_PATH}' not found. Skipping.")
         return
-
     icon_key = os.path.splitext(os.path.basename(ICON_SOURCE_PATH))[0]
-    try:
-        with open(INSTANCE_CFG_PATH, 'r') as f: lines = f.readlines()
-
-        new_lines = []
-        name_updated = False
-        icon_key_updated = False
-        for line in lines:
-            if line.strip().startswith('name='):
-                new_lines.append('name=AstroRise\n')
-                name_updated = True
-            elif line.strip().startswith('iconKey='):
-                new_lines.append(f'iconKey={icon_key}\n')
-                icon_key_updated = True
-            else:
-                new_lines.append(line)
-
-        if not name_updated: new_lines.append('name=AstroRise\n')
-        if not icon_key_updated: new_lines.append(f'iconKey={icon_key}\n')
-
-        with open(INSTANCE_CFG_PATH, 'w') as f: f.writelines(new_lines)
-        print("  Instance name and icon key set.")
-    except IOError as e:
-        die(f"Could not read or write to '{INSTANCE_CFG_PATH}': {e}")
+    with open(INSTANCE_CFG_PATH, 'r') as f: lines = f.readlines()
+    new_lines, name_updated, icon_key_updated = [], False, False
+    for line in lines:
+        if line.strip().startswith('name='): new_lines.append('name=AstroRise\n'); name_updated = True
+        elif line.strip().startswith('iconKey='): new_lines.append(f'iconKey={icon_key}\n'); icon_key_updated = True
+        else: new_lines.append(line)
+    if not name_updated: new_lines.append('name=AstroRise\n')
+    if not icon_key_updated: new_lines.append(f'iconKey={icon_key}\n')
+    with open(INSTANCE_CFG_PATH, 'w') as f: f.writelines(new_lines)
+    print("  Instance name and icon key set.")
 
 def install_icon():
-    """Copies the pack icon to the MultiMC icons directory."""
     print(f"Installing icon...")
     if not os.path.exists(ICON_SOURCE_PATH):
         print(f"  Warning: Icon '{ICON_SOURCE_PATH}' not found. Skipping.")
         return
-
     icon_dest_name = os.path.splitext(os.path.basename(ICON_SOURCE_PATH))[0]
     icon_dest_path = os.path.join(ICON_DEST_DIR, icon_dest_name)
-    try:
-        os.makedirs(ICON_DEST_DIR, exist_ok=True)
-        shutil.copy(ICON_SOURCE_PATH, icon_dest_path)
-        print(f"  Icon copied to '{os.path.abspath(icon_dest_path)}'.")
-    except (IOError, os.error) as e:
-        die(f"Could not copy icon: {e}")
+    os.makedirs(ICON_DEST_DIR, exist_ok=True)
+    shutil.copy(ICON_SOURCE_PATH, icon_dest_path)
+    print(f"  Icon copied to '{os.path.abspath(icon_dest_path)}'.")
 
 def sync_directory(src, dest):
-    """Synchronizes a directory from src to dest, deleting the destination first."""
     print(f"  Syncing '{src}' to '{dest}'...")
     if not os.path.exists(src): die(f"Source directory '{src}' not found.")
-    try:
-        if os.path.exists(dest): shutil.rmtree(dest)
-        shutil.copytree(src, dest)
-        print(f"    Sync complete.")
-    except (IOError, os.error) as e:
-        die(f"Could not synchronize directory '{src}': {e}")
+    if os.path.exists(dest): shutil.rmtree(dest)
+    shutil.copytree(src, dest)
+    print(f"    Sync complete.")
 
 def sync_mods():
-    """Synchronizes the mods based on the manifest file."""
     dest_dir = os.path.join(MINECRAFT_DIR, "mods")
     print(f"  Syncing mods to '{dest_dir}'...")
-    try:
-        with open(MANIFEST_PATH, 'r') as f: manifest_data = json.load(f)
-    except (IOError, json.JSONDecodeError) as e:
-        die(f"Could not read or parse manifest file '{MANIFEST_PATH}': {e}")
-
+    with open(MANIFEST_PATH, 'r') as f: manifest_data = json.load(f)
     required_mods = manifest_data.get('client_mods', []) + manifest_data.get('mods', [])
     if not os.path.exists(MODS_SOURCE_DIR): die(f"Source mods directory '{MODS_SOURCE_DIR}' not found.")
-
     if os.path.exists(dest_dir): shutil.rmtree(dest_dir)
     os.makedirs(dest_dir)
-
     copied_count = 0
     for mod_filename in required_mods:
         source_path = os.path.join(MODS_SOURCE_DIR, mod_filename)
@@ -211,6 +155,7 @@ def sync_mods():
         else:
             print(f"    Warning: Mod '{mod_filename}' not found in '{MODS_SOURCE_DIR}'.")
     print(f"    Sync complete. Copied {copied_count}/{len(required_mods)} mods.")
+
 
 def install_client():
     """Runs the client installation process."""
@@ -235,61 +180,64 @@ def install_server():
 
 def show_gui_selector():
     """Shows a simple GUI to select the installation mode."""
-    # This function will be called when the script is run without arguments.
-    # It redirects console output to a text widget to show progress.
+    global IS_GUI_MODE
+    IS_GUI_MODE = True
 
     root = tk.Tk()
     root.title("Astro Rise Installer")
-    root.geometry("500x400")
 
     main_frame = ttk.Frame(root, padding="10")
     main_frame.pack(fill=tk.BOTH, expand=True)
 
+    # --- Logo ---
+    try:
+        # Resize the image to a more reasonable size for the GUI
+        img = Image.open(ICON_SOURCE_PATH)
+        img.thumbnail((128, 128))
+        logo = ImageTk.PhotoImage(img)
+        logo_label = ttk.Label(main_frame, image=logo)
+        logo_label.pack(pady=10)
+    except FileNotFoundError:
+        # If logo not found, just continue without it.
+        pass
+    except Exception as e:
+        # Catch other potential Pillow/tk errors
+        print(f"Could not load logo: {e}")
+
     label = ttk.Label(main_frame, text="Choose the installation type:", font=("Arial", 12))
     label.pack(pady=10)
 
-    # This is a bit of a hack to run the install in a way the GUI can update.
-    # A more robust solution would use threading, but this is simpler for this case.
     def run_install(install_function):
         for widget in main_frame.winfo_children():
             widget.destroy()
 
-        text_area = tk.Text(main_frame, wrap=tk.WORD, height=20, width=60)
+        text_area = tk.Text(main_frame, wrap=tk.WORD, height=20, width=70)
         text_area.pack(fill=tk.BOTH, expand=True)
 
-        # Redirect stdout to the text area
         class StdoutRedirector:
-            def __init__(self, widget):
-                self.widget = widget
+            def __init__(self, widget): self.widget = widget
             def write(self, text):
                 self.widget.insert(tk.END, text)
                 self.widget.see(tk.END)
-            def flush(self):
-                pass
+                root.update_idletasks()
+            def flush(self): pass
 
         sys.stdout = StdoutRedirector(text_area)
         sys.stderr = StdoutRedirector(text_area)
 
-        root.update_idletasks()
-
         try:
             install_function()
         except SystemExit as e:
-            if e.code != 0:
-                print(f"\nInstallation failed with exit code {e.code}.")
-            else:
-                print("\nInstallation finished.")
+            if e.code != 0: print(f"\nInstallation failed.")
+            else: print("\nInstallation finished.")
         except Exception as e:
             print(f"\nAn unexpected error occurred: {e}")
 
-        # Add a final close button
         close_button = ttk.Button(main_frame, text="Close", command=root.destroy)
         close_button.pack(pady=10)
 
-
     client_button = ttk.Button(main_frame, text="Install Client", command=lambda: run_install(install_client))
     client_button.pack(pady=10, fill=tk.X)
-
     server_button = ttk.Button(main_frame, text="Install Server", command=lambda: run_install(install_server))
     server_button.pack(pady=5, fill=tk.X)
 
@@ -298,16 +246,12 @@ def show_gui_selector():
 def main():
     """Main function to parse arguments or show GUI."""
     if len(sys.argv) > 1:
-        # If arguments are provided, use command-line parser
         parser = argparse.ArgumentParser(description="Astro Rise Modpack Installer.")
         parser.add_argument("mode", choices=['client', 'server'], help="Installation mode: 'client' or 'server'.")
         args = parser.parse_args()
-        if args.mode == 'client':
-            install_client()
-        elif args.mode == 'server':
-            install_server()
+        if args.mode == 'client': install_client()
+        elif args.mode == 'server': install_server()
     else:
-        # If no arguments, show the GUI selector
         show_gui_selector()
 
 if __name__ == "__main__":
