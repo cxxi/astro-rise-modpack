@@ -7,20 +7,10 @@ import subprocess
 import tkinter as tk
 from tkinter import ttk, messagebox
 
-# Pillow import with fallback if ImageTk not available
-try:
-    from PIL import Image, ImageTk
-    HAS_IMAGETK = True
-except Exception:
-    from PIL import Image
-    ImageTk = None
-    HAS_IMAGETK = False
-
 # --- Global State ---
 IS_GUI_MODE = False
 
 # --- Constants ---
-# Support PyInstaller: resources are bundled in sys._MEIPASS
 if getattr(sys, 'frozen', False):
     BASE_PATH = sys._MEIPASS
     INSTANCE_ROOT = os.path.dirname(os.path.abspath(sys.executable))
@@ -29,38 +19,20 @@ else:
     SCRIPT_DIR = BASE_PATH
     INSTANCE_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 
-# Paths within the instance folder
 GIT_DIR = os.path.join(INSTANCE_ROOT, ".git")
 MANIFEST_PATH = os.path.join(INSTANCE_ROOT, "manifest.json")
 MMC_PACK_PATH = os.path.join(INSTANCE_ROOT, "mmc-pack.json")
 INSTANCE_CFG_PATH = os.path.join(INSTANCE_ROOT, "instance.cfg")
 MINECRAFT_DIR = os.path.join(INSTANCE_ROOT, ".minecraft")
-
-# Source paths are inside the `astro-rise` directory within the instance
 ASTRO_RISE_DIR = os.path.join(INSTANCE_ROOT, "astro-rise")
-ASTRO_RISE_SRC_DIR = os.path.join(ASTRO_RISE_DIR, "src")
 
-def resource_path(relative_path):
-    """Get absolute path to resource, works for dev and PyInstaller."""
-    try:
-        # PyInstaller crée un dossier temporaire et stocke les fichiers dans _MEIPASS
-        base_path = sys._MEIPASS
-    except AttributeError:
-        base_path = os.path.abspath(os.path.dirname(__file__))
-    return os.path.join(base_path, relative_path)
-
-# --- ICON_SOURCE_PATH ---
-ICON_SOURCE_PATH = resource_path("astro-rise.png")
-
-CONFIG_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "config")
-KUBEJS_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "kubejs")
-MODS_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "mods")
-
-# Destination for the icon is relative to the instance folder
+ICON_SOURCE_PATH = os.path.join(ASTRO_RISE_DIR, "astro-rise.png")
+CONFIG_SOURCE_DIR = os.path.join(ASTRO_RISE_DIR, "config")
+KUBEJS_SOURCE_DIR = os.path.join(ASTRO_RISE_DIR, "kubejs")
+MODS_SOURCE_DIR = os.path.join(ASTRO_RISE_DIR, "mods")
 ICON_DEST_DIR = os.path.join(INSTANCE_ROOT, "..", "..", "icons")
 
 def die(message):
-    """Prints an error message and exits the script."""
     error_message = f"\nError: {message}"
     if IS_GUI_MODE:
         messagebox.showerror("Error", message)
@@ -69,14 +41,11 @@ def die(message):
     sys.exit(1)
 
 def prompt_for_continue(message):
-    """Prints a message and waits for user confirmation, adapting to GUI or CLI."""
     if IS_GUI_MODE:
-        # In GUI mode, show a dialog box. askokcancel returns True if OK is clicked.
         if not messagebox.askokcancel("Confirmation", message):
             print("\nInstallation cancelled by user.")
             sys.exit(1)
     else:
-        # In CLI mode, use input()
         print(message)
         try:
             input("Press Enter to continue, or Ctrl+C to cancel...")
@@ -85,17 +54,14 @@ def prompt_for_continue(message):
             sys.exit(1)
 
 def try_git_update():
-    """Attempts to self-update the repository using Git if available."""
     print("--- Checking for updates ---")
     if not os.path.isdir(GIT_DIR):
         print("  .git directory not found. Skipping automatic update.")
         return
-
     git_executable = shutil.which('git')
     if not git_executable:
         print("  Git command not found. Skipping automatic update.")
         return
-
     print("  Git repository found. Attempting to pull latest changes...")
     try:
         subprocess.run([git_executable, "fetch"], cwd=INSTANCE_ROOT, check=True, capture_output=True)
@@ -105,7 +71,6 @@ def try_git_update():
     except (subprocess.CalledProcessError, Exception) as e:
         print(f"  Warning: Git update failed. Please update manually. Error: {e}")
 
-# ... (All other core logic functions like verify_versions, update_instance_cfg, etc., remain the same)
 def get_mmc_version(components, component_uid):
     for component in components:
         if component.get('uid') == component_uid: return component.get('cachedVersion')
@@ -146,7 +111,8 @@ def update_instance_cfg():
 def install_icon():
     print(f"Installing icon...")
     if not os.path.exists(ICON_SOURCE_PATH):
-        print(f"  Warning: Icon '{ICON_SOURCE_PATH}' not found. Skipping.")
+        # This is now just an informational message, not a diagnostic.
+        print(f"  Info: Logo image not found at '{ICON_SOURCE_PATH}'. Skipping icon installation.")
         return
     icon_dest_name = os.path.splitext(os.path.basename(ICON_SOURCE_PATH))[0]
     icon_dest_path = os.path.join(ICON_DEST_DIR, icon_dest_name)
@@ -179,12 +145,10 @@ def sync_mods():
             print(f"    Warning: Mod '{mod_filename}' not found in '{MODS_SOURCE_DIR}'.")
     print(f"    Sync complete. Copied {copied_count}/{len(required_mods)} mods.")
 
-
 def install_client():
-    """Runs the client installation process."""
     try_git_update()
     print("\n--- Starting Installation/Update ---")
-    prompt_for_continue("!!! IMPORTANT !!!\nPlease ensure MultiMC is completely closed before proceeding.\nFailure to do so may result in the configuration changes being overwritten by MultiMC.")
+    prompt_for_continue("!!! IMPORTANT !!!\nPlease ensure MultiMC is completely closed before proceeding.")
     verify_versions()
     print("\n--- Updating instance configuration ---")
     update_instance_cfg()
@@ -198,41 +162,22 @@ def install_client():
     print("\n--- Client installation complete! ---")
 
 def install_server():
-    """Runs the server installation process."""
     print("Server installation is not yet implemented.")
 
 def show_gui_selector():
-    """Shows a simple GUI to select the installation mode."""
     global IS_GUI_MODE
     IS_GUI_MODE = True
 
     root = tk.Tk()
     root.title("Astro Rise Installer")
-
     main_frame = ttk.Frame(root, padding="10")
     main_frame.pack(fill=tk.BOTH, expand=True)
-
-    # --- Logo ---
-    if HAS_IMAGETK:
-        try:
-            img = Image.open(ICON_SOURCE_PATH)
-            img.thumbnail((128, 128))
-            logo = ImageTk.PhotoImage(img)
-            logo_label = ttk.Label(main_frame, image=logo)
-            logo_label.image = logo  # Keep a reference
-            logo_label.pack(pady=10)
-        except Exception as e:
-            print(f"Could not load logo: {e}")
-    else:
-        print("ImageTk not available — skipping logo display.")
-
     label = ttk.Label(main_frame, text="Choose the installation type:", font=("Arial", 12))
-    label.pack(pady=10)
+    label.pack(pady=20)
 
     def run_install(install_function):
         for widget in main_frame.winfo_children():
             widget.destroy()
-
         text_area = tk.Text(main_frame, wrap=tk.WORD, height=20, width=70)
         text_area.pack(fill=tk.BOTH, expand=True)
 
@@ -266,15 +211,23 @@ def show_gui_selector():
     root.mainloop()
 
 def main():
-    """Main function to parse arguments or show GUI."""
     if len(sys.argv) > 1:
         parser = argparse.ArgumentParser(description="Astro Rise Modpack Installer.")
-        parser.add_argument("mode", choices=['client', 'server'], help="Installation mode: 'client' or 'server'.")
+        parser.add_argument("mode", choices=['client', 'server'], help="Installation mode.")
         args = parser.parse_args()
         if args.mode == 'client': install_client()
         elif args.mode == 'server': install_server()
     else:
-        show_gui_selector()
+        try:
+            show_gui_selector()
+        except ImportError:
+            print("\n--- GUI Mode Error ---")
+            print("Could not start graphical interface because a dependency is missing.")
+            print("On Debian/Ubuntu, you may need to install it with:")
+            print("sudo apt-get install python3-tk")
+            print("\nYou can still use the command-line interface:")
+            print("python3 installer.py client")
+            sys.exit(1)
 
 if __name__ == "__main__":
     main()
