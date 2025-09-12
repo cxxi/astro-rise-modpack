@@ -3,12 +3,12 @@
 // 	event.remove({ output: "sophisticatedbackpacks:auto_feeder_upgrade" })
 // })
 
-PlayerEvents.changedDimension(event => {
+PlayerEvents.playerChangedDimension(event => {
 
 	let player = event.player
 	let inventory = player.inventory
 
-	if (!event.to.location().startsWith("ad_astra:")) return
+	if (!event.to.toString().startsWith("ad_astra:")) return
 
 	for (let i = 0; i < inventory.size(); i++)
 	{
@@ -30,7 +30,7 @@ PlayerEvents.inventoryChanged(event => {
   	let player = event.player
   	let stack = event.item
 
-	if (!player.level.dimension.location().startsWith("ad_astra:")) return
+	if (!player.level.dimension.toString().startsWith("ad_astra:")) return
 
   	if (!stack.item.foodProperties) return
 
