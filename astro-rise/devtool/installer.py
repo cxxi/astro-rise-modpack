@@ -6,13 +6,20 @@ import shutil
 import subprocess
 
 # --- Constants ---
-# This script is designed to be run from within a MultiMC instance folder.
-# All paths are calculated relative to the script's location to make it robust.
-
-# The script will be located at: <instance_folder>/astro-rise/devtool/installer.py
-# So, the instance folder is two levels up from the script's directory.
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-INSTANCE_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
+# When running as a compiled PyInstaller executable, __file__ points to a temporary
+# directory. The correct way to find the application's "home" directory is to
+# use sys.executable.
+# We assume the compiled installer (`installer.sh` or `installer.exe`) is
+# placed in the root of the MultiMC instance folder.
+if getattr(sys, 'frozen', False):
+    # We are running in a bundle
+    INSTANCE_ROOT = os.path.dirname(os.path.abspath(sys.executable))
+else:
+    # We are running in a normal Python environment
+    # The script is at <instance_folder>/astro-rise/devtool/installer.py
+    # So, the instance folder is two levels up from the script's directory.
+    SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+    INSTANCE_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 
 # Paths within the instance folder
 GIT_DIR = os.path.join(INSTANCE_ROOT, ".git")
