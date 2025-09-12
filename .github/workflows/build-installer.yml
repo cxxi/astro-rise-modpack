@@ -1,4 +1,4 @@
-name: Build Standalone Installers
+name: Build Standalone Modpack Installers
 
 on:
   push:
