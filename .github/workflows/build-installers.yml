@@ -5,17 +5,20 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
+    name: Build on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
 
     steps:
-
     - name: Check out repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -28,24 +31,52 @@ jobs:
         pip install pyinstaller
 
     - name: Build executable with PyInstaller
-      run: |
-        pyinstaller --onefile --name AstroRiseInstaller installer.py
+      run: pyinstaller --onefile --name AstroRiseInstaller installer.py
 
-    - name: Prepare Artifacts for Linux
+    - name: Prepare and Upload Linux Artifact
       if: runner.os == 'Linux'
       run: |
         mv dist/AstroRiseInstaller installer-linux
         echo './installer-linux "$@"' > installer.sh
         chmod +x installer.sh
         chmod +x installer-linux
+      uses: actions/upload-artifact@v4
+      with:
+        name: installer-linux-artifact
+        path: |
+          installer-linux
+          installer.sh
 
-    - name: Prepare Artifacts for Windows
+    - name: Prepare and Upload Windows Artifact
       if: runner.os == 'Windows'
+      run: mv dist/AstroRiseInstaller.exe installer.exe
+      uses: actions/upload-artifact@v4
+      with:
+        name: installer-windows-artifact
+        path: installer.exe
+
+  commit:
+    name: Commit Installers
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+
+    - name: Download all artifacts
+      uses: actions/download-artifact@v4
+      with:
+        path: artifacts
+
+    - name: Move artifacts to root
       run: |
-        move dist\AstroRiseInstaller.exe installer.exe
-        
+        mv artifacts/installer-linux-artifact/* .
+        mv artifacts/installer-windows-artifact/* .
+        rm -rf artifacts
+
     - name: Commit and push installers
-      uses: stefanzweifel/git-auto-commit-action@v4
+      uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "ci: Build and commit standalone installers"
         file_pattern: "installer.exe installer-linux installer.sh"
