@@ -35,26 +35,22 @@ jobs:
     - name: Build executable with PyInstaller
       run: pyinstaller --onefile --name AstroRiseInstaller astro-rise/devtool/installer.py
 
-    - name: Prepare Linux Artifacts
+    - name: Prepare Linux Artifact
       if: runner.os == 'Linux'
       run: |
-        mv dist/AstroRiseInstaller installer-linux
-        echo './installer-linux "$@"' > installer.sh
+        mv dist/AstroRiseInstaller installer.sh
         chmod +x installer.sh
-        chmod +x installer-linux
 
     - name: Upload Linux Artifact
       if: runner.os == 'Linux'
       uses: actions/upload-artifact@v4
       with:
         name: installer-linux-artifact
-        path: |
-          installer-linux
-          installer.sh
+        path: installer.sh
 
     - name: Prepare Windows Artifact
       if: runner.os == 'Windows'
-      run: mv dist/AstroRiseInstaller.exe installer.exe
+      run: Move-Item -Force dist/AstroRiseInstaller.exe installer.exe
 
     - name: Upload Windows Artifact
       if: runner.os == 'Windows'
@@ -79,15 +75,16 @@ jobs:
 
     - name: Move artifacts to root
       run: |
-        mv artifacts/installer-linux-artifact/* .
-        mv artifacts/installer-windows-artifact/* .
+        # Move the single file from each artifact directory to the root
+        mv artifacts/installer-linux-artifact/installer.sh .
+        mv artifacts/installer-windows-artifact/installer.exe .
         rm -rf artifacts
 
     - name: Commit and push installers
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "ci: Build and commit standalone installers"
-        file_pattern: "installer.exe installer-linux installer.sh"
+        file_pattern: "installer.exe installer.sh"
         commit_user_name: "GitHub Actions"
         commit_user_email: "actions@github.com"
         commit_author: "GitHub Actions <actions@github.com>"
