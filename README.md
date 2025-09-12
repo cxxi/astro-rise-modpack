@@ -54,10 +54,15 @@ This will open the folder where the instance's files are stored.
 Now, you will set up the modpack itself.
 
 1.  Download or clone this repository. Copy the **entire contents** of the repository (the `astro-rise` folder, `manifest.json`, `installer.py`, etc.) directly into the instance folder you just opened.
+    ```bash
+    git init
+    git remote add origin git@github.com:cxxi/astro-rise-modpack.git
+    git pull origin main
+    ```
 2.  **!!! CLOSE MULTIMC !!!** Before running the installer, make sure the MultiMC application is **completely closed**. This is critical.
 3.  Open a terminal or command prompt inside the instance folder and run the installer script:
     ```bash
-    python installer.py client
+    ./installer.sh client 
     ```
 4.  The script will ask you to confirm that MultiMC is closed. Press Enter to proceed.
 
@@ -73,10 +78,10 @@ If you installed the pack using the `git clone` method, updating is simple:
 1.  Make sure MultiMC is closed.
 2.  Run the installer script again from within your instance folder:
     ```bash
-    python astro-rise/devtool/installer.py client
+    ./installer.sh client 
     ```
 The script will automatically download the latest changes before applying them.
 
-<!-- If you installed from a ZIP file, you must delete your instance and follow the installation guide again with the new ZIP file. -->
+If you installed from a ZIP file, you follow the installation guide again with the new ZIP file.
 
 ---
