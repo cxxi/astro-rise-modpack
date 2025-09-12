@@ -55,8 +55,8 @@ ServerEvents.recipes(event => {
 	    },
 	    cast_consumed: true,
 	    fluid: {
-	    	fluid: 'tconstruct:liquid_soul',
-	    	amount: 1000
+	    	fluid: 'astro_rise:molten_necrotic_bone',
+	    	amount: 100
 	    },
 	    result: {
 	    	item: 'minecraft:wither_skeleton_skull'
