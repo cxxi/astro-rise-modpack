@@ -6,24 +6,6 @@
 
 This repository contains the files for the Astro Rise modpack, along with a Python-based installer to help set it up.
 
-### Client Installation (for MultiMC)
-
-1.  Download the repository as a ZIP file and unzip it, or clone it.
-2.  Copy the entire content of the repository into your new MultiMC instance folder.
-3.  Run the installer in `client` mode from a terminal inside the instance folder:
-    ```bash
-    python installer.py client
-    ```
-4.  The script will verify your Minecraft and Forge versions and synchronize all the necessary configs, scripts, and mods.
-
-### Server Installation
-
-The server installation process is not yet implemented.
-=======
-# Astro Rise Modpack
-
-This repository contains the files for the Astro Rise modpack, along with a Python-based installer to help set it up.
-
 ## Client Installation Guide (for MultiMC)
 
 This guide will walk you through creating a new instance and installing the modpack.
@@ -79,3 +61,5 @@ Now, you will set up the modpack itself.
 4.  The script will ask you to confirm that MultiMC is closed. Press Enter to proceed.
 
 Once the script is finished, you can re-open MultiMC, and your Astro Rise instance will be ready to play!
+
+### Server Installation
