@@ -6,13 +6,21 @@ import shutil
 import subprocess
 import tkinter as tk
 from tkinter import ttk, messagebox
-from PIL import Image, ImageTk
+
+# Pillow import with fallback if ImageTk not available
+try:
+    from PIL import Image, ImageTk
+    HAS_IMAGETK = True
+except Exception:
+    from PIL import Image
+    ImageTk = None
+    HAS_IMAGETK = False
 
 # --- Global State ---
 IS_GUI_MODE = False
 
 # --- Constants ---
-# Path logic to handle both normal execution and PyInstaller bundling
+# Support PyInstaller: resources are bundled in sys._MEIPASS
 if getattr(sys, 'frozen', False):
     BASE_PATH = sys._MEIPASS
     INSTANCE_ROOT = os.path.dirname(os.path.abspath(sys.executable))
@@ -31,7 +39,11 @@ MINECRAFT_DIR = os.path.join(INSTANCE_ROOT, ".minecraft")
 # Source paths are inside the `astro-rise` directory within the instance
 ASTRO_RISE_DIR = os.path.join(INSTANCE_ROOT, "astro-rise")
 ASTRO_RISE_SRC_DIR = os.path.join(ASTRO_RISE_DIR, "src")
-ICON_SOURCE_PATH = os.path.join(ASTRO_RISE_DIR, "astro-rise.png")
+
+# ICON_SOURCE_PATH: in dev this should point to astro-rise/astro-rise.png,
+# in a PyInstaller bundle the file will be copied into BASE_PATH by --add-data
+ICON_SOURCE_PATH = os.path.join(BASE_PATH, "astro-rise.png")
+
 CONFIG_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "config")
 KUBEJS_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "kubejs")
 MODS_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "mods")
@@ -193,20 +205,28 @@ def show_gui_selector():
     main_frame.pack(fill=tk.BOTH, expand=True)
 
     # --- Logo ---
-    try:
-        # Resize the image to a more reasonable size for the GUI
-        img = Image.open(ICON_SOURCE_PATH)
-        img.thumbnail((128, 128))
-        logo = ImageTk.PhotoImage(img)
-        logo_label = ttk.Label(main_frame, image=logo)
-        logo_label.image = logo # Keep a reference to prevent garbage collection
-        logo_label.pack(pady=10)
-    except FileNotFoundError:
-        # If logo not found, print a warning to the console/text area and continue.
-        print(f"Warning: Logo image not found at '{ICON_SOURCE_PATH}'.")
-    except Exception as e:
-        # Catch other potential Pillow/tk errors
-        print(f"Could not load logo: {e}")
+    if HAS_IMAGETK:
+        try:
+            if not os.path.exists(ICON_SOURCE_PATH):
+                # Try fallback: maybe in source tree under ASTRO_RISE_DIR
+                alt = os.path.join(ASTRO_RISE_DIR, "astro-rise.png")
+                if os.path.exists(alt):
+                    path_to_use = alt
+                else:
+                    path_to_use = ICON_SOURCE_PATH
+            else:
+                path_to_use = ICON_SOURCE_PATH
+
+            img = Image.open(path_to_use)
+            img.thumbnail((128, 128))
+            logo = ImageTk.PhotoImage(img)
+            logo_label = ttk.Label(main_frame, image=logo)
+            logo_label.image = logo # Keep a reference to prevent garbage collection
+            logo_label.pack(pady=10)
+        except Exception as e:
+            print(f"Could not load logo: {e}")
+    else:
+        print("ImageTk not available — skipping logo display.")
 
     label = ttk.Label(main_frame, text="Choose the installation type:", font=("Arial", 12))
     label.pack(pady=10)
