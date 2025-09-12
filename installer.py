@@ -87,9 +87,9 @@ INSTANCE_CFG_PATH = "instance.cfg"
 ICON_SOURCE_PATH = "astro-rise/astro-rise.png"
 ICON_DEST_DIR = os.path.join("..", "..", "icons")
 MINECRAFT_DIR = ".minecraft"
-CONFIG_SOURCE_DIR = os.path.join("astro-rise", "config")
-KUBEJS_SOURCE_DIR = os.path.join("astro-rise", "kubejs")
-MODS_SOURCE_DIR = os.path.join("astro-rise", "mods")
+CONFIG_SOURCE_DIR = os.path.join("astro-rise", "src", "config")
+KUBEJS_SOURCE_DIR = os.path.join("astro-rise", "src", "kubejs")
+MODS_SOURCE_DIR = os.path.join("astro-rise", "src", "mods")
 
 def update_instance_cfg():
     """
