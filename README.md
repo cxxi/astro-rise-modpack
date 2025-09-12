@@ -3,6 +3,7 @@
 `minecraft 1.20.1` `forge 47.4.0`
 
 ![astro-rise-logo](astro-rise/astro-rise.png)
+=======
 
 This repository contains the files for the Astro Rise modpack, along with a Python-based installer to help set it up.
 
@@ -62,4 +63,20 @@ Now, you will set up the modpack itself.
 
 Once the script is finished, you can re-open MultiMC, and your Astro Rise instance will be ready to play!
 
-### Server Installation
+## Server Installation
+
+*not implemented*  
+
+## Updating the Modpack
+
+If you installed the pack using the `git clone` method, updating is simple:
+1.  Make sure MultiMC is closed.
+2.  Run the installer script again from within your instance folder:
+    ```bash
+    python astro-rise/devtool/installer.py client
+    ```
+The script will automatically download the latest changes before applying them.
+
+<!-- If you installed from a ZIP file, you must delete your instance and follow the installation guide again with the new ZIP file. -->
+
+---
