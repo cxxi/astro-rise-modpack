@@ -30,10 +30,11 @@ MINECRAFT_DIR = os.path.join(INSTANCE_ROOT, ".minecraft")
 
 # Source paths are inside the `astro-rise` directory within the instance
 ASTRO_RISE_DIR = os.path.join(INSTANCE_ROOT, "astro-rise")
+ASTRO_RISE_SRC_DIR = os.path.join(ASTRO_RISE_DIR, "src")
 ICON_SOURCE_PATH = os.path.join(ASTRO_RISE_DIR, "astro-rise.png")
-CONFIG_SOURCE_DIR = os.path.join(ASTRO_RISE_DIR, "config")
-KUBEJS_SOURCE_DIR = os.path.join(ASTRO_RISE_DIR, "kubejs")
-MODS_SOURCE_DIR = os.path.join(ASTRO_RISE_DIR, "mods")
+CONFIG_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "config")
+KUBEJS_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "kubejs")
+MODS_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "mods")
 
 # Destination for the icon is relative to the instance folder
 ICON_DEST_DIR = os.path.join(INSTANCE_ROOT, "..", "..", "icons")
