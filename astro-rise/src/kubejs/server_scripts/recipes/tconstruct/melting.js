@@ -2,10 +2,17 @@ ServerEvents.recipes(event => {
 
 	// molten_necrotic_bone
 
-	event.recipes.tconstruct.melting(
-	    { item: 'tconstruct:necrotic_bone' },
-	    { fluid: 'astro_rise:molten_necrotic_bone', amount: 100 },
-	    950
-	)
+	event.custom({
+	    type: 'tconstruct:melting',
+	    ingredient: { 
+	    	item: 'tconstruct:necrotic_bone' 
+		},
+	    result: {
+		    amount: 100,
+		    fluid: 'astro_rise:molten_necrotic_bone'
+		},
+	    temperature: 950,
+	    time: 171
+	})
 
 })
