@@ -14,9 +14,11 @@ IS_GUI_MODE = False
 # --- Constants ---
 # Path logic to handle both normal execution and PyInstaller bundling
 if getattr(sys, 'frozen', False):
+    BASE_PATH = sys._MEIPASS
     INSTANCE_ROOT = os.path.dirname(os.path.abspath(sys.executable))
 else:
-    SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+    BASE_PATH = os.path.dirname(os.path.abspath(__file__))
+    SCRIPT_DIR = BASE_PATH
     INSTANCE_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 
 # Paths within the instance folder

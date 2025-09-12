@@ -38,7 +38,7 @@ jobs:
         pip install pyinstaller Pillow
 
     - name: Build executable with PyInstaller
-      run: pyinstaller --onefile --name AstroRiseInstaller astro-rise/devtool/installer.py
+      run: pyinstaller --onefile --add-data "astro-rise/astro-rise.png:." --name AstroRiseInstaller astro-rise/devtool/installer.py
 
     - name: Prepare Linux Artifact
       if: runner.os == 'Linux'
