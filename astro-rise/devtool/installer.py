@@ -196,6 +196,7 @@ def show_gui_selector():
         img.thumbnail((128, 128))
         logo = ImageTk.PhotoImage(img)
         logo_label = ttk.Label(main_frame, image=logo)
+        logo_label.image = logo # Keep a reference to prevent garbage collection
         logo_label.pack(pady=10)
     except FileNotFoundError:
         # If logo not found, just continue without it.
