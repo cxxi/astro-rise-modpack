@@ -3,6 +3,8 @@ name: Build Standalone Installers
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'installer.py'
   workflow_dispatch:
 
 permissions:
@@ -65,7 +67,7 @@ jobs:
     name: Commit Installers
     needs: build
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Check out repository
       uses: actions/checkout@v4
