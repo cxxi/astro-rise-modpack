@@ -40,9 +40,17 @@ MINECRAFT_DIR = os.path.join(INSTANCE_ROOT, ".minecraft")
 ASTRO_RISE_DIR = os.path.join(INSTANCE_ROOT, "astro-rise")
 ASTRO_RISE_SRC_DIR = os.path.join(ASTRO_RISE_DIR, "src")
 
-# ICON_SOURCE_PATH: in dev this should point to astro-rise/astro-rise.png,
-# in a PyInstaller bundle the file will be copied into BASE_PATH by --add-data
-ICON_SOURCE_PATH = os.path.join(BASE_PATH, "astro-rise.png")
+def resource_path(relative_path):
+    """Get absolute path to resource, works for dev and PyInstaller."""
+    try:
+        # PyInstaller crée un dossier temporaire et stocke les fichiers dans _MEIPASS
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(os.path.dirname(__file__))
+    return os.path.join(base_path, relative_path)
+
+# --- ICON_SOURCE_PATH ---
+ICON_SOURCE_PATH = resource_path("astro-rise.png")
 
 CONFIG_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "config")
 KUBEJS_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "kubejs")
@@ -207,21 +215,11 @@ def show_gui_selector():
     # --- Logo ---
     if HAS_IMAGETK:
         try:
-            if not os.path.exists(ICON_SOURCE_PATH):
-                # Try fallback: maybe in source tree under ASTRO_RISE_DIR
-                alt = os.path.join(ASTRO_RISE_DIR, "astro-rise.png")
-                if os.path.exists(alt):
-                    path_to_use = alt
-                else:
-                    path_to_use = ICON_SOURCE_PATH
-            else:
-                path_to_use = ICON_SOURCE_PATH
-
-            img = Image.open(path_to_use)
+            img = Image.open(ICON_SOURCE_PATH)
             img.thumbnail((128, 128))
             logo = ImageTk.PhotoImage(img)
             logo_label = ttk.Label(main_frame, image=logo)
-            logo_label.image = logo # Keep a reference to prevent garbage collection
+            logo_label.image = logo  # Keep a reference
             logo_label.pack(pady=10)
         except Exception as e:
             print(f"Could not load logo: {e}")
