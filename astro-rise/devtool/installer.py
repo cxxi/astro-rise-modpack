@@ -3,6 +3,7 @@ import os
 import sys
 import json
 import shutil
+import subprocess
 
 # --- Constants ---
 # This script is designed to be run from within a MultiMC instance folder.
@@ -14,6 +15,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 INSTANCE_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 
 # Paths within the instance folder
+GIT_DIR = os.path.join(INSTANCE_ROOT, ".git")
 MANIFEST_PATH = os.path.join(INSTANCE_ROOT, "manifest.json")
 MMC_PACK_PATH = os.path.join(INSTANCE_ROOT, "mmc-pack.json")
 INSTANCE_CFG_PATH = os.path.join(INSTANCE_ROOT, "instance.cfg")
@@ -43,6 +45,42 @@ def prompt_for_continue(message):
         print("\nInstallation cancelled by user.")
         sys.exit(1)
 
+def try_git_update():
+    """Attempts to self-update the repository using Git if available."""
+    print("--- Checking for updates ---")
+    if not os.path.isdir(GIT_DIR):
+        print("  .git directory not found. Skipping automatic update.")
+        print("  To enable updates, please install by cloning the repository with Git.")
+        return
+
+    git_executable = shutil.which('git')
+    if not git_executable:
+        print("  Git command not found. Skipping automatic update.")
+        print("  Please install Git or update manually by re-downloading the repository.")
+        return
+
+    print("  Git repository found. Attempting to pull latest changes...")
+    try:
+        # Fetch latest changes from origin
+        fetch_process = subprocess.run([git_executable, "fetch"], cwd=INSTANCE_ROOT, capture_output=True, text=True)
+        if fetch_process.returncode != 0:
+            print("  Warning: 'git fetch' failed. Could not check for updates.")
+            print(f"  Git stderr: {fetch_process.stderr}")
+            return
+
+        # Reset to the latest version of the main branch, discarding local changes
+        reset_process = subprocess.run([git_executable, "reset", "--hard", "origin/main"], cwd=INSTANCE_ROOT, capture_output=True, text=True)
+        if reset_process.returncode != 0:
+            print("  Warning: 'git reset' failed. Could not apply updates automatically.")
+            print(f"  Git stderr: {reset_process.stderr}")
+            return
+
+        print("  Repository updated successfully.")
+        print(reset_process.stdout)
+
+    except Exception as e:
+        print(f"  An unexpected error occurred during git update: {e}")
+
 def get_mmc_version(components, component_uid):
     """Finds the version of a specific component in the mmc-pack.json data."""
     for component in components:
@@ -52,7 +90,7 @@ def get_mmc_version(components, component_uid):
 
 def verify_versions():
     """Verifies that Minecraft/Forge versions in mmc-pack.json match manifest.json."""
-    print("Verifying Minecraft and Forge versions...")
+    print("\n--- Verifying Minecraft and Forge versions ---")
     if not os.path.exists(MANIFEST_PATH):
         die(f"'{MANIFEST_PATH}' not found. Run installer from the repository root.")
     if not os.path.exists(MMC_PACK_PATH):
@@ -167,7 +205,8 @@ def sync_mods():
 
 def install_client():
     """Runs the client installation process."""
-    print("--- Starting client installation ---")
+    try_git_update()
+    print("\n--- Starting Installation/Update ---")
     prompt_for_continue("!!! IMPORTANT !!!\nPlease ensure MultiMC is completely closed before proceeding.\nFailure to do so may result in the configuration changes being overwritten by MultiMC.")
     verify_versions()
     print("\n--- Updating instance configuration ---")
