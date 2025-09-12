@@ -27,14 +27,10 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: Install tk for Linux
-      if: runner.os == 'Linux'
-      run: sudo apt-get update && sudo apt-get install -y python3-tk
-
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pyinstaller Pillow
+        pip install pyinstaller
 
     - name: Build executable with PyInstaller
       run: pyinstaller --onefile --name AstroRiseInstaller astro-rise/devtool/installer.py
