@@ -26,7 +26,7 @@ check_consistency() {
     echo -e "${COLOR_BOLD}${COLOR_BLUE}      Checking Consistency for: ${title}${COLOR_RESET}"
     echo -e "${COLOR_BLUE}=======================================================${COLOR_RESET}"
 
-    if [ ! -d "$asset_dir" ] && [ "$asset_dir" != "astro-rise/mods" ]; then # mods dir is guaranteed to exist
+    if [ ! -d "$asset_dir" ] && [ "$asset_dir" != "astro-rise/src/mods" ]; then # mods dir is guaranteed to exist
         echo -e "${COLOR_YELLOW}Warning: Directory '$asset_dir' not found. Skipping check.${COLOR_RESET}\n"
         return
     fi
@@ -98,6 +98,6 @@ if [ ! -f "$MANIFEST_FILE" ]; then
 fi
 
 # --- Script Execution ---
-check_consistency "Mods" ".client_mods[], .server_mods[], .mods[]" "astro-rise/mods" "*.jar"
-check_consistency "Resource Packs" ".resource_packs[]" "astro-rise/resourcepacks" "*.zip"
-check_consistency "Datapacks" ".datapacks[]" "astro-rise/world/datapacks" "*.zip"
+check_consistency "Mods" ".client_mods[], .server_mods[], .mods[]" "astro-rise/src/mods" "*.jar"
+check_consistency "Resource Packs" ".resource_packs[]" "astro-rise/src/resourcepacks" "*.zip"
+check_consistency "Datapacks" ".datapacks[]" "astro-rise/src/datapacks" "*.zip"
