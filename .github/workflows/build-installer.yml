@@ -1,0 +1,94 @@
+name: Build Standalone Installers
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'astro-rise/devtool/installer.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install tk for Linux
+      if: runner.os == 'Linux'
+      run: sudo apt-get update && sudo apt-get install -y python3-tk
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyinstaller
+
+    - name: Build executable with PyInstaller
+      run: pyinstaller --onefile --name AstroRiseInstaller astro-rise/devtool/installer.py
+
+    - name: Prepare Linux Artifact
+      if: runner.os == 'Linux'
+      run: |
+        mv dist/AstroRiseInstaller installer.sh
+        chmod +x installer.sh
+
+    - name: Upload Linux Artifact
+      if: runner.os == 'Linux'
+      uses: actions/upload-artifact@v4
+      with:
+        name: installer-linux-artifact
+        path: installer.sh
+
+    - name: Prepare Windows Artifact
+      if: runner.os == 'Windows'
+      run: Move-Item -Force dist/AstroRiseInstaller.exe installer.exe
+
+    - name: Upload Windows Artifact
+      if: runner.os == 'Windows'
+      uses: actions/upload-artifact@v4
+      with:
+        name: installer-windows-artifact
+        path: installer.exe
+
+  commit:
+    name: Commit Installers
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+
+    - name: Download all artifacts
+      uses: actions/download-artifact@v4
+      with:
+        path: artifacts
+
+    - name: Move artifacts to root
+      run: |
+        # Move the single file from each artifact directory to the root
+        mv artifacts/installer-linux-artifact/installer.sh .
+        mv artifacts/installer-windows-artifact/installer.exe .
+        rm -rf artifacts
+
+    - name: Commit and push installers
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "ci: Build and commit standalone installers"
+        file_pattern: "installer.exe installer.sh"
+        commit_user_name: "GitHub Actions"
+        commit_user_email: "actions@github.com"
+        commit_author: "GitHub Actions <actions@github.com>"
