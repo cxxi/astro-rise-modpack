@@ -8,10 +8,10 @@
 		"JustEnoughMekanismMultiblocks-1.20.1-4.10.jar",
 		"JustEnoughProfessions-forge-1.20.1-3.0.1.jar",
 		"JustEnoughResources-1.20.1-1.4.0.247.jar",
-		"DynamicLights-1.20.1.2.jar",
-		"Journeymap-1.20.1-5.10.3-forge.jar",
-		"JustZoom_forge_2.1.1_MC_1.20.1.jar",
-		"Konkrete_forge_1.8.0_MC_1.20-1.20.1.jar"
+		"dynamiclights-1.20.1.2.jar",
+		"journeymap-1.20.1-5.10.3-forge.jar",
+		"justZoom_forge_2.1.1_MC_1.20.1.jar",
+		"konkrete_forge_1.8.0_MC_1.20-1.20.1.jar"
 	],
 	"server_mods" : [
 		"ftb-library-forge-2001.2.10.jar",
@@ -80,7 +80,6 @@
 		"createoreexcavation-1.20-1.6.4.jar",
 		"createsifter-1.20.1-1.8.6-6.0.6.jar",
 		"curios-forge-5.14.1+1.20.1.jar",
-		"cutdowntrees-1.20.4-1.2.0.1.jar",
 		"deeperdarker-forge-1.20.1-1.3.3.jar",
 		"elevatorid-1.20.1-1.9.1-forge.jar",
 		"embeddium-0.3.31+mc1.20.1.jar",
@@ -111,7 +110,6 @@
 		"sophisticatedcore-1.20.1-1.2.80.1073.jar",
 		"sophisticatedstorage-1.20.1-1.3.59.1224.jar",
 		"sophisticatedstoragecreateintegration-1.20.1-0.1.12.36.jar",
-		"starlight-1.1.2+forge.1cda73c.jar",
 		"supermartijn642configlib-1.1.8-forge-mc1.20.jar",
 		"supermartijn642corelib-1.1.18-forge-mc1.20.1.jar",
 		"tconjei-1.20.1-1.5.0.jar",
