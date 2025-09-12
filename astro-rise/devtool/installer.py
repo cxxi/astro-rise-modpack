@@ -4,6 +4,8 @@ import sys
 import json
 import shutil
 import subprocess
+import tkinter as tk
+from tkinter import ttk
 
 # --- Constants ---
 # When running as a compiled PyInstaller executable, __file__ points to a temporary
@@ -232,15 +234,82 @@ def install_server():
     """Runs the server installation process."""
     print("Server installation is not yet implemented.")
 
+def show_gui_selector():
+    """Shows a simple GUI to select the installation mode."""
+    # This function will be called when the script is run without arguments.
+    # It redirects console output to a text widget to show progress.
+
+    root = tk.Tk()
+    root.title("Astro Rise Installer")
+    root.geometry("500x400")
+
+    main_frame = ttk.Frame(root, padding="10")
+    main_frame.pack(fill=tk.BOTH, expand=True)
+
+    label = ttk.Label(main_frame, text="Choose the installation type:", font=("Arial", 12))
+    label.pack(pady=10)
+
+    # This is a bit of a hack to run the install in a way the GUI can update.
+    # A more robust solution would use threading, but this is simpler for this case.
+    def run_install(install_function):
+        for widget in main_frame.winfo_children():
+            widget.destroy()
+
+        text_area = tk.Text(main_frame, wrap=tk.WORD, height=20, width=60)
+        text_area.pack(fill=tk.BOTH, expand=True)
+
+        # Redirect stdout to the text area
+        class StdoutRedirector:
+            def __init__(self, widget):
+                self.widget = widget
+            def write(self, text):
+                self.widget.insert(tk.END, text)
+                self.widget.see(tk.END)
+            def flush(self):
+                pass
+
+        sys.stdout = StdoutRedirector(text_area)
+        sys.stderr = StdoutRedirector(text_area)
+
+        root.update_idletasks()
+
+        try:
+            install_function()
+        except SystemExit as e:
+            if e.code != 0:
+                print(f"\nInstallation failed with exit code {e.code}.")
+            else:
+                print("\nInstallation finished.")
+        except Exception as e:
+            print(f"\nAn unexpected error occurred: {e}")
+
+        # Add a final close button
+        close_button = ttk.Button(main_frame, text="Close", command=root.destroy)
+        close_button.pack(pady=10)
+
+
+    client_button = ttk.Button(main_frame, text="Install Client", command=lambda: run_install(install_client))
+    client_button.pack(pady=10, fill=tk.X)
+
+    server_button = ttk.Button(main_frame, text="Install Server", command=lambda: run_install(install_server))
+    server_button.pack(pady=5, fill=tk.X)
+
+    root.mainloop()
+
 def main():
-    """Main function to parse arguments and run the installer."""
-    parser = argparse.ArgumentParser(description="Astro Rise Modpack Installer.")
-    parser.add_argument("mode", choices=['client', 'server'], help="Installation mode: 'client' or 'server'.")
-    args = parser.parse_args()
-    if args.mode == 'client':
-        install_client()
-    elif args.mode == 'server':
-        install_server()
+    """Main function to parse arguments or show GUI."""
+    if len(sys.argv) > 1:
+        # If arguments are provided, use command-line parser
+        parser = argparse.ArgumentParser(description="Astro Rise Modpack Installer.")
+        parser.add_argument("mode", choices=['client', 'server'], help="Installation mode: 'client' or 'server'.")
+        args = parser.parse_args()
+        if args.mode == 'client':
+            install_client()
+        elif args.mode == 'server':
+            install_server()
+    else:
+        # If no arguments, show the GUI selector
+        show_gui_selector()
 
 if __name__ == "__main__":
     main()
