@@ -5,15 +5,29 @@ import json
 import shutil
 
 # --- Constants ---
-MANIFEST_PATH = "manifest.json"
-MMC_PACK_PATH = "mmc-pack.json"
-INSTANCE_CFG_PATH = "instance.cfg"
-ICON_SOURCE_PATH = "astro-rise/astro-rise.png"
-ICON_DEST_DIR = os.path.join("..", "..", "icons")
-MINECRAFT_DIR = ".minecraft"
-CONFIG_SOURCE_DIR = os.path.join("astro-rise", "config")
-KUBEJS_SOURCE_DIR = os.path.join("astro-rise", "kubejs")
-MODS_SOURCE_DIR = os.path.join("astro-rise", "mods")
+# This script is designed to be run from within a MultiMC instance folder.
+# All paths are calculated relative to the script's location to make it robust.
+
+# The script will be located at: <instance_folder>/astro-rise/devtool/installer.py
+# So, the instance folder is two levels up from the script's directory.
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+INSTANCE_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
+
+# Paths within the instance folder
+MANIFEST_PATH = os.path.join(INSTANCE_ROOT, "manifest.json")
+MMC_PACK_PATH = os.path.join(INSTANCE_ROOT, "mmc-pack.json")
+INSTANCE_CFG_PATH = os.path.join(INSTANCE_ROOT, "instance.cfg")
+MINECRAFT_DIR = os.path.join(INSTANCE_ROOT, ".minecraft")
+
+# Source paths are inside the `astro-rise` directory within the instance
+ASTRO_RISE_DIR = os.path.join(INSTANCE_ROOT, "astro-rise")
+ICON_SOURCE_PATH = os.path.join(ASTRO_RISE_DIR, "astro-rise.png")
+CONFIG_SOURCE_DIR = os.path.join(ASTRO_RISE_DIR, "config")
+KUBEJS_SOURCE_DIR = os.path.join(ASTRO_RISE_DIR, "kubejs")
+MODS_SOURCE_DIR = os.path.join(ASTRO_RISE_DIR, "mods")
+
+# Destination for the icon is relative to the instance folder
+ICON_DEST_DIR = os.path.join(INSTANCE_ROOT, "..", "..", "icons")
 
 def die(message):
     """Prints an error message to stderr and exits the script."""
