@@ -200,8 +200,8 @@ def show_gui_selector():
         logo_label.image = logo # Keep a reference to prevent garbage collection
         logo_label.pack(pady=10)
     except FileNotFoundError:
-        # If logo not found, just continue without it.
-        pass
+        # If logo not found, print a warning to the console/text area and continue.
+        print(f"Warning: Logo image not found at '{ICON_SOURCE_PATH}'.")
     except Exception as e:
         # Catch other potential Pillow/tk errors
         print(f"Could not load logo: {e}")
