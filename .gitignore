@@ -1,4 +1,6 @@
 .minecraft/
+server/
+run-server.sh
 natives/
 patches/
 instance.cfg
