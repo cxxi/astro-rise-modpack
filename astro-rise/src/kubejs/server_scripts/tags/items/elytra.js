@@ -11,7 +11,11 @@ ServerEvents.tags('item', event => {
 	event.add('elytraslot:elytra', [
 	    'tconstruct:slime_chestplate'
 	])
-	
+
+	event.add('forge:elytra', [
+	    'tconstruct:slime_chestplate'
+	])
+
 })
 
 // ServerEvents.highPriorityData(event => {
