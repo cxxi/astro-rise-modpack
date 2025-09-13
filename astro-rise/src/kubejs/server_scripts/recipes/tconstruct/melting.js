@@ -15,4 +15,19 @@ ServerEvents.recipes(event => {
 	    time: 171
 	})
 
+	// liquid_sculk
+
+	event.custom({
+	    type: 'tconstruct:melting',
+	    ingredient: { 
+	    	item: 'minecraft:sculk' 
+		},
+	    result: {
+		    amount: 900,
+		    fluid: 'astro_rise:liquid_sculk'
+		},
+	    temperature: 800,
+	    time: 171
+	})
+
 })

@@ -64,4 +64,52 @@ ServerEvents.recipes(event => {
 	    cooling_time: 100
 	})
 
+	// necrotic_bone
+
+	event.custom({
+	    type: 'tconstruct:casting_table',
+	    cast: {
+	    	item: 'tconstruct:casts/single_use/gear'
+	    },
+	    cast_consumed: true,
+	    fluid: {
+	    	fluid: 'astro_rise:molten_necrotic_bone',
+	    	amount: 100
+	    },
+	    result: {
+	    	item: 'tconstruct:necrotic_bone'
+	    },
+	    cooling_time: 100
+	})
+
+	event.custom({
+	    type: 'tconstruct:casting_table',
+	    cast: {
+	    	item: 'tconstruct:casts/multi_use/gear'
+	    },
+	    cast_consumed: false,
+	    fluid: {
+	    	fluid: 'astro_rise:molten_necrotic_bone',
+	    	amount: 100
+	    },
+	    result: {
+	    	item: 'tconstruct:necrotic_bone'
+	    },
+	    cooling_time: 100
+	})
+
+	// sculk
+
+	event.custom({
+	    type: 'tconstruct:casting_basin',
+	    fluid: {
+	    	fluid: 'astro_rise:liquid_sculk',
+	    	amount: 900
+	    },
+	    result: {
+	    	item: 'minecraft:sculk'
+	    },
+	    cooling_time: 60
+	})
+
 })
