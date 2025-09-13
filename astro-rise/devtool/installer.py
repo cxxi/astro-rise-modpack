@@ -196,7 +196,7 @@ def install_server():
     print(f"  'run-server.sh' copied to '{run_server_dest_path}'.")
     print("\n--- Server installation complete! ---")
 
-def show_gui_selector():
+def show_client_installer_gui():
     global IS_GUI_MODE
     IS_GUI_MODE = True
 
@@ -204,7 +204,7 @@ def show_gui_selector():
     root.title("Astro Rise Installer")
     main_frame = ttk.Frame(root, padding="10")
     main_frame.pack(fill=tk.BOTH, expand=True)
-    label = ttk.Label(main_frame, text="Choose the installation type:", font=("Arial", 12))
+    label = ttk.Label(main_frame, text="Click the button to install the Astro Rise client.", font=("Arial", 12))
     label.pack(pady=20)
 
     def run_install(install_function):
@@ -237,8 +237,6 @@ def show_gui_selector():
 
     client_button = ttk.Button(main_frame, text="Install Client", command=lambda: run_install(install_client))
     client_button.pack(pady=10, fill=tk.X)
-    server_button = ttk.Button(main_frame, text="Install Server", command=lambda: run_install(install_server))
-    server_button.pack(pady=5, fill=tk.X)
 
     root.mainloop()
 
@@ -251,10 +249,10 @@ def main():
         elif args.mode == 'server': install_server()
     else:
         try:
-            show_gui_selector()
-        except ImportError:
+            show_client_installer_gui()
+        except (ImportError, tk.TclError):
             print("\n--- GUI Mode Error ---")
-            print("Could not start graphical interface because a dependency is missing.")
+            print("Could not start graphical interface because a dependency is missing or display is not available.")
             print("On Debian/Ubuntu, you may need to install it with:")
             print("sudo apt-get install python3-tk")
             print("\nYou can still use the command-line interface:")
