@@ -1,7 +1,7 @@
 ServerEvents.tags('item', event => {
 
 	event.add('elytraslot:elytra', [
-	    'tconstruct:wings'
+	    'tconstruct:slime_chestplate'
 	])
 	
 })
