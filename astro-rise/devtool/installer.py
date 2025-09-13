@@ -24,6 +24,7 @@ MANIFEST_PATH = os.path.join(INSTANCE_ROOT, "manifest.json")
 MMC_PACK_PATH = os.path.join(INSTANCE_ROOT, "mmc-pack.json")
 INSTANCE_CFG_PATH = os.path.join(INSTANCE_ROOT, "instance.cfg")
 MINECRAFT_DIR = os.path.join(INSTANCE_ROOT, ".minecraft")
+SERVER_DIR = os.path.join(INSTANCE_ROOT, "server")
 ASTRO_RISE_DIR = os.path.join(INSTANCE_ROOT, "astro-rise")
 ASTRO_RISE_SRC_DIR = os.path.join(ASTRO_RISE_DIR, "src")
 
@@ -31,6 +32,7 @@ ICON_SOURCE_PATH = os.path.join(ASTRO_RISE_DIR, "astro-rise.png")
 CONFIG_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "config")
 KUBEJS_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "kubejs")
 MODS_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "mods")
+RUN_SERVER_SCRIPT_SOURCE_PATH = os.path.join(ASTRO_RISE_DIR, "devtool", "run-server.sh")
 ICON_DEST_DIR = os.path.join(INSTANCE_ROOT, "..", "..", "icons")
 
 def die(message):
@@ -146,6 +148,24 @@ def sync_mods():
             print(f"    Warning: Mod '{mod_filename}' not found in '{MODS_SOURCE_DIR}'.")
     print(f"    Sync complete. Copied {copied_count}/{len(required_mods)} mods.")
 
+def sync_server_mods():
+    dest_dir = os.path.join(SERVER_DIR, "mods")
+    print(f"  Syncing server mods to '{dest_dir}'...")
+    with open(MANIFEST_PATH, 'r') as f: manifest_data = json.load(f)
+    required_mods = manifest_data.get('server_mods', []) + manifest_data.get('mods', [])
+    if not os.path.exists(MODS_SOURCE_DIR): die(f"Source mods directory '{MODS_SOURCE_DIR}' not found.")
+    if os.path.exists(dest_dir): shutil.rmtree(dest_dir)
+    os.makedirs(dest_dir)
+    copied_count = 0
+    for mod_filename in required_mods:
+        source_path = os.path.join(MODS_SOURCE_DIR, mod_filename)
+        if os.path.exists(source_path):
+            shutil.copy(source_path, dest_dir)
+            copied_count += 1
+        else:
+            print(f"    Warning: Mod '{mod_filename}' not found in '{MODS_SOURCE_DIR}'.")
+    print(f"    Sync complete. Copied {copied_count}/{len(required_mods)} mods.")
+
 def install_client():
     try_git_update()
     print("\n--- Starting Installation/Update ---")
@@ -163,7 +183,18 @@ def install_client():
     print("\n--- Client installation complete! ---")
 
 def install_server():
-    print("Server installation is not yet implemented.")
+    try_git_update()
+    print("\n--- Starting Server Installation/Update ---")
+    print("\n--- Synchronizing directories ---")
+    os.makedirs(SERVER_DIR, exist_ok=True)
+    sync_directory(CONFIG_SOURCE_DIR, os.path.join(SERVER_DIR, 'config'))
+    sync_directory(KUBEJS_SOURCE_DIR, os.path.join(SERVER_DIR, 'kubejs'))
+    sync_server_mods()
+    print("\n--- Copying server script ---")
+    run_server_dest_path = os.path.join(INSTANCE_ROOT, "run-server.sh")
+    shutil.copy(RUN_SERVER_SCRIPT_SOURCE_PATH, run_server_dest_path)
+    print(f"  'run-server.sh' copied to '{run_server_dest_path}'.")
+    print("\n--- Server installation complete! ---")
 
 def show_gui_selector():
     global IS_GUI_MODE
