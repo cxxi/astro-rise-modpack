@@ -204,12 +204,14 @@ def show_client_installer_gui():
     root.title("Astro Rise Installer")
     main_frame = ttk.Frame(root, padding="10")
     main_frame.pack(fill=tk.BOTH, expand=True)
-    label = ttk.Label(main_frame, text="Click the button to install the Astro Rise client.", font=("Arial", 12))
+
+    label = ttk.Label(main_frame, text="Starting installation...", font=("Arial", 12))
     label.pack(pady=20)
 
     def run_install(install_function):
         for widget in main_frame.winfo_children():
             widget.destroy()
+
         text_area = tk.Text(main_frame, wrap=tk.WORD, height=20, width=70)
         text_area.pack(fill=tk.BOTH, expand=True)
 
@@ -235,8 +237,7 @@ def show_client_installer_gui():
         close_button = ttk.Button(main_frame, text="Close", command=root.destroy)
         close_button.pack(pady=10)
 
-    client_button = ttk.Button(main_frame, text="Install Client", command=lambda: run_install(install_client))
-    client_button.pack(pady=10, fill=tk.X)
+    root.after(100, lambda: run_install(install_client))
 
     root.mainloop()
 
