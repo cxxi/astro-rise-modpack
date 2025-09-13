@@ -38,6 +38,7 @@
 				"3493023BED0EA5B1"
 				"56C1A4F3EE2150C7"
 			]
+			hide_until_deps_complete: true
 			id: "4A3423B3B5B3FD7C"
 			tasks: [{
 				id: "0ACDE4CADE7A6F0C"
@@ -235,6 +236,7 @@
 		}
 		{
 			dependencies: ["539C44D3C38C6126"]
+			hide_until_deps_complete: true
 			id: "02196A8D45747BF7"
 			tasks: [{
 				id: "48605B5D0B879CD5"
