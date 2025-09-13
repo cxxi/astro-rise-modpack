@@ -14,7 +14,7 @@
 		"konkrete_forge_1.8.0_MC_1.20-1.20.1.jar"
 	],
 	"server_mods" : [
-		"ModernFix-forge-5.24.4+mc1.20.1.jar"
+		"modernfix-forge-5.24.4+mc1.20.1.jar"
 	],
 	"mods" : [
 		"AI-Improvements-1.20-0.5.2.jar",
