@@ -87,8 +87,8 @@
 				item: "tconstruct:seared_drain"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -5.0d
+			x: 7.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -114,7 +114,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: -6.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["23E0CB3DCEDC5728"]
@@ -146,7 +146,7 @@
 				item: "tconstruct:seared_basin"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 5.5d
 			y: -8.0d
 		}
 		{
@@ -242,8 +242,8 @@
 				item: "minecraft:lava_bucket"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -5.0d
+			x: 8.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["67A796F152AC308F"]
@@ -253,8 +253,8 @@
 				item: "tconstruct:blazing_blood_bucket"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -3.0d
+			x: 8.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -399,8 +399,86 @@
 				id: "1F600B20CC993A12"
 				type: "advancement"
 			}]
-			x: 4.0d
+			x: 10.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0CC7E361DEA23ECD"]
+			id: "3EB6B03536836A41"
+			tasks: [{
+				id: "36571658125ECB3A"
+				item: "tconstruct:foundry_controller"
+				type: "item"
+			}]
+			x: 5.5d
 			y: -3.0d
+		}
+		{
+			dependencies: ["23E0CB3DCEDC5728"]
+			hide_until_deps_complete: true
+			id: "0CC7E361DEA23ECD"
+			tasks: [{
+				id: "2EF423ACDF436F4D"
+				item: "tconstruct:scorched_stone"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3EB6B03536836A41"]
+			id: "4ACE51EB78DB06D4"
+			tasks: [{
+				id: "56C8F6F19564E475"
+				item: "tconstruct:scorched_drain"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3EB6B03536836A41"]
+			id: "24625F29BA6DC665"
+			tasks: [{
+				id: "2D83C576A8A81939"
+				item: "tconstruct:scorched_faucet"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3EB6B03536836A41"]
+			id: "54A030E11F22FE5B"
+			tasks: [{
+				id: "291F96EA82B46C3D"
+				item: "tconstruct:scorched_table"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3EB6B03536836A41"]
+			id: "3B7B314F4FC0D37D"
+			tasks: [{
+				id: "7B04819BA429C732"
+				item: "tconstruct:scorched_basin"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3EB6B03536836A41"]
+			id: "339C25F526260B57"
+			tasks: [{
+				id: "63378ECFB6F0F499"
+				item: "tconstruct:scorched_fuel_tank"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.5d
 		}
 	]
 	title: "Smelting"
