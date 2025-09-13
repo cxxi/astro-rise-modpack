@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
 	    	item: 'minecraft:sculk' 
 		},
 	    result: {
-		    amount: 900,
+		    amount: 1000,
 		    fluid: 'astro_rise:liquid_sculk'
 		},
 	    temperature: 800,
