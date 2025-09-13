@@ -33,6 +33,7 @@ CONFIG_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "config")
 KUBEJS_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "kubejs")
 MODS_SOURCE_DIR = os.path.join(ASTRO_RISE_SRC_DIR, "mods")
 RUN_SERVER_SCRIPT_SOURCE_PATH = os.path.join(ASTRO_RISE_DIR, "devtool", "run-server.sh")
+PATCH_KUBEJS_SCRIPT_SOURCE_PATH = os.path.join(ASTRO_RISE_DIR, "devtool", "patch-kubejs.sh")
 ICON_DEST_DIR = os.path.join(INSTANCE_ROOT, "..", "..", "icons")
 
 def die(message):
@@ -194,6 +195,8 @@ def install_server():
     run_server_dest_path = os.path.join(INSTANCE_ROOT, "run-server.sh")
     shutil.copy(RUN_SERVER_SCRIPT_SOURCE_PATH, run_server_dest_path)
     print(f"  'run-server.sh' copied to '{run_server_dest_path}'.")
+    shutil.copy(PATCH_KUBEJS_SCRIPT_SOURCE_PATH, run_server_dest_path)
+    print(f"  'patch-kubejs.sh' copied to '{run_server_dest_path}'.")
     print("\n--- Server installation complete! ---")
 
 def show_client_installer_gui():
