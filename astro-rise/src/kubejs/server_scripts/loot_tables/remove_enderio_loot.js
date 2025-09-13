@@ -1,11 +1,11 @@
 ServerEvents.lootTables(event => {
   
-	event.addJson('enderio:chests/alloy_loot', {
+	event.add('enderio:chests/alloy_loot', {
 		type: 'minecraft:loot_table',
 		pools: []
 	})
 
-	event.addJson('enderio:chests/common_loot', {
+	event.add('enderio:chests/common_loot', {
 		type: 'minecraft:loot_table',
 		pools: []
 	})
