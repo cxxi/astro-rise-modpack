@@ -1,5 +1,5 @@
 {
-	always_invisible: true
+	autofocus_id: "47738EA756C25E6C"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "collected_souls"
@@ -19,8 +19,8 @@
 				title: "Soul Collection"
 				type: "gamestage"
 			}]
-			x: 4.0d
-			y: -1.5d
+			x: -21.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["47738EA756C25E6C"]
@@ -28,7 +28,6 @@
 			id: "14D09FEEA85E071D"
 			tasks: [{
 				id: "3A6F582073B90E0E"
-				title: "Corrupted Lunarian"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -42,6 +41,7 @@
 						}
 					}
 				}
+				title: "Corrupted Lunarian"
 				type: "item"
 			}]
 			x: -2.0d
@@ -53,7 +53,6 @@
 			id: "238B617E7B3B5654"
 			tasks: [{
 				id: "6ACA9D1233BC404E"
-				title: "Glacian Ram"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -67,6 +66,7 @@
 						}
 					}
 				}
+				title: "Glacian Ram"
 				type: "item"
 			}]
 			x: -3.5d
@@ -78,7 +78,6 @@
 			id: "50B584FA5E5C74FB"
 			tasks: [{
 				id: "00E5F25826650098"
-				title: "Lunarian"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -92,6 +91,7 @@
 						}
 					}
 				}
+				title: "Lunarian"
 				type: "item"
 			}]
 			x: -5.0d
@@ -103,7 +103,6 @@
 			id: "52D6EA05A405B4CD"
 			tasks: [{
 				id: "403F972EA32EFD50"
-				title: "Lunarian Wandering Trader"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -117,6 +116,7 @@
 						}
 					}
 				}
+				title: "Lunarian Wandering Trader"
 				type: "item"
 			}]
 			x: -5.5d
@@ -128,7 +128,6 @@
 			id: "273E5AD0BC3A7CB3"
 			tasks: [{
 				id: "04F2B02C314D58E1"
-				title: "Martian Raptor"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -142,6 +141,7 @@
 						}
 					}
 				}
+				title: "Martian Raptor"
 				type: "item"
 			}]
 			x: -5.0d
@@ -153,7 +153,6 @@
 			id: "7D5FA84C98661887"
 			tasks: [{
 				id: "1B00BD1307F5BCBD"
-				title: "Mogler"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -167,6 +166,7 @@
 						}
 					}
 				}
+				title: "Mogler"
 				type: "item"
 			}]
 			x: -8.0d
@@ -178,7 +178,6 @@
 			id: "66648C76C4CDA805"
 			tasks: [{
 				id: "0100261419962792"
-				title: "Pygro"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -192,6 +191,7 @@
 						}
 					}
 				}
+				title: "Pygro"
 				type: "item"
 			}]
 			x: -9.5d
@@ -203,7 +203,6 @@
 			id: "1B969CC4C9041781"
 			tasks: [{
 				id: "15AFE3537D8BF6AB"
-				title: "Pygro Brute"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -217,6 +216,7 @@
 						}
 					}
 				}
+				title: "Pygro Brute"
 				type: "item"
 			}]
 			x: -10.0d
@@ -228,7 +228,6 @@
 			id: "4346C4F0DF320B4D"
 			tasks: [{
 				id: "29BCDCF27C7B974C"
-				title: "Star Crawler"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -242,6 +241,7 @@
 						}
 					}
 				}
+				title: "Star Crawler"
 				type: "item"
 			}]
 			x: -11.0d
@@ -253,7 +253,6 @@
 			id: "7520EFFB47C021B0"
 			tasks: [{
 				id: "2A468BC3D37C8996"
-				title: "Sulfur Creeper"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -267,6 +266,7 @@
 						}
 					}
 				}
+				title: "Sulfur Creeper"
 				type: "item"
 			}]
 			x: -13.0d
@@ -278,7 +278,6 @@
 			id: "77838026E1DED0CB"
 			tasks: [{
 				id: "1304F3944FE4B02E"
-				title: "Zombified Mogler"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -292,6 +291,7 @@
 						}
 					}
 				}
+				title: "Zombified Mogler"
 				type: "item"
 			}]
 			x: -14.5d
@@ -303,7 +303,6 @@
 			id: "715F5454B7C1C07D"
 			tasks: [{
 				id: "3642911F84A5BB28"
-				title: "Zombified Pygro"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -317,6 +316,7 @@
 						}
 					}
 				}
+				title: "Zombified Pygro"
 				type: "item"
 			}]
 			x: -12.5d
@@ -328,7 +328,6 @@
 			id: "6E176465110F5225"
 			tasks: [{
 				id: "24CE70341E3B0B53"
-				title: "Alligator Snapping Turtle"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -342,6 +341,7 @@
 						}
 					}
 				}
+				title: "Alligator Snapping Turtle"
 				type: "item"
 			}]
 			x: -12.0d
@@ -353,7 +353,6 @@
 			id: "4E23607BB2183351"
 			tasks: [{
 				id: "4066327FAA7A9733"
-				title: "Anaconda"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -367,6 +366,7 @@
 						}
 					}
 				}
+				title: "Anaconda"
 				type: "item"
 			}]
 			x: -10.5d
@@ -378,7 +378,6 @@
 			id: "517A68057E487DE7"
 			tasks: [{
 				id: "2155377737605C83"
-				title: "Anteater"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -392,6 +391,7 @@
 						}
 					}
 				}
+				title: "Anteater"
 				type: "item"
 			}]
 			x: -9.0d
@@ -403,7 +403,6 @@
 			id: "5F4884D9E062F90C"
 			tasks: [{
 				id: "60340D8A68FC7941"
-				title: "Bald Eagle"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -417,6 +416,7 @@
 						}
 					}
 				}
+				title: "Bald Eagle"
 				type: "item"
 			}]
 			x: -7.5d
@@ -428,7 +428,6 @@
 			id: "7D7C2D5E5F2C15DD"
 			tasks: [{
 				id: "7944896CEF02A4E5"
-				title: "Banana Slug"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -442,6 +441,7 @@
 						}
 					}
 				}
+				title: "Banana Slug"
 				type: "item"
 			}]
 			x: -6.5d
@@ -453,7 +453,6 @@
 			id: "301D0349BDF43573"
 			tasks: [{
 				id: "221A072885081DA7"
-				title: "Bison"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -467,6 +466,7 @@
 						}
 					}
 				}
+				title: "Bison"
 				type: "item"
 			}]
 			x: -4.5d
@@ -478,7 +478,6 @@
 			id: "2FC3700EFB090AC4"
 			tasks: [{
 				id: "4506E55E599D793E"
-				title: "Blobfish"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -492,6 +491,7 @@
 						}
 					}
 				}
+				title: "Blobfish"
 				type: "item"
 			}]
 			x: -9.5d
@@ -503,7 +503,6 @@
 			id: "5903408743EFF4B1"
 			tasks: [{
 				id: "0E16ED04DCEF24EA"
-				title: "Blue Jay"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -517,6 +516,7 @@
 						}
 					}
 				}
+				title: "Blue Jay"
 				type: "item"
 			}]
 			x: -8.0d
@@ -528,7 +528,6 @@
 			id: "7ABDF62F36234F96"
 			tasks: [{
 				id: "681AEFE755D9504C"
-				title: "Bone Serpent"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -542,6 +541,7 @@
 						}
 					}
 				}
+				title: "Bone Serpent"
 				type: "item"
 			}]
 			x: -6.5d
@@ -553,7 +553,6 @@
 			id: "3902E3FF88581D54"
 			tasks: [{
 				id: "70B4883B8A477E6E"
-				title: "Bunfungus"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -567,6 +566,7 @@
 						}
 					}
 				}
+				title: "Bunfungus"
 				type: "item"
 			}]
 			x: -5.0d
@@ -578,7 +578,6 @@
 			id: "4CD4C0F1A6AC29BD"
 			tasks: [{
 				id: "7920833E9D272FCE"
-				title: "Cachalot Whale"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -592,6 +591,7 @@
 						}
 					}
 				}
+				title: "Cachalot Whale"
 				type: "item"
 			}]
 			x: -3.5d
@@ -603,7 +603,6 @@
 			id: "0AA4D30324CF7CD3"
 			tasks: [{
 				id: "30FFD7C51662499F"
-				title: "Caiman"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -617,6 +616,7 @@
 						}
 					}
 				}
+				title: "Caiman"
 				type: "item"
 			}]
 			x: -3.0d
@@ -628,7 +628,6 @@
 			id: "6E2025B4641F545C"
 			tasks: [{
 				id: "2CF1BCAFAA79F717"
-				title: "Capuchin Monkey"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -642,6 +641,7 @@
 						}
 					}
 				}
+				title: "Capuchin Monkey"
 				type: "item"
 			}]
 			x: -2.0d
@@ -653,7 +653,6 @@
 			id: "214AF45127B89ECA"
 			tasks: [{
 				id: "0667C8D22103DAC5"
-				title: "Catfish"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -667,6 +666,7 @@
 						}
 					}
 				}
+				title: "Catfish"
 				type: "item"
 			}]
 			x: -10.0d
@@ -678,7 +678,6 @@
 			id: "6354DCA44C9A6C68"
 			tasks: [{
 				id: "656698F0F55ACD37"
-				title: "Centipede Head"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -692,6 +691,7 @@
 						}
 					}
 				}
+				title: "Centipede Head"
 				type: "item"
 			}]
 			x: -8.5d
@@ -703,7 +703,6 @@
 			id: "5DCD3FC1B7DB4F86"
 			tasks: [{
 				id: "76D3CD97F775F361"
-				title: "Cockroach"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -717,6 +716,7 @@
 						}
 					}
 				}
+				title: "Cockroach"
 				type: "item"
 			}]
 			x: -7.0d
@@ -728,7 +728,6 @@
 			id: "3DCE61F2837A5251"
 			tasks: [{
 				id: "0D036D20464AE60C"
-				title: "Comb Jelly"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -742,6 +741,7 @@
 						}
 					}
 				}
+				title: "Comb Jelly"
 				type: "item"
 			}]
 			x: -5.0d
@@ -753,7 +753,6 @@
 			id: "362A66FE4E054E19"
 			tasks: [{
 				id: "632E787673645C78"
-				title: "Cosmaw"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -767,6 +766,7 @@
 						}
 					}
 				}
+				title: "Cosmaw"
 				type: "item"
 			}]
 			x: -3.5d
@@ -778,7 +778,6 @@
 			id: "32466162E4B64BFB"
 			tasks: [{
 				id: "3CC042F456809EAC"
-				title: "Cosmic Cod"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -792,6 +791,7 @@
 						}
 					}
 				}
+				title: "Cosmic Cod"
 				type: "item"
 			}]
 			x: -2.0d
@@ -803,7 +803,6 @@
 			id: "4DE0D13DAAC220E7"
 			tasks: [{
 				id: "427EC808803FB6DC"
-				title: "Crimson Mosquito"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -817,6 +816,7 @@
 						}
 					}
 				}
+				title: "Crimson Mosquito"
 				type: "item"
 			}]
 			x: -0.5d
@@ -828,7 +828,6 @@
 			id: "339223CF3F95BE2B"
 			tasks: [{
 				id: "52AD8B2AED540F18"
-				title: "Crocodile"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -842,6 +841,7 @@
 						}
 					}
 				}
+				title: "Crocodile"
 				type: "item"
 			}]
 			x: -14.0d
@@ -853,7 +853,6 @@
 			id: "1547AB62570491F7"
 			tasks: [{
 				id: "637979BB9E681F22"
-				title: "Crow"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -867,6 +866,7 @@
 						}
 					}
 				}
+				title: "Crow"
 				type: "item"
 			}]
 			x: -13.0d
@@ -878,7 +878,6 @@
 			id: "1134E5B7EE3E7B09"
 			tasks: [{
 				id: "2A68B45DF7F7CDC3"
-				title: "Devils Hole Pupfish"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -892,6 +891,7 @@
 						}
 					}
 				}
+				title: "Devils Hole Pupfish"
 				type: "item"
 			}]
 			x: -11.5d
@@ -903,7 +903,6 @@
 			id: "7123DE31E0642F07"
 			tasks: [{
 				id: "7618412468DF7B6D"
-				title: "Dropbear"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -917,6 +916,7 @@
 						}
 					}
 				}
+				title: "Dropbear"
 				type: "item"
 			}]
 			x: -10.0d
@@ -928,7 +928,6 @@
 			id: "2396A0F0AC87F589"
 			tasks: [{
 				id: "364A5103650E287B"
-				title: "Elephant"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -942,6 +941,7 @@
 						}
 					}
 				}
+				title: "Elephant"
 				type: "item"
 			}]
 			x: -8.5d
@@ -953,7 +953,6 @@
 			id: "488EED03A496BA4C"
 			tasks: [{
 				id: "5C6BE299E1934D92"
-				title: "Emu"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -967,6 +966,7 @@
 						}
 					}
 				}
+				title: "Emu"
 				type: "item"
 			}]
 			x: -7.0d
@@ -978,7 +978,6 @@
 			id: "7DB630D04C0E0E65"
 			tasks: [{
 				id: "4983CB88453239C8"
-				title: "Endergrade"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -992,6 +991,7 @@
 						}
 					}
 				}
+				title: "Endergrade"
 				type: "item"
 			}]
 			x: -5.5d
@@ -1003,7 +1003,6 @@
 			id: "415A5C8F3DA5FBAA"
 			tasks: [{
 				id: "439BD5DD5275157B"
-				title: "Enderiophage"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1017,6 +1016,7 @@
 						}
 					}
 				}
+				title: "Enderiophage"
 				type: "item"
 			}]
 			x: -4.5d
@@ -1028,7 +1028,6 @@
 			id: "6F40E7FB423A2A4F"
 			tasks: [{
 				id: "74F6529B60FF23D4"
-				title: "Farseer"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1042,6 +1041,7 @@
 						}
 					}
 				}
+				title: "Farseer"
 				type: "item"
 			}]
 			x: -3.0d
@@ -1053,7 +1053,6 @@
 			id: "7F4800BAF092C32D"
 			tasks: [{
 				id: "7224B0EB465BDF93"
-				title: "Flutter"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1067,6 +1066,7 @@
 						}
 					}
 				}
+				title: "Flutter"
 				type: "item"
 			}]
 			x: -8.5d
@@ -1078,7 +1078,6 @@
 			id: "53590B4C56CB861C"
 			tasks: [{
 				id: "76671E4FF3D8958D"
-				title: "Fly"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1092,6 +1091,7 @@
 						}
 					}
 				}
+				title: "Fly"
 				type: "item"
 			}]
 			x: -11.5d
@@ -1103,7 +1103,6 @@
 			id: "216F090AB2E07DE1"
 			tasks: [{
 				id: "352185495AC1698D"
-				title: "Flying Fish"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1117,6 +1116,7 @@
 						}
 					}
 				}
+				title: "Flying Fish"
 				type: "item"
 			}]
 			x: -13.5d
@@ -1128,7 +1128,6 @@
 			id: "10D99BAE26FB68B9"
 			tasks: [{
 				id: "04A8F0E6F6999A9B"
-				title: "Frilled Shark"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1142,6 +1141,7 @@
 						}
 					}
 				}
+				title: "Frilled Shark"
 				type: "item"
 			}]
 			x: -12.5d
@@ -1153,7 +1153,6 @@
 			id: "302CB6479520A232"
 			tasks: [{
 				id: "6FA92E9244C6FF86"
-				title: "Froststalker"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1167,6 +1166,7 @@
 						}
 					}
 				}
+				title: "Froststalker"
 				type: "item"
 			}]
 			x: -6.5d
@@ -1178,7 +1178,6 @@
 			id: "19F6A3CF1BF3FC6E"
 			tasks: [{
 				id: "59854FB2E3BB091E"
-				title: "Gazelle"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1192,6 +1191,7 @@
 						}
 					}
 				}
+				title: "Gazelle"
 				type: "item"
 			}]
 			x: -9.5d
@@ -1203,7 +1203,6 @@
 			id: "667937994C4C92FD"
 			tasks: [{
 				id: "11CE316221A28EFC"
-				title: "Gelada Monkey"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1217,6 +1216,7 @@
 						}
 					}
 				}
+				title: "Gelada Monkey"
 				type: "item"
 			}]
 			x: -5.5d
@@ -1228,7 +1228,6 @@
 			id: "4317943B0BBAFDD3"
 			tasks: [{
 				id: "560FAF98A7157205"
-				title: "Giant Squid"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1242,6 +1241,7 @@
 						}
 					}
 				}
+				title: "Giant Squid"
 				type: "item"
 			}]
 			x: -6.5d
@@ -1253,7 +1253,6 @@
 			id: "078F361018940C51"
 			tasks: [{
 				id: "4AAC552E39C24938"
-				title: "Gorilla"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1267,6 +1266,7 @@
 						}
 					}
 				}
+				title: "Gorilla"
 				type: "item"
 			}]
 			x: -4.5d
@@ -1278,7 +1278,6 @@
 			id: "04D51C4047F39DDC"
 			tasks: [{
 				id: "5AC7A89167FC12DF"
-				title: "Grizzly Bear"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1292,6 +1291,7 @@
 						}
 					}
 				}
+				title: "Grizzly Bear"
 				type: "item"
 			}]
 			x: -3.5d
@@ -1303,7 +1303,6 @@
 			id: "3AEEDC8FC136F171"
 			tasks: [{
 				id: "1492F36974AE63A9"
-				title: "Guster"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1317,6 +1316,7 @@
 						}
 					}
 				}
+				title: "Guster"
 				type: "item"
 			}]
 			x: -2.5d
@@ -1328,7 +1328,6 @@
 			id: "48BAEEC42E67C66D"
 			tasks: [{
 				id: "2D5C65252E5A4B0A"
-				title: "Hammerhead Shark"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1342,6 +1341,7 @@
 						}
 					}
 				}
+				title: "Hammerhead Shark"
 				type: "item"
 			}]
 			x: -3.5d
@@ -1353,7 +1353,6 @@
 			id: "489F0CC35E285327"
 			tasks: [{
 				id: "483CD844AE04A41B"
-				title: "Hummingbird"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1367,6 +1366,7 @@
 						}
 					}
 				}
+				title: "Hummingbird"
 				type: "item"
 			}]
 			x: -4.0d
@@ -1378,7 +1378,6 @@
 			id: "1F35263DFAF146DA"
 			tasks: [{
 				id: "3D8B18F09986125A"
-				title: "Jerboa"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1392,6 +1391,7 @@
 						}
 					}
 				}
+				title: "Jerboa"
 				type: "item"
 			}]
 			x: -7.0d
@@ -1403,7 +1403,6 @@
 			id: "03A7C0FC0DBB3598"
 			tasks: [{
 				id: "0FE3C333F9776C40"
-				title: "Kangaroo"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1417,6 +1416,7 @@
 						}
 					}
 				}
+				title: "Kangaroo"
 				type: "item"
 			}]
 			x: -7.5d
@@ -1428,7 +1428,6 @@
 			id: "757CE0194B395068"
 			tasks: [{
 				id: "0AFF6ABCA165F261"
-				title: "Komodo Dragon"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1442,6 +1441,7 @@
 						}
 					}
 				}
+				title: "Komodo Dragon"
 				type: "item"
 			}]
 			x: -6.0d
@@ -1453,7 +1453,6 @@
 			id: "5FAD7E44D85C5F26"
 			tasks: [{
 				id: "2606DE74CD478F08"
-				title: "Laviathan"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1467,6 +1466,7 @@
 						}
 					}
 				}
+				title: "Laviathan"
 				type: "item"
 			}]
 			x: -9.0d
@@ -1478,7 +1478,6 @@
 			id: "11D5D4BAA6AECF4F"
 			tasks: [{
 				id: "36062DFE473301EB"
-				title: "Leafcutter Ant"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1492,6 +1491,7 @@
 						}
 					}
 				}
+				title: "Leafcutter Ant"
 				type: "item"
 			}]
 			x: -11.5d
@@ -1503,7 +1503,6 @@
 			id: "6C4A7BF545334966"
 			tasks: [{
 				id: "2D8C9050E221FE48"
-				title: "Lobster"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1517,6 +1516,7 @@
 						}
 					}
 				}
+				title: "Lobster"
 				type: "item"
 			}]
 			x: -13.5d
@@ -1528,7 +1528,6 @@
 			id: "3FA43F28FB837D8C"
 			tasks: [{
 				id: "08B233AB4CD12F7F"
-				title: "Maned Wolf"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1542,6 +1541,7 @@
 						}
 					}
 				}
+				title: "Maned Wolf"
 				type: "item"
 			}]
 			x: -14.5d
@@ -1553,7 +1553,6 @@
 			id: "2922B9CD764298DE"
 			tasks: [{
 				id: "3BCE9065010A0EE7"
-				title: "Mantis Shrimp"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1567,6 +1566,7 @@
 						}
 					}
 				}
+				title: "Mantis Shrimp"
 				type: "item"
 			}]
 			x: -15.0d
@@ -1578,7 +1578,6 @@
 			id: "6526E8D00213A396"
 			tasks: [{
 				id: "2F45A0F37024BE18"
-				title: "Mimic Octopus"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1592,6 +1591,7 @@
 						}
 					}
 				}
+				title: "Mimic Octopus"
 				type: "item"
 			}]
 			x: -11.0d
@@ -1603,7 +1603,6 @@
 			id: "3FBA3C87CEC2168C"
 			tasks: [{
 				id: "4408A7795F8D5209"
-				title: "Mimicube"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1617,6 +1616,7 @@
 						}
 					}
 				}
+				title: "Mimicube"
 				type: "item"
 			}]
 			x: -12.0d
@@ -1628,7 +1628,6 @@
 			id: "628D814353BBA5E9"
 			tasks: [{
 				id: "4413789EB70259A1"
-				title: "Moose"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1642,6 +1641,7 @@
 						}
 					}
 				}
+				title: "Moose"
 				type: "item"
 			}]
 			x: -12.5d
@@ -1653,7 +1653,6 @@
 			id: "3E1926123A13D040"
 			tasks: [{
 				id: "3526BB2B8DA9565B"
-				title: "Mudskipper"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1667,6 +1666,7 @@
 						}
 					}
 				}
+				title: "Mudskipper"
 				type: "item"
 			}]
 			x: -10.5d
@@ -1678,7 +1678,6 @@
 			id: "435EDB196A97B483"
 			tasks: [{
 				id: "10EE61D0BF640997"
-				title: "Mungus"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1692,6 +1691,7 @@
 						}
 					}
 				}
+				title: "Mungus"
 				type: "item"
 			}]
 			x: -5.5d
@@ -1703,7 +1703,6 @@
 			id: "39000A7DA3645077"
 			tasks: [{
 				id: "134D5D792CED8278"
-				title: "Murmur"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1717,6 +1716,7 @@
 						}
 					}
 				}
+				title: "Murmur"
 				type: "item"
 			}]
 			x: -2.0d
@@ -1728,7 +1728,6 @@
 			id: "6CA0BFB37CE1440E"
 			tasks: [{
 				id: "68EE8EF248A08248"
-				title: "Orca"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1742,6 +1741,7 @@
 						}
 					}
 				}
+				title: "Orca"
 				type: "item"
 			}]
 			x: -2.5d
@@ -1753,7 +1753,6 @@
 			id: "3CA1C87CDB49117C"
 			tasks: [{
 				id: "1C206782B584DFB8"
-				title: "Platypus"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1767,6 +1766,7 @@
 						}
 					}
 				}
+				title: "Platypus"
 				type: "item"
 			}]
 			x: -12.5d
@@ -1778,7 +1778,6 @@
 			id: "2732E4DD21C3C13B"
 			tasks: [{
 				id: "71728837A28F7744"
-				title: "Potoo"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1792,6 +1791,7 @@
 						}
 					}
 				}
+				title: "Potoo"
 				type: "item"
 			}]
 			x: -15.0d
@@ -1803,7 +1803,6 @@
 			id: "708D899D1D099BA9"
 			tasks: [{
 				id: "2BD1387FE7FE1F0E"
-				title: "Raccoon"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1817,6 +1816,7 @@
 						}
 					}
 				}
+				title: "Raccoon"
 				type: "item"
 			}]
 			x: -13.5d
@@ -1828,7 +1828,6 @@
 			id: "60DAD74E01CFF6E7"
 			tasks: [{
 				id: "5067F9D5B84D187D"
-				title: "Rain Frog"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1842,6 +1841,7 @@
 						}
 					}
 				}
+				title: "Rain Frog"
 				type: "item"
 			}]
 			x: -14.0d
@@ -1853,7 +1853,6 @@
 			id: "7A4D8E90BA53FA04"
 			tasks: [{
 				id: "460CF632E2F1D4D8"
-				title: "Rattlesnake"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1867,6 +1866,7 @@
 						}
 					}
 				}
+				title: "Rattlesnake"
 				type: "item"
 			}]
 			x: -10.0d
@@ -1878,7 +1878,6 @@
 			id: "39BFCF167F9F9891"
 			tasks: [{
 				id: "4EC094BAE781C011"
-				title: "Rhinoceros"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1892,6 +1891,7 @@
 						}
 					}
 				}
+				title: "Rhinoceros"
 				type: "item"
 			}]
 			x: -7.5d
@@ -1903,7 +1903,6 @@
 			id: "63D6B67D896996E5"
 			tasks: [{
 				id: "4DDD18DAF1D30B5F"
-				title: "Roadrunner"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1917,6 +1916,7 @@
 						}
 					}
 				}
+				title: "Roadrunner"
 				type: "item"
 			}]
 			x: -7.0d
@@ -1928,7 +1928,6 @@
 			id: "2E45EF3B873E2BEA"
 			tasks: [{
 				id: "1FECC9E8FC2C6167"
-				title: "Rocky Roller"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1942,6 +1941,7 @@
 						}
 					}
 				}
+				title: "Rocky Roller"
 				type: "item"
 			}]
 			x: -8.0d
@@ -1953,7 +1953,6 @@
 			id: "74035B831B9D7C77"
 			tasks: [{
 				id: "7177F52E19C31090"
-				title: "Seagull"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1967,6 +1966,7 @@
 						}
 					}
 				}
+				title: "Seagull"
 				type: "item"
 			}]
 			x: -11.0d
@@ -1978,7 +1978,6 @@
 			id: "4C88111EE1D7CE44"
 			tasks: [{
 				id: "4C48460AECA0E026"
-				title: "Seal"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -1992,6 +1991,7 @@
 						}
 					}
 				}
+				title: "Seal"
 				type: "item"
 			}]
 			x: -15.5d
@@ -2003,7 +2003,6 @@
 			id: "7C42CA1A309DF08E"
 			tasks: [{
 				id: "06A2DD05DEACB3F7"
-				title: "Shoebill"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2017,6 +2016,7 @@
 						}
 					}
 				}
+				title: "Shoebill"
 				type: "item"
 			}]
 			x: -15.5d
@@ -2028,7 +2028,6 @@
 			id: "16E304F4A956A6E1"
 			tasks: [{
 				id: "5C6D3AFAE2075BAD"
-				title: "Skelewag"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2042,6 +2041,7 @@
 						}
 					}
 				}
+				title: "Skelewag"
 				type: "item"
 			}]
 			x: -15.5d
@@ -2053,7 +2053,6 @@
 			id: "52D441D61999367B"
 			tasks: [{
 				id: "25A074792F0CD067"
-				title: "Skreecher"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2067,6 +2066,7 @@
 						}
 					}
 				}
+				title: "Skreecher"
 				type: "item"
 			}]
 			x: -13.5d
@@ -2078,7 +2078,6 @@
 			id: "342950ED030E9C2D"
 			tasks: [{
 				id: "4917593ACA296A9B"
-				title: "Skunk"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2092,6 +2091,7 @@
 						}
 					}
 				}
+				title: "Skunk"
 				type: "item"
 			}]
 			x: -8.5d
@@ -2103,7 +2103,6 @@
 			id: "70AC79A76F6F6E36"
 			tasks: [{
 				id: "3ED78741310072CB"
-				title: "Snow Leopard"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2117,6 +2116,7 @@
 						}
 					}
 				}
+				title: "Snow Leopard"
 				type: "item"
 			}]
 			x: -7.5d
@@ -2128,7 +2128,6 @@
 			id: "463667659A205CE8"
 			tasks: [{
 				id: "6FDC797DB45B4646"
-				title: "Soul Vulture"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2142,6 +2141,7 @@
 						}
 					}
 				}
+				title: "Soul Vulture"
 				type: "item"
 			}]
 			x: -11.5d
@@ -2153,7 +2153,6 @@
 			id: "533AAD729F83998C"
 			tasks: [{
 				id: "54126D7D52C15FA7"
-				title: "Spectre"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2167,6 +2166,7 @@
 						}
 					}
 				}
+				title: "Spectre"
 				type: "item"
 			}]
 			x: -16.0d
@@ -2178,7 +2178,6 @@
 			id: "3704163301BF4782"
 			tasks: [{
 				id: "303F09E198F119BA"
-				title: "Straddler"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2192,6 +2191,7 @@
 						}
 					}
 				}
+				title: "Straddler"
 				type: "item"
 			}]
 			x: -13.5d
@@ -2203,7 +2203,6 @@
 			id: "600A31984C175BAC"
 			tasks: [{
 				id: "3F6305FE105E2630"
-				title: "Stradpole"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2217,6 +2216,7 @@
 						}
 					}
 				}
+				title: "Stradpole"
 				type: "item"
 			}]
 			x: -10.5d
@@ -2228,7 +2228,6 @@
 			id: "18932925D90471F3"
 			tasks: [{
 				id: "6B6DB4A57F5F0BE9"
-				title: "Sugar Glider"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2242,6 +2241,7 @@
 						}
 					}
 				}
+				title: "Sugar Glider"
 				type: "item"
 			}]
 			x: -9.0d
@@ -2253,7 +2253,6 @@
 			id: "0FC67299622FBE54"
 			tasks: [{
 				id: "2CC1558DC79EE01C"
-				title: "Sunbird"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2267,6 +2266,7 @@
 						}
 					}
 				}
+				title: "Sunbird"
 				type: "item"
 			}]
 			x: -12.0d
@@ -2278,7 +2278,6 @@
 			id: "32EA1118268386BE"
 			tasks: [{
 				id: "618DDF4707A03DBE"
-				title: "Tarantula Hawk"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2292,6 +2291,7 @@
 						}
 					}
 				}
+				title: "Tarantula Hawk"
 				type: "item"
 			}]
 			x: -11.0d
@@ -2303,7 +2303,6 @@
 			id: "18CA65A3886D9B03"
 			tasks: [{
 				id: "574D17F414AC033E"
-				title: "Tasmanian Devil"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2317,6 +2316,7 @@
 						}
 					}
 				}
+				title: "Tasmanian Devil"
 				type: "item"
 			}]
 			x: -10.0d
@@ -2328,7 +2328,6 @@
 			id: "4D17D2A6F1F17391"
 			tasks: [{
 				id: "6965B19C3A3A4CF3"
-				title: "Terrapin"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2342,6 +2341,7 @@
 						}
 					}
 				}
+				title: "Terrapin"
 				type: "item"
 			}]
 			x: -8.0d
@@ -2353,7 +2353,6 @@
 			id: "7BEBC8F79DCF1DF3"
 			tasks: [{
 				id: "12EF0F75F36FF8CB"
-				title: "Tiger"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2367,6 +2366,7 @@
 						}
 					}
 				}
+				title: "Tiger"
 				type: "item"
 			}]
 			x: -6.5d
@@ -2378,7 +2378,6 @@
 			id: "509A77401F136F20"
 			tasks: [{
 				id: "51E75DF771D7D0A5"
-				title: "Toucan"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2392,6 +2391,7 @@
 						}
 					}
 				}
+				title: "Toucan"
 				type: "item"
 			}]
 			x: -13.0d
@@ -2403,7 +2403,6 @@
 			id: "2FE3E0BEDBBAB48B"
 			tasks: [{
 				id: "698EECA52976F6BD"
-				title: "Triops"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2417,6 +2416,7 @@
 						}
 					}
 				}
+				title: "Triops"
 				type: "item"
 			}]
 			x: -14.5d
@@ -2428,7 +2428,6 @@
 			id: "18872FDA85538B8E"
 			tasks: [{
 				id: "73EBF49355033217"
-				title: "Tusklin"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2442,6 +2441,7 @@
 						}
 					}
 				}
+				title: "Tusklin"
 				type: "item"
 			}]
 			x: -15.5d
@@ -2453,7 +2453,6 @@
 			id: "0B11FEEA9C5E5C20"
 			tasks: [{
 				id: "1CE6435A7AB4CBBE"
-				title: "Underminer"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2467,6 +2466,7 @@
 						}
 					}
 				}
+				title: "Underminer"
 				type: "item"
 			}]
 			x: -12.0d
@@ -2478,7 +2478,6 @@
 			id: "6A2ECE6D873517D6"
 			tasks: [{
 				id: "55AA39891B7642CC"
-				title: "Void Worm"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2492,6 +2491,7 @@
 						}
 					}
 				}
+				title: "Void Worm"
 				type: "item"
 			}]
 			x: -9.0d
@@ -2503,7 +2503,6 @@
 			id: "3C9A151E852DE6D5"
 			tasks: [{
 				id: "4ED765A9DE7352CE"
-				title: "Warped Mosco"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2517,6 +2516,7 @@
 						}
 					}
 				}
+				title: "Warped Mosco"
 				type: "item"
 			}]
 			x: -8.0d
@@ -2528,7 +2528,6 @@
 			id: "23E90039B0E3C34C"
 			tasks: [{
 				id: "37A34333E9E6EA74"
-				title: "Warped Toad"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2542,6 +2541,7 @@
 						}
 					}
 				}
+				title: "Warped Toad"
 				type: "item"
 			}]
 			x: -6.5d
@@ -2553,7 +2553,6 @@
 			id: "557C88E3E340CF95"
 			tasks: [{
 				id: "32DE8A6B55C0BD72"
-				title: "Angler Fish"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2567,6 +2566,7 @@
 						}
 					}
 				}
+				title: "Angler Fish"
 				type: "item"
 			}]
 			x: -4.5d
@@ -2578,7 +2578,6 @@
 			id: "56DA2C321642BB9E"
 			tasks: [{
 				id: "3A07FF62C5D89D1F"
-				title: "Sculk Centipede"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2592,6 +2591,7 @@
 						}
 					}
 				}
+				title: "Sculk Centipede"
 				type: "item"
 			}]
 			x: -14.0d
@@ -2603,7 +2603,6 @@
 			id: "320A93C95808C94E"
 			tasks: [{
 				id: "5FA84E06EBAB02E6"
-				title: "Sculk Leech"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2617,6 +2616,7 @@
 						}
 					}
 				}
+				title: "Sculk Leech"
 				type: "item"
 			}]
 			x: -13.5d
@@ -2628,7 +2628,6 @@
 			id: "4D6FD80251BC39E8"
 			tasks: [{
 				id: "380EF01550EDFD9B"
-				title: "Sculk Snapper"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2642,6 +2641,7 @@
 						}
 					}
 				}
+				title: "Sculk Snapper"
 				type: "item"
 			}]
 			x: -11.0d
@@ -2653,7 +2653,6 @@
 			id: "0A2DE7F6EBC455A2"
 			tasks: [{
 				id: "13E8FBC5E082DF14"
-				title: "Shattered"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2667,6 +2666,7 @@
 						}
 					}
 				}
+				title: "Shattered"
 				type: "item"
 			}]
 			x: -10.0d
@@ -2678,7 +2678,6 @@
 			id: "7398A6857D4DA57B"
 			tasks: [{
 				id: "215FA59E2112574C"
-				title: "Shriek Worm"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2692,6 +2691,7 @@
 						}
 					}
 				}
+				title: "Shriek Worm"
 				type: "item"
 			}]
 			x: -6.5d
@@ -2703,7 +2703,6 @@
 			id: "11106941DDFA80CD"
 			tasks: [{
 				id: "54228481EE148C21"
-				title: "Sludge"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2717,6 +2716,7 @@
 						}
 					}
 				}
+				title: "Sludge"
 				type: "item"
 			}]
 			x: -9.0d
@@ -2728,7 +2728,6 @@
 			id: "50282FD38636EBBF"
 			tasks: [{
 				id: "673D7E862D69EB33"
-				title: "Stalker"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2742,6 +2741,7 @@
 						}
 					}
 				}
+				title: "Stalker"
 				type: "item"
 			}]
 			x: -7.5d
@@ -2753,7 +2753,6 @@
 			id: "602BDEAF5D9DB8AC"
 			tasks: [{
 				id: "2F69CCC8362B4B6A"
-				title: "Allay"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2767,6 +2766,7 @@
 						}
 					}
 				}
+				title: "Allay"
 				type: "item"
 			}]
 			x: -5.5d
@@ -2778,7 +2778,6 @@
 			id: "2502832EDE596403"
 			tasks: [{
 				id: "6175903B0308B2B7"
-				title: "Axolotl"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2792,6 +2791,7 @@
 						}
 					}
 				}
+				title: "Axolotl"
 				type: "item"
 			}]
 			x: -12.5d
@@ -2803,7 +2803,6 @@
 			id: "4E53DCA7CE6881A9"
 			tasks: [{
 				id: "4C47F2C45515741C"
-				title: "Bat"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2817,6 +2816,7 @@
 						}
 					}
 				}
+				title: "Bat"
 				type: "item"
 			}]
 			x: -11.5d
@@ -2828,7 +2828,6 @@
 			id: "012EC98D1CAA9308"
 			tasks: [{
 				id: "4E01BEB68466C615"
-				title: "Bee"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2842,6 +2841,7 @@
 						}
 					}
 				}
+				title: "Bee"
 				type: "item"
 			}]
 			x: -15.5d
@@ -2853,7 +2853,6 @@
 			id: "1027B195FACACB11"
 			tasks: [{
 				id: "00DFAF4746891618"
-				title: "Blaze"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2867,6 +2866,7 @@
 						}
 					}
 				}
+				title: "Blaze"
 				type: "item"
 			}]
 			x: -4.0d
@@ -2878,7 +2878,6 @@
 			id: "600F9816F633C7B6"
 			tasks: [{
 				id: "17E4929FC105FBF5"
-				title: "Camel"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2892,6 +2891,7 @@
 						}
 					}
 				}
+				title: "Camel"
 				type: "item"
 			}]
 			x: -5.0d
@@ -2903,7 +2903,6 @@
 			id: "5F536D2A6456F5A6"
 			tasks: [{
 				id: "54539484A3AB567D"
-				title: "Cat"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2917,6 +2916,7 @@
 						}
 					}
 				}
+				title: "Cat"
 				type: "item"
 			}]
 			x: -3.0d
@@ -2928,7 +2928,6 @@
 			id: "6C88C2ACDE4BBB97"
 			tasks: [{
 				id: "7D81AD0EB1488FFE"
-				title: "Cave Spider"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2942,6 +2941,7 @@
 						}
 					}
 				}
+				title: "Cave Spider"
 				type: "item"
 			}]
 			x: -5.5d
@@ -2953,7 +2953,6 @@
 			id: "37D697EFC3F82827"
 			tasks: [{
 				id: "479730F575556527"
-				title: "Chicken"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2967,6 +2966,7 @@
 						}
 					}
 				}
+				title: "Chicken"
 				type: "item"
 			}]
 			x: -3.5d
@@ -2978,7 +2978,6 @@
 			id: "131CFE612B33C357"
 			tasks: [{
 				id: "71A400C70F949990"
-				title: "Cod"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -2992,6 +2991,7 @@
 						}
 					}
 				}
+				title: "Cod"
 				type: "item"
 			}]
 			x: -10.5d
@@ -3003,7 +3003,6 @@
 			id: "07CDAEB963D898F9"
 			tasks: [{
 				id: "24D186A4F6C93111"
-				title: "Cow"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3017,6 +3016,7 @@
 						}
 					}
 				}
+				title: "Cow"
 				type: "item"
 			}]
 			x: -2.5d
@@ -3028,7 +3028,6 @@
 			id: "43D2AC070E0570B6"
 			tasks: [{
 				id: "58354067F067F1B1"
-				title: "Creeper"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3042,6 +3041,7 @@
 						}
 					}
 				}
+				title: "Creeper"
 				type: "item"
 			}]
 			x: -15.0d
@@ -3053,7 +3053,6 @@
 			id: "3A88F44A6FD117A5"
 			tasks: [{
 				id: "5C85D7E542B5BFFF"
-				title: "Dolphin"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3067,6 +3066,7 @@
 						}
 					}
 				}
+				title: "Dolphin"
 				type: "item"
 			}]
 			x: -9.0d
@@ -3078,7 +3078,6 @@
 			id: "3D3B9D8F7939841A"
 			tasks: [{
 				id: "61DAED34CCF3114F"
-				title: "Donkey"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3092,6 +3091,7 @@
 						}
 					}
 				}
+				title: "Donkey"
 				type: "item"
 			}]
 			x: -14.5d
@@ -3103,7 +3103,6 @@
 			id: "4EB370F53EEBC04B"
 			tasks: [{
 				id: "338D2A81B8F75043"
-				title: "Drowned"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3117,6 +3116,7 @@
 						}
 					}
 				}
+				title: "Drowned"
 				type: "item"
 			}]
 			x: -2.5d
@@ -3128,7 +3128,6 @@
 			id: "1F97717750E97244"
 			tasks: [{
 				id: "7DAFC0F0847C1067"
-				title: "Elder Guardian"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3142,6 +3141,7 @@
 						}
 					}
 				}
+				title: "Elder Guardian"
 				type: "item"
 			}]
 			x: -6.0d
@@ -3153,7 +3153,6 @@
 			id: "0CAAB74F3228B45B"
 			tasks: [{
 				id: "1EFCD2067713658E"
-				title: "Enderman"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3167,6 +3166,7 @@
 						}
 					}
 				}
+				title: "Enderman"
 				type: "item"
 			}]
 			x: -1.5d
@@ -3178,7 +3178,6 @@
 			id: "4B2753EE6C6058A3"
 			tasks: [{
 				id: "22276C00684817AE"
-				title: "Endermite"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3192,6 +3191,7 @@
 						}
 					}
 				}
+				title: "Endermite"
 				type: "item"
 			}]
 			x: -1.5d
@@ -3203,7 +3203,6 @@
 			id: "2E4B2CEBC0BE1BD6"
 			tasks: [{
 				id: "0CF6B283612FFAC1"
-				title: "Evoker"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3217,6 +3216,7 @@
 						}
 					}
 				}
+				title: "Evoker"
 				type: "item"
 			}]
 			x: -1.5d
@@ -3228,7 +3228,6 @@
 			id: "0D2B1A6B64A012E6"
 			tasks: [{
 				id: "4BF2E996C23519F1"
-				title: "Fox"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3242,6 +3241,7 @@
 						}
 					}
 				}
+				title: "Fox"
 				type: "item"
 			}]
 			x: -1.5d
@@ -3253,7 +3253,6 @@
 			id: "3CFEAD9560659529"
 			tasks: [{
 				id: "456A842AA4EC46D9"
-				title: "Frog"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3267,6 +3266,7 @@
 						}
 					}
 				}
+				title: "Frog"
 				type: "item"
 			}]
 			x: -1.0d
@@ -3278,7 +3278,6 @@
 			id: "35516A44D12DECEF"
 			tasks: [{
 				id: "53362A794C0AF49E"
-				title: "Ghast"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3292,6 +3291,7 @@
 						}
 					}
 				}
+				title: "Ghast"
 				type: "item"
 			}]
 			x: -16.5d
@@ -3303,7 +3303,6 @@
 			id: "40AA6708AC40B6E9"
 			tasks: [{
 				id: "684CEE8F67F0586B"
-				title: "Glow Squid"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3317,6 +3316,7 @@
 						}
 					}
 				}
+				title: "Glow Squid"
 				type: "item"
 			}]
 			x: -17.0d
@@ -3328,7 +3328,6 @@
 			id: "187156A4941D8631"
 			tasks: [{
 				id: "4978ED74ED5D9CAF"
-				title: "Goat"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3342,6 +3341,7 @@
 						}
 					}
 				}
+				title: "Goat"
 				type: "item"
 			}]
 			x: -16.5d
@@ -3353,7 +3353,6 @@
 			id: "4CF2983784BE1697"
 			tasks: [{
 				id: "520BF3E36481A665"
-				title: "Guardian"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3367,6 +3366,7 @@
 						}
 					}
 				}
+				title: "Guardian"
 				type: "item"
 			}]
 			x: -17.5d
@@ -3378,7 +3378,6 @@
 			id: "04C292021AFE3911"
 			tasks: [{
 				id: "3F83E8F69F8166A7"
-				title: "Hoglin"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3392,6 +3391,7 @@
 						}
 					}
 				}
+				title: "Hoglin"
 				type: "item"
 			}]
 			x: -3.5d
@@ -3403,7 +3403,6 @@
 			id: "115751A0922ED13D"
 			tasks: [{
 				id: "71064F45AE9C9BF3"
-				title: "Horse"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3417,6 +3416,7 @@
 						}
 					}
 				}
+				title: "Horse"
 				type: "item"
 			}]
 			x: -7.0d
@@ -3428,7 +3428,6 @@
 			id: "1407DBF4D883E61E"
 			tasks: [{
 				id: "6A5FC52451517074"
-				title: "Husk"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3442,6 +3441,7 @@
 						}
 					}
 				}
+				title: "Husk"
 				type: "item"
 			}]
 			x: -6.0d
@@ -3453,7 +3453,6 @@
 			id: "2F387A52224F101F"
 			tasks: [{
 				id: "5B23A63215A64EDE"
-				title: "Illusioner"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3467,6 +3466,7 @@
 						}
 					}
 				}
+				title: "Illusioner"
 				type: "item"
 			}]
 			x: -8.0d
@@ -3478,7 +3478,6 @@
 			id: "7ED8F61D1F08023F"
 			tasks: [{
 				id: "3903D542A1A4BD76"
-				title: "Iron Golem"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3492,6 +3491,7 @@
 						}
 					}
 				}
+				title: "Iron Golem"
 				type: "item"
 			}]
 			x: -10.5d
@@ -3503,7 +3503,6 @@
 			id: "2D312C34EE8CE736"
 			tasks: [{
 				id: "7444023D86A49DD5"
-				title: "Llama"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3517,6 +3516,7 @@
 						}
 					}
 				}
+				title: "Llama"
 				type: "item"
 			}]
 			x: -14.0d
@@ -3528,7 +3528,6 @@
 			id: "7191747F70111FC0"
 			tasks: [{
 				id: "6D9F34BDE53A65FE"
-				title: "Magma Cube"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3542,6 +3541,7 @@
 						}
 					}
 				}
+				title: "Magma Cube"
 				type: "item"
 			}]
 			x: -13.0d
@@ -3553,7 +3553,6 @@
 			id: "69CE9DB1C475E0C8"
 			tasks: [{
 				id: "7CEDEE721A150575"
-				title: "Mooshroom"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3567,6 +3566,7 @@
 						}
 					}
 				}
+				title: "Mooshroom"
 				type: "item"
 			}]
 			x: -12.0d
@@ -3578,7 +3578,6 @@
 			id: "1B3C9544A34F2ABE"
 			tasks: [{
 				id: "5D9BEC862037D3B6"
-				title: "Mule"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3592,6 +3591,7 @@
 						}
 					}
 				}
+				title: "Mule"
 				type: "item"
 			}]
 			x: -9.0d
@@ -3603,7 +3603,6 @@
 			id: "24601942CFE7A84D"
 			tasks: [{
 				id: "138A3628DA391C8F"
-				title: "Ocelot"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3617,6 +3616,7 @@
 						}
 					}
 				}
+				title: "Ocelot"
 				type: "item"
 			}]
 			x: -9.5d
@@ -3628,7 +3628,6 @@
 			id: "5700D3FF6AF9BBB7"
 			tasks: [{
 				id: "40D91F31B47CA0C4"
-				title: "Panda"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3642,6 +3641,7 @@
 						}
 					}
 				}
+				title: "Panda"
 				type: "item"
 			}]
 			x: -8.5d
@@ -3653,7 +3653,6 @@
 			id: "363BD9AAA7C5910D"
 			tasks: [{
 				id: "309DE3EDCD2407BA"
-				title: "Parrot"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3667,6 +3666,7 @@
 						}
 					}
 				}
+				title: "Parrot"
 				type: "item"
 			}]
 			x: -7.5d
@@ -3678,7 +3678,6 @@
 			id: "6C0B7BBE6660E279"
 			tasks: [{
 				id: "6D28453FA916CB11"
-				title: "Phantom"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3692,6 +3691,7 @@
 						}
 					}
 				}
+				title: "Phantom"
 				type: "item"
 			}]
 			x: -5.0d
@@ -3703,7 +3703,6 @@
 			id: "34F827FA355786DF"
 			tasks: [{
 				id: "1EF01ECD29B0A343"
-				title: "Pig"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3717,6 +3716,7 @@
 						}
 					}
 				}
+				title: "Pig"
 				type: "item"
 			}]
 			x: -10.5d
@@ -3728,7 +3728,6 @@
 			id: "22E6ED11284E579E"
 			tasks: [{
 				id: "04AEE88079FA09C3"
-				title: "Piglin"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3742,6 +3741,7 @@
 						}
 					}
 				}
+				title: "Piglin"
 				type: "item"
 			}]
 			x: -11.5d
@@ -3753,7 +3753,6 @@
 			id: "43B8A69A05E73010"
 			tasks: [{
 				id: "02E1D2630DD31B79"
-				title: "Piglin Brute"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3767,6 +3766,7 @@
 						}
 					}
 				}
+				title: "Piglin Brute"
 				type: "item"
 			}]
 			x: -12.5d
@@ -3778,7 +3778,6 @@
 			id: "377063B516A1915B"
 			tasks: [{
 				id: "61C21EE9BA261A3A"
-				title: "Pillager"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3792,6 +3791,7 @@
 						}
 					}
 				}
+				title: "Pillager"
 				type: "item"
 			}]
 			x: -13.5d
@@ -3803,7 +3803,6 @@
 			id: "7F8C9F98A0E31BB1"
 			tasks: [{
 				id: "1B44DCE2FB625BFE"
-				title: "Polar Bear"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3817,6 +3816,7 @@
 						}
 					}
 				}
+				title: "Polar Bear"
 				type: "item"
 			}]
 			x: -14.5d
@@ -3828,7 +3828,6 @@
 			id: "0B505E8AEC9129DF"
 			tasks: [{
 				id: "417AB405A93F51B7"
-				title: "Pufferfish"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3842,6 +3841,7 @@
 						}
 					}
 				}
+				title: "Pufferfish"
 				type: "item"
 			}]
 			x: -15.0d
@@ -3853,7 +3853,6 @@
 			id: "31E1E331DA76F532"
 			tasks: [{
 				id: "09D7AFE2FCF1DF49"
-				title: "Rabbit"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3867,6 +3866,7 @@
 						}
 					}
 				}
+				title: "Rabbit"
 				type: "item"
 			}]
 			x: -15.5d
@@ -3878,7 +3878,6 @@
 			id: "6F7552C7F87E70C7"
 			tasks: [{
 				id: "219F2E89AA1F82C2"
-				title: "Ravager"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3892,6 +3891,7 @@
 						}
 					}
 				}
+				title: "Ravager"
 				type: "item"
 			}]
 			x: -16.0d
@@ -3903,7 +3903,6 @@
 			id: "3874D5C27FCE7950"
 			tasks: [{
 				id: "50308DFC64E33357"
-				title: "Salmon"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3917,6 +3916,7 @@
 						}
 					}
 				}
+				title: "Salmon"
 				type: "item"
 			}]
 			x: -16.5d
@@ -3928,7 +3928,6 @@
 			id: "51BEA8CDA495CA0E"
 			tasks: [{
 				id: "4AF63BABF1D04BDD"
-				title: "Sheep"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3942,6 +3941,7 @@
 						}
 					}
 				}
+				title: "Sheep"
 				type: "item"
 			}]
 			x: -17.5d
@@ -3953,7 +3953,6 @@
 			id: "683058C60920F7A6"
 			tasks: [{
 				id: "77FBCEB4BF5AD69E"
-				title: "Shulker"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3967,6 +3966,7 @@
 						}
 					}
 				}
+				title: "Shulker"
 				type: "item"
 			}]
 			x: -16.5d
@@ -3978,7 +3978,6 @@
 			id: "301488D85235A220"
 			tasks: [{
 				id: "49A05D0DB2A71721"
-				title: "Silverfish"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -3992,6 +3991,7 @@
 						}
 					}
 				}
+				title: "Silverfish"
 				type: "item"
 			}]
 			x: -17.5d
@@ -4003,7 +4003,6 @@
 			id: "4A2644749D40DA52"
 			tasks: [{
 				id: "66D90FFFE3E74B91"
-				title: "Skeleton"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4017,6 +4016,7 @@
 						}
 					}
 				}
+				title: "Skeleton"
 				type: "item"
 			}]
 			x: -18.0d
@@ -4028,7 +4028,6 @@
 			id: "1C185871CE3F488E"
 			tasks: [{
 				id: "6EE046E3F3A71449"
-				title: "Skeleton Horse"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4042,6 +4041,7 @@
 						}
 					}
 				}
+				title: "Skeleton Horse"
 				type: "item"
 			}]
 			x: -18.5d
@@ -4053,7 +4053,6 @@
 			id: "3865CFEB9AF97CDB"
 			tasks: [{
 				id: "371D17BC52A71C1F"
-				title: "Slime"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4067,6 +4066,7 @@
 						}
 					}
 				}
+				title: "Slime"
 				type: "item"
 			}]
 			x: -17.5d
@@ -4078,7 +4078,6 @@
 			id: "1E56DB608D0D8E30"
 			tasks: [{
 				id: "04CECFC97E6AF559"
-				title: "Sniffer"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4092,6 +4091,7 @@
 						}
 					}
 				}
+				title: "Sniffer"
 				type: "item"
 			}]
 			x: -17.0d
@@ -4103,7 +4103,6 @@
 			id: "765D153EB15E01C7"
 			tasks: [{
 				id: "54A19ACD2C2432CD"
-				title: "Snow Golem"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4117,6 +4116,7 @@
 						}
 					}
 				}
+				title: "Snow Golem"
 				type: "item"
 			}]
 			x: -16.5d
@@ -4128,7 +4128,6 @@
 			id: "274B070DB4777543"
 			tasks: [{
 				id: "4D3795D1F038C269"
-				title: "Spider"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4142,6 +4141,7 @@
 						}
 					}
 				}
+				title: "Spider"
 				type: "item"
 			}]
 			x: -4.0d
@@ -4153,7 +4153,6 @@
 			id: "54349F88221AF77E"
 			tasks: [{
 				id: "168D8D64FF683DCD"
-				title: "Squid"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4167,6 +4166,7 @@
 						}
 					}
 				}
+				title: "Squid"
 				type: "item"
 			}]
 			x: -16.0d
@@ -4178,7 +4178,6 @@
 			id: "138AEA878B7DA2BA"
 			tasks: [{
 				id: "554D4AD622D1A60E"
-				title: "Stray"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4192,6 +4191,7 @@
 						}
 					}
 				}
+				title: "Stray"
 				type: "item"
 			}]
 			x: -19.0d
@@ -4203,7 +4203,6 @@
 			id: "5ECE05ED53A21A22"
 			tasks: [{
 				id: "27BE5968BD0AEF7E"
-				title: "Strider"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4217,6 +4216,7 @@
 						}
 					}
 				}
+				title: "Strider"
 				type: "item"
 			}]
 			x: -18.5d
@@ -4228,7 +4228,6 @@
 			id: "715E1575FE037445"
 			tasks: [{
 				id: "1A4FDF57BAC0920E"
-				title: "Tadpole"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4242,6 +4241,7 @@
 						}
 					}
 				}
+				title: "Tadpole"
 				type: "item"
 			}]
 			x: -18.5d
@@ -4253,7 +4253,6 @@
 			id: "5CA3C1816E246C8D"
 			tasks: [{
 				id: "4297F5B5FC034300"
-				title: "Tropical Fish"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4267,6 +4266,7 @@
 						}
 					}
 				}
+				title: "Tropical Fish"
 				type: "item"
 			}]
 			x: -18.0d
@@ -4278,7 +4278,6 @@
 			id: "4AABA9B1D8283FBD"
 			tasks: [{
 				id: "7C946B5F776B6C56"
-				title: "Turtle"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4292,6 +4291,7 @@
 						}
 					}
 				}
+				title: "Turtle"
 				type: "item"
 			}]
 			x: -17.5d
@@ -4303,7 +4303,6 @@
 			id: "6202685B042ABA57"
 			tasks: [{
 				id: "4027CC102AA5F279"
-				title: "Vex"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4317,6 +4316,7 @@
 						}
 					}
 				}
+				title: "Vex"
 				type: "item"
 			}]
 			x: -17.0d
@@ -4328,7 +4328,6 @@
 			id: "223EEDCB4618B39A"
 			tasks: [{
 				id: "1B4212914A41FFC8"
-				title: "Villager"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4342,6 +4341,7 @@
 						}
 					}
 				}
+				title: "Villager"
 				type: "item"
 			}]
 			x: -16.5d
@@ -4353,7 +4353,6 @@
 			id: "2F2E66A604FB26D3"
 			tasks: [{
 				id: "5A38162DD3FEF06E"
-				title: "Vindicator"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4367,6 +4366,7 @@
 						}
 					}
 				}
+				title: "Vindicator"
 				type: "item"
 			}]
 			x: -15.5d
@@ -4378,7 +4378,6 @@
 			id: "22E4507C34843885"
 			tasks: [{
 				id: "545BE8D6D13094D5"
-				title: "Wandering Trader"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4392,6 +4391,7 @@
 						}
 					}
 				}
+				title: "Wandering Trader"
 				type: "item"
 			}]
 			x: -16.0d
@@ -4403,7 +4403,6 @@
 			id: "498F29E98FBAC67A"
 			tasks: [{
 				id: "07151C3F75F433F8"
-				title: "Witch"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4417,6 +4416,7 @@
 						}
 					}
 				}
+				title: "Witch"
 				type: "item"
 			}]
 			x: -15.0d
@@ -4428,7 +4428,6 @@
 			id: "03F389ACEBA2C35E"
 			tasks: [{
 				id: "3C6247412768D521"
-				title: "Wither"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4442,6 +4441,7 @@
 						}
 					}
 				}
+				title: "Wither"
 				type: "item"
 			}]
 			x: -14.0d
@@ -4453,7 +4453,6 @@
 			id: "0AB1CD97D7B3ECD3"
 			tasks: [{
 				id: "449F28183BBB9BDC"
-				title: "Wither Skeleton"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4467,6 +4466,7 @@
 						}
 					}
 				}
+				title: "Wither Skeleton"
 				type: "item"
 			}]
 			x: -13.0d
@@ -4478,7 +4478,6 @@
 			id: "24D485E19BB7AE75"
 			tasks: [{
 				id: "28BAC8651B997C79"
-				title: "Wolf"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4492,6 +4491,7 @@
 						}
 					}
 				}
+				title: "Wolf"
 				type: "item"
 			}]
 			x: -12.0d
@@ -4503,7 +4503,6 @@
 			id: "5E00D4178BAD03E1"
 			tasks: [{
 				id: "4E7ECCB2B7772C74"
-				title: "Zoglin"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4517,6 +4516,7 @@
 						}
 					}
 				}
+				title: "Zoglin"
 				type: "item"
 			}]
 			x: -11.0d
@@ -4528,7 +4528,6 @@
 			id: "42504F6E39FFCD01"
 			tasks: [{
 				id: "347012D5C365F90A"
-				title: "Zombie"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4542,6 +4541,7 @@
 						}
 					}
 				}
+				title: "Zombie"
 				type: "item"
 			}]
 			x: -10.0d
@@ -4553,7 +4553,6 @@
 			id: "4529D311A937C42F"
 			tasks: [{
 				id: "4C7B027A562D1078"
-				title: "Zombie Villager"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4567,6 +4566,7 @@
 						}
 					}
 				}
+				title: "Zombie Villager"
 				type: "item"
 			}]
 			x: -9.0d
@@ -4578,7 +4578,6 @@
 			id: "4909F9F2B8558B6C"
 			tasks: [{
 				id: "0CAAC9781CF1A9BE"
-				title: "Zombified Piglin"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4592,6 +4591,7 @@
 						}
 					}
 				}
+				title: "Zombified Piglin"
 				type: "item"
 			}]
 			x: -8.0d
@@ -4603,7 +4603,6 @@
 			id: "243FF0A215DC9FAE"
 			tasks: [{
 				id: "7527896A21D364A5"
-				title: "Ender Slime"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4617,6 +4616,7 @@
 						}
 					}
 				}
+				title: "Ender Slime"
 				type: "item"
 			}]
 			x: -6.5d
@@ -4628,7 +4628,6 @@
 			id: "4299094CE734E490"
 			tasks: [{
 				id: "158EB57E9F5FD9FD"
-				title: "Sky Slime"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4642,6 +4641,7 @@
 						}
 					}
 				}
+				title: "Sky Slime"
 				type: "item"
 			}]
 			x: -5.5d
@@ -4653,7 +4653,6 @@
 			id: "0FE9FDDAC28B0A33"
 			tasks: [{
 				id: "2429386B22CD0BC3"
-				title: "Terracube"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4667,6 +4666,7 @@
 						}
 					}
 				}
+				title: "Terracube"
 				type: "item"
 			}]
 			x: -4.5d
@@ -4678,7 +4678,6 @@
 			id: "7A416C1B11D62761"
 			tasks: [{
 				id: "4684677C9645980E"
-				title: "Adherent"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4692,6 +4691,7 @@
 						}
 					}
 				}
+				title: "Adherent"
 				type: "item"
 			}]
 			x: -7.0d
@@ -4703,7 +4703,6 @@
 			id: "27B69EC10B65AE0B"
 			tasks: [{
 				id: "2187085FD24AFA7B"
-				title: "Alpha Yeti"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4717,6 +4716,7 @@
 						}
 					}
 				}
+				title: "Alpha Yeti"
 				type: "item"
 			}]
 			x: -6.0d
@@ -4728,7 +4728,6 @@
 			id: "4C71A88B2191D979"
 			tasks: [{
 				id: "7572FBCC60B4D154"
-				title: "Armored Giant"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4742,6 +4741,7 @@
 						}
 					}
 				}
+				title: "Armored Giant"
 				type: "item"
 			}]
 			x: -5.0d
@@ -4753,7 +4753,6 @@
 			id: "40E3D147FFDD080F"
 			tasks: [{
 				id: "25C2A744DF6E3646"
-				title: "Bighorn Sheep"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4767,6 +4766,7 @@
 						}
 					}
 				}
+				title: "Bighorn Sheep"
 				type: "item"
 			}]
 			x: -4.0d
@@ -4778,7 +4778,6 @@
 			id: "5D22E000D10D726B"
 			tasks: [{
 				id: "3119D320F04B6F11"
-				title: "Blockchain Goblin"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4792,6 +4791,7 @@
 						}
 					}
 				}
+				title: "Blockchain Goblin"
 				type: "item"
 			}]
 			x: -8.0d
@@ -4803,7 +4803,6 @@
 			id: "2AE6211D147706FC"
 			tasks: [{
 				id: "5B3485D1C7F8684E"
-				title: "Boar"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4817,6 +4816,7 @@
 						}
 					}
 				}
+				title: "Boar"
 				type: "item"
 			}]
 			x: -9.0d
@@ -4828,7 +4828,6 @@
 			id: "5BC0C18DC053E418"
 			tasks: [{
 				id: "6D361FFBE7D1F13C"
-				title: "Carminite Broodling"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4842,6 +4841,7 @@
 						}
 					}
 				}
+				title: "Carminite Broodling"
 				type: "item"
 			}]
 			x: -10.0d
@@ -4853,7 +4853,6 @@
 			id: "6FF44FF031F5B535"
 			tasks: [{
 				id: "2E217D56F3124214"
-				title: "Carminite Ghastguard"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4867,6 +4866,7 @@
 						}
 					}
 				}
+				title: "Carminite Ghastguard"
 				type: "item"
 			}]
 			x: -11.0d
@@ -4878,7 +4878,6 @@
 			id: "6EE4737CCFCEE477"
 			tasks: [{
 				id: "6E8EC250862692B1"
-				title: "Carminite Ghastling"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4892,6 +4891,7 @@
 						}
 					}
 				}
+				title: "Carminite Ghastling"
 				type: "item"
 			}]
 			x: -12.0d
@@ -4903,7 +4903,6 @@
 			id: "22ADB63CF68C5693"
 			tasks: [{
 				id: "5FF83BBD9B16A676"
-				title: "Carminite Golem"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4917,6 +4916,7 @@
 						}
 					}
 				}
+				title: "Carminite Golem"
 				type: "item"
 			}]
 			x: -13.0d
@@ -4928,7 +4928,6 @@
 			id: "3C84E2DD0B853110"
 			tasks: [{
 				id: "2AB0624896A989A3"
-				title: "Death Tome"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4942,6 +4941,7 @@
 						}
 					}
 				}
+				title: "Death Tome"
 				type: "item"
 			}]
 			x: -14.0d
@@ -4953,7 +4953,6 @@
 			id: "0E3DB459954238AA"
 			tasks: [{
 				id: "6F5743E39463053A"
-				title: "Deer"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4967,6 +4966,7 @@
 						}
 					}
 				}
+				title: "Deer"
 				type: "item"
 			}]
 			x: -15.0d
@@ -4978,7 +4978,6 @@
 			id: "20755431DD216F03"
 			tasks: [{
 				id: "3F3BBFC597D0CCEA"
-				title: "Dwarf Rabbit"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -4992,6 +4991,7 @@
 						}
 					}
 				}
+				title: "Dwarf Rabbit"
 				type: "item"
 			}]
 			x: -3.5d
@@ -5003,7 +5003,6 @@
 			id: "158FF95557C7BE01"
 			tasks: [{
 				id: "26978A5FCCD629B9"
-				title: "Fire Beetle"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5017,6 +5016,7 @@
 						}
 					}
 				}
+				title: "Fire Beetle"
 				type: "item"
 			}]
 			x: -2.5d
@@ -5028,7 +5028,6 @@
 			id: "2BC1463CFB085742"
 			tasks: [{
 				id: "6E87674E5D9D4B97"
-				title: "Giant Miner"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5042,6 +5041,7 @@
 						}
 					}
 				}
+				title: "Giant Miner"
 				type: "item"
 			}]
 			x: -2.5d
@@ -5053,7 +5053,6 @@
 			id: "792F4A8044153D9D"
 			tasks: [{
 				id: "5EDEF8C3BB898B51"
-				title: "Harbinger Cube"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5067,6 +5066,7 @@
 						}
 					}
 				}
+				title: "Harbinger Cube"
 				type: "item"
 			}]
 			x: -15.0d
@@ -5078,7 +5078,6 @@
 			id: "20EF4B44446B1FF4"
 			tasks: [{
 				id: "14587D499FBDDCAA"
-				title: "Hedge Spider"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5092,6 +5091,7 @@
 						}
 					}
 				}
+				title: "Hedge Spider"
 				type: "item"
 			}]
 			x: -16.0d
@@ -5103,7 +5103,6 @@
 			id: "7A86F3B4634D182E"
 			tasks: [{
 				id: "17481BF5C93F3C0E"
-				title: "Helmet Crab"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5117,6 +5116,7 @@
 						}
 					}
 				}
+				title: "Helmet Crab"
 				type: "item"
 			}]
 			x: -17.0d
@@ -5128,7 +5128,6 @@
 			id: "4500DF4DFD789833"
 			tasks: [{
 				id: "3A7DC201791F196F"
-				title: "Hostile Wolf"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5142,6 +5141,7 @@
 						}
 					}
 				}
+				title: "Hostile Wolf"
 				type: "item"
 			}]
 			x: -17.5d
@@ -5153,7 +5153,6 @@
 			id: "33C4EDD338CF088C"
 			tasks: [{
 				id: "44BF38E6027A5BBF"
-				title: "Hydra"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5167,6 +5166,7 @@
 						}
 					}
 				}
+				title: "Hydra"
 				type: "item"
 			}]
 			x: -18.0d
@@ -5178,7 +5178,6 @@
 			id: "14A05B89172B7CAD"
 			tasks: [{
 				id: "74C560D3C304F7EB"
-				title: "King Spider"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5192,6 +5191,7 @@
 						}
 					}
 				}
+				title: "King Spider"
 				type: "item"
 			}]
 			x: -18.5d
@@ -5203,7 +5203,6 @@
 			id: "347CB89F20E53E30"
 			tasks: [{
 				id: "16A2A3FAF3D497AF"
-				title: "Knight Phantom"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5217,6 +5216,7 @@
 						}
 					}
 				}
+				title: "Knight Phantom"
 				type: "item"
 			}]
 			x: -19.0d
@@ -5228,7 +5228,6 @@
 			id: "293D0D7F08B901EB"
 			tasks: [{
 				id: "6265980E72DED5C6"
-				title: "Kobold"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5242,6 +5241,7 @@
 						}
 					}
 				}
+				title: "Kobold"
 				type: "item"
 			}]
 			x: -19.5d
@@ -5253,7 +5253,6 @@
 			id: "081EEBCCB3B215BE"
 			tasks: [{
 				id: "5EBE1736FC691850"
-				title: "Lich"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5267,6 +5266,7 @@
 						}
 					}
 				}
+				title: "Lich"
 				type: "item"
 			}]
 			x: -19.5d
@@ -5278,7 +5278,6 @@
 			id: "17A9BF7B96821256"
 			tasks: [{
 				id: "6C2D6F31484D55BF"
-				title: "Lower Goblin Knight"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5292,6 +5291,7 @@
 						}
 					}
 				}
+				title: "Lower Goblin Knight"
 				type: "item"
 			}]
 			x: -20.5d
@@ -5303,7 +5303,6 @@
 			id: "37479B81A9F74EAC"
 			tasks: [{
 				id: "6A8850D1A7F008EB"
-				title: "Loyal Zombie"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5317,6 +5316,7 @@
 						}
 					}
 				}
+				title: "Loyal Zombie"
 				type: "item"
 			}]
 			x: -20.5d
@@ -5328,7 +5328,6 @@
 			id: "6B0A28CFAF22B048"
 			tasks: [{
 				id: "57A1F9EEE682D02F"
-				title: "Maze Slime"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5342,6 +5341,7 @@
 						}
 					}
 				}
+				title: "Maze Slime"
 				type: "item"
 			}]
 			x: -20.0d
@@ -5353,7 +5353,6 @@
 			id: "56B25775B3F3B638"
 			tasks: [{
 				id: "4445D6739DBE2507"
-				title: "Minoshroom"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5367,6 +5366,7 @@
 						}
 					}
 				}
+				title: "Minoshroom"
 				type: "item"
 			}]
 			x: -19.5d
@@ -5378,7 +5378,6 @@
 			id: "3391DEA84FACA454"
 			tasks: [{
 				id: "59BCD25E6C2BC456"
-				title: "Minotaur"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5392,6 +5391,7 @@
 						}
 					}
 				}
+				title: "Minotaur"
 				type: "item"
 			}]
 			x: -19.0d
@@ -5403,7 +5403,6 @@
 			id: "42EC096A1A742D17"
 			tasks: [{
 				id: "7F78738BB222A4F9"
-				title: "Mist Wolf"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5417,6 +5416,7 @@
 						}
 					}
 				}
+				title: "Mist Wolf"
 				type: "item"
 			}]
 			x: -18.5d
@@ -5428,7 +5428,6 @@
 			id: "4FBD2A7CBA32C367"
 			tasks: [{
 				id: "58EDEAD441003881"
-				title: "Mosquito Swarm"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5442,6 +5441,7 @@
 						}
 					}
 				}
+				title: "Mosquito Swarm"
 				type: "item"
 			}]
 			x: -18.0d
@@ -5453,7 +5453,6 @@
 			id: "160CBA504ECE36A3"
 			tasks: [{
 				id: "415B777F387AD36B"
-				title: "Naga"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5467,6 +5466,7 @@
 						}
 					}
 				}
+				title: "Naga"
 				type: "item"
 			}]
 			x: -17.0d
@@ -5478,7 +5478,6 @@
 			id: "5FA1386C561C61B4"
 			tasks: [{
 				id: "1D1A49483D03F3BE"
-				title: "Penguin"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5492,6 +5491,7 @@
 						}
 					}
 				}
+				title: "Penguin"
 				type: "item"
 			}]
 			x: -14.0d
@@ -5503,7 +5503,6 @@
 			id: "6541A1F297787C7E"
 			tasks: [{
 				id: "65B3A05168FA0C53"
-				title: "Pinch Beetle"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5517,6 +5516,7 @@
 						}
 					}
 				}
+				title: "Pinch Beetle"
 				type: "item"
 			}]
 			x: -13.0d
@@ -5528,7 +5528,6 @@
 			id: "2A97D0807AFAA128"
 			tasks: [{
 				id: "2833DB4F8FEB72CB"
-				title: "Raven"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5542,6 +5541,7 @@
 						}
 					}
 				}
+				title: "Raven"
 				type: "item"
 			}]
 			x: -12.0d
@@ -5553,7 +5553,6 @@
 			id: "70A21C3841BE9EE2"
 			tasks: [{
 				id: "7009ADF4033B7E3C"
-				title: "Redcap"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5567,6 +5566,7 @@
 						}
 					}
 				}
+				title: "Redcap"
 				type: "item"
 			}]
 			x: -11.0d
@@ -5578,7 +5578,6 @@
 			id: "48CFDC9D20E5A2FD"
 			tasks: [{
 				id: "3D741038A30F0222"
-				title: "Redcap Sapper"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5592,6 +5591,7 @@
 						}
 					}
 				}
+				title: "Redcap Sapper"
 				type: "item"
 			}]
 			x: -10.0d
@@ -5603,7 +5603,6 @@
 			id: "6DE54C5DDC4FA23E"
 			tasks: [{
 				id: "7E19D205AD77B7A2"
-				title: "Roving Cube"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5617,6 +5616,7 @@
 						}
 					}
 				}
+				title: "Roving Cube"
 				type: "item"
 			}]
 			x: -9.0d
@@ -5628,7 +5628,6 @@
 			id: "277CB26A8D431AD7"
 			tasks: [{
 				id: "0DFDC43739C5D880"
-				title: "Skeleton Druid"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5642,6 +5641,7 @@
 						}
 					}
 				}
+				title: "Skeleton Druid"
 				type: "item"
 			}]
 			x: -8.0d
@@ -5653,7 +5653,6 @@
 			id: "104B17A17019E039"
 			tasks: [{
 				id: "2CAC45025EBFB948"
-				title: "Slime Beetle"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5667,6 +5666,7 @@
 						}
 					}
 				}
+				title: "Slime Beetle"
 				type: "item"
 			}]
 			x: -7.0d
@@ -5678,7 +5678,6 @@
 			id: "0882332304147D1A"
 			tasks: [{
 				id: "0533471CB43A7569"
-				title: "Snow Guardian"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5692,6 +5691,7 @@
 						}
 					}
 				}
+				title: "Snow Guardian"
 				type: "item"
 			}]
 			x: -6.0d
@@ -5703,7 +5703,6 @@
 			id: "0661D16C392C7024"
 			tasks: [{
 				id: "6FA02E445B50B491"
-				title: "Snow Queen"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5717,6 +5716,7 @@
 						}
 					}
 				}
+				title: "Snow Queen"
 				type: "item"
 			}]
 			x: -4.5d
@@ -5728,7 +5728,6 @@
 			id: "5FD6F9361CA650CA"
 			tasks: [{
 				id: "48E078DB329D205B"
-				title: "Squirrel"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5742,6 +5741,7 @@
 						}
 					}
 				}
+				title: "Squirrel"
 				type: "item"
 			}]
 			x: -3.5d
@@ -5753,7 +5753,6 @@
 			id: "42793C3EF2CB8AED"
 			tasks: [{
 				id: "7073FA084C4DCF51"
-				title: "Swarm Spider"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5767,6 +5766,7 @@
 						}
 					}
 				}
+				title: "Swarm Spider"
 				type: "item"
 			}]
 			x: -3.0d
@@ -5778,7 +5778,6 @@
 			id: "3938BBD12470D3BA"
 			tasks: [{
 				id: "7D531CDD158AE041"
-				title: "Tiny Bird"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5792,6 +5791,7 @@
 						}
 					}
 				}
+				title: "Tiny Bird"
 				type: "item"
 			}]
 			x: -16.0d
@@ -5803,7 +5803,6 @@
 			id: "05355623229D192E"
 			tasks: [{
 				id: "47C263D295C7835B"
-				title: "Towerwood Borer"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5817,6 +5816,7 @@
 						}
 					}
 				}
+				title: "Towerwood Borer"
 				type: "item"
 			}]
 			x: -17.0d
@@ -5828,7 +5828,6 @@
 			id: "30D50060A85D44D7"
 			tasks: [{
 				id: "77474B2F88A32985"
-				title: "Troll"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5842,6 +5841,7 @@
 						}
 					}
 				}
+				title: "Troll"
 				type: "item"
 			}]
 			x: -18.0d
@@ -5853,7 +5853,6 @@
 			id: "00AC4BAC643C9361"
 			tasks: [{
 				id: "7AB04AA31E554A30"
-				title: "Upper Goblin Knight"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5867,6 +5866,7 @@
 						}
 					}
 				}
+				title: "Upper Goblin Knight"
 				type: "item"
 			}]
 			x: -15.0d
@@ -5878,7 +5878,6 @@
 			id: "25499B2D4F4E9B1D"
 			tasks: [{
 				id: "043E81494C655075"
-				title: "Ur Ghast"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5892,6 +5891,7 @@
 						}
 					}
 				}
+				title: "Ur Ghast"
 				type: "item"
 			}]
 			x: -14.0d
@@ -5903,7 +5903,6 @@
 			id: "734DA44031091EBC"
 			tasks: [{
 				id: "714CD40EE664D36B"
-				title: "Winter Wolf"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5917,6 +5916,7 @@
 						}
 					}
 				}
+				title: "Winter Wolf"
 				type: "item"
 			}]
 			x: -12.5d
@@ -5928,7 +5928,6 @@
 			id: "363711CAAF4E0126"
 			tasks: [{
 				id: "46E7DD0801334858"
-				title: "Wraith"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5942,6 +5941,7 @@
 						}
 					}
 				}
+				title: "Wraith"
 				type: "item"
 			}]
 			x: -11.0d
@@ -5953,7 +5953,6 @@
 			id: "74483648467230AD"
 			tasks: [{
 				id: "3750AA4F87702402"
-				title: "Yeti"
 				item: {
 					Count: 1
 					id: "enderio:filled_soul_vial"
@@ -5967,6 +5966,7 @@
 						}
 					}
 				}
+				title: "Yeti"
 				type: "item"
 			}]
 			x: -10.0d
