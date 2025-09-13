@@ -15,8 +15,6 @@
 	],
 	"server_mods" : [
 		"ftb-library-forge-2001.2.10.jar",
-		"ftb-quests-forge-2001.4.14.jar",
-		"ftb-teams-forge-2001.3.1.jar",
 		"ftb-xmod-compat-forge-2.1.3.jar",
 		"ModernFix-forge-5.24.4+mc1.20.1.jar"
 	],
@@ -87,6 +85,8 @@
 		"entityculling-forge-1.8.2-mc1.20.1.jar",
 		"ferritecore-6.0.1-forge.jar",
 		"ftbbackups2-forge-1.20-1.0.23.jar",
+		"ftb-quests-forge-2001.4.14.jar",
+		"ftb-teams-forge-2001.3.1.jar",
 		"geckolib-forge-1.20.1-4.7.3.jar",
 		"guideme-20.1.11.jar",
 		"immersive_aircraft-1.3.3+1.20.1-forge.jar",
