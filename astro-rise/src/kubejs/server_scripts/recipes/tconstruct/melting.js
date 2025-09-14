@@ -32,25 +32,25 @@ ServerEvents.recipes(event => {
 
 	// test raw
 
-	event.custom({
-		type: 'tconstruct:ore_melting',
-		// byproducts: [
-		// 	{
-		// 		amount: 90,
-		// 		rate: 'metal',
-		// 		tag: 'forge:molten_steel'
-		// 	}
-		// ],
-		ingredient: {
-			tag: 'forge:raw_materials/iron'
-		},
-		// rate: 'metal',
-		result: {
-			amount: 90,
-			tag: 'forge:molten_iron'
-		},
-		temperature: 800,
-		time: 90
-	})
+	// event.custom({
+	// 	type: 'tconstruct:ore_melting',
+	// 	// byproducts: [
+	// 	// 	{
+	// 	// 		amount: 90,
+	// 	// 		rate: 'metal',
+	// 	// 		tag: 'forge:molten_steel'
+	// 	// 	}
+	// 	// ],
+	// 	ingredient: {
+	// 		tag: 'forge:raw_materials/iron'
+	// 	},
+	// 	// rate: 'metal',
+	// 	result: {
+	// 		amount: 90,
+	// 		tag: 'forge:molten_iron'
+	// 	},
+	// 	temperature: 800,
+	// 	time: 90
+	// })
 
 })
