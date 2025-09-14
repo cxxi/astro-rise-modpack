@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cp -r ./astro-rise/src/kubejs ./server/kubejs
+cp -r ./astro-rise/src/kubejs/* ./server/kubejs
