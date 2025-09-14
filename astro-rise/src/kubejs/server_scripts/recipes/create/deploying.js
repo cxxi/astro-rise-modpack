@@ -95,23 +95,4 @@ ServerEvents.recipes(event => {
 		]
 	})
 
-	// fluix_mechanism
-
-	event.custom({
-		type: "create:deploying",
-		ingredients: [
-		    {
-		    	item: 'astro_rise:quartz_mechanism'
-		    },
-		    {
-		    	item: 'ae2:charged_certus_quartz_crystal'
-		    }
-		],
-		results: [
-			{
-				item: 'astro_rise:certus_mechanism'
-			}
-		]
-	})
-
 })
