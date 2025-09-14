@@ -30,6 +30,35 @@ ServerEvents.recipes(event => {
 	    time: 171
 	})
 
+	// molten_fluix
+
+	event.custom({
+	    type: 'tconstruct:melting',
+	    ingredient: { 
+	    	item: 'ae2:fluix_crystal' 
+		},
+	    result: {
+		    amount: 100,
+		    fluid: 'astro_rise:molten_fluix'
+		},
+	    temperature: 950,
+	    time: 171
+	})
+
+	event.custom({
+	    type: 'tconstruct:melting',
+	    ingredient: { 
+	    	item: 'ae2:fluix_dust' 
+		},
+	    result: {
+		    amount: 100,
+		    fluid: 'astro_rise:molten_fluix'
+		},
+	    temperature: 950,
+	    time: 171
+	})
+
+
 	// test raw
 
 	// event.custom({

@@ -1,4 +1,3 @@
-
 StartupEvents.registry('item', event => {
 
 	event

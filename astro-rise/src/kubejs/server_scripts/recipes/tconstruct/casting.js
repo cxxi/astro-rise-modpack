@@ -96,4 +96,38 @@ ServerEvents.recipes(event => {
 	    cooling_time: 60
 	})
 
+	// fluix_crystal
+
+	event.custom({
+	    type: 'tconstruct:casting_table',
+	    cast: {
+	    	tag: 'tconstruct:casts/single_use/gem'
+	    },
+	    cast_consumed: true,
+	    fluid: {
+	    	fluid: 'astro_rise:molten_fluix',
+	    	amount: 100
+	    },
+	    result: {
+	    	item: 'ae2:fluix_crystal'
+	    },
+	    cooling_time: 100
+	})
+
+	event.custom({
+	    type: 'tconstruct:casting_table',
+	    cast: {
+	    	tag: 'tconstruct:casts/multi_use/gem'
+	    },
+	    cast_consumed: false,
+	    fluid: {
+	    	fluid: 'astro_rise:molten_fluix',
+	    	amount: 100
+	    },
+	    result: {
+	    	item: 'ae2:fluix_crystal'
+	    },
+	    cooling_time: 100
+	})
+
 })
