@@ -10,8 +10,8 @@ ServerEvents.recipes(event => {
 	    'AEA'  
 	], {
 		A: 'twilightforest:knightmetal_ingot',
-	    B: 'create:precision_mechanism',
-	    C: 'deeperdarker:soul_dust',
+	    B: 'astro_rise:sculk_mechanism',
+	    C: 'createaddition:electrum_spool',
 	    D: 'mekanism:block_osmium',
 	    E: 'createdieselgenerators:burner'
 	})
