@@ -1,8 +1,26 @@
 ServerEvents.recipes(event => {
 
-	event.recipes.create.filling('astro_rise:sculk_mechanism', [
-		'astro_rise:liquid_sculk', 
-		'create:precision_mechanism'
-	])
+	event.custom({
+		type: "create:filling",
+		ingredients: [
+		    {
+		    	item: 'create:precision_mechanism'
+		    },
+		    {
+		      amount: 500,
+		      fluid: 'astro_rise:liquid_sculk'
+		    }
+		],
+		results: [
+			{
+				item: 'astro_rise:sculk_mechanism'
+			}
+		]
+	})
+
+	// event.recipes.create.filling('astro_rise:sculk_mechanism', [
+	// 	'astro_rise:liquid_sculk', 
+	// 	'create:precision_mechanism'
+	// ])
 
 })
