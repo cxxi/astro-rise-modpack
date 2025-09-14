@@ -19,21 +19,6 @@ ServerEvents.recipes(event => {
 	    result: "tconstruct:draconic"
 	})
 
-	event.custom({
-	    type: 'tconstruct:modifier',
-	    inputs: [
-	    	{ item: 'deeperdarker:heart_of_the_deep' },
-	    ],
-	    tools: {
-	    	tag: 'tconstruct:modifiable/durability'
-	    },
-	    level: {
-	        min: 1,
-	        max: 2
-	    },
-	    result: "tconstruct:draconic"
-	})
-
 	event.remove({id: 'tconstruct:tools/modifiers/slotless/draconic_from_scales'})
 	  
 	event.custom({
@@ -49,6 +34,21 @@ ServerEvents.recipes(event => {
 	    	tag: 'tconstruct:modifiable/durability'
 	    },
 	    level: 1,
+	    result: "tconstruct:draconic"
+	})
+
+	event.custom({
+	    type: 'tconstruct:modifier',
+	    inputs: [
+	    	{ item: 'deeperdarker:heart_of_the_deep' },
+	    ],
+	    tools: {
+	    	tag: 'tconstruct:modifiable/durability'
+	    },
+	    level: {
+	        min: 1,
+	        max: 2
+	    },
 	    result: "tconstruct:draconic"
 	})
 
