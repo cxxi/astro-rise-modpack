@@ -7,8 +7,8 @@ ServerEvents.recipes(event => {
 		    	item: 'create:precision_mechanism'
 		    },
 		    {
-		      amount: 500,
-		      fluid: 'astro_rise:liquid_sculk'
+		    	amount: 500,
+		    	fluid: 'astro_rise:liquid_sculk'
 		    }
 		],
 		results: [
