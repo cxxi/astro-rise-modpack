@@ -235,6 +235,7 @@ ServerEvents.recipes(event => {
 	event.remove({id: 'tconstruct:smeltery/melting/metal/iron/raw_block'})
 
 	event.custom({
+		type: 'tconstruct:ore_melting',
 		ingredient: {
 			tag: 'forge:storage_blocks/raw_iron'
 		},
