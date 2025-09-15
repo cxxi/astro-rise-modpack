@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
 		},
 		temperature: 800,
 		time: 98
-	}
+	})
 
 	event.remove({id: 'tconstruct:smeltery/melting/metal/iron/chain_chestplate'})
 
@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
 		},
 		temperature: 800,
 		time: 139
-	}
+	})
 
 	event.remove({id: 'tconstruct:smeltery/melting/metal/iron/chain_helmet'})
 
@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
 		},
 		temperature: 800,
 		time: 110
-	}
+	})
 
 	event.remove({id: 'tconstruct:smeltery/melting/metal/iron/chain_leggings'})
 
@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
 		},
 		temperature: 800,
 		time: 130
-	}
+	})
 
 	event.remove({id: 'tconstruct:smeltery/melting/metal/iron/ore_singular'})
 
@@ -187,7 +187,7 @@ ServerEvents.recipes(event => {
 		},
 		temperature: 800,
 		time: 150
-	}
+	})
 
 	event.remove({id: 'tconstruct:smeltery/melting/metal/iron/raw'})
 
@@ -210,7 +210,7 @@ ServerEvents.recipes(event => {
 		},
 		temperature: 800,
 		time: 90
-	}
+	})
 
 	event.remove({id: 'tconstruct:smeltery/melting/metal/iron/raw_block'})
 
@@ -233,6 +233,6 @@ ServerEvents.recipes(event => {
 		},
 		temperature: 800,
 		time: 361
-	}
+	})
 
 })
