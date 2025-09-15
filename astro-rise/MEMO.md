@@ -14,3 +14,5 @@ https://www.curseforge.com/minecraft/mc-mods/mekanism-ad-astra-ores
 https://www.curseforge.com/minecraft/mc-mods/roost-re-hatched
 https://www.curseforge.com/minecraft/mc-mods/better-archeology
 https://www.curseforge.com/minecraft/mc-mods/mutant-monsters
+
+https://www.curseforge.com/minecraft/mc-mods/many-more-ores-and-crafts
