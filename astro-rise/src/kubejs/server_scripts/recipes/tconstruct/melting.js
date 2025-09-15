@@ -59,19 +59,12 @@ ServerEvents.recipes(event => {
 	})
 
 
-	// test raw
+	// remove steel with foundry
 
 	event.remove({id: 'tconstruct:smeltery/melting/metal/iron/chain_boots'})
 
 	event.custom({
 		type: 'tconstruct:damagable_melting',
-		// byproducts: [
-		// 	{
-		// 		amount: 120,
-		// 		tag: 'forge:molten_steel',
-		// 		unit_size: 10
-		// 	}
-		// ],
 		ingredient: {
 			item: 'minecraft:chainmail_boots'
 		},
@@ -88,13 +81,6 @@ ServerEvents.recipes(event => {
 
 	event.custom({
 		type: 'tconstruct:damagable_melting',
-		// byproducts: [
-		// 	{
-		// 		amount: 240,
-		// 		tag: 'forge:molten_steel',
-		// 		unit_size: 10
-		// 	}
-		// ],
 		ingredient: {
 			item: 'minecraft:chainmail_chestplate'
 		},
@@ -111,13 +97,6 @@ ServerEvents.recipes(event => {
 
 	event.custom({
 		type: 'tconstruct:damagable_melting',
-		// byproducts: [
-		// 	{
-		// 		amount: 150,
-		// 		tag: 'forge:molten_steel',
-		// 		unit_size: 10
-		// 	}
-		// ],
 		ingredient: {
 			item: 'minecraft:chainmail_helmet'
 		},
@@ -134,13 +113,6 @@ ServerEvents.recipes(event => {
 
 	event.custom({
 		type: 'tconstruct:damagable_melting',
-		// byproducts: [
-		// 	{
-		// 		amount: 210,
-		// 		tag: 'forge:molten_steel',
-		// 		unit_size: 10
-		// 	}
-		// ],
 		ingredient: {
 			item: 'minecraft:chainmail_leggings'
 		},
@@ -157,13 +129,68 @@ ServerEvents.recipes(event => {
 
 	event.custom({
 		type: 'tconstruct:ore_melting',
-		// byproducts: [
-		// 	{
-		// 		amount: 180,
-		// 		rate: 'metal',
-		// 		tag: 'forge:molten_steel'
-		// 	}
-		// ],
+		conditions: [
+			{
+				type: 'mantle:tag_combination_filled',
+				match: [
+					'forge:ores/iron',
+					'forge:ore_rates/sparse'
+				]
+			}
+		],
+		ingredient: {
+			type: 'forge:intersection',
+			children: [
+				{
+					tag: 'forge:ores/iron'
+				},
+				{
+					tag: 'forge:ore_rates/sparse'
+				}
+			]
+		},
+		rate: 'metal',
+		result: {
+			amount: 90,
+			tag: 'forge:molten_iron'
+		},
+		temperature: 800,
+		time: 90
+	})
+
+	event.custom({
+		type: 'tconstruct:ore_melting',
+		conditions: [
+			{
+				type: 'mantle:tag_combination_filled',
+				match: [
+					'forge:ores/iron',
+					'forge:ore_rates/dense'
+				]
+			}
+		],
+		ingredient: {
+			type: 'forge:intersection',
+			children: [
+				{
+					tag: 'forge:ores/iron'
+				},
+				{
+					tag: 'forge:ore_rates/dense'
+				}
+			]
+		},
+		rate: 'metal',
+		result: {
+			amount: 540,
+			tag: 'forge:molten_iron'
+		},
+		temperature: 800,
+		time: 271
+	})
+
+	event.custom({
+		type: 'tconstruct:ore_melting',
 		conditions: [
 			{
 				type: 'mantle:tag_combination_filled',
@@ -180,7 +207,6 @@ ServerEvents.recipes(event => {
 				tag: 'tconstruct:non_singular_ore_rates'
 			}
 		},
-		// rate: 'metal',
 		result: {
 			amount: 180,
 			tag: 'forge:molten_iron'
@@ -193,17 +219,10 @@ ServerEvents.recipes(event => {
 
 	event.custom({
 		type: 'tconstruct:ore_melting',
-		// byproducts: [
-		// 	{
-		// 		amount: 90,
-		// 		rate: 'metal',
-		// 		tag: 'forge:molten_steel'
-		// 	}
-		// ],
 		ingredient: {
 			tag: 'forge:raw_materials/iron'
 		},
-		// rate: 'metal',
+		rate: 'metal',
 		result: {
 			amount: 90,
 			tag: 'forge:molten_iron'
@@ -215,18 +234,10 @@ ServerEvents.recipes(event => {
 	event.remove({id: 'tconstruct:smeltery/melting/metal/iron/raw_block'})
 
 	event.custom({
-		type: 'tconstruct:ore_melting',
-		// byproducts: [
-		// 	{
-		// 		amount: 810,
-		// 		rate: 'metal',
-		// 		tag: 'forge:molten_steel'
-		// 	}
-		// ],
 		ingredient: {
 			tag: 'forge:storage_blocks/raw_iron'
 		},
-		// rate: 'metal',
+		rate: 'metal',
 		result: {
 			amount: 810,
 			tag: 'forge:molten_iron'
