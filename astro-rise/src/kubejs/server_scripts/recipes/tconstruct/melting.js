@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
 				}
 			]
 		},
-		rate: 'metal',
+		// rate: 'metal',
 		result: {
 			amount: 90,
 			tag: 'forge:molten_iron'
@@ -180,7 +180,7 @@ ServerEvents.recipes(event => {
 				}
 			]
 		},
-		rate: 'metal',
+		// rate: 'metal',
 		result: {
 			amount: 540,
 			tag: 'forge:molten_iron'
@@ -222,7 +222,7 @@ ServerEvents.recipes(event => {
 		ingredient: {
 			tag: 'forge:raw_materials/iron'
 		},
-		rate: 'metal',
+		// rate: 'metal',
 		result: {
 			amount: 90,
 			tag: 'forge:molten_iron'
@@ -237,7 +237,7 @@ ServerEvents.recipes(event => {
 		ingredient: {
 			tag: 'forge:storage_blocks/raw_iron'
 		},
-		rate: 'metal',
+		// rate: 'metal',
 		result: {
 			amount: 810,
 			tag: 'forge:molten_iron'
