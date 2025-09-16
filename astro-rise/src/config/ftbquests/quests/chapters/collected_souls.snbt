@@ -5972,6 +5972,75 @@
 			x: -10.0d
 			y: -13.0d
 		}
+		{
+			dependencies: ["47738EA756C25E6C"]
+			id: "1D613FDFD1D2BF08"
+			tasks: [{
+				id: "448D3160B8A2F13F"
+				item: {
+					Count: 1
+					id: "enderio:filled_soul_vial"
+					tag: {
+						BlockEntityTag: {
+							EntityStorage: {
+								Entity: {
+									id: "thermal:basalz"
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -20.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["47738EA756C25E6C"]
+			id: "595921B6A73DD399"
+			tasks: [{
+				id: "0E0713F4B5674B82"
+				item: {
+					Count: 1
+					id: "enderio:filled_soul_vial"
+					tag: {
+						BlockEntityTag: {
+							EntityStorage: {
+								Entity: {
+									id: "thermal:blitz"
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -20.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["47738EA756C25E6C"]
+			id: "2553E9377AC1C08D"
+			tasks: [{
+				id: "5FC764D3E655BBF4"
+				item: {
+					Count: 1
+					id: "enderio:filled_soul_vial"
+					tag: {
+						BlockEntityTag: {
+							EntityStorage: {
+								Entity: {
+									id: "thermal:blizz"
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -19.5d
+			y: -1.0d
+		}
 	]
 	title: "Collected Souls"
 }
