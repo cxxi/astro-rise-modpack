@@ -9,7 +9,7 @@
 		"JustEnoughProfessions-forge-1.20.1-3.0.1.jar",
 		"JustEnoughResources-1.20.1-1.4.0.247.jar",
 		"justzoom_forge_2.1.1_MC_1.20.1.jar",
-		"oculus-mc1.20.1-1.8.0.jar"
+		"embeddium-0.3.31+mc1.20.1.jar"
 	],
 	"server_mods" : [],
 	"mods" : [
@@ -81,7 +81,6 @@
 		"curios-forge-5.14.1+1.20.1.jar",
 		"deeperdarker-forge-1.20.1-1.3.3.jar",
 		"elevatorid-1.20.1-1.9.1-forge.jar",
-		"rubidium-mc1.20.1-0.7.1a.jar",
 		"endermanantigrief-1.1.0-1.20.1.jar",
 		"entityculling-forge-1.8.2-mc1.20.1.jar",
 		"Searchables-forge-1.20.1-1.0.3.jar",
