@@ -3,14 +3,14 @@
 	"biomes": "twilightforest:final_plateau",
 	"spawn_overrides": {},
 	"step": "underground_structures",
-	"terrain_adaptation": "encapsulate",
+	"terrain_adaptation": "beard_thin",
 	"start_height": {
 	    "type": "minecraft:uniform",
 	    "max_inclusive": {
 	    	"absolute": 96
 	    },
 	    "min_inclusive": {
-	    	"absolute": 50
+	    	"absolute": 90
 	    }
 	}
 }
