@@ -1,7 +1,16 @@
 {
-  "type": "minecraft:stronghold",
-  "biomes": "twilightforest:final_plateau",
-  "spawn_overrides": {},
-  "step": "surface_structures",
-  "terrain_adaptation": "bury"
+	"type": "minecraft:stronghold",
+	"biomes": "twilightforest:final_plateau",
+	"spawn_overrides": {},
+	"step": "underground_structures",
+	"terrain_adaptation": "encapsulate",
+	"start_height": {
+	    "type": "minecraft:uniform",
+	    "max_inclusive": {
+	    	"absolute": 96
+	    },
+	    "min_inclusive": {
+	    	"absolute": 50
+	    }
+	}
 }
