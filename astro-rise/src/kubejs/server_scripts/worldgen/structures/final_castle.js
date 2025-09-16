@@ -1,18 +1,12 @@
 ServerEvents.highPriorityData(event => {
 
-    let finalPlateau = event.get('twilightforest:final_plateau')
-
-    if (finalPlateau && finalPlateau.structures) {
-
-        finalPlateau.structures = finalPlateau.structures.filter(s => s.structure != 'twilightforest:final_castle')
-
-        // finalPlateau.structures.push({
-        //     structure: 'my_mod:my_end_portal_castle',
-        //     spacing: 1,
-        //     separation: 1,
-        //     salt: 12345
-        // })
-
-        event.add('twilightforest:final_plateau', finalPlateau)
-    }
+    event.add('twilightforest:final_castle', {
+        type: 'minecraft:structure',
+        start_pool: 'ae2:meteorite',
+        size: 1,
+        start_height: {
+            absolute: 64
+        }
+    })
+    
 })
