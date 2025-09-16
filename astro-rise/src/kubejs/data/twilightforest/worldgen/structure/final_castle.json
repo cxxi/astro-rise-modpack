@@ -1,6 +1,7 @@
 {
-  "type": "minecraft:desert_pyramid",
+  "type": "minecraft:stronghold",
   "biomes": "twilightforest:final_plateau",
   "spawn_overrides": {},
-  "step": "surface_structures"
+  "step": "surface_structures",
+  "terrain_adaptation": "bury"
 }

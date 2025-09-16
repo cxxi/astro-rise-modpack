@@ -1,13 +1,13 @@
 {
   "placement": {
-    "type": "minecraft:random_spread",
+    "type": "minecraft:concentric_rings",
     "salt": 14357617,
     "separation": 8,
     "spacing": 32
   },
   "structures": [
     {
-      "structure": "minecraft:desert_pyramid",
+      "structure": "minecraft:stronghold",
       "weight": 1
     }
   ]
