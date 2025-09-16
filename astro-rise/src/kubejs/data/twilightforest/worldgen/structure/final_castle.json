@@ -3,9 +3,9 @@
 	"biomes": "twilightforest:final_plateau",
 	"spawn_overrides": {},
 	"step": "underground_structures",
-	"terrain_adaptation": "beard_thin",
+	"terrain_adaptation": "beard_box",
 	"start_height": {
 		"type": "minecraft:fixed",
-		"value": 94
+		"value": 96
 	}
 }
