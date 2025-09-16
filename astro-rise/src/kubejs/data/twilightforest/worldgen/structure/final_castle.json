@@ -5,12 +5,7 @@
 	"step": "underground_structures",
 	"terrain_adaptation": "beard_thin",
 	"start_height": {
-	    "type": "minecraft:uniform",
-	    "max_inclusive": {
-	    	"absolute": 96
-	    },
-	    "min_inclusive": {
-	    	"absolute": 90
-	    }
+		"type": "minecraft:fixed",
+		"value": 94
 	}
 }
