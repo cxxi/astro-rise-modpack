@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
 	], {
 	    A: 'enderio:broken_spawner', 
 	    B: 'minecraft:rib_armor_trim_smithing_template',
-	    C: 'minecraft:eye_armor_trim_smithing_template',
+	    C: 'minecraft:sentry_armor_trim_smithing_template',
 	    D: 'minecraft:compass',
 	    E: 'minecraft:spire_armor_trim_smithing_template',
 	    F: 'minecraft:tide_armor_trim_smithing_template'
