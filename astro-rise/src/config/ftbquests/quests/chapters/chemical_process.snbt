@@ -32,7 +32,205 @@
 				type: "item"
 			}]
 			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["209849ADB7F64DF4"]
+			id: "7B2D02EFDD1E7EC8"
+			tasks: [{
+				id: "62D270DF6D6FC801"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["209849ADB7F64DF4"]
+			id: "150590BD5E46ADF9"
+			tasks: [{
+				id: "444119E063E67B03"
+				item: "mekanism:energized_smelter"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["209849ADB7F64DF4"]
+			id: "1233473942F3451F"
+			tasks: [{
+				id: "3F8A79F929B2BE00"
+				item: "mekanism:crusher"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["209849ADB7F64DF4"]
+			id: "5A599385F3061ADC"
+			tasks: [{
+				id: "2A0F5C955EF28D48"
+				item: "mekanism:combiner"
+				type: "item"
+			}]
+			x: 3.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["209849ADB7F64DF4"]
+			id: "21D9D98815C62AE6"
+			tasks: [{
+				id: "35BA002C55B70EA4"
+				item: "mekanism:purification_chamber"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["209849ADB7F64DF4"]
+			id: "2B804DE1530CC5CF"
+			tasks: [{
+				id: "27BBFC953B6D8DCF"
+				item: "mekanism:osmium_compressor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["209849ADB7F64DF4"]
+			id: "4ED95E11F524696B"
+			tasks: [{
+				id: "0DE90CBCDAFF1025"
+				item: "mekanism:chemical_injection_chamber"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["209849ADB7F64DF4"]
+			id: "08AFA4D016C29979"
+			tasks: [{
+				id: "4D9FFD00667D479A"
+				item: "mekanism:precision_sawmill"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			id: "37FDC7618BFD2CEE"
+			tasks: [{
+				id: "37B2125745878313"
+				item: "mekanism:basic_smelting_factory"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			id: "5D450F7974E511D5"
+			tasks: [{
+				id: "377B4646DA7296E4"
+				item: "mekanism:basic_enriching_factory"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			id: "796D860FC0195958"
+			tasks: [{
+				id: "29B57A19678D4DE6"
+				item: "mekanism:basic_crushing_factory"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			id: "0C4FC859A05F6D4C"
+			tasks: [{
+				id: "38DB44180CEB0141"
+				item: "mekanism:basic_compressing_factory"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "51E12E3187933E7E"
+			tasks: [{
+				id: "523F0A0F97342A01"
+				item: "mekanism:basic_combining_factory"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			id: "52E12A46020E0E39"
+			tasks: [{
+				id: "4A429E774FA0BD5E"
+				item: "mekanism:basic_purifying_factory"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			id: "7E790F12770B6755"
+			tasks: [{
+				id: "209BB7BF8FBAB55D"
+				item: "mekanism:basic_injecting_factory"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			id: "43E3E81677B104A5"
+			tasks: [{
+				id: "49F7FD69A313E335"
+				item: "mekanism:basic_infusing_factory"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			id: "55E51024D59D6BFC"
+			tasks: [{
+				id: "7F3DD2280FFC0FC0"
+				item: "mekanism:basic_sawing_factory"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			id: "45AB5AB7963E639A"
+			tasks: [{
+				id: "5F9E9437C813424A"
+				item: "mekanism:enriched_iron"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			id: "2B5FC89C087ABC27"
+			tasks: [{
+				id: "5DE83540F919C83B"
+				item: "enderio:primitive_alloy_smelter"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
 		}
 	]
 	title: "Chemical Process"

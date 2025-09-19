@@ -30,7 +30,7 @@
 				item: "mekanismgenerators:heat_generator"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.5d
 			y: -7.0d
 		}
 		{
@@ -85,7 +85,7 @@
 				item: "mekanismgenerators:wind_generator"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.5d
 			y: -7.0d
 		}
 		{
