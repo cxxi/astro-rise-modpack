@@ -7,6 +7,8 @@ JEIEvents.hideItems(event => {
 	event.hide('bigreactors:yellorium_nugget')
 	event.hide('bigreactors:yellorium_bucket')
 
+	event.hide('enderio:primitive_alloy_smelter')
+	event.hide('enderio:alloy_smelter')
 	event.hide('enderio:wood_gear')
 	event.hide('enderio:stone_gear')
 	event.hide('enderio:silicon')
