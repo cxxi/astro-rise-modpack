@@ -13,7 +13,9 @@ ServerEvents.recipes(event => {
 
 	event.forEachRecipe({ }, recipe => {
 
-		if (!targetMods.includes(recipe.mod)) return
+		const mod = recipe.getId().split(':').at(0)
+
+		if (!targetMods.includes(mod)) return
 		if (skipIds.includes(recipe.getId())) return
 
 		let changed = false
