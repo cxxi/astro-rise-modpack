@@ -11,9 +11,9 @@ ServerEvents.recipes(event => {
     const targetMods = ['create', 'petrolsparts', 'createdieselgenerators']
 	const skipIds = ['createdieselgenerators:crafting/kelp_handle']
 
-	event.forEachRecipe({ }, recipe => {
+	event.forEachRecipe({}, recipe => {
 
-		const mod = recipe.getId().split(':').at(0)
+		const mod = recipe.getId().split(':')[0]
 
 		if (!targetMods.includes(mod)) return
 		if (skipIds.includes(recipe.getId())) return
