@@ -12,4 +12,31 @@ ServerEvents.recipes(event => {
 
   	// 'mekanism:enriched_carbon'
 
+  	// apatite
+  	// cinnabar
+  	// niter
+  	// sulfur
+  	// silver
+  	// nickel
+  	// ruby
+  	// sapphire
+
+  	// constantan
+	// invar
+	// signalum
+	// lumium
+	// enderium
+  	
+  	// coal coke
+	// bitumen
+	// tar
+	// rosin
+	// rubber -> cured_rubber
+	// slag -> rich_slag
+	// insightful crystal
+	// compost
+
+	// remove satchel
+
+
 })
