@@ -4,6 +4,20 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'mekanism:metallurgic_infusing/alloy/infused' })
 
-	event.recipes.mekanismMetallurgicInfusing('mekanism:alloy_infused', 'create:andesite_alloy', 'mekanism:redstone', 10)
+	event.custom({
+		type: 'mekanism:metallurgic_infusing',
+		chemicalInput: {
+			amount: 10,
+			tag: 'mekanism:redstone'
+		},
+		itemInput: {
+			ingred1ient: {
+				item: 'create:andesite_alloy'
+			}
+		},
+		output: {
+			item: 'mekanism:alloy_infused'
+		}
+	})
 
 })
