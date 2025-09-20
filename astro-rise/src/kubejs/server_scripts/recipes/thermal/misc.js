@@ -10,39 +10,57 @@ ServerEvents.recipes(event => {
 
     const targetMods = ['create', 'petrolsparts', 'createdieselgenerators']
 	const skipIds = ['createdieselgenerators:crafting/kelp_handle']
+	const from = 'minecraft:dried_kelp'
+	const to = 'thermal:cured_rubber'
 
 	event.forEachRecipe({}, recipe => {
 
-		const mod = recipe.getId().split(':')[0]
+	    const id = recipe.getId()
+	    if (!id) return
 
-		if (!targetMods.includes(mod)) return
-		if (skipIds.includes(recipe.getId())) return
+	    const mod = id.split(':')[0]
+	    if (!targetMods.includes(mod)) return
+	    if (skipIds.includes(id)) return
 
-		let changed = false
-		let json = recipe.json
+	    let json = recipe.json
+	    let changed = false
 
-		if (json.ingredients) {
-			json.ingredients.forEach(ing => {
-				if (ing.item === 'minecraft:dried_kelp') {
-					ing.item = 'thermal:cured_rubber'
-					changed = true
-				}
-			})
-		}
+	    if (json.key) {
+	    	for (const symbol in json.key) {
+	    		const ing = json.key[symbol]
+	    		if (ing.item === from) {
+	    			ing.item = to
+	    			changed = true
+	    		}
+	    	}
+	    }
 
-		if (json.key) {
-			Object.keys(json.key).forEach(k => {
-				let ing = json.key[k]
-				if (ing.item === 'minecraft:dried_kelp') {
-					ing.item = 'thermal:cured_rubber'
-					changed = true
-				}
-			})
-		}
+	    if (json.ingredients) {
+	    	json.ingredients.forEach(ing => {
+	    		if (ing.item === from) {
+	    			ing.item = to
+	    			changed = true
+	    		}
+	    	})
+	    }
 
-		if (changed) {
-			event.custom(json).id(recipe.getId())
-		}
+	    if (json.input && json.input.item === from) {
+	    	json.input.item = to
+	    	changed = true
+	    }
+
+	    if (json.inputs) {
+	    	json.inputs.forEach(ing => {
+	    		if (ing.item === from) {
+	    			ing.item = to
+	    			changed = true
+	    		}
+	    	})
+	    }
+
+	    if (changed) {
+	    	event.custom(json).id(id)
+	    }
 	})
 
 })
