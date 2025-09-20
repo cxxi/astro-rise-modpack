@@ -1,5 +1,5 @@
 {
-  "feature": "astro_rise:ruby_ore",
+  "feature": "astro_rise:ruby_ore_custom",
   "placement": [
     {
       "type": "minecraft:count",
