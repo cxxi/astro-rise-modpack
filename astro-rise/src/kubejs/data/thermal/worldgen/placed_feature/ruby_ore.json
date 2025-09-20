@@ -1,5 +1,5 @@
 {
-  "feature": "thermal:ore_ruby",
+  "feature": "thermal:ruby_ore",
   "placement": [
     {
       "type": "minecraft:count",
