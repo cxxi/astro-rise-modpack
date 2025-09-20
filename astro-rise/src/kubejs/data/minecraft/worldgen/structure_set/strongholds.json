@@ -7,10 +7,5 @@
     "salt": 0,
     "spread": 3
   },
-  "structures": [
-    {
-      "structure": "minecraft:empty",
-      "weight": 0
-    }
-  ]
+  "structures": []
 }
