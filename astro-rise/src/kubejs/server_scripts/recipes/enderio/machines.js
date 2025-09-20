@@ -1,35 +1,8 @@
 ServerEvents.recipes(event => {
 
-	// primitive_alloy_smelter
+	// primitive_alloy_smelter & alloy_smelter
 
-	event.remove({ id: 'enderio:primitive_alloy_smelter' })
-
-	event.shaped('enderio:primitive_alloy_smelter', [
-		'AAA', 
-	    'BCB',
-	    'DBD' 
-	], {
-		A: 'minecraft:blast_furnace',
-		B: 'minecraft:deepslate',
-		C: 'enderio:grains_of_infinity',
-		D: 'mekanism:enriched_iron'
-	})
-
-	// alloy_smelter
-
-	event.remove({ id: 'enderio:alloy_smelter' })
-
-	event.shaped('enderio:alloy_smelter', [
-		'ABA', 
-	    'BCB',
-	    'DED' 
-	], {
-		A: 'enderio:dark_steel_ingot',
-		B: 'enderio:primitive_alloy_smelter',
-		C: 'enderio:void_chassis',
-		D: 'enderio:iron_gear',
-		E: 'create:basin'
-	})
+	event.remove({ type: 'enderio:alloy_smelting' })
 
 	// crafter
 
