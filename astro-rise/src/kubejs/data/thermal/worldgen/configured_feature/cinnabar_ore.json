@@ -9,8 +9,8 @@
           "Name": "thermal:cinnabar_ore"
         },
         "target": {
-          "predicate_type": "minecraft:block_match",
-          "block": "minecraft:netherrack"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "thermal:netherrack_replaceables"
         }
       }
     ]
