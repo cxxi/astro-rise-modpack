@@ -34,7 +34,12 @@
     },
     {
       "type": "minecraft:biome"
+    },
+    {
+      "type": "forge:in_dimensions",
+      "dimensions": [
+        "deeperdarker:otherside"
+      ]
     }
-  ],
-  "dimensions": ["deeperdarker:otherside"]
+  ]
 }

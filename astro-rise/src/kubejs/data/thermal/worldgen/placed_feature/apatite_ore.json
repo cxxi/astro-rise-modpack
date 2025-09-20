@@ -22,7 +22,12 @@
     },
     {
       "type": "minecraft:biome"
+    },
+    {
+      "type": "forge:in_dimensions",
+      "dimensions": [
+        "minecraft:the_end"
+      ]
     }
-  ],
-  "dimensions": ["minecraft:the_end"]
+  ]
 }
