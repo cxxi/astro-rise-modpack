@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
 		type: 'createdieselgenerators:bulk_fermenting',
 		ingredients: [
 			{
-				fluid: 'thermal:resin'
+				fluid: 'thermal:resin',
 				amount: 1000
 			}
 		],
