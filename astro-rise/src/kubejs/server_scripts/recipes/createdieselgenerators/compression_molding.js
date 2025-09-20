@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
 		type: 'createdieselgenerators:compression_molding',
 		ingredients: [
 			{
-				fluid: 'thermal:latex'
+				fluid: 'thermal:latex',
 				amount: 1000
 			}
 		],
