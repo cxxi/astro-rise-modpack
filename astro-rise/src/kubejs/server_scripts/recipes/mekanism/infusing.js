@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
 			tag: 'mekanism:redstone'
 		},
 		itemInput: {
-			ingred1ient: {
+			ingredient: {
 				item: 'create:andesite_alloy'
 			}
 		},
