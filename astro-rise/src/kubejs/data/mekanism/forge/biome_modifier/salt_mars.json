@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:or",
+    "values": [
+      "ad_astra:martian_wastelands",
+      "ad_astra:martian_polar_caps",
+      "ad_astra:martian_canyon_creek"
+    ]
+  },
+  "features": "mekanism:salt_mars",
+  "step": "underground_ores"
+}
