@@ -6,7 +6,7 @@
 			"#c:is_mountain", 
 			"#minecraft:is_mountain", 
 		    "#terralith:cliffs",
-		    "#terralith:highlands",
+		    "#terralith:highlands"
 	  	]
 	},
 	"features": "thermal:ruby_ore",
