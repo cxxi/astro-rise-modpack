@@ -1,0 +1,6 @@
+{
+  "type": "forge:remove_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "ad_astra:oil_well",
+  "step": "surface_structures"
+}

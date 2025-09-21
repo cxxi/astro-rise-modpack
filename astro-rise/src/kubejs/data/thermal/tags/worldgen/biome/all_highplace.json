@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#c:is_mountain", 
-    "#terralith:cliffs",
-    "#terralith:highlands",
-  ]
-}

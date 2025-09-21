@@ -1,6 +1,14 @@
 {
-  "type": "forge:add_features",
-  "biomes": "#thermal:all_highplace",
-  "features": "thermal:ruby_ore",
-  "step": "underground_ores"
+	"type": "forge:add_features",
+	"biomes": {
+		"type": "forge:or",
+		"values": [
+			"#c:is_mountain", 
+			"#minecraft:is_mountain", 
+		    "#terralith:cliffs",
+		    "#terralith:highlands",
+	  	]
+	},
+	"features": "thermal:ruby_ore",
+	"step": "underground_ores"
 }
