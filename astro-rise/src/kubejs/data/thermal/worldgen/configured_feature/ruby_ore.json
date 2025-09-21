@@ -6,7 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "thermal:sapphire_ore"
+          "Name": "thermal:ruby_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
@@ -15,7 +15,7 @@
       },
       {
         "state": {
-          "Name": "thermal:deepslate_sapphire_ore"
+          "Name": "thermal:deepslate_ruby_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
