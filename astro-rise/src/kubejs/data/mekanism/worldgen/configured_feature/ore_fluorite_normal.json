@@ -12,7 +12,7 @@
         },
         "target": {
           "predicate_type": "minecraft:block_match",
-          "block": "deeperdarker:sculk_stone"
+          "block": "deeperdarker:echo_soil"
         }
       }
     ]

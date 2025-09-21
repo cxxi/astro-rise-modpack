@@ -1,6 +1,13 @@
 {
   "type": "forge:add_features",
-  "biomes": "#mekanism:spawn_ores",
+  "biomes": "#minecraft:is_overworld",
+  "biomes": {
+    "type": "forge:or",
+    "values": [
+      "#minecraft:is_overworld",
+      "ad_astra:lunar_wastelands"
+    ]
+  },
   "features": [
     "mekanism:ore_osmium_upper",
     "mekanism:ore_osmium_middle",
