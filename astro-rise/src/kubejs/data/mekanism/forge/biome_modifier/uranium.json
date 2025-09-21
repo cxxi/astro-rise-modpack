@@ -1,6 +1,14 @@
 {
   "type": "forge:add_features",
-  "biomes": "#mekanism:spawn_ores",
+  "biomes": {
+    "type": "forge:or",
+    "values": [
+      "deeperdarker:blooming_caverns",
+      "deeperdarker:deeplands",
+      "deeperdarker:echoing_forest",
+      "deeperdarker:overcast_columns"
+    ]
+  },
   "features": [
     "mekanism:ore_uranium_small",
     "mekanism:ore_uranium_buried"
