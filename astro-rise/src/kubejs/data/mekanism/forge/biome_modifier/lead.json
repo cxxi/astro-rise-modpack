@@ -4,7 +4,7 @@
     "type": "forge:or",
     "values": [
       "#minecraft:is_overworld",
-      "ad_astra:glacio_snowy_barrens"
+      "ad_astra:glacio_snowy_barren"
     ]
   },
   "features": "mekanism:ore_lead_normal",
