@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#minecraft:is_nether",
+  "biomes": "ad_astra:venus_wastelands",
   "features": "thermal:niter_ore",
   "step": "underground_ores"
 }
