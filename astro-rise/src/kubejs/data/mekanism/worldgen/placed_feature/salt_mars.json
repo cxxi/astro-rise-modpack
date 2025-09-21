@@ -2,10 +2,6 @@
   "feature": "mekanism:salt",
   "placement": [
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 20
-    },
-    {
       "type": "minecraft:count",
       "count": {
         "type": "minecraft:uniform",
@@ -26,7 +22,7 @@
           "absolute": 100
         },
         "min_inclusive": {
-          "absolute": 60
+          "absolute": 50
         }
       }
     },
