@@ -1,9 +1,13 @@
 {
-  "feature": "mekanism:salt",
+  "feature": "mekanism:salt_mars",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 5
+      "count": { 
+      	"type": "minecraft:uniform", 
+      	"min_inclusive": 0, 
+  		"max_inclusive": 1
+  	  }
     },
     {
       "type": "minecraft:in_square"
@@ -13,10 +17,10 @@
       "height": {
         "type": "minecraft:trapezoid",
         "max_inclusive": {
-          "absolute": 200
+          "absolute": 100
         },
         "min_inclusive": {
-          "absolute": -16
+          "absolute": 60
         }
       }
     },
