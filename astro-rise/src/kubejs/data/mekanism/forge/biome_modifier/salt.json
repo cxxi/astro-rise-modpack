@@ -4,7 +4,9 @@
     "type": "forge:or",
     "values": [
       "#minecraft:is_overworld",
-      "ad_astra:martian_wastelands"
+      "ad_astra:martian_wastelands",
+      "ad_astra:martian_polar_caps",
+      "ad_astra:martian_canyon_creek"
     ]
   },
   "features": "mekanism:salt",

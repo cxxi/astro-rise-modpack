@@ -17,7 +17,9 @@
       "type": "minecraft:matching_blocks",
       "blocks": [
         "minecraft:dirt",
-        "minecraft:clay"
+        "minecraft:clay",
+        "ad_astra:mars_stone",
+        "ad_astra:mars_sand"
       ]
     }
   }

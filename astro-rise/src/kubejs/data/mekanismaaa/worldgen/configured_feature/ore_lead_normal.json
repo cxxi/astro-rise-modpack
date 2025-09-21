@@ -1,0 +1,20 @@
+{
+  "type": "mekanism:ore",
+  "config": {
+    "oreVeinType": {
+      "type": "lead",
+      "index": 0
+    },
+    "targets": [
+      {
+        "state": {
+          "Name": "mekanismaaa:glacio_lead_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "ad_astra:glacio_stone"
+        }
+      }
+    ]
+  }
+}

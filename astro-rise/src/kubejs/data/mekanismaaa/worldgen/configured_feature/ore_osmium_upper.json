@@ -1,0 +1,20 @@
+{
+  "type": "mekanism:ore",
+  "config": {
+    "oreVeinType": {
+      "type": "osmium",
+      "index": 0
+    },
+    "targets": [
+      {
+        "state": {
+          "Name": "mekanismaaa:moon_osmium_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "ad_astra:moon_stone"
+        }
+      }
+    ]
+  }
+}

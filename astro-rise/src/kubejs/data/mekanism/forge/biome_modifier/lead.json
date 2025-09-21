@@ -1,12 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": {
-    "type": "forge:or",
-    "values": [
-      "#minecraft:is_overworld",
-      "ad_astra:glacio_snowy_barrens"
-    ]
-  },
+  "biomes": "#minecraft:is_overworld",
   "features": "mekanism:ore_lead_normal",
   "step": "underground_ores"
 }

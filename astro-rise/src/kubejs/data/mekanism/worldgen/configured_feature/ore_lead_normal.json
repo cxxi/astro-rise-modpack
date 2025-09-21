@@ -23,15 +23,6 @@
           "predicate_type": "minecraft:tag_match",
           "tag": "minecraft:deepslate_ore_replaceables"
         }
-      },
-      {
-        "state": {
-          "Name": "mekanism:lead_ore"
-        },
-        "target": {
-          "predicate_type": "minecraft:block_match",
-          "block": "ad_astra:glacio_stone"
-        }
       }
     ]
   }
