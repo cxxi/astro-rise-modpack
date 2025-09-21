@@ -8,7 +8,7 @@
 			"minecraft:bamboo_jungle",
 			"terralith:hot_shrubland",
 			"minecraft:mangrove_swamp",
-			"minecraft:swamp",
+			"minecraft:swamp"
 	  	]
 	},
 	"features": "thermal:trees_rubberwood",

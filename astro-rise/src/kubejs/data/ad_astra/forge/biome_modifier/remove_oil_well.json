@@ -1,7 +1,0 @@
-{
-  "type": "forge:remove_structures",
-  "biomes": "#minecraft:is_overworld",
-  "structures": [
-    "ad_astra:oil_well"
-  ]
-}
