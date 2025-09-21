@@ -3,8 +3,7 @@
   "biomes": {
     "type": "forge:or",
     "values": [
-      "#minecraft:is_overworld",
-      "ad_astra:glacio_snowy_barren"
+      "#minecraft:is_overworld"
     ]
   },
   "features": [
