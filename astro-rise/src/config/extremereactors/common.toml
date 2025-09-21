@@ -88,7 +88,7 @@
 	[common.worldgen]
 		#If false, disables all world gen from Extreme Reactors;
 		#all other worldgen settings are automatically ignored.
-		enableWorldGen = true
+		enableWorldGen = false
 		#Re-run world gen in chunks that have already been generated (once they have been loaded), 
 		#but have not been modified by Extreme Reactors before.
 		enableWorldRegeneration = false
