@@ -15,6 +15,7 @@ ServerEvents.recipes(event => {
 	})
 
 	event.replaceInput({ id: 'createdieselgenerators:crafting/pumpjack_head' }, "minecraft:dried_kelp", "thermal:cured_rubber")
-	event.replaceInput({ id: 'createdieselgenerators:crafting/chemical_sprayer' }, "minecraft:dried_kelp", "thermal:cured_rubber")
+	
+	// event.replaceInput({ id: 'createdieselgenerators:crafting/chemical_sprayer' }, "minecraft:dried_kelp", "thermal:cured_rubber")
 
 })
