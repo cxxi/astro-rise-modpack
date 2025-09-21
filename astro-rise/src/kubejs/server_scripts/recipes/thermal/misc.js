@@ -8,59 +8,13 @@ ServerEvents.recipes(event => {
 
     // kelp to rubber
 
-    // const targetMods = ['create', 'petrolsparts', 'createdieselgenerators']
-	// const skipIds = ['createdieselgenerators:crafting/kelp_handle']
-	// const from = 'minecraft:dried_kelp'
-	// const to = 'thermal:cured_rubber'
+    const modList = ["create", "petrolsparts"]
 
-	// event.forEachRecipe({}, recipe => {
+	modList.forEach(modid => {
+		event.replaceInput({ mod: modid }, "minecraft:dried_kelp", "thermal:cured_rubber")
+	})
 
-	//     const id = recipe.getId()
-	//     if (!id) return
-
-	//     const mod = id.split(':')[0]
-	//     if (!targetMods.includes(mod)) return
-	//     if (skipIds.includes(id)) return
-
-	//     let json = recipe.json
-	//     let changed = false
-
-	//     if (json.key) {
-	//     	for (const symbol in json.key) {
-	//     		const ing = json.key[symbol]
-	//     		if (ing.item === from) {
-	//     			ing.item = to
-	//     			changed = true
-	//     		}
-	//     	}
-	//     }
-
-	//     if (json.ingredients) {
-	//     	json.ingredients.forEach(ing => {
-	//     		if (ing.item === from) {
-	//     			ing.item = to
-	//     			changed = true
-	//     		}
-	//     	})
-	//     }
-
-	//     if (json.input && json.input.item === from) {
-	//     	json.input.item = to
-	//     	changed = true
-	//     }
-
-	//     if (json.inputs) {
-	//     	json.inputs.forEach(ing => {
-	//     		if (ing.item === from) {
-	//     			ing.item = to
-	//     			changed = true
-	//     		}
-	//     	})
-	//     }
-
-	//     if (changed) {
-	//     	event.custom(json).id(id)
-	//     }
-	// })
+	event.replaceInput({ id: 'createdieselgenerators:crafting/pumpjack_head' }, "minecraft:dried_kelp", "thermal:cured_rubber")
+	event.replaceInput({ id: 'createdieselgenerators:crafting/chemical_sprayer' }, "minecraft:dried_kelp", "thermal:cured_rubber")
 
 })
