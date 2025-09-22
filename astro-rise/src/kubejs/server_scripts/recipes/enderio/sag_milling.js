@@ -1,8 +1,11 @@
 ServerEvents.recipes(event => {
 
-	// redstone_ore
+	// ores
 
-	event.remove({ id: 'enderio:sag_milling/redstone_ore' })
+	event.remove({
+		type: 'enderio:sag_milling',
+		input: '#forge:ores'
+	})
 	
 	// clay
 
