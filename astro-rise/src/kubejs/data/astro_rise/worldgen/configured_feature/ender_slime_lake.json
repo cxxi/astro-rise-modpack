@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:lake",
+  "config": {
+    "fluid": {
+      "Name": "tconstruct:ender_slime"
+    },
+    "barrier": {
+      "Name": "minecraft:end_stone"
+    }
+  }
+}
