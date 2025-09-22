@@ -1,0 +1,12 @@
+
+{
+	"type": "astro_rise:twilight_end_portal",
+	"biomes": "twilightforest:final_plateau",
+	"spawn_overrides": {},
+	"step": "surface_structures",
+	"terrain_adaptation": "beard_thin",
+	"start_height": {
+		"absolute": 96
+	},
+	"project_start_to_heightmap": "WORLD_SURFACE_WG"
+}

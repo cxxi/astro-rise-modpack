@@ -7,7 +7,7 @@
   },
   "structures": [
     {
-      "structure": "minecraft:stronghold",
+      "structure": "astro_rise:twilight_end_portal",
       "weight": 1
     }
   ]
