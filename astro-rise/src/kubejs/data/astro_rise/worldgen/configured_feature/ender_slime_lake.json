@@ -2,10 +2,16 @@
   "type": "minecraft:lake",
   "config": {
     "fluid": {
-      "Name": "tconstruct:ender_slime"
+      "type": "minecraft:block_state_provider",
+      "state": {
+        "Name": "tconstruct:ender_slime"
+      }
     },
     "barrier": {
-      "Name": "minecraft:end_stone"
+      "type": "minecraft:block_state_provider",
+      "state": {
+        "Name": "minecraft:end_stone"
+      }
     }
   }
 }
