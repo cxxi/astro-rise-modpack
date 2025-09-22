@@ -27,6 +27,8 @@ JEIEvents.hideItems(event => {
 	event.hide('thermal:deepslate_cinnabar_ore')
 	event.hide('thermal:deepslate_niter_ore')
 	event.hide('thermal:deepslate_sulfur_ore')
+	event.hide('deeperdarker:sculk_stone_redstone_ore')
+	event.hide('deeperdarker:gloomslate_redstone_ore')
 
 	event.hide('ftbquests:loot_crate_opener')
 

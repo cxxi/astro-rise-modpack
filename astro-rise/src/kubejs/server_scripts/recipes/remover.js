@@ -33,4 +33,6 @@ ServerEvents.recipes(event => {
 	event.remove({ input: 'thermal:deepslate_cinnabar_ore' })
 	event.remove({ input: 'thermal:deepslate_niter_ore' })
 	event.remove({ input: 'thermal:deepslate_sulfur_ore' })
+	event.remove({ input: 'deeperdarker:sculk_stone_redstone_ore' })
+	event.remove({ input: 'deeperdarker:gloomslate_redstone_ore' })
 })
