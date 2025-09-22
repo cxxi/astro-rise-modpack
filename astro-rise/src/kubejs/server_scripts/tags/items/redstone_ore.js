@@ -5,4 +5,9 @@ ServerEvents.tags('item', event => {
 		'deeperdarker:gloomslate_redstone_ore'
 	])
 
+	event.remove('minecraft:redstone_ores', [
+		'deeperdarker:sculk_stone_redstone_ore',
+		'deeperdarker:gloomslate_redstone_ore'
+	])
+
 })
