@@ -1,15 +1,16 @@
 {
 	"type": "minecraft:jigsaw",
+	"start_pool": "astro_rise:twilight_end_portal/start_pool",
+	"size": 1,
+	"max_distance_from_center": 50,
 	"biomes": "twilightforest:final_plateau",
-	"spawn_overrides": {},
 	"step": "surface_structures",
 	"terrain_adaptation": "beard_thin",
 	"start_height": {
-		"absolute": 96
+		"absolute": 0
 	},
 	"project_start_to_heightmap": "WORLD_SURFACE_WG",
 	"use_expansion_hack": false,
-	"max_distance_from_center": 50,
-	"start_pool": "astro_rise:twilight_end_portal/start_pool",
-	"size": 1
+	"adapt_noise": true,
+	"spawn_overrides": {}
 }
