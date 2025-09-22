@@ -1,0 +1,15 @@
+{
+	"name": "astro_rise:twilight_end_portal/start_pool",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "astro_rise:twilight_end_portal", 
+				"processors": "minecraft:empty",
+				"projection": "rigid"
+			}
+		}
+	]
+}
