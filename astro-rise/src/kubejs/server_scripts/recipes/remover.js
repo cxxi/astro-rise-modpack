@@ -1,6 +1,7 @@
 ServerEvents.recipes(event => {
 
 	event.remove({ output: /twilightforest:hollow_.*/ })
+	event.remove({ id: 'twilightforest:carminite_reactor' })
 
 	// ores cleaning
 
