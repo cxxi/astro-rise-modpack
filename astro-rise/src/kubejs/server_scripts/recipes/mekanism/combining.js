@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
 	event.recipes.mekanismCombining('ad_astra:venus_calorite_ore', Item.of('ad_astra:raw_calorite', 8), 'ad_astra:venus_cobblestone')
 	event.recipes.mekanismCombining('create:zinc_ore', Item.of('create:raw_zinc', 8), 'minecraft:cobblestone')
 	event.recipes.mekanismCombining('create:deepslate_zinc_ore', Item.of('create:raw_zinc', 8), 'minecraft:cobbled_deepslate')
-	event.recipes.mekanismCombining('mekanismaaa:moon_osmium_ore', Item.of('create:raw_osmium', 8), 'ad_astra:moon_cobblestone')
+	event.recipes.mekanismCombining('mekanismaaa:moon_osmium_ore', Item.of('mekanism:raw_osmium', 8), 'ad_astra:moon_cobblestone')
 	event.recipes.mekanismCombining('thermal:apatite_ore', Item.of('thermal:apatite_dust', 27), 'chipped:cobbled_end_stone')
 	event.recipes.mekanismCombining('thermal:cinnabar_ore', Item.of('thermal:cinnabar_dust', 8), 'chipped:cobbled_netherrack')
 	event.recipes.mekanismCombining('thermal:niter_ore', Item.of('thermal:niter_dust', 27), 'ad_astra:venus_cobblestone')
@@ -31,6 +31,6 @@ ServerEvents.recipes(event => {
 	event.recipes.mekanismCombining('mekanism:uranium_ore', Item.of('mekanism:raw_uranium', 8), 'deeperdarker:cobbled_gloomslate')
 
 	event.remove({ id: 'mekanism:processing/fluorite/to_ore' })
-	event.recipes.mekanismCombining('mekanism:fluroite_ore', Item.of('mekanism:dust_fluorite', 14), 'deeperdarker:cobbled_sculk_stone')
+	event.recipes.mekanismCombining('mekanism:fluorite_ore', Item.of('mekanism:dust_fluorite', 14), 'deeperdarker:cobbled_sculk_stone')
 
 })
