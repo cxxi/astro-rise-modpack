@@ -1,8 +1,12 @@
 {
 	"jer.dim.all": "All",
-	"jer.dim.minecraft:overworld": "Overworld",
+	"jer.dim.minecraft:overworld": "The Earth (Overworld)",
 	"jer.dim.minecraft:the_nether": "The Nether",
 	"jer.dim.minecraft:the_end": "The End",
-
-	"jer.dim.ad_astra:mercury": "Planet Mercury"
+	"jer.dim.twilightforest:twilight_forest": "The Twilight Forest",
+	"jer.dim.deeperdarker:otherside": "The Otherside (Deep Dark)",
+	"jer.dim.ad_astra:moon": "The Moon",
+	"jer.dim.ad_astra:mars": "Mars",
+	"jer.dim.ad_astra:venus": "Venus",
+	"jer.dim.ad_astra:mercury": "Mercury"
 }
