@@ -4,7 +4,7 @@
     "fluid": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "tconstruct:ender_slime"
+        "Name": "tconstruct:molten_amethyst"
       }
     },
     "barrier": {

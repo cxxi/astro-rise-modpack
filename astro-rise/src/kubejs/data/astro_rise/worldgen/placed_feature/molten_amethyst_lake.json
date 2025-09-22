@@ -1,5 +1,5 @@
 {
-  "feature": "astro_rise:ender_slime_lake",
+  "feature": "astro_rise:molten_amethyst_lake",
   "placement": [
     { "type": "minecraft:rarity_filter", "chance": 20 }, 
     { "type": "minecraft:in_square" },
