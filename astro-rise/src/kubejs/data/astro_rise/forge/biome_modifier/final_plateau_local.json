@@ -2,7 +2,8 @@
   "type": "forge:add_features",
   "biomes": "twilightforest:final_plateau",
   "features": [
-    "astro_rise:noisy_end_stone"
+    "astro_rise:noisy_end_stone",
+    "astro_rise:noisy_ender_slime_dirt"
   ],
   "step": "local_modifications"
 }
