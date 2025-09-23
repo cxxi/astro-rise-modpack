@@ -24,16 +24,15 @@ ServerEvents.recipes(event => {
 		.stress(128)
 		.id("astro_rise:drilling/tin")
 
+	event.recipes.createoreexcavation.drilling('mekanism:raw_lead', 'astro_rise:lead_vein', 300)
+		.drill('createoreexcavation:diamond_drill')
+		.stress(128)
+		.id("astro_rise:drilling/lead")
+
 	event.recipes.createoreexcavation.drilling('mekanism:raw_osmium', 'astro_rise:osmium_vein', 300)
 		.drill('createoreexcavation:diamond_drill')
 		.stress(128)
 		.id("astro_rise:drilling/osmium")
-
-	event.recipes.createoreexcavation.drilling('mekanism:raw_uranium', 'astro_rise:uranium_vein', 300)
-		.fluid('tconstruct:molten_lumium')
-		.drill('createoreexcavation:netherite_drill')
-		.stress(192)
-		.id("astro_rise:drilling/uranium")
 
 	event.recipes.createoreexcavation.drilling('mekanism:fluorite_gem', 'astro_rise:fluorite_vein', 300)
 		.fluid('tconstruct:molten_lumium')
@@ -41,10 +40,23 @@ ServerEvents.recipes(event => {
 		.stress(192)
 		.id("astro_rise:drilling/fluorite")
 
-	event.recipes.createoreexcavation.drilling('mekanism:raw_lead', 'astro_rise:lead_vein', 300)
-		.drill('createoreexcavation:diamond_drill')
-		.stress(128)
-		.id("astro_rise:drilling/lead")
+	event.recipes.createoreexcavation.drilling('mekanism:raw_uranium', 'astro_rise:uranium_vein', 300)
+		.fluid('tconstruct:molten_lumium')
+		.drill('createoreexcavation:netherite_drill')
+		.stress(192)
+		.id("astro_rise:drilling/uranium")
+
+	event.recipes.createoreexcavation.drilling('big_reactor:anglesite_crystal', 'astro_rise:anglesite_vein', 300)
+		.fluid('tconstruct:molten_uranium')
+		.drill('createoreexcavation:netherite_drill')
+		.stress(256)
+		.id("astro_rise:drilling/anglesite")
+
+	event.recipes.createoreexcavation.drilling('big_reactor:benitoite_crystal', 'astro_rise:benitoite_vein', 300)
+		.fluid('tconstruct:molten_uranium')
+		.drill('createoreexcavation:netherite_drill')
+		.stress(256)
+		.id("astro_rise:drilling/benitoite")
 
 	event.recipes.createoreexcavation.drilling('thermal:apatite', 'astro_rise:apatite_vein', 300)
 		.fluid('minecraft:lava')
