@@ -1,5 +1,16 @@
 ServerEvents.recipes(event => {
 
-	event.recipes.mekanismEnriching('2x mekanism:dust_coal', '#forges:ores/coal')
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forges:ores/coal'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'mekanism:dust_coal'
+		}
+	})
 
 })
