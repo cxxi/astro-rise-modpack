@@ -1,10 +1,12 @@
 ServerEvents.recipes(event => {
 
+	event.remove({ id: 'mekanism:processing/coal/from_ore' })
+
 	event.custom({
 		type: 'mekanism:enriching',
 		input: {
 			ingredient: {
-				tag: 'forges:ores/coal'
+				tag: 'forge:ores/coal'
 			}
 		},
 		output: {
