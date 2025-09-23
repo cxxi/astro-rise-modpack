@@ -56,14 +56,14 @@ ServerEvents.recipes(event => {
 	    .alwaysInfinite()
 	    .biomeWhitelist('deeperdarker:has_blooming_vein')
 
-	event.recipes.createoreexcavation.vein('{"text": "Anglesite (PbS04)"}', 'big_reactor:anglesite_crystal')
+	event.recipes.createoreexcavation.vein('{"text": "Anglesite (PbS04)"}', 'bigreactors:anglesite_crystal')
 		.placement(400, 128, 89152849)
 		.veinSize(3, 5)
 		.id('astro_rise:anglesite_vein')
 	    .alwaysInfinite()
 	    .biomeWhitelist('forge:is_end')
 
-	event.recipes.createoreexcavation.vein('{"text": "Benitoite (BaTiSi309)"}', 'big_reactor:benitoite_crystal')
+	event.recipes.createoreexcavation.vein('{"text": "Benitoite (BaTiSi309)"}', 'bigreactors:benitoite_crystal')
 		.placement(400, 128, 91159842)
 		.veinSize(3, 5)
 		.id('astro_rise:benitoite_vein')

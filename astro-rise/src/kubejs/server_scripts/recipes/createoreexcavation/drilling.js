@@ -46,13 +46,13 @@ ServerEvents.recipes(event => {
 		.stress(192)
 		.id("astro_rise:drilling/uranium")
 
-	event.recipes.createoreexcavation.drilling('big_reactor:anglesite_crystal', 'astro_rise:anglesite_vein', 300)
+	event.recipes.createoreexcavation.drilling('bigreactors:anglesite_crystal', 'astro_rise:anglesite_vein', 300)
 		.fluid('tconstruct:molten_uranium')
 		.drill('createoreexcavation:netherite_drill')
 		.stress(256)
 		.id("astro_rise:drilling/anglesite")
 
-	event.recipes.createoreexcavation.drilling('big_reactor:benitoite_crystal', 'astro_rise:benitoite_vein', 300)
+	event.recipes.createoreexcavation.drilling('bigreactors:benitoite_crystal', 'astro_rise:benitoite_vein', 300)
 		.fluid('tconstruct:molten_uranium')
 		.drill('createoreexcavation:netherite_drill')
 		.stress(256)
