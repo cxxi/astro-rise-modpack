@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:patch",
+  "type": "minecraft:random_patch",
   "config": {
     "state": {
       "type": "minecraft:simple_state_provider",
