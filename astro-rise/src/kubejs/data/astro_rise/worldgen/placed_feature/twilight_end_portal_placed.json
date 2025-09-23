@@ -1,0 +1,10 @@
+{
+  "feature": "astro_rise:twilight_end_portal",
+  "placement": [
+    {
+      "type": "twilightforest:forced_landmark",
+      "landmark_set": "astro_rise:twilight_end_portal",
+      "scan_elevation": 256
+    }
+  ]
+}
