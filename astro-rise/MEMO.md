@@ -32,10 +32,12 @@ zinc
 silver
 nickel
 tin
-osmium
-uranium
-fluorite
 lead
+osmium
+fluorite
+uranium
+anglesite
+benitoite
 apatite
 cinnabar
 ruby

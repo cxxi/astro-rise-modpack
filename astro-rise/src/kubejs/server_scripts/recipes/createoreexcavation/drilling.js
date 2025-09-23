@@ -117,4 +117,5 @@ ServerEvents.recipes(event => {
 		.drill('createoreexcavation:netherite_drill')
 		.stress(256)
 		.id("astro_rise:drilling/calorite")
+		
 })
