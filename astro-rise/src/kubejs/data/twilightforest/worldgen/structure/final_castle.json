@@ -1,6 +1,6 @@
 {
 	"type": "minecraft:jigsaw",
-	"start_pool": "astro_rise:empty/start_pool",
+	"start_pool": "astro_rise:twilight_end_portal/pool",
 	"size": 1,
 	"max_distance_from_center": 50,
 	"biomes": "twilightforest:final_plateau",
