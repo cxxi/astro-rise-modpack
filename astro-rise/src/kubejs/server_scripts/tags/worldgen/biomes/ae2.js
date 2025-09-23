@@ -1,8 +1,7 @@
 ServerEvents.tags('worldgen/biome', event => {
 
 	event.add('ae2:has_meteorites', [
-	    'ad_astra:lunar_wastelands',
-	    '#ad_astra:moon'
+	    'ad_astra:mercury_deltas'
 	])
 
 	event.remove('ae2:has_meteorites', [
