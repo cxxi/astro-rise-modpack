@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
 	event.recipes.createoreexcavation.drilling([
-			Item.of('tconstruct:raw_cobalt'),
+			Item.of('tconstruct:raw_cobalt').withChance(0.40),
 			Item.of('minecraft:netherrack').withChance(0.40)
 		], 'astro_rise:cobalt_vein', 300)
 		.fluid('minecraft:lava')
@@ -34,25 +34,37 @@ ServerEvents.recipes(event => {
 		.stress(128)
 		.id("astro_rise:drilling/osmium")
 
-	event.recipes.createoreexcavation.drilling('mekanism:fluorite_gem', 'astro_rise:fluorite_vein', 300)
+	event.recipes.createoreexcavation.drilling([
+			Item.of('deeperdarker:sculk_stone').withChance(0.50),
+			Item.of('mekanism:fluorite_gem').withChance(0.30)
+		], 'astro_rise:fluorite_vein', 300)
 		.fluid('tconstruct:molten_lumium')
 		.drill('createoreexcavation:netherite_drill')
 		.stress(192)
 		.id("astro_rise:drilling/fluorite")
 
-	event.recipes.createoreexcavation.drilling('mekanism:raw_uranium', 'astro_rise:uranium_vein', 300)
+	event.recipes.createoreexcavation.drilling([
+			Item.of('deeperdarker:gloomslate').withChance(0.50),
+			Item.of('mekanism:raw_uranium').withChance(0.30)
+		], 'astro_rise:uranium_vein', 300)
 		.fluid('tconstruct:molten_lumium')
 		.drill('createoreexcavation:netherite_drill')
 		.stress(192)
 		.id("astro_rise:drilling/uranium")
 
-	event.recipes.createoreexcavation.drilling('bigreactors:anglesite_crystal', 'astro_rise:anglesite_vein', 300)
+	event.recipes.createoreexcavation.drilling([
+			Item.of('minecraft:end_stone').withChance(0.65),
+			Item.of('bigreactors:anglesite_crystal').withChance(0.15)
+		], 'astro_rise:anglesite_vein', 300)
 		.fluid('tconstruct:molten_uranium')
 		.drill('createoreexcavation:netherite_drill')
 		.stress(256)
 		.id("astro_rise:drilling/anglesite")
 
-	event.recipes.createoreexcavation.drilling('bigreactors:benitoite_crystal', 'astro_rise:benitoite_vein', 300)
+	event.recipes.createoreexcavation.drilling([
+			Item.of('minecraft:netherrack').withChance(0.65),
+			Item.of('bigreactors:benitoite_crystal').withChance(0.15)
+		], 'astro_rise:benitoite_vein', 300)
 		.fluid('tconstruct:molten_uranium')
 		.drill('createoreexcavation:netherite_drill')
 		.stress(256)
@@ -82,13 +94,19 @@ ServerEvents.recipes(event => {
 		.stress(128)
 		.id("astro_rise:drilling/sapphire")
 
-	event.recipes.createoreexcavation.drilling('thermal:niter', 'astro_rise:niter_vein', 300)
+	event.recipes.createoreexcavation.drilling([
+			Item.of('ad_astra:venus_stone').withChance(0.35),
+			Item.of('thermal:niter').withChance(0.15)
+		], 'astro_rise:niter_vein', 300)
 		.fluid('mekanism:hydrogen')
 		.drill('createoreexcavation:netherite_drill')
 		.stress(192)
 		.id("astro_rise:drilling/niter")
 
-	event.recipes.createoreexcavation.drilling('thermal:sulfur', 'astro_rise:sulfur_vein', 300)
+	event.recipes.createoreexcavation.drilling([
+			Item.of('ad_astra:mercury_stone').withChance(0.35),
+			Item.of('thermal:sulfur').withChance(0.15)
+		], 'astro_rise:sulfur_vein', 300)
 		.fluid('mekanism:hydrogen')
 		.drill('createoreexcavation:netherite_drill')
 		.stress(192)
@@ -100,7 +118,10 @@ ServerEvents.recipes(event => {
 		.stress(256)
 		.id("astro_rise:drilling/desh")
 
-	event.recipes.createoreexcavation.drilling('ad_astra:ice_shard', 'astro_rise:ice_shard_vein', 300)
+	event.recipes.createoreexcavation.drilling([
+			Item.of('ad_astra:moon_stone').withChance(0.35),
+			Item.of('ad_astra:ice_shard').withChance(0.15)
+		], 'astro_rise:ice_shard_vein', 300)
 		.fluid('mekanism:oxygen')
 		.drill('createoreexcavation:netherite_drill')
 		.stress(192)
@@ -117,5 +138,5 @@ ServerEvents.recipes(event => {
 		.drill('createoreexcavation:netherite_drill')
 		.stress(256)
 		.id("astro_rise:drilling/calorite")
-		
+
 })
