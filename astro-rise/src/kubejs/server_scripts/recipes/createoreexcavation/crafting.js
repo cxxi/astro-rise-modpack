@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
 	    A: 'minecraft:ender_eye', 
 	    B: 'thermal:sapphire',
 	    C: 'thermal:ruby',
-	    D: 'tconstruct:tough_handle'
+	    D: 'createaddition:brass_rod'
 	})
 
 })
