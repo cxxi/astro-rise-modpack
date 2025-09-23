@@ -1,5 +1,12 @@
 ServerEvents.recipes(event => {
 
+	event.recipes.createoreexcavation.vein('{"text": "Lava"}', 'minecraft:lava_bucket')
+		.placement(500, 128, 64632489)
+		.veinSize(5, 8)
+		.id('astro_rise:lava_vein')
+		.alwaysInfinite()
+		.biomeWhitelist('forge:is_hot')
+
 	event.recipes.createoreexcavation.vein('{"text": "Raw Cobalt"}', 'tconstruct:raw_cobalt')
 	    .placement(800, 256, 64825185)
 	    .veinSize(5, 8)
