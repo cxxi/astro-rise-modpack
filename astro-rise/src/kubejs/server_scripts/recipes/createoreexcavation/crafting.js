@@ -3,9 +3,9 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'createoreexcavation:vein_finder' })
 
 	event.shaped('createoreexcavation:vein_finder', [
-	    'AB ', 
-	    'CD ',
-	    '  D'  
+	    ' BA', 
+	    ' DC',
+	    'D  '  
 	], {
 	    A: 'minecraft:ender_eye', 
 	    B: 'thermal:sapphire',

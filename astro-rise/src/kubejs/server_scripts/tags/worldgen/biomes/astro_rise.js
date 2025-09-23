@@ -20,7 +20,7 @@ ServerEvents.tags('worldgen/biome', event => {
 
 	event.add('astro_rise:has_lava_vein', [
 	   'ad_astra:mercury_deltas',
-	   'minecraft:is_nether'
+	   '#minecraft:is_nether'
 	])
 
 	event.add('astro_rise:has_blooming_vein', [
