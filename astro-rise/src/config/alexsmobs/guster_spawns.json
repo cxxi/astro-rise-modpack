@@ -56,6 +56,13 @@
         "negate": false,
         "value": "terralith:cave/desert_caves"
       }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "ad_astra:mercury_deltas"
+      }
     ]
   ]
 }
