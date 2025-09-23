@@ -8,6 +8,7 @@
         "max_inclusive": 12
       }
     },
+    "half_height": 1,
     "state": {
       "Name": "minecraft:end_stone"
     },

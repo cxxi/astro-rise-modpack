@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "twilightforest:final_plateau",
+  "spawners":
+  {
+    "type": "alexsmobs:mimicube",
+    "weight": 80,
+    "minCount": 1,
+    "maxCount": 5
+  }
+}
