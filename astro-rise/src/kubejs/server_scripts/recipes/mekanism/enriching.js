@@ -90,4 +90,69 @@ ServerEvents.recipes(event => {
 		}
 	})
 
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				item: 'ad_astra:moon_desh_ore'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'astro_rise:dust_desh'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				item: 'ad_astra:moon_ice_shard_ore'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'astro_rise:dust_ice_shard'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				item: 'ad_astra:mars_ostrum_ore'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'astro_rise:dust_ostrum'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				item: 'ad_astra:venus_calorite_ore'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'astro_rise:dust_calorite'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				item: 'astro_rise:mercury_aerolyte_ore'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'astro_rise:dust_aerolyte'
+		}
+	})
+
 })
