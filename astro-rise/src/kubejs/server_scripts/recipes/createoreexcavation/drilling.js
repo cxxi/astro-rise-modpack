@@ -139,4 +139,10 @@ ServerEvents.recipes(event => {
 		.stress(256)
 		.id("astro_rise:drilling/calorite")
 
+	event.recipes.createoreexcavation.drilling('astro_rise:aerolyte_raw', 'astro_rise:aerolyte_vein', 4000)
+		.fluid('mekanism:sulfuric_acid')
+		.drill('createoreexcavation:netherite_drill')
+		.stress(256)
+		.id("astro_rise:drilling/aerolyte")
+
 })
