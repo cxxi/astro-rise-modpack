@@ -13,7 +13,11 @@
       "Name": "minecraft:end_stone"
     },
     "target": {
-      "Name": "twilightforest:weathered_deadrock"
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "twilightforest:weathered_deadrock",
+        "twilightforest:cracked_deadrock"
+      ]
     }
   }
 }
