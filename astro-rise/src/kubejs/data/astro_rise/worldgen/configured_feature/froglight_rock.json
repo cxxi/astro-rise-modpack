@@ -1,19 +1,51 @@
 {
   "type": "minecraft:random_patch",
   "config": {
-    "state": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "minecraft:pearlescent_froglight"
-      }
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:pearlescent_froglight"
+            }
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:replaceable"
+              },
+              {
+                "type": "minecraft:matching_fluids",
+                "fluids": "minecraft:empty"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "twilightforest:weathered_deadrock",
+                  "twilightforest:cracked_deadrock",
+                  "minecraft:end_stone"
+                ],
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          }
+        }
+      ]
     },
-    "tries": 5,
-    "xz_spread": 3,
-    "y_spread": 2,
-    "targets": [
-      "twilightforest:weathered_deadrock",
-      "twilightforest:cracked_deadrock",
-      "minecraft:end_stone"
-    ]
+    "tries": 64,
+    "xz_spread": 7,
+    "y_spread": 3
   }
 }
