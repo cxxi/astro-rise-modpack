@@ -70,14 +70,14 @@ ServerEvents.recipes(event => {
 		.stress(128)
 		.id("astro_rise:drilling/sapphire")
 
-	event.recipes.createoreexcavation.drilling('thermal:nither', 'astro_rise:nither_vein', 300)
-		// .fluid('mekanism:hydrogen')
+	event.recipes.createoreexcavation.drilling('thermal:niter', 'astro_rise:niter_vein', 300)
+		.fluid('mekanism:hydrogen')
 		.drill('createoreexcavation:netherite_drill')
 		.stress(192)
-		.id("astro_rise:drilling/nither")
+		.id("astro_rise:drilling/niter")
 
 	event.recipes.createoreexcavation.drilling('thermal:sulfur', 'astro_rise:sulfur_vein', 300)
-		// .fluid('mekanism:hydrogen')
+		.fluid('mekanism:hydrogen')
 		.drill('createoreexcavation:netherite_drill')
 		.stress(192)
 		.id("astro_rise:drilling/sulfur")

@@ -84,10 +84,10 @@ ServerEvents.recipes(event => {
 	    .alwaysInfinite()
 	    .biomeWhitelist('forge:is_mountain')
 
-	event.recipes.createoreexcavation.vein('{"text": "Nither"}', 'thermal:nither')
+	event.recipes.createoreexcavation.vein('{"text": "Niter"}', 'thermal:niter')
 		.placement(800, 256, 10649287)
 		.veinSize(2, 6)
-		.id('astro_rise:nither_vein')
+		.id('astro_rise:niter_vein')
 	    .alwaysInfinite()
 	    .biomeWhitelist('ad_astra:has_venus_vein')
 
