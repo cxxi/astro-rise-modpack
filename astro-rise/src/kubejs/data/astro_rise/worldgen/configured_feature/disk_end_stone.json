@@ -13,8 +13,7 @@
         "state": {
           "Name": "minecraft:end_stone"
         }
-      },
-      "rules": []
+      }
     },
     "target": {
       "type": "minecraft:matching_blocks",
