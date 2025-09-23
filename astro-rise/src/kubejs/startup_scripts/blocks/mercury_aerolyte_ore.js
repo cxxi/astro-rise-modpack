@@ -10,6 +10,25 @@ StartupEvents.registry('block', event => {
 	    .textureAll("astro_rise:block/mercury_aerolyte_ore")
 	    .tagBlock("mineable/pickaxe")                    
 	    .tagBlock("minecraft:needs_iron_tool")           
-	    .tagBlock("forge:ores")                          
-	    // .tagBlock("forge:ores/mercury_aerolyte")
+	    .tagBlock("forge:ores")                      
+	    .tagBlock("forge:ores/mercury_aerolyte")
+	    .setLootTableJson({
+	    	type: "minecraft:block",
+	    	pools: [
+	    		{
+	    			rolls: 1,
+	    			entries: [
+	    				{
+    						type: "minecraft:item",
+    						name: "astro_rise:raw_aerolyte"
+	    				}
+	    			],
+	    			conditions: [
+    					{
+    						condition: "minecraft:survives_explosion"
+    					}
+	    			]
+	    		}
+	    	]
+	    })
 })
