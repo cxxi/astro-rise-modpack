@@ -147,7 +147,7 @@ ServerEvents.recipes(event => {
 	    .alwaysInfinite()
 	    .biomeWhitelist('astro_rise:has_venus_vein')
 
-	event.recipes.createoreexcavation.vein('{"text": "Raw Aerolyte"}', 'ad_astra:raw_aerolyte')
+	event.recipes.createoreexcavation.vein('{"text": "Raw Aerolyte"}', 'astro_rise:raw_aerolyte')
 		.placement(400, 128, 80573421)
 		.veinSize(3, 5)
 		.id('astro_rise:aerolyte_vein')
