@@ -2,7 +2,9 @@
   "type": "forge:add_features",
   "biomes": "twilightforest:final_plateau",
   "features": [
-    "astro_rise:froglight_rock"
+    "astro_rise:ender_slime_tree",
+    "astro_rise:ender_slime_tree_tall",
+    "minecraft:chorus_plant"
   ],
   "step": "vegetal_decoration"
 }

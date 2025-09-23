@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": "twilightforest:final_plateau",
+  "features": [
+    "astro_rise:froglight_rock"
+  ],
+  "step": "top_layer_modification"
+}

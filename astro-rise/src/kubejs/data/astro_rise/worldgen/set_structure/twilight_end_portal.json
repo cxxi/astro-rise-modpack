@@ -1,14 +1,13 @@
 {
-  "placement": {
-    "type": "minecraft:concentric_rings",
-    "salt": 14357617,
-    "separation": 8,
-    "spacing": 32
-  },
-  "structures": [
-    {
-      "structure": "astro_rise:twilight_end_portal",
-      "weight": 1
-    }
-  ]
+	"placement": {
+		"type": "twilightforest:forced_landmark",
+		"landmark_set": "astro_rise:twilight_end_portal",
+		"scan_elevation": 256
+	},
+	"structures": [
+		{
+			"structure": "astro_rise:twilight_end_portal", 
+			"weight": 1 
+		}
+	]
 }

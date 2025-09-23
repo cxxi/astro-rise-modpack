@@ -1,8 +1,19 @@
 {
-  "type": "minecraft:forest_rock",
+  "type": "minecraft:patch",
   "config": {
     "state": {
-      "Name": "minecraft:cobblestone"
-    }
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:pearlescent_froglight"
+      }
+    },
+    "tries": 5,
+    "xz_spread": 3,
+    "y_spread": 2,
+    "targets": [
+      "twilightforest:weathered_deadrock",
+      "twilightforest:cracked_deadrock",
+      "minecraft:end_stone"
+    ]
   }
 }
