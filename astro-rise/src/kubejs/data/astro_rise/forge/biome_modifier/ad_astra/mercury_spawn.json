@@ -4,15 +4,21 @@
 	"spawners": [
   		{
 			"type": "minecraft:blaze",
-			"weight": 50,
+			"weight": 20,
 			"minCount": 3,
 			"maxCount": 5
 		},
 		{
 			"type": "thermal:basalz",
-			"weight": 50,
+			"weight": 40,
 			"minCount": 3,
 			"maxCount": 5
 		},
+		{
+			"type": "alexsmobs:guster",
+			"weight": 40,
+			"minCount": 3,
+			"maxCount": 5
+		}
 	]
 }
