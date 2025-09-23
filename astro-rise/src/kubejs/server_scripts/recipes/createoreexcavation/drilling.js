@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
 
 	event.recipes.createoreexcavation.drilling([
 			Item.of('tconstruct:raw_cobalt'),
-			coeutil.processingOutput('minecraft:netherrack', 0.40)
+			Item.of('minecraft:netherrack').withChance(0.40)
 		], 'astro_rise:cobalt_vein', 300)
 		.fluid('minecraft:lava')
 		.drill('createoreexcavation:diamond_drill')
