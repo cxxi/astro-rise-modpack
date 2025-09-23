@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ad_astra:mercury_deltas",
+  "features": "astro_rise:mercury_aerolyte_ore",
+  "step": "underground_ores"
+}

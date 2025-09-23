@@ -11,6 +11,7 @@ ServerEvents.recipes(event => {
 	event.blasting('thermal:cinnabar', 'thermal:cinnabar_ore') 
 	event.blasting('thermal:sulfur', 'thermal:sulfur_ore') 
 	event.blasting('thermal:sapphire', '#forge:ores/sapphire') 
-	event.blasting('thermal:ruby', '#forge:ores/ruby') 
+	event.blasting('thermal:ruby', '#forge:ores/ruby')
+	event.blasting('astro_rise:ingot_aerolyte', 'astro_rise:mercury_aerolyte_ore')
 
 })
