@@ -555,25 +555,7 @@ quantity=1
 ################################################################################
 
 [[mob]]
-name="minecraft:blaze"
-[[mob.rule]]
-name="mercury-rule"
-type="all"
-run=50
-dimension=["ad_astra:mercury", "minecraft:the_nether"]
-whitelistBiomes=["ad_astra:mercury_deltas"]
-
-[[mob]]
-name="thermal:basalz"
-[[mob.rule]]
-name="mercury-rule"
-type="all"
-run=50
-dimension=["ad_astra:mercury"]
-whitelistBiomes=["ad_astra:mercury_deltas"]
-
-[[mob]]
-name="alexsmobs:guster"
+name=["minecraft:blaze","thermal:basalz","alexsmobs:guster"]
 [[mob.rule]]
 name="mercury-rule"
 type="all"
