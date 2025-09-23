@@ -554,23 +554,32 @@ quantity=1
 # Add your custom rules below the next line
 ################################################################################
 
-[mobs."minecraft:blaze"]
-weight = 20
-minGroupSize = 1
-maxGroupSize = 3
-whitelistBiomes = ["ad_astra:mercury_deltas"]
+[[mob]]
+name="minecraft:blaze"
+[[mob.rule]]
+name="mercury-rule"
+type="all"
+run=50
+dimension=["ad_astra:mercury", "minecraft:the_nether"]
+whitelistBiomes=["ad_astra:mercury_deltas"]
 
-[mobs."thermal:basalz"]
-weight = 100
-minGroupSize = 3
-maxGroupSize = 5
-whitelistBiomes = ["ad_astra:mercury_deltas"]
+[[mob]]
+name="thermal:basalz"
+[[mob.rule]]
+name="mercury-rule"
+type="all"
+run=50
+dimension=["ad_astra:mercury"]
+whitelistBiomes=["ad_astra:mercury_deltas"]
 
-[mobs."alexsmobs:guster"]
-weight = 100
-minGroupSize = 3
-maxGroupSize = 5
-whitelistBiomes = ["ad_astra:mercury_deltas"]
+[[mob]]
+name="alexsmobs:guster"
+[[mob.rule]]
+name="mercury-rule"
+type="all"
+run=50
+dimension=["ad_astra:mercury"]
+whitelistBiomes=["ad_astra:mercury_deltas"]
 
 ################################################################################
 # Add your custom rules above the previous line
