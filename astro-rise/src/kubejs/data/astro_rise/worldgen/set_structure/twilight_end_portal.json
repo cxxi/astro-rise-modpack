@@ -1,7 +1,7 @@
 {
 	"placement": {
 		"type": "twilightforest:forced_landmark",
-		"landmark_set": "astro_rise:twilight_end_portal",
+		"landmark_set": "astro_rise:twilight_end_portal_set",
 		"scan_elevation": 256
 	},
 	"structures": [

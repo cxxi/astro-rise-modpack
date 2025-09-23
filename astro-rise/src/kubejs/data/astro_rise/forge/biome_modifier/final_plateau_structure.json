@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#twilightforest:final_plateau",
-  "features": "astro_rise:twilight_end_portal_placed",
+  "features": "astro_rise:twilight_end_portal_set",
   "step": "surface_structures"
 }
