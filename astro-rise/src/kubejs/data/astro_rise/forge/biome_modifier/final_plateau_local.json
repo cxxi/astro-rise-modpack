@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "twilightforest:final_plateau",
-  "features": "astro_rise:disk_end_stone",
+  "features": "astro_rise:noisy_end_stone",
   "step": "local_modifications"
 }
