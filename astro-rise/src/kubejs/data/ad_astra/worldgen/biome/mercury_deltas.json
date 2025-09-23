@@ -74,21 +74,9 @@
     	},
     	{
 			"type": "minecraft:blaze",
-			"weight": 20,
-			"minCount": 1,
-			"maxCount": 3
-		},
-		{
-			"type": "thermal:basalz",
-			"weight": 100,
-			"minCount": 3,
-			"maxCount": 5
-		},
-		{
-			"type": "alexsmobs:guster",
-			"weight": 100,
-			"minCount": 3,
-			"maxCount": 5
+			"weight": 80,
+			"minCount": 2,
+			"maxCount": 4
 		}
     ],
     "underground_water_creature": [],
