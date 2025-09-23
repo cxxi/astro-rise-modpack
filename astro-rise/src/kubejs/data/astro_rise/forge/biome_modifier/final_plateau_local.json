@@ -2,8 +2,7 @@
   "type": "forge:add_features",
   "biomes": "twilightforest:final_plateau",
   "features": [
-    "astro_rise:noisy_end_stone",
-    "astro_rise:froglight_rock"
+    "astro_rise:noisy_end_stone"
   ],
   "step": "local_modifications"
 }

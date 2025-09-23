@@ -4,7 +4,8 @@
   "features": [
     "astro_rise:ender_slime_tree",
     "astro_rise:ender_slime_tree_tall",
-    "minecraft:chorus_plant"
+    "minecraft:chorus_plant",
+    "astro_rise:froglight_rock"
   ],
   "step": "vegetal_decoration"
 }
