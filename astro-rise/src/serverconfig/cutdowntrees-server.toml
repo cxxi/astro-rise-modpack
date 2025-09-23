@@ -1,0 +1,9 @@
+#how much get damage when tree is cut down
+#Range: 0.0 ~ 1.7976931348623157E308
+CutDownDamage = 2.0
+#how much time(tick) do you need to cut down trees
+#Range: > 0
+CutDownSpeed = 30
+#you can change do dropped items go to near of player
+doDroppedItemsGoToNearOfPlayer = true
+
