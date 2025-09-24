@@ -168,4 +168,185 @@ ServerEvents.recipes(event => {
 		}
 	})
 
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forge:ores/tin'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'mekanism:dust_tin'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forge:ores/lead'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'mekanism:dust_lead'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forge:ores/osmium'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'mekanism:dust_osmium'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forge:ores/uranium'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'mekanism:dust_uranium'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forge:ores/fluorite'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'mekanism:dust_fluorite'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forge:ores/silver'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'thermal:silver_dust'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forge:ores/nickel'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'thermal:nickel_dust'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forge:ores/apatite'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'thermal:apatite_dust'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forge:ores/cinnabar'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'thermal:cinnabar_dust'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forge:ores/sulfur'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'mekanism:dust_sulfur'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forge:ores/niter'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'thermal:niter_dust'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forge:ores/ruby'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'thermal:ruby_dust'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forge:ores/sapphire'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'thermal:sapphire_dust'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forge:ores/cobalt'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'enderio:powdered_cobalt'
+		}
+	})
 })
