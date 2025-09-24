@@ -28,6 +28,7 @@ ServerEvents.recipes(event => {
 	event.recipes.createsifter.sifting([
 		Item.of('minecraft:flint').withChance(0.05),
 		Item.of('minecraft:bone_meal').withChance(0.05),
+		Item.of('minecraft:coal').withChance(0.07),
 		Item.of('astro_rise:andesite_nugget').withChance(0.10)
 	], ['minecraft:gravel','createsifter:zinc_mesh'])
 
@@ -52,10 +53,8 @@ ServerEvents.recipes(event => {
 
 	event.recipes.createsifter.sifting([
 		Item.of('minecraft:gold_nugget').withChance(0.05),
-		Item.of('minecraft:redstone').withChance(0.03),
 		Item.of('minecraft:glowstone_dust').withChance(0.03),
 		Item.of('mekanism:dust_quartz').withChance(0.03),
-		Item.of('mekanism:dust_coal').withChance(0.05),
 		Item.of('minecraft:nautilus_shell').withChance(0.01)
 	], ['minecraft:sand','createsifter:brass_mesh'])
 
@@ -80,7 +79,6 @@ ServerEvents.recipes(event => {
 	event.recipes.createsifter.sifting([
 		Item.of('mekanism:dust_gold').withChance(0.05),
 		Item.of('mekanism:dust_lapis_lazuli').withChance(0.05),
-		Item.of('minecraft:redstone').withChance(0.05),
 		Item.of('mekanism:dust_emerald').withChance(0.03),
 		Item.of('thermal:ruby_dust').withChance(0.03),
 		Item.of('thermal:sapphire_dust').withChance(0.03),
