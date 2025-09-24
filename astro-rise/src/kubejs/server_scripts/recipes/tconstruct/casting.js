@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
 	// andesite_alloy
 
 	event.custom({
-	    type: 'tconstruct:casting_table',
+	    type: 'tconstruct:casting_basin',
 	    cast: {
 	    	item: 'minecraft:andesite'
 	    },

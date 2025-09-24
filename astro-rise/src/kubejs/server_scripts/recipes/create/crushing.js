@@ -1,11 +1,15 @@
 ServerEvents.recipes(event => {
 
-	event.remove({ id: 'create:crushing/ochrum' })
-	event.remove({ id: 'create:crushing/ochrum_recycling' })
+	// event.remove({ id: 'create:crushing/tuff' })
+	// event.remove({ id: 'create:crushing/tuff_recycling' })
 
-	event.remove({ id: 'create:crushing/tuff' })
-	event.remove({ id: 'create:crushing/tuff_recycling' })
+	event.remove({ type: 'create:crushing',  input: '#create:stone_types/ochrum' })
+	event.remove({ type: 'create:crushing',  input: '#create:stone_types/crimsite' })
+	event.remove({ type: 'create:crushing',  input: '#create:stone_types/veridium' })
+	event.remove({ type: 'create:crushing',  input: '#create:stone_types/asurine' })
 
+	event.remove({ type: 'create:crushing',  input: '#minecraft:flowers' })
+	event.remove({ type: 'create:crushing',  input: '#createaddition:plants' })
 	event.remove({ type: 'create:crushing',  output: 'createdieselgenerators:wood_chip' })
 
 	event.remove({ id: 'create_ultimate_factory:crushing_netherite' })

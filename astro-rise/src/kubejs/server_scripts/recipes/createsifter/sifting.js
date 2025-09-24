@@ -21,7 +21,8 @@ ServerEvents.recipes(event => {
 		Item.of('minecraft:beetroot_seeds').withChance(0.1),
 		Item.of('minecraft:torchflower_seeds').withChance(0.01),
 		Item.of('farmersdelight:cabbage_seeds').withChance(0.1),
-		Item.of('farmersdelight:tomato_seeds').withChance(0.1)
+		Item.of('farmersdelight:tomato_seeds').withChance(0.1),
+		Item.of('minecraft:cacao_beans').withChance(0.1)
 	], ['minecraft:dirt','createsifter:zinc_mesh'])
 
 	event.recipes.createsifter.sifting([
@@ -54,7 +55,8 @@ ServerEvents.recipes(event => {
 		Item.of('minecraft:redstone').withChance(0.03),
 		Item.of('minecraft:glowstone_dust').withChance(0.03),
 		Item.of('mekanism:dust_quartz').withChance(0.03),
-		Item.of('mekanism:dust_coal').withChance(0.05)
+		Item.of('mekanism:dust_coal').withChance(0.05),
+		Item.of('minecraft:nautilus_shell').withChance(0.01)
 	], ['minecraft:sand','createsifter:brass_mesh'])
 
 	// advanced brass mesh
