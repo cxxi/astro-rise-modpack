@@ -32,6 +32,10 @@ JEIEvents.hideItems(event => {
 
 	event.hide('ftbquests:loot_crate_opener')
 
+	event.hide('createsifter:andesite_mesh')
+	event.hide('createsifter:custom_mesh')
+	event.hide('createsifter:advanced_custom_mesh')
+
 	event.hide('create_mechanical_chicken:seed_oil_bucket')
 
 	// event.hide('bigreactors:yellorium_nugget')
