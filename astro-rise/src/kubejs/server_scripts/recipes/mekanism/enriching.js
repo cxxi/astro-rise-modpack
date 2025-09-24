@@ -159,7 +159,7 @@ ServerEvents.recipes(event => {
 		type: 'mekanism:enriching',
 		input: {
 			ingredient: {
-				item: 'forge:ores/zinc'
+				tag: 'forge:ores/zinc'
 			}
 		},
 		output: {

@@ -10,6 +10,7 @@ ServerEvents.recipes(event => {
 	event.recipes.mekanismCombining('ad_astra:moon_ice_shard_ore', Item.of('ad_astra:ice_shard', 14), 'ad_astra:moon_cobblestone')
 	event.recipes.mekanismCombining('ad_astra:mars_ostrum_ore', Item.of('ad_astra:raw_ostrum', 8), 'ad_astra:mars_cobblestone')
 	event.recipes.mekanismCombining('ad_astra:venus_calorite_ore', Item.of('ad_astra:raw_calorite', 8), 'ad_astra:venus_cobblestone')
+	event.recipes.mekanismCombining('astro_rise:mercury_aerolyte_ore', Item.of('astro_rise:raw_aerolyte', 8), 'ad_astra:mercury_cobblestone')
 	event.recipes.mekanismCombining('create:zinc_ore', Item.of('create:raw_zinc', 8), 'minecraft:cobblestone')
 	event.recipes.mekanismCombining('create:deepslate_zinc_ore', Item.of('create:raw_zinc', 8), 'minecraft:cobbled_deepslate')
 	event.recipes.mekanismCombining('mekanismaaa:moon_osmium_ore', Item.of('mekanism:raw_osmium', 8), 'ad_astra:moon_cobblestone')
