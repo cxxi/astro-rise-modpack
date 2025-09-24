@@ -1,6 +1,7 @@
 ServerEvents.recipes(event => {
 
-	event.remove({ type: 'create:crushing',  input: /.*_ore/ })
+	// event.remove({ type: 'create:crushing',  input: /.*_ore/ })
+	// TODO
 
 	// ochrum
 
