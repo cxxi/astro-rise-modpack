@@ -32,4 +32,8 @@ ServerEvents.tags('worldgen/biome', event => {
 		'deeperdarker:overcast_columns'
 	])
 
+	event.add('astro_rise:has_gold_vein', [
+		'#minecraft:is_overworld',
+		'#minecraft:is_nether'
+	])
 })
