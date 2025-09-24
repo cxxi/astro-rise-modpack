@@ -48,3 +48,5 @@ desh
 ice_shard
 ostrum
 calorite
+aluminum
+platinum
