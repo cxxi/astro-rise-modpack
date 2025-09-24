@@ -1,4 +1,4 @@
-ServerEvents.playerLoggedIn(event => {
+PlayerEvents.loggedIn(event => {
 
     const player = event.player
 
