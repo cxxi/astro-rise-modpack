@@ -1,7 +1,6 @@
 ServerEvents.recipes(event => {
 
-	// event.remove({ id: 'create:crushing/tuff' })
-	// event.remove({ id: 'create:crushing/tuff_recycling' })
+	event.remove({ type: 'create:crushing',  input: '#create:stone_types/tuff' })
 
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/ochrum' })
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/crimsite' })

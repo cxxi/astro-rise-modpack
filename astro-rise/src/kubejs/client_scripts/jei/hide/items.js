@@ -35,6 +35,7 @@ JEIEvents.hideItems(event => {
 	event.hide('createsifter:andesite_mesh')
 	event.hide('createsifter:custom_mesh')
 	event.hide('createsifter:advanced_custom_mesh')
+	event.hide('createsifter:dust')
 
 	event.hide('create_mechanical_chicken:seed_oil_bucket')
 

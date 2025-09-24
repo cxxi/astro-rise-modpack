@@ -4,4 +4,4 @@ ServerEvents.recipes(event => {
    		'9x ad_astra:ice_shard'
    	])
 
-}
+})
