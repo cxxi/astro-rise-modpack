@@ -59,10 +59,14 @@ ServerEvents.recipes(event => {
    		'4x astro_rise:andesite_nugget'
    	])
 
+   	event.shapeless('4x astro_rise:andesite_nugget', [
+   		'4x astro_rise:andesite_nugget'
+   	])
+
 	// shulker_shell
 
 	event.shapeless('minecraft:shulker_shell', [
-   		'9x astro_rise:shulker_scute'
+   		'minecraft:andesite'
    	])
 
 	// cake
