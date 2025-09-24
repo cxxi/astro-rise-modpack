@@ -31,33 +31,55 @@ ServerEvents.recipes(event => {
 	], ['minecraft:gravel','createsifter:zinc_mesh'])
 
 	// brass mesh
-	// brass -> gravel / sand
 
-	// event.custom({
-	// 	type: 'createsifter:sifting',
-	// 	input: { item: 'minecraft:gravel' },
-	// 	mesh: { count: 1, id: 'createsifter:brass_mesh' },
-	// 	processingTime: 500,
-	// 	results: [
-	// 		{ id: 'minecraft:quartz', chance: 0.1 },
-	// 		{ id: 'minecraft:nether_wart', chance: 0.05 },
-	// 		{ id: 'create:experience_nugget', chance: 0.1 }
-	// 	]
-	// })
+	event.remove({ id: 'createsifter:sifting/gravel_brass_mesh' })
+	event.remove({ id: 'createsifter:sifting/sand_brass_mesh' })
+	event.remove({ id: 'createsifter:sifting/soul_sand_brass_mesh' })
 
-	// event.custom({
-	// 	type: 'createsifter:sifting',
-	// 	input: { item: 'minecraft:sand' },
-	// 	mesh: { count: 1, id: 'createsifter:brass_mesh' },
-	// 	processingTime: 500,
-	// 	results: [
-	// 		{ id: 'minecraft:quartz', chance: 0.1 },
-	// 		{ id: 'minecraft:nether_wart', chance: 0.05 },
-	// 		{ id: 'create:experience_nugget', chance: 0.1 }
-	// 	]
-	// })
+	event.recipes.createsifter.sifting([
+		Item.of('minecraft:iron_nugget').withChance(0.05),
+		Item.of('create:copper_nugget').withChance(0.05),
+		Item.of('create:zinc_nugget').withChance(0.05),
+		Item.of('mekanism:nugget_tin').withChance(0.04),
+		Item.of('simplemetals_aluminum:aluminum_nugget').withChance(0.04),
+		Item.of('mekanism:nugget_lead').withChance(0.04),
+		Item.of('thermal:nickel_nugget').withChance(0.04),
+		Item.of('thermal:silver_nugget').withChance(0.04),
+		Item.of('mekanism:nugget_osmium').withChance(0.03),
+		Item.of('astro_rise:platinum_nugget').withChance(0.01)
+	], ['minecraft:gravel','createsifter:brass_mesh'])
+
+	event.recipes.createsifter.sifting([
+		Item.of('minecraft:gold_nugget').withChance(0.05),
+		Item.of('minecraft:redstone').withChance(0.03),
+		Item.of('minecraft:glowstone_dust').withChance(0.03),
+		Item.of('mekanism:dust_quartz').withChance(0.03),
+		Item.of('mekanism:dust_coal').withChance(0.05)
+	], ['minecraft:sand','createsifter:brass_mesh'])
 
 	// advanced brass mesh
-	// advanced brass -> gravel / sand / soulsand
+
+	event.remove({ id: 'createsifter:sifting/gravel_advanced_brass_mesh' })
+	event.remove({ id: 'createsifter:sifting/soul_sand_advanced_brass_mesh' })
+
+	event.recipes.createsifter.sifting([
+		Item.of('minecraft:gold_nugget').withChance(0.05)
+	], ['minecraft:gravel','createsifter:advanced_brass_mesh'])
+
+	event.recipes.createsifter.sifting([
+		Item.of('minecraft:gold_nugget').withChance(0.05)
+	], ['minecraft:sand','createsifter:advanced_brass_mesh'])
+
+	event.recipes.createsifter.sifting([
+		Item.of('minecraft:gold_nugget').withChance(0.05)
+	], ['minecraft:soul_sand','createsifter:advanced_brass_mesh'])
+
+	event.recipes.createsifter.sifting([
+		Item.of('minecraft:gold_nugget').withChance(0.05)
+	], ['astro_rise:crushed_netherrack','createsifter:advanced_brass_mesh'])
+
+	event.recipes.createsifter.sifting([
+		Item.of('minecraft:gold_nugget').withChance(0.05)
+	], ['createsifter:crushed_end_stone','createsifter:advanced_brass_mesh'])
 
 })
