@@ -34,6 +34,17 @@ ServerEvents.recipes(event => {
 		.stress(128)
 		.id("astro_rise:drilling/osmium")
 
+	event.recipes.createoreexcavation.drilling('simplemetals_aluminum:raw_aluminum', 'astro_rise:aluminum_vein', 600)
+		.drill('createoreexcavation:diamond_drill')
+		.stress(128)
+		.id("astro_rise:drilling/aluminum")
+
+	event.recipes.createoreexcavation.drilling(Item.of('platinum_mod:raw_platinum').withChance(0.35), 'astro_rise:platinum_vein', 1200)
+		.fluid('minecraft:lava')
+		.drill('createoreexcavation:netherite_drill')
+		.stress(192)
+		.id("astro_rise:drilling/platinum")
+
 	event.recipes.createoreexcavation.drilling([
 			Item.of('deeperdarker:sculk_stone').withChance(0.50),
 			Item.of('mekanism:fluorite_gem').withChance(0.30)

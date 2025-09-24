@@ -63,6 +63,20 @@ ServerEvents.recipes(event => {
 	    .alwaysInfinite()
 	    .biomeWhitelist('astro_rise:has_blooming_vein')
 
+	event.recipes.createoreexcavation.vein('{"text": "Raw Bauxite"}', 'simplemetals_aluminum:raw_aluminum')
+		.placement(400, 128, 25159364)
+		.veinSize(4, 7)
+		.id('astro_rise:aluminum_vein')
+	    .alwaysInfinite()
+	    .biomeWhitelist('minecraft:is_overworld')
+
+	event.recipes.createoreexcavation.vein('{"text": "Raw Platinum"}', 'platinum_mod:raw_platinum')
+		.placement(400, 256, 31159894)
+		.veinSize(3, 5)
+		.id('astro_rise:platinum_vein')
+	    .alwaysInfinite()
+	    .biomeWhitelist('minecraft:is_overworld')
+
 	event.recipes.createoreexcavation.vein('{"text": "Anglesite (PbS04)"}', 'bigreactors:anglesite_crystal')
 		.placement(400, 128, 89152849)
 		.veinSize(3, 5)

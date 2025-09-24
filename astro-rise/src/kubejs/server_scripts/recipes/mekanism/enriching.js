@@ -349,4 +349,30 @@ ServerEvents.recipes(event => {
 			item: 'enderio:powdered_cobalt'
 		}
 	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forge:ores/aluminum'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'astro_rise:dust_aluminum'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				tag: 'forge:ores/platinum'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'astro_rise:dust_platinum'
+		}
+	})
 })
