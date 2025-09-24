@@ -36,13 +36,13 @@ ServerEvents.recipes(event => {
 	// })
 
 	event.recipes.createsifter.sifting([
-		Output.of('minecraft:wheat_seeds', 0.3),
-		Output.of('minecraft:pumpkin_seeds', 0.1),
-		Output.of('minecraft:melon_seeds', 0.1),
-		Output.of('minecraft:beetroot_seeds', 0.1),
-		Output.of('minecraft:torchflower_seeds', 0.01),
-		Output.of('farmersdelight:cabbage_seeds', 0.1),
-		Output.of('farmersdelight:tomato_seeds', 0.1)
+		Item.of('minecraft:wheat_seeds').withChance(0.3),
+		Item.of('minecraft:pumpkin_seeds').withChance(0.1),
+		Item.of('minecraft:melon_seeds').withChance(0.1),
+		Item.of('minecraft:beetroot_seeds').withChance(0.1),
+		Item.of('minecraft:torchflower_seeds').withChance(0.01),
+		Item.of('farmersdelight:cabbage_seeds').withChance(0.1),
+		Item.of('farmersdelight:tomato_seeds').withChance(0.1)
 	],'minecraft:dirt','createsifter:zinc_mesh')
 
 	// event.custom({
@@ -58,9 +58,9 @@ ServerEvents.recipes(event => {
 	// })
 
 	event.recipes.createsifter.sifting([
-		Output.of('minecraft:flint', 0.05),
-		Output.of('minecraft:bone_meal', 0.05),
-		Output.of('astro_rise:andesite_nugget', 0.1)
+		Item.of('minecraft:flint').withChance(0.05),
+		Item.of('minecraft:bone_meal').withChance(0.05),
+		Item.of('astro_rise:andesite_nugget').withChance(0.1)
 	],'minecraft:gravel','createsifter:zinc_mesh')
 
 	// brass mesh
