@@ -102,10 +102,11 @@ ServerEvents.recipes(event => {
 	], ['astro_rise:crushed_netherrack','createsifter:advanced_brass_mesh'])
 
 	event.recipes.createsifter.sifting([
+		Item.of('thermal:apatite_dust').withChance(0.03),
 		Item.of('platinum_mod:ender_tear').withChance(0.03),
-		Item.of('astro_rise:shulker_scute').withChance(0.05),
-		Item.of('tconstruct:dragon_scale').withChance(0.05)
-		// Item.of('minecraft:gold_nugget').withChance(0.05)
+		Item.of('astro_rise:shulker_scute').withChance(0.02),
+		Item.of('tconstruct:dragon_scale').withChance(0.02),
+		Item.of('thermal:ender_pearl_dust').withChance(0.05)
 	], ['createsifter:crushed_end_stone','createsifter:advanced_brass_mesh'])
 
 })
