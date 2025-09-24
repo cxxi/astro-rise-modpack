@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'createoreexcavation:ore_vein_type/netherite' })
 
-	event.recipes.createoreexcavation.vein('{"text": "Ancient Debris"}', 'minecraft:ancien_debris')
+	event.recipes.createoreexcavation.vein('{"text": "Ancient Debris"}', 'minecraft:ancient_debris')
 		.placement(500, 128, 72624489)
 		.veinSize(2, 4)
 		.id('astro_rise:ore_vein_type/netherite')

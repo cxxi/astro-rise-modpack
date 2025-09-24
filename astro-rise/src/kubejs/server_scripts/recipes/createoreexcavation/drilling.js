@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
 	event.recipes.createoreexcavation.drilling([
 			Item.of('minecraft:netherrack').withChance(0.80),
 			Item.of('minecraft:magma_block').withChance(0.50),
-			Item.of('minecraft:ancien_debris').withChance(0.20)
+			Item.of('minecraft:ancient_debris').withChance(0.20)
 		], 'astro_rise:ore_vein_type/netherite', 4000)
 		.fluid('mekanism:sulfuric_acid')
 		.drill('createoreexcavation:netherite_drill')
