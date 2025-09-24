@@ -95,13 +95,19 @@ ServerEvents.recipes(event => {
 		.stress(256)
 		.id("astro_rise:drilling/benitoite")
 
-	event.recipes.createoreexcavation.drilling('thermal:apatite', 'astro_rise:ore_vein_type/apatite', 1200)
+	event.recipes.createoreexcavation.drilling([
+			Item.of('minecraft:end_stone').withChance(0.65),
+			Item.of('thermal:apatite')
+		], 'astro_rise:ore_vein_type/apatite', 1200)
 		.fluid('minecraft:lava')
 		.drill('createoreexcavation:diamond_drill')
 		.stress(128)
 		.id("astro_rise:drilling/apatite")
 
-	event.recipes.createoreexcavation.drilling('thermal:cinnabar', 'astro_rise:ore_vein_type/cinnabar', 1200)
+	event.recipes.createoreexcavation.drilling([
+			Item.of('minecraft:netherrack').withChance(0.65),
+			Item.of('thermal:cinnabar')
+		], 'astro_rise:ore_vein_type/cinnabar', 1200)
 		.fluid('minecraft:lava')
 		.drill('createoreexcavation:diamond_drill')
 		.stress(128)

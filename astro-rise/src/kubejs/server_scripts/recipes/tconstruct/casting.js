@@ -82,6 +82,24 @@ ServerEvents.recipes(event => {
 	    cooling_time: 100
 	})
 
+	// andesite_alloy
+
+	event.custom({
+	    type: 'tconstruct:casting_table',
+	    cast: {
+	    	item: 'minecraft:andesite'
+	    },
+	    cast_consumed: true,
+	    fluid: {
+	    	fluid: 'tconstruct:molten_aluminum',
+	    	amount: 10
+	    },
+	    result: {
+	    	item: 'create:andesite_alloy'
+	    },
+	    cooling_time: 20
+	})
+
 	// sculk
 
 	event.custom({

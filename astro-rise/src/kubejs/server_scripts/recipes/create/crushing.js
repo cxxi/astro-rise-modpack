@@ -6,9 +6,33 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'create:crushing/tuff' })
 	event.remove({ id: 'create:crushing/tuff_recycling' })
 
-	event.remove({ id: 'create_ultimate_factory:crushing_netherite' })
-
 	event.remove({ type: 'create:crushing',  output: 'createdieselgenerators:wood_chip' })
+
+	event.remove({ id: 'create_ultimate_factory:crushing_netherite' })
+	event.remove({ id: 'create_ultimate_factory:crushing_endstone' })
+	event.remove({ id: 'create:crushing/netherrack' })
+	
+	event.custom({
+		type: 'create:crushing',
+		ingredients: [
+			{ item : 'minecraft:netherrack' }
+		],
+		processingTime: 150,
+		results: [
+			{ item: 'astro_rise:crushed_netherrack' }
+		]
+	})
+
+	event.custom({
+		type: 'create:crushing',
+		ingredients: [
+			{ item : 'minecraft:end_stone' }
+		],
+		processingTime: 500,
+		results: [
+			{ item: 'createsifter:crushed_end_stone' }
+		]
+	})
 
 	// ores
 

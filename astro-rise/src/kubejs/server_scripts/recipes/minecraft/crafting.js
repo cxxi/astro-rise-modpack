@@ -53,6 +53,18 @@ ServerEvents.recipes(event => {
 	    B: 'minecraft:glass_bottle'
 	})
 
+	// andesite
+
+	event.shapeless('minecraft:andesite', [
+   		'4x astro_rise:andesite_nugget'
+   	])
+
+	// shulker_shell
+
+	event.shapeless('minecraft:shulker_shell', [
+   		'9x astro_rise:shulker_scute'
+   	])
+
 	// cake
 
 	event.remove({id: 'minecraft:cake'})
