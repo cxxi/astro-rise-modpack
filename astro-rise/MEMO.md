@@ -50,7 +50,7 @@ fluorite
 apatite
 cinnabar
 
-nither
+niter
 sulfur
 ice_shard
 

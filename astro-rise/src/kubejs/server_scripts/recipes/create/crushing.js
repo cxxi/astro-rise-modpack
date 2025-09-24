@@ -69,8 +69,8 @@ ServerEvents.recipes(event => {
 		],
 		processingTime: 200,
 		results: [
-			{ item: 'minecraft:redstone', count: 3 },
-			{ item: 'minecraft:redstone', count: 6, chance: 0.50 }
+			{ item: 'minecraft:redstone', count: 6 },
+			{ item: 'minecraft:redstone', count: 3, chance: 0.50 }
 		]
 	})
 
@@ -81,8 +81,8 @@ ServerEvents.recipes(event => {
 		],
 		processingTime: 200,
 		results: [
-			{ item: 'minecraft:lapis_lazuli', count: 3 },
-			{ item: 'minecraft:lapis_lazuli', count: 6, chance: 0.50 }
+			{ item: 'minecraft:lapis_lazuli', count: 6 },
+			{ item: 'minecraft:lapis_lazuli', count: 3, chance: 0.50 }
 		]
 	})
 
@@ -93,8 +93,8 @@ ServerEvents.recipes(event => {
 		],
 		processingTime: 200,
 		results: [
-			{ item: 'minecraft:quartz', count: 3 },
-			{ item: 'minecraft:quartz', count: 6, chance: 0.50 }
+			{ item: 'minecraft:quartz', count: 6 },
+			{ item: 'minecraft:quartz', count: 3, chance: 0.50 }
 		]
 	})
 
@@ -269,12 +269,12 @@ ServerEvents.recipes(event => {
 	event.custom({
 		type: 'create:crushing',
 		ingredients: [
-			{ tag : 'forge:ores/nither' }
+			{ tag : 'forge:ores/niter' }
 		],
 		processingTime: 250,
 		results: [
-			{ item: 'thermal:nither' },
-			{ item: 'thermal:nither', chance: 0.25 }
+			{ item: 'thermal:niter' },
+			{ item: 'thermal:niter', chance: 0.25 }
 		]
 	})
 
