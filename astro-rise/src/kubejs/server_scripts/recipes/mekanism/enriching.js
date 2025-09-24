@@ -155,4 +155,17 @@ ServerEvents.recipes(event => {
 		}
 	})
 
+	event.custom({
+		type: 'mekanism:enriching',
+		input: {
+			ingredient: {
+				item: 'forge:ores/zinc'
+			}
+		},
+		output: {
+			count: 2,
+			item: 'astro_rise:dust_zinc'
+		}
+	})
+
 })
