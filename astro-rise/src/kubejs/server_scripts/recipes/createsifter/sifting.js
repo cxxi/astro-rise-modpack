@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
 		Item.of('minecraft:torchflower_seeds').withChance(0.01),
 		Item.of('farmersdelight:cabbage_seeds').withChance(0.1),
 		Item.of('farmersdelight:tomato_seeds').withChance(0.1)
-	],'minecraft:dirt','createsifter:zinc_mesh')
+	], ['minecraft:dirt','createsifter:zinc_mesh'])
 
 	// event.custom({
 	// 	type: 'createsifter:sifting',
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
 		Item.of('minecraft:flint').withChance(0.05),
 		Item.of('minecraft:bone_meal').withChance(0.05),
 		Item.of('astro_rise:andesite_nugget').withChance(0.1)
-	],'minecraft:gravel','createsifter:zinc_mesh')
+	], ['minecraft:gravel','createsifter:zinc_mesh'])
 
 	// brass mesh
 	// brass -> gravel / sand
