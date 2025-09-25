@@ -1,10 +1,10 @@
 ServerEvents.recipes(event => {
 
-    // rubber
-
 	event.remove({ id: 'thermal:rubber_3' })
     event.remove({ id: 'thermal:rubber_from_vine' })
 	event.remove({ id: 'thermal:rubber_from_dandelion' })
+
+	event.remove({ id: 'thermal:earth_charge/sulfur_dust_from_sulfur' })
 
     // kelp to rubber
 
