@@ -148,4 +148,74 @@ ServerEvents.recipes(event => {
 	    cooling_time: 100
 	})
 
+	// mold
+
+	event.custom({
+	    type: 'tconstruct:casting_table',
+	    cast: {
+	    	item: 'minecraft:bowl'
+	    },
+	    cast_consumed: true,
+	    fluid: {
+	    	fluid: 'tconstruct:molten_aluminum',
+	    	amount: 360
+	    },
+	    result: {
+	    	item: 'createdieselgenerators:mold',
+  			nbt: { Mold: 'createdieselgenerators:bowl' }
+	    },
+	    cooling_time: 100
+	})
+
+	event.custom({
+	    type: 'tconstruct:casting_table',
+	    cast: {
+	    	item: 'create:shaft'
+	    },
+	    cast_consumed: true,
+	    fluid: {
+	    	fluid: 'tconstruct:molten_aluminum',
+	    	amount: 360
+	    },
+	    result: {
+	    	item: 'createdieselgenerators:mold',
+  			nbt: { Mold: 'createdieselgenerators:bar' }
+	    },
+	    cooling_time: 100
+	})
+
+	event.custom({
+	    type: 'tconstruct:casting_table',
+	    cast: {
+	    	item: 'chipped:loose_iron_bars'
+	    },
+	    cast_consumed: true,
+	    fluid: {
+	    	fluid: 'tconstruct:molten_aluminum',
+	    	amount: 360
+	    },
+	    result: {
+	    	item: 'createdieselgenerators:mold',
+  			nbt: { Mold: 'createdieselgenerators:wavy' }
+	    },
+	    cooling_time: 100
+	})
+
+	event.custom({
+	    type: 'tconstruct:casting_table',
+	    cast: {
+	    	item: 'minecraft:chain'
+	    },
+	    cast_consumed: true,
+	    fluid: {
+	    	fluid: 'tconstruct:molten_aluminum',
+	    	amount: 360
+	    },
+	    result: {
+	    	item: 'createdieselgenerators:mold',
+  			nbt: { Mold: 'createdieselgenerators:chain' }
+	    },
+	    cooling_time: 100
+	})
+
 })
