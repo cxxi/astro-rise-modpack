@@ -26,7 +26,10 @@ ServerEvents.recipes(event => {
 			item: 'simplemetals_aluminum:aluminum_sheet'
 		},
 		result: {
-			item: 'createdieselgenerators:mold'
+			item: 'createdieselgenerators:mold',
+			components: {
+				Mold: 'createdieselgenerators:bar' 
+			}
 		}
   	})
 
