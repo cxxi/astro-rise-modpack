@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
 	    // event.remove({ type: 'create:crushing', input: flower })
 	})
 
-	Ingredient.of({tag: 'createaddition:plants'})..forEach(plant => {
+	Ingredient.of({tag: 'createaddition:plants'}).forEach(plant => {
 		console.log(`ASTRO_DEBUG : ${plant}`)
 	    // event.remove({ type: 'create:crushing', input: plant })
 	})
