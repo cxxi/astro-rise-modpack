@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'create:sequenced_assembly/precision_mechanism' })
 
 	event.recipes.create.sequenced_assembly([
-		Item.of('minecraft:precision_mechanism').withChance(1.0),
+		Item.of('create:precision_mechanism').withChance(1.0),
 		Item.of('minecraft:oak_log').withChance(0.06),
 		Item.of('create:copper_nugget').withChance(0.08),
 		Item.of('simplemetals_aluminum:aluminum_nugget').withChance(0.08),
