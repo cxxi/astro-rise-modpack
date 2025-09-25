@@ -162,7 +162,7 @@ ServerEvents.recipes(event => {
 	    },
 	    result: {
 	    	item: 'createdieselgenerators:mold',
-  			nbt: { Mold: 'createdieselgenerators:bowl' }
+  			tag: { Mold: 'createdieselgenerators:bowl' }
 	    },
 	    cooling_time: 100
 	})
@@ -179,7 +179,7 @@ ServerEvents.recipes(event => {
 	    },
 	    result: {
 	    	item: 'createdieselgenerators:mold',
-  			nbt: { Mold: 'createdieselgenerators:bar' }
+  			tag: { Mold: 'createdieselgenerators:bar' }
 	    },
 	    cooling_time: 100
 	})
@@ -196,7 +196,7 @@ ServerEvents.recipes(event => {
 	    },
 	    result: {
 	    	item: 'createdieselgenerators:mold',
-  			nbt: { Mold: 'createdieselgenerators:wavy' }
+  			tag: { Mold: 'createdieselgenerators:wavy' }
 	    },
 	    cooling_time: 100
 	})
@@ -213,7 +213,7 @@ ServerEvents.recipes(event => {
 	    },
 	    result: {
 	    	item: 'createdieselgenerators:mold',
-  			nbt: { Mold: 'createdieselgenerators:chain' }
+  			tag: { Mold: 'createdieselgenerators:chain' }
 	    },
 	    cooling_time: 100
 	})
