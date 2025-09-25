@@ -170,7 +170,7 @@ ServerEvents.recipes(event => {
 	    cast_consumed: false,
 	    fluid: {
 	    	fluid: 'thermal:latex',
-			amount: 1000
+			amount: 250
 	    },
 	    result: {
 	    	item: 'thermal:rubber'
