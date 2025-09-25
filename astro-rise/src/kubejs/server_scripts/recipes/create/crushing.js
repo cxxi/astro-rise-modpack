@@ -9,10 +9,12 @@ ServerEvents.recipes(event => {
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/quartz' })
 
 	Ingredient.of({tag: 'minecraft:flowers'}).getItemIds().forEach(flower => {
+		console.log(`ASTRO_DEBUG : ${flower.toJson()}`)
 	    event.remove({ type: 'create:crushing', input: flower })
 	})
 
 	Ingredient.of({tag: 'createaddition:plants'}).getItemIds().forEach(plant => {
+		console.log(`ASTRO_DEBUG : ${plant.toJson()}`)
 	    event.remove({ type: 'create:crushing', input: plant })
 	})
 
