@@ -20,4 +20,19 @@ ServerEvents.recipes(event => {
 	    'simplemetals_aluminum:aluminum_sheet'
   	).id('astro_rise:stonecut/mold_bar')
 
+  	event.custom({
+		type: "minecraft:stonecutting",
+		ingredient: {
+			item: "minecraft:mangrove_log"
+		},
+		result: {
+			item: {
+				id: 'createdieselgenerators:mold',
+				components: {
+					Mold: 'createdieselgenerators:bar' 
+				}
+			}
+		}
+  	})
+
 })
