@@ -1,28 +1,29 @@
 ServerEvents.recipes(event => {
 
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/tuff' })
-
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/ochrum' })
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/crimsite' })
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/veridium' })
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/asurine' })
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/quartz' })
-
-	Ingredient.of({tag: 'minecraft:flowers'}).getItemIds().forEach(flower => {
-		console.log(`ASTRO_DEBUG : ${flower}`)
-	    event.remove({ type: 'create:crushing', input: flower.toString() })
-	})
-
-	Ingredient.of({tag: 'createaddition:plants'}).getItemIds().forEach(plant => {
-		console.log(`ASTRO_DEBUG : ${plant}`)
-	    event.remove({ type: 'create:crushing', input: plant.toString() })
-	})
+	event.remove({ type: 'create:crushing',  input: '#create:stone_types/diorite' })
 
 	event.remove({ type: 'create:crushing',  output: 'createdieselgenerators:wood_chip' })
 
 	event.remove({ id: 'create_ultimate_factory:crushing_netherite' })
 	event.remove({ id: 'create_ultimate_factory:crushing_endstone' })
 	event.remove({ id: 'create_ultimate_factory:crushing_scoria' })
+	event.remove({ id: 'create_ultimate_factory:crushing_limestone' })
+	event.remove({ id: 'create_ultimate_factory:crushing_soulsand' })
+	event.remove({ id: 'create_ultimate_factory:crushing_blackstone' })
+
+	event.remove({ id: 'create_deeper_darker:crushing_sculk_vein' })
+	event.remove({ id: 'create_deeper_darker:crushing_sculk_sensor' })
+	event.remove({ id: 'create_deeper_darker:crushing_sculk_shrieker' })
+	event.remove({ id: 'create_deeper_darker:crushing_sculk_catalyst' })
+
+	event.remove({ id: 'create:crushing/gilded_blackstone' })
+	event.remove({ id: 'create:crushing/prismarine_crystals' })
 	event.remove({ id: 'create:crushing/netherrack' })
 	
 	event.custom({

@@ -58,3 +58,11 @@ desh
 ostrum
 calorite
 aerolyte
+
+
+```js
+Ingredient.of({tag: 'minecraft:flowers'}).getItemIds().forEach(flower => {
+	console.log(`ASTRO_DEBUG : ${flower}`)
+    event.remove({ type: 'create:crushing', input: flower.toString() })
+})
+```
