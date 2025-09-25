@@ -148,4 +148,18 @@ ServerEvents.recipes(event => {
 	    cooling_time: 100
 	})
 
+	// mold
+
+	event.custom({
+	    type: 'tconstruct:casting_table',
+	    fluid: {
+	    	fluid: 'tconstruct:molten_aluminum',
+	    	amount: 250
+	    },
+	    result: {
+	    	item: 'astro_rise:molt'
+	    },
+	    cooling_time: 77
+	})
+
 })

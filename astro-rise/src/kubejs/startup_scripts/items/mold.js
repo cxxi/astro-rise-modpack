@@ -1,6 +1,11 @@
 StartupEvents.registry('item', event => {
 
 	event
+		.create('astro_rise:mold')
+		.texture('createdieselgenerators:item/mold/blank')
+		.displayName('Mold')
+
+	event
 		.create('astro_rise:bowl_mold')
 		.texture('createdieselgenerators:item/mold/bowl')
 		.displayName('Bowl Mold')
