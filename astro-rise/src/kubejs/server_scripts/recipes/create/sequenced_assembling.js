@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createFilling('astro_rise:incomplete_steel_mechanism', [
 			{ amount: 500, fluid: 'thermal:latex'}, 
 			'astro_rise:incomplete_steel_mechanism'
-		])
+		]),
 		event.recipes.createDeploying('astro_rise:incomplete_steel_mechanism', [
 			'astro_rise:incomplete_steel_mechanism',
 			'thermal:rubber'
