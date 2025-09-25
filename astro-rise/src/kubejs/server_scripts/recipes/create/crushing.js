@@ -834,7 +834,7 @@ ServerEvents.recipes(event => {
 	event.custom({
 		type: 'create:crushing',
 		ingredients: [
-			{ item : 'tconstruct:raw_aerolyte' }
+			{ item : 'astro_rise:raw_aerolyte' }
 		],
 		processingTime: 350,
 		results: [
@@ -845,7 +845,7 @@ ServerEvents.recipes(event => {
 	event.custom({
 		type: 'create:crushing',
 		ingredients: [
-			{ item : 'tconstruct:raw_aerolyte_block' }
+			{ item : 'astro_rise:raw_aerolyte_block' }
 		],
 		processingTime: 350,
 		results: [
