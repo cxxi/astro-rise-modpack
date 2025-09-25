@@ -6,13 +6,21 @@ ServerEvents.recipes(event => {
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/crimsite' })
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/veridium' })
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/asurine' })
+	event.remove({ type: 'create:crushing',  input: '#create:stone_types/quartz' })
 
-	event.remove({ type: 'create:crushing',  input: '#minecraft:flowers' })
-	event.remove({ type: 'create:crushing',  input: '#createaddition:plants' })
+	Ingredient.of('#minecraft:flowers').itemIds.forEach(flower => {
+	    event.remove({ type: 'create:crushing', input: flower })
+	})
+
+	Ingredient.of('#createaddition:plants').itemIds.forEach(plant => {
+	    event.remove({ type: 'create:crushing', input: plant })
+	})
+
 	event.remove({ type: 'create:crushing',  output: 'createdieselgenerators:wood_chip' })
 
 	event.remove({ id: 'create_ultimate_factory:crushing_netherite' })
 	event.remove({ id: 'create_ultimate_factory:crushing_endstone' })
+	event.remove({ id: 'create_ultimate_factory:crushing_scoria' })
 	event.remove({ id: 'create:crushing/netherrack' })
 	
 	event.custom({

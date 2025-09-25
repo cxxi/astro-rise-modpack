@@ -6,6 +6,10 @@ ServerEvents.recipes(event => {
 		type: 'enderio:sag_milling',
 		input: '#forge:ores'
 	})
+
+	// coal
+
+	event.remove({ id: 'enderio:sag_milling/coal' })
 	
 	// clay
 
@@ -18,9 +22,7 @@ ServerEvents.recipes(event => {
 	// cobalt_ingot
 
 	event.recipes.enderio.sag_milling(
-      	[
-       		"enderio:powdered_cobalt"
-      	],
+      	[ "enderio:powdered_cobalt" ],
       	"tconstruct:cobalt_ingot",
       	2400,
       	EnderIOBonusType.NONE
