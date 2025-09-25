@@ -27,7 +27,13 @@ ServerEvents.recipes(event => {
 		},
 		result: {
 			item: 'createdieselgenerators:mold',
-			components: {
+			data: {
+				Mold: 'createdieselgenerators:bar' 
+			},
+			tag: {
+				Mold: 'createdieselgenerators:bar' 
+			},
+			nbt: {
 				Mold: 'createdieselgenerators:bar' 
 			}
 		}
