@@ -8,12 +8,14 @@ ServerEvents.recipes(event => {
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/asurine' })
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/quartz' })
 
-	Ingredient.of('#minecraft:flowers').itemIds.forEach(flower => {
-	    event.remove({ type: 'create:crushing', input: flower })
+	Ingredient.of({tag: 'minecraft:flowers'}).forEach(flower => {
+		console.log(`ASTRO_DEBUG : ${flower}`)
+	    // event.remove({ type: 'create:crushing', input: flower })
 	})
 
-	Ingredient.of('#createaddition:plants').itemIds.forEach(plant => {
-	    event.remove({ type: 'create:crushing', input: plant })
+	Ingredient.of({tag: 'createaddition:plants'})..forEach(plant => {
+		console.log(`ASTRO_DEBUG : ${plant}`)
+	    // event.remove({ type: 'create:crushing', input: plant })
 	})
 
 	event.remove({ type: 'create:crushing',  output: 'createdieselgenerators:wood_chip' })
