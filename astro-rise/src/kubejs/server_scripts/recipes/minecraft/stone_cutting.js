@@ -1,22 +1,22 @@
 ServerEvents.recipes(event => {
 
 	event.stonecutting(
-	    Item.of('createdieselgenerators:mold', {Mold: 'createdieselgenerators:bowl' }),
+	    Item.of('createdieselgenerators:mold', { tag: { Mold: 'createdieselgenerators:bowl' }}),
 	    'simplemetals_aluminum:aluminum_sheet'
 	)
 
 	event.stonecutting(
-	    Item.of('createdieselgenerators:mold', {Mold: 'createdieselgenerators:wavy' }),
+	    Item.of('createdieselgenerators:mold', { tag: { Mold: 'createdieselgenerators:wavy' }}),
 	    'simplemetals_aluminum:aluminum_sheet'
   	)
 
 	event.stonecutting(
-	    Item.of('createdieselgenerators:mold', {Mold: 'createdieselgenerators:chain' }),
+	    Item.of('createdieselgenerators:mold', { tag: { Mold: 'createdieselgenerators:chain' }}),
 	    'simplemetals_aluminum:aluminum_sheet'
   	)
 
 	event.stonecutting(
-	    Item.of('createdieselgenerators:mold', {Mold: 'createdieselgenerators:bar' }),
+	    Item.of('createdieselgenerators:mold', { tag: { Mold: 'createdieselgenerators:bar' }}),
 	    'simplemetals_aluminum:aluminum_sheet'
   	)
 
