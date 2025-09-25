@@ -40,6 +40,11 @@ StartupEvents.registry('item', event => {
 		.displayName('Steel Mechanism')
 
 	event
+		.create('astro_rise:incomplete_steel_mechanism')
+		.texture('astro_rise:item/incomplete_steel_mechanism')
+		.displayName('IncompleteSteel Mechanism')
+
+	event
 		.create('astro_rise:earth_steel_mechanism')
 		.texture('astro_rise:item/earth_steel_mechanism')
 		.displayName('Earth Steel Mechanism')
