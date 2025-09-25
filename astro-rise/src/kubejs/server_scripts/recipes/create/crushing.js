@@ -9,13 +9,13 @@ ServerEvents.recipes(event => {
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/quartz' })
 
 	Ingredient.of({tag: 'minecraft:flowers'}).getItemIds().forEach(flower => {
-		console.log(`ASTRO_DEBUG : ${flower.getId()}`)
-	    event.remove({ type: 'create:crushing', input: flower.getId() })
+		console.log(`ASTRO_DEBUG : ${flower}`)
+	    event.remove({ type: 'create:crushing', input: flower.toString() })
 	})
 
 	Ingredient.of({tag: 'createaddition:plants'}).getItemIds().forEach(plant => {
-		console.log(`ASTRO_DEBUG : ${plant.getId()}`)
-	    event.remove({ type: 'create:crushing', input: plant.getId() })
+		console.log(`ASTRO_DEBUG : ${plant}`)
+	    event.remove({ type: 'create:crushing', input: plant.toString() })
 	})
 
 	event.remove({ type: 'create:crushing',  output: 'createdieselgenerators:wood_chip' })
