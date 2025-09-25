@@ -157,7 +157,39 @@ ServerEvents.recipes(event => {
 	    	amount: 250
 	    },
 	    result: {
-	    	item: 'astro_rise:molt'
+	    	item: 'astro_rise:mold'
+	    },
+	    cooling_time: 150
+	})
+
+	event.custom({
+	    type: 'tconstruct:casting_table',
+	    cast: {
+	    	item: 'astro_rise:bowl_mold'
+	    },
+	    cast_consumed: false,
+	    fluid: {
+	    	fluid: 'thermal:latex',
+			amount: 1000
+	    },
+	    result: {
+	    	item: 'thermal:rubber'
+	    },
+	    cooling_time: 150
+	})
+
+	event.custom({
+	    type: 'tconstruct:casting_table',
+	    cast: {
+	    	item: 'astro_rise:bar_mold'
+	    },
+	    cast_consumed: false,
+	    fluid: {
+	    	fluid: "create:chocolate",
+			amount: 250
+	    },
+	    result: {
+	    	item: 'create:bar_of_chocolate'
 	    },
 	    cooling_time: 77
 	})
