@@ -12,28 +12,24 @@ ServerEvents.recipes(event => {
 	], 'ad_astra:steel_plate', [
 		event.recipes.createDeploying('astro_rise:incomplete_steel_mechanism', [
 			'astro_rise:incomplete_steel_mechanism',
-			'thermal:invar_gear'
-		]),
-		event.recipes.createDeploying('astro_rise:incomplete_steel_mechanism', [
-			'astro_rise:incomplete_steel_mechanism',
-			'thermal:lead_gear'
+			'mekanism:advanced_control_circuit'
 		]),
 		event.recipes.createFilling('astro_rise:incomplete_steel_mechanism', [
-			{ amount: 500, fluid: 'thermal:latex'}, 
+			{ amount: 200, fluid: 'thermal:latex'}, 
 			'astro_rise:incomplete_steel_mechanism'
 		]),
+		event.recipes.create.pressing(
+		    'astro_rise:incomplete_steel_mechanism',
+		    'astro_rise:incomplete_steel_mechanism'
+		),
 		event.recipes.createDeploying('astro_rise:incomplete_steel_mechanism', [
 			'astro_rise:incomplete_steel_mechanism',
-			'thermal:rubber'
-		]),
-		event.recipes.createDeploying('astro_rise:incomplete_steel_mechanism', [
-			'astro_rise:incomplete_steel_mechanism',
-			'mekanism:advanced_control_circuit'
+			'thermal:invar_gear'
 		]),
 		event.recipes.createDeploying('astro_rise:incomplete_steel_mechanism', [
 			'astro_rise:incomplete_steel_mechanism',
 			'create:sturdy_sheet'
 		])
-	]).transitionalItem('astro_rise:incomplete_steel_mechanism').loops(3)
+	]).transitionalItem('astro_rise:incomplete_steel_mechanism').loops(4)
 
 })
