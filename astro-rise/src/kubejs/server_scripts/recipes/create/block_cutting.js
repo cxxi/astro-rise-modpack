@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
 
-  event.remove({ type: 'create:block_cutting', input: 'astro_rise:mold' })
+  event.remove({ type: 'create:block_cutting', output: /astro_rise:.*_mold/ })
 
 })
