@@ -22,15 +22,25 @@ ServerEvents.recipes(event => {
 
   	event.custom({
 		type: 'minecraft:stonecutting',
-		ingredient: {
-			item: 'simplemetals_aluminum:aluminum_sheet'
-		},
-		result: {
-			id: 'createdieselgenerators:mold',
-			components: {
-				Mold: 'createdieselgenerators:bar' 
+		input: {
+			ingredient: {
+				item: 'simplemetals_aluminum:aluminum_sheet'
 			}
+		},
+		output: {
+			item: 'createdieselgenerators:mold'
 		}
+		
   	})
 
+
+  	// ingredient: {
+	// 		item: 'simplemetals_aluminum:aluminum_sheet'
+	// 	},
+	// 	result: {
+	// 		id: 'createdieselgenerators:mold',
+	// 		components: {
+	// 			Mold: 'createdieselgenerators:bar' 
+	// 		}
+	// 	}
 })
