@@ -8,17 +8,15 @@ ServerEvents.recipes(event => {
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/asurine' })
 	event.remove({ type: 'create:crushing',  input: '#create:stone_types/quartz' })
 
-	console.log(Ingredient.of({tag: 'minecraft:flowers'}).toJson())
-	// forEach(flower => {
-	// 	console.log(`ASTRO_DEBUG : ${flower}`)
+	console.log(Ingredient.of({tag: 'minecraft:flowers'}).getItemIds().forEach(flower => {
+		console.log(`ASTRO_DEBUG : ${flower}`)
 	//     // event.remove({ type: 'create:crushing', input: flower })
-	// })
+	})
 
-	console.log(Ingredient.of({tag: 'createaddition:plants'}).toJson())
-	// forEach(plant => {
-	// 	console.log(`ASTRO_DEBUG : ${plant}`)
+	console.log(Ingredient.of({tag: 'createaddition:plants'}).getItemIds()t.forEach(plant => {
+		console.log(`ASTRO_DEBUG : ${plant}`)
 	//     // event.remove({ type: 'create:crushing', input: plant })
-	// })
+	})
 
 	event.remove({ type: 'create:crushing',  output: 'createdieselgenerators:wood_chip' })
 
