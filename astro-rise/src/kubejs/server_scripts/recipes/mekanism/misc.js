@@ -38,6 +38,8 @@ ServerEvents.recipes(event => {
 	event.remove({ input: 'thermal:sawdust_block' })
 	event.remove({ output: 'thermal:sawdust_block' })
 
+	event.remove({ id: 'createdieselgenerators:chip_wood_block' })
+
 	event.shapeless('createdieselgenerators:chip_wood_block', [
 	    '9x mekanism:sawdust' 
 	])

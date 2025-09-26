@@ -59,5 +59,9 @@ JEIEvents.hideItems(event => {
 	event.hide('ad_astra:oil_bucket')
 	event.hide('ad_astra:coal_generator')
 	event.hide('ad_astra:etrionic_blast_furnace')
-	
+
+	event.hide('thermal:sawdust')
+	event.hide('thermal:sawdust_block')
+	event.hide('createdieselgenerators:chip_wood')
+
 })
