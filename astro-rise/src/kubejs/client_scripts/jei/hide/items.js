@@ -41,8 +41,8 @@ JEIEvents.hideItems(event => {
 
 	event.hide('create_mechanical_chicken:seed_oil_bucket')
 
-	// event.hide('bigreactors:yellorium_nugget')
-	// event.hide('bigreactors:yellorium_bucket')
+	event.hide('bigreactors:yellorium_nugget')
+	event.hide('bigreactors:yellorium_bucket')
 
 	event.hide('enderio:primitive_alloy_smelter')
 	event.hide('enderio:alloy_smelter')

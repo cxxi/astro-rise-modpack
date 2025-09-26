@@ -53,7 +53,10 @@ ServerEvents.recipes(event => {
 	    B: 'minecraft:glass_bottle'
 	})
 
-	// andesite
+	// nugget|ingot
+
+	event.remove({ id: 'crateaddition:crafting/electrum_ingot' })
+	event.remove({ id: 'ad_astra:steel_ingot' })
 
 	event.shapeless('minecraft:andesite', [
    		'4x astro_rise:andesite_nugget'
@@ -61,6 +64,30 @@ ServerEvents.recipes(event => {
 
    	event.shapeless('4x astro_rise:andesite_nugget', [
    		'minecraft:andesite'
+   	])
+
+   	event.shapeless('platinum_mod:platinum', [
+   		'9x astro_rise:platinum_nugget'
+   	])
+
+   	event.shapeless('9x astro_rise:platinum_nugget', [
+   		'platinum_mod:platinum'
+   	])
+
+   	event.shapeless('astro_rise:ingot_aerolyte', [
+   		'9x astro_rise:aerolyte_nugget'
+   	])
+
+   	event.shapeless('9x astro_rise:aerolyte_nugget', [
+   		'astro_rise:ingot_aerolyte'
+   	])
+
+   	event.shapeless('ad_astra:etrium_ingot', [
+   		'9x ad_astra:etrium_nugget'
+   	])
+
+   	event.shapeless('9x ad_astra:etrium_nugget', [
+   		'ad_astra:etrium_ingot'
    	])
 
 	// shulker_shell
