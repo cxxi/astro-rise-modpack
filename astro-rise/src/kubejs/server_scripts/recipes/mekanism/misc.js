@@ -29,13 +29,12 @@ ServerEvents.recipes(event => {
 
 	// sawdust
 
-	event.replaceInput({}, "thermal:sawdust", "mekanism:sawdust")
-	event.replaceInput({}, "createdieselgenerators:wood_chip", "mekanism:sawdust")
-	event.replaceOutput({}, "thermal:sawdust", "mekanism:sawdust")
-	event.replaceOutput({}, "createdieselgenerators:wood_chip", "mekanism:sawdust")
-
-	// event.remove({ input: 'thermal:sawdust' })
-	// event.remove({ output: 'thermal:sawdust' })
-
+	event.replaceInput({}, 'thermal:sawdust', 'mekanism:sawdust')
+	event.replaceInput({}, 'createdieselgenerators:wood_chip', 'mekanism:sawdust')
+	event.replaceOutput({}, 'thermal:sawdust', 'mekanism:sawdust')
+	event.replaceOutput({}, 'createdieselgenerators:wood_chip', 'mekanism:sawdust')
+	event.remove({ input: 'createdieselgenerators:wood_chip' })
+	event.remove({ input: 'thermal:sawdust_block' })
+	event.remove({ output: 'thermal:sawdust_block' })
 
 })
