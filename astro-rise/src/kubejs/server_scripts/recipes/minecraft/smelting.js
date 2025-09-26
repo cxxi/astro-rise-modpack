@@ -13,5 +13,8 @@ ServerEvents.recipes(event => {
 	event.smelting('thermal:sapphire', '#forge:ores/sapphire') 
 	event.smelting('thermal:ruby', '#forge:ores/ruby')
 	event.smelting('tconstruct:cobalt_ingot', 'tconstruct:cobalt_ore')
+	event.smelting('tconstruct:cobalt_ingot', 'astro_rise:crushed_raw_cobalt')
 	event.smelting('astro_rise:ingot_aerolyte', 'astro_rise:mercury_aerolyte_ore')
+	event.smelting('astro_rise:ingot_aerolyte', 'astro_rise:crushed_raw_aerolyte')
+	event.smelting('platinum_mod:platinum', 'create:crushed_raw_platinum')
 })

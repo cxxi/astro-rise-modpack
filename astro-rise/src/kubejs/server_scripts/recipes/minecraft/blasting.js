@@ -12,6 +12,9 @@ ServerEvents.recipes(event => {
 	event.blasting('thermal:sulfur', 'thermal:sulfur_ore') 
 	event.blasting('thermal:sapphire', '#forge:ores/sapphire') 
 	event.blasting('thermal:ruby', '#forge:ores/ruby')
+	event.blasting('tconstruct:cobalt_ingot', 'astro_rise:crushed_raw_cobalt')
 	event.blasting('astro_rise:ingot_aerolyte', 'astro_rise:mercury_aerolyte_ore')
+	event.blasting('astro_rise:ingot_aerolyte', 'astro_rise:crushed_raw_aerolyte')
+	event.blasting('platinum_mod:platinum', 'create:crushed_raw_platinum')
 
 })
