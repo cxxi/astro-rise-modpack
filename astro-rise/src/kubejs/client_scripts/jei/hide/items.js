@@ -62,6 +62,6 @@ JEIEvents.hideItems(event => {
 
 	event.hide('thermal:sawdust')
 	event.hide('thermal:sawdust_block')
-	event.hide('createdieselgenerators:chip_wood')
+	event.hide('createdieselgenerators:wood_chip')
 
 })
