@@ -43,18 +43,13 @@ ServerEvents.recipes(event => {
 		Item.of('create:copper_nugget').withChance(0.05),
 		Item.of('create:zinc_nugget').withChance(0.05),
 		Item.of('mekanism:nugget_tin').withChance(0.04),
-		Item.of('simplemetals_aluminum:aluminum_nugget').withChance(0.04),
-		Item.of('mekanism:nugget_lead').withChance(0.04),
-		Item.of('thermal:nickel_nugget').withChance(0.04),
-		Item.of('thermal:silver_nugget').withChance(0.04),
-		Item.of('mekanism:nugget_osmium').withChance(0.03),
-		Item.of('astro_rise:platinum_nugget').withChance(0.01)
+		Item.of('mekanism:nugget_lead').withChance(0.04)
 	], ['minecraft:gravel','createsifter:brass_mesh'])
 
 	event.recipes.createsifter.sifting([
 		Item.of('minecraft:gold_nugget').withChance(0.05),
 		Item.of('minecraft:glowstone_dust').withChance(0.03),
-		Item.of('mekanism:dust_quartz').withChance(0.03),
+		Item.of('minecraft:quartz').withChance(0.03),
 		Item.of('minecraft:nautilus_shell').withChance(0.01)
 	], ['minecraft:sand','createsifter:brass_mesh'])
 
@@ -64,37 +59,37 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'createsifter:sifting/soul_sand_advanced_brass_mesh' })
 
 	event.recipes.createsifter.sifting([
-		Item.of('mekanism:dust_iron').withChance(0.05),
-		Item.of('mekanism:dust_copper').withChance(0.05),
-		Item.of('astro_rise:dust_zinc').withChance(0.05),
-		Item.of('mekanism:dust_tin').withChance(0.04),
-		Item.of('astro_rise:dust_aluminum').withChance(0.04),
-		Item.of('mekanism:dust_lead').withChance(0.04),
-		Item.of('thermal:nickel_dust').withChance(0.04),
-		Item.of('thermal:silver_dust').withChance(0.04),
-		Item.of('mekanism:dust_osmium').withChance(0.03),
-		Item.of('astro_rise:dust_platinum').withChance(0.01)
+		Item.of('minecraft:iron_nugget').withChance(0.05),
+		Item.of('create:copper_nugget').withChance(0.05),
+		Item.of('create:zinc_nugget').withChance(0.05),
+		Item.of('mekanism:nugget_tin').withChance(0.04),
+		Item.of('simplemetals_aluminum:aluminum_nugget').withChance(0.04),
+		Item.of('mekanism:nugget_lead').withChance(0.04),
+		Item.of('thermal:nickel_nugget').withChance(0.04),
+		Item.of('thermal:silver_nugget').withChance(0.04),
+		Item.of('mekanism:nugget_osmium').withChance(0.03),
+		Item.of('astro_rise:platinum_nugget').withChance(0.01)
 	], ['minecraft:gravel','createsifter:advanced_brass_mesh'])
 
 	event.recipes.createsifter.sifting([
-		Item.of('mekanism:dust_gold').withChance(0.05),
-		Item.of('mekanism:dust_lapis_lazuli').withChance(0.05),
-		Item.of('mekanism:dust_emerald').withChance(0.03),
-		Item.of('thermal:ruby_dust').withChance(0.03),
-		Item.of('thermal:sapphire_dust').withChance(0.03),
-		Item.of('createaddition:diamond_grit').withChance(0.01)
+		Item.of('minecraft:gold_nugget').withChance(0.05),
+		Item.of('minecraft:lapis_lazuli').withChance(0.05),
+		Item.of('minecraft:emerald').withChance(0.03),
+		Item.of('thermal:ruby').withChance(0.03),
+		Item.of('thermal:sapphire').withChance(0.03),
+		Item.of('minecraft:diamond').withChance(0.01)
 	], ['minecraft:sand','createsifter:advanced_brass_mesh'])
 
 	event.recipes.createsifter.sifting([
 		Item.of('create:experience_nugget').withChance(0.10),
-		Item.of('thermal:cinnabar_dust').withChance(0.03),
+		Item.of('thermal:cinnabar').withChance(0.03),
 		Item.of('minecraft:ghast_tear').withChance(0.03),
 		Item.of('minecraft:bone_meal').withChance(0.05),
-		Item.of('mekanism:dust_coal').withChance(0.05)
+		Item.of('miencraft:coal').withChance(0.05)
 	], ['minecraft:soul_sand','createsifter:advanced_brass_mesh'])
 
 	event.recipes.createsifter.sifting([
-		Item.of('mekanism:dust_quartz').withChance(0.05),
+		Item.of('minecraft:quartz').withChance(0.05),
 		Item.of('minecraft:glowstone_dust').withChance(0.05),
 		Item.of('minecraft:nether_wart').withChance(0.03),
 		Item.of('minecraft:blaze_powder').withChance(0.03),
@@ -102,7 +97,7 @@ ServerEvents.recipes(event => {
 	], ['astro_rise:crushed_netherrack','createsifter:advanced_brass_mesh'])
 
 	event.recipes.createsifter.sifting([
-		Item.of('thermal:apatite_dust').withChance(0.03),
+		Item.of('thermal:apatite').withChance(0.03),
 		Item.of('platinum_mod:ender_tear').withChance(0.03),
 		Item.of('astro_rise:shulker_scute').withChance(0.02),
 		Item.of('tconstruct:dragon_scale').withChance(0.02),
