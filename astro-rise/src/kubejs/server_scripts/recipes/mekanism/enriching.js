@@ -180,6 +180,13 @@ ServerEvents.recipes(event => {
 		output: { count: 2, item: 'astro_rise:dust_platinum' }
 	})
 
+	event.custom({
+		type: 'mekanism:enriching',
+		input: { ingredient: { item: 'thermal:ender_pearl_dust' }},
+		output: { count: 1, item: 'thermal:enderium_dust' }
+	})
+
+
 	// event.recipes.mekanismCrushing('astro_rise:dust_zinc', 'create:zinc_ingot')
 	// event.recipes.mekanismCrushing('astro_rise:dust_aluminum', 'simplemetals_aluminum:aluminum_ingot')
 	// event.recipes.mekanismCrushing('astro_rise:dust_platinum', 'platinum_mod:platinum')
