@@ -31,8 +31,8 @@ ServerEvents.recipes(event => {
 
 	event.replaceInput({}, "thermal:sawdust", "mekanism:sawdust")
 	event.replaceInput({}, "createdieselgenerators:wood_chip", "mekanism:sawdust")
-	event.replaceOuput({}, "thermal:sawdust", "mekanism:sawdust")
-	event.replaceOuput({}, "createdieselgenerators:wood_chip", "mekanism:sawdust")
+	event.replaceOutput({}, "thermal:sawdust", "mekanism:sawdust")
+	event.replaceOutput({}, "createdieselgenerators:wood_chip", "mekanism:sawdust")
 
 	// event.remove({ input: 'thermal:sawdust' })
 	// event.remove({ output: 'thermal:sawdust' })
