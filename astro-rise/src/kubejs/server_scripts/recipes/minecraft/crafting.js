@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
 	// shulker_shell
 
 	event.shapeless('minecraft:shulker_shell', [
-   		'minecraft:andesite'
+   		'9x astro_rise:shulker_scute'
    	])
 
 	// cake
