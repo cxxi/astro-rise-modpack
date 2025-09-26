@@ -27,4 +27,15 @@ ServerEvents.recipes(event => {
 		B: 'ad_astra:steel_plate'
 	})
 
+	// sawdust
+
+	event.replaceInput({}, "thermal:sawdust", "mekanism:sawdust")
+	event.replaceInput({}, "createdieselgenerators:wood_chip", "mekanism:sawdust")
+	event.replaceOuput({}, "thermal:sawdust", "mekanism:sawdust")
+	event.replaceOuput({}, "createdieselgenerators:wood_chip", "mekanism:sawdust")
+
+	// event.remove({ input: 'thermal:sawdust' })
+	// event.remove({ output: 'thermal:sawdust' })
+
+
 })
