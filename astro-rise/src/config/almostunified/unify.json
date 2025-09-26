@@ -91,7 +91,10 @@
   "itemTagInheritance": {},
   "blockTagInheritanceMode": "ALLOW",
   "blockTagInheritance": {},
-  "ignoredTags": [],
+  "ignoredTags": [
+    "forge:sawdust",
+    "forge:sawdust/wood"
+  ],
   "ignoredItems": [
     "mekanismaaa:glacio_lead_ore",
     "mekanismaaa:glacio_tin_ore",
