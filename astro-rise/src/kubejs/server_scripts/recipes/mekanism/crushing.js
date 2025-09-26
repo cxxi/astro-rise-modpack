@@ -33,5 +33,6 @@ ServerEvents.recipes(event => {
 	event.recipes.mekanismCrushing('enderio:soul_powder', 'enderio:soularium_ingot')
 	event.recipes.mekanismCrushing('enderio:withering_powder', 'tconstruct:necrotic_bone')
 	event.recipes.mekanismCrushing('enderio:withering_powder', 'minecraft:wither_skeleton_skull')
+	event.recipes.mekanismCrushing('deeperdarker:soul_dust', 'create_deep_dark:echo_ingot')
 
 })

@@ -30,6 +30,7 @@
     "forge:plates/{material}",
     "forge:rods/{material}",
     "forge:wires/{material}",
+    "forge:sawdust/wood",
     "forge:storage_blocks/{material}",
     "forge:storage_blocks/raw_{material}"
   ],
@@ -82,8 +83,7 @@
     "uranium",
     "zinc",
     "quartz",
-    "ender_pearl",
-    "sawdust"
+    "ender_pearl"
   ],
   "priorityOverrides": {},
   "customTags": {},
