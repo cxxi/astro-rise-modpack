@@ -26,4 +26,7 @@ ServerEvents.recipes(event => {
 	event.smelting('astro_rise:ingot_aerolyte', 'astro_rise:dust_aerolyte')
 	event.smelting('ad_astra:ice_shard', 'astro_rise:dust_ice_shard')
 	event.smelting('minecraft:ender_pearl', 'thermal:ender_pearl_dust')
+	event.smelting('enderio:soularium_ingot', 'enderio:soul_powder')
+	event.smelting('minecraft:obsidian', 'create:powdered_obsidian')
+	
 })

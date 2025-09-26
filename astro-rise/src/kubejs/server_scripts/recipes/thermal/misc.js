@@ -9,6 +9,8 @@ ServerEvents.recipes(event => {
 
 	event.remove({ input: 'thermal:earth_charge' })
 
+	event.remove({ id: 'thermal:enderium_dust_2' })
+
     // kelp to rubber
 
     const modList = ["create", "petrolsparts"]
