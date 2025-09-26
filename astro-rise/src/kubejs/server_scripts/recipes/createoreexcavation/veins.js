@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'createoreexcavation:ore_vein_type/lapis' })
 
-	event.recipes.createoreexcavation.vein('{"text": "Raw Lapis Lazuli"}', 'astro_rise:raw_lapis')
+	event.recipes.createoreexcavation.vein('{"text": "Raw Lapis Lazuli"}', 'astro_rise:raw_lapis_lazuli')
 		.placement(500, 128, 56813486)
 		.veinSize(4, 6)
 		.id('astro_rise:ore_vein_type/lapis')
