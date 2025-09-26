@@ -15,6 +15,32 @@ ServerEvents.recipes(event => {
 	    time: 171
 	})
 
+	event.custom({
+	    type: 'tconstruct:melting',
+	    ingredient: { 
+	    	item: 'enderio:withering_powder' 
+		},
+	    result: {
+		    amount: 100,
+		    fluid: 'astro_rise:molten_necrotic_bone'
+		},
+	    temperature: 950,
+	    time: 171
+	})
+
+	event.custom({
+	    type: 'tconstruct:melting',
+	    ingredient: { 
+	    	item: 'minecraft:wither_skeleton_skull' 
+		},
+	    result: {
+		    amount: 400,
+		    fluid: 'astro_rise:molten_necrotic_bone'
+		},
+	    temperature: 950,
+	    time: 171
+	})
+
 	// liquid_sculk
 
 	event.custom({

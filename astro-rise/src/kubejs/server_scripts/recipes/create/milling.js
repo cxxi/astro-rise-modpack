@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.milling('mekanism:dust_lead', 'create:crushed_raw_lead')
 	event.recipes.create.milling('astro_rise:dust_aluminum', 'create:crushed_raw_aluminum')
 	event.recipes.create.milling('mekanism:dust_uranium', 'create:crushed_raw_uranium')
-	event.recipes.create.milling('astro_rise:dust_cobalt', 'astro_rise:crushed_raw_cobalt')
+	event.recipes.create.milling('enderio:powdered_cobalt', 'astro_rise:crushed_raw_cobalt')
 	event.recipes.create.milling('thermal:nickel_dust', 'create:crushed_raw_nickel')
 	event.recipes.create.milling('astro_rise:dust_aerolyte', 'astro_rise:crushed_raw_aerolyte')
 	event.recipes.create.milling('astro_rise:dust_desh', 'create_ad_astra_compat:crushed_desh_ore')

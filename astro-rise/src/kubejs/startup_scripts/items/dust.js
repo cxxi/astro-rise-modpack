@@ -40,9 +40,4 @@ StartupEvents.registry('item', event => {
 		.texture('astro_rise:item/dust_ice_shard')
 		.displayName('Ice Shard Dust')
 
-	event
-		.create('astro_rise:dust_cobalt')
-		.texture('astro_rise:item/dust_cobalt')
-		.displayName('Cobalt Dust')
-
 })

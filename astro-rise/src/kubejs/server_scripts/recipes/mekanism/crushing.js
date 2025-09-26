@@ -1,35 +1,37 @@
 ServerEvents.recipes(event => {
 
-	// blutonium_ingot
-
-	event.recipes.mekanismCrushing('bigreactors:blutonium_dust', 'bigreactors:blutonium_ingot')
-	
-	// cyanite_ingot
-
+	event.recipes.mekanismCrushing('bigreactors:blutonium_dust', 'bigreactors:blutonium_ingot')	
 	event.recipes.mekanismCrushing('bigreactors:cyanite_dust', 'bigreactors:cyanite_ingot')
-	
-	// magentite_ingot
-
 	event.recipes.mekanismCrushing('bigreactors:magentite_dust', 'bigreactors:magentite_ingot')
-	
-	// graphite_ingot
-
 	event.recipes.mekanismCrushing('bigreactors:graphite_dust', 'bigreactors:graphite_ingot')
-	
-	// ludicrite_ingot
-
 	event.recipes.mekanismCrushing('bigreactors:ludicrite_dust', 'bigreactors:ludicrite_ingot')
-	
-	// ridiculite_ingot
-
 	event.recipes.mekanismCrushing('bigreactors:ridiculite_dust', 'bigreactors:ridiculite_ingot')
-	
-	// inanite_ingot
-
 	event.recipes.mekanismCrushing('bigreactors:inanite_dust', 'bigreactors:inanite_ingot')
-	
-	// insanite_ingot
-
 	event.recipes.mekanismCrushing('bigreactors:insanite_dust', 'bigreactors:insanite_ingot')
+
+	event.recipes.mekanismCrushing('astro_rise:dust_zinc', 'create:zinc_ingot')
+	event.recipes.mekanismCrushing('astro_rise:dust_aluminum', 'simplemetals:aluminum_ingot')
+	event.recipes.mekanismCrushing('astro_rise:dust_platinum', 'platinum_mod:platinum')
+	event.recipes.mekanismCrushing('astro_rise:dust_desh', 'ad_astra:desh_ingot')
+	event.recipes.mekanismCrushing('astro_rise:dust_ostrum', 'ad_astra:ostrum_ingot')
+	event.recipes.mekanismCrushing('astro_rise:dust_calorite', 'ad_astra:calorite_ingot')
+	event.recipes.mekanismCrushing('astro_rise:dust_aerolyte', 'astro_rise:ingot_aerolyte')
+	event.recipes.mekanismCrushing('astro_rise:dust_ice_shard', 'ad_astra:ice_shard')
+	event.recipes.mekanismCrushing('mekanism:dust_sulfur', 'thermal:sulfur')
+	event.recipes.mekanismCrushing('thermal:apatite_dust', 'thermal:apatite')
+	event.recipes.mekanismCrushing('thermal:cinnabar_dust', 'thermal:cinnabar')
+	event.recipes.mekanismCrushing('thermal:niter_dust', 'thermal:niter')
+	event.recipes.mekanismCrushing('thermal:ender_pearl_dust', 'minecraft:ender_pearl')
+	event.recipes.mekanismCrushing('thermal:silver_dust', 'thermal:silver_ingot')
+	event.recipes.mekanismCrushing('thermal:nickel_dust', 'thermal:nickel_ingot')
+	event.recipes.mekanismCrushing('thermal:ruby_dust', 'thermal:ruby')
+	event.recipes.mekanismCrushing('thermal:sapphire_dust', 'thermal:sapphire')
+	event.recipes.mekanismCrushing('minecraft:blaze_powder', 'minecraft:blaze_rod')
+	event.recipes.mekanismCrushing('create:powdered_obsidian', 'minecraft:obsidian')
+	event.recipes.mekanismCrushing('create:powdered_obsidian', 'minecraft:crying_obsidian')
+	event.recipes.mekanismCrushing('enderio:powdered_cobalt', 'tconstruct:cobalt_ingot')
+	event.recipes.mekanismCrushing('enderio:soul_powder', 'enderio:soularium_ingot')
+	event.recipes.mekanismCrushing('enderio:withering_powder', 'tconstruct:necrotic_bone')
+	event.recipes.mekanismCrushing('enderio:withering_powder', 'minecraft:wither_skeleton_skull')
 
 })
