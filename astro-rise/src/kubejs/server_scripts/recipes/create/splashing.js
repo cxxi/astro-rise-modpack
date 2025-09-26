@@ -29,7 +29,8 @@ ServerEvents.recipes(event => {
 		Item.of('mekanism:dust_tin').withChance(0.25)
 	], 'create:crushed_raw_silver')
 
-	event.remove({ id: 'create:splashing/mekanism/crushed_raw_tin' })
+	// event.remove({ id: 'create:splashing/mekanism/crushed_raw_tin' })
+	event.remove({ id: 'create:splashing/thermal/crushed_raw_tin' })
 
 	event.recipes.create.splashing([
 		Item.of('mekanism:nugget_tin').withCount(9), 
@@ -64,21 +65,21 @@ ServerEvents.recipes(event => {
 		Item.of('mekanism:dust_copper').withChance(0.25)
 	], 'create:crushed_raw_nickel')
 
-	event.remove({ id: 'create_ad_astra_compat:splashing/thermal/crushed_desh_ore' })
+	event.remove({ id: 'create_ad_astra_compat:splashing/crushed_desh_ore' })
 
 	event.recipes.create.splashing([
 		Item.of('ad_astra:desh_nugget').withCount(9), 
 		Item.of('astro_rise:dust_ice_shard').withChance(0.15)
 	], 'create_ad_astra_compat:crushed_desh_ore')
 
-	event.remove({ id: 'create_ad_astra_compat:splashing/thermal/crushed_calorite_ore' })
+	event.remove({ id: 'create_ad_astra_compat:splashing/crushed_calorite_ore' })
 
 	event.recipes.create.splashing([
 		Item.of('ad_astra:calorite_nugget').withCount(9), 
 		Item.of('thermal:niter_dust').withChance(0.15)
 	], 'create_ad_astra_compat:crushed_calorite_ore')
 
-	event.remove({ id: 'create_ad_astra_compat:splashing/thermal/crushed_ostrum_ore' })
+	event.remove({ id: 'create_ad_astra_compat:splashing/crushed_ostrum_ore' })
 
 	event.recipes.create.splashing([
 		Item.of('ad_astra:ostrum_nugget').withCount(9), 
