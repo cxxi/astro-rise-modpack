@@ -13,16 +13,4 @@ ServerEvents.recipes(event => {
 	    B: 'minecraft:barrel'
 	})
 
-	// chip_wood_block
-
-	// event.remove({ id: 'createdieselgenerators:crafting/chip_wood_block'})
-
-	// event.shapeless('createdieselgenerators:chip_wood_block', [
-	//     '9x createdieselgenerators:wood_chip' 
-	// ])
-
-	// event.shapeless('createdieselgenerators:chip_wood_block', [
-	//     '9x mekanism:sawdust' 
-	// ])
-
 })
