@@ -10,6 +10,7 @@ ServerEvents.recipes(event => {
 	event.remove({ input: 'thermal:earth_charge' })
 
 	event.remove({ id: 'thermal:enderium_dust_2' })
+	event.remove({ id: /thermal:fire_charge\/.*/ })
 
     // kelp to rubber
 
