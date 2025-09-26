@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
 	event.recipes.mekanismCrushing('bigreactors:insanite_dust', 'bigreactors:insanite_ingot')
 
 	event.recipes.mekanismCrushing('astro_rise:dust_zinc', 'create:zinc_ingot')
-	event.recipes.mekanismCrushing('astro_rise:dust_aluminum', 'simplemetals:aluminum_ingot')
+	event.recipes.mekanismCrushing('astro_rise:dust_aluminum', 'simplemetals_aluminum:aluminum_ingot')
 	event.recipes.mekanismCrushing('astro_rise:dust_platinum', 'platinum_mod:platinum')
 	event.recipes.mekanismCrushing('astro_rise:dust_desh', 'ad_astra:desh_ingot')
 	event.recipes.mekanismCrushing('astro_rise:dust_ostrum', 'ad_astra:ostrum_ingot')
