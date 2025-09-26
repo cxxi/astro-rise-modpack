@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
 		Item.of('minecraft:blue_dye').withChance(0.5)
 	], 'minecraft:lapis_lazuli')
 
-	event.remove({ id: 'create:milling/compat/tconstruct/necrotic_bone' })
+	event.remove({ id: 'create:milling/compat/tconstruct/nercotic_bone' })
 	event.recipes.create.milling('enderio:withering_powder', 'tconstruct:necrotic_bone')
 
 	event.recipes.create.milling('mekanism:dust_iron', 'create:crushed_raw_iron')
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.milling('mekanism:dust_emerald', 'createoreexcavation:raw_emerald')
 	event.recipes.create.milling('createaddition:diamond_grit', 'createoreexcavation:raw_diamond')
-	event.recipes.create.milling('2x mekanism:dust_lapis_lazuli', 'astro_rise:raw_lapis_lazuli')
+	event.recipes.create.milling('3x mekanism:dust_lapis_lazuli', 'astro_rise:raw_lapis_lazuli')
 	event.recipes.create.milling('mekanism:dust_quartz', 'astro_rise:raw_quartz')
 
 })

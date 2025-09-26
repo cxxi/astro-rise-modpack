@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
 		],
 		processingTime: 150,
 		results: [
-			{ item: 'mekanism:dust_lapis_lazuli', count: 3 }
+			{ item: 'mekanism:dust_lapis_lazuli', count: 4 }
 		]
 	})
 	

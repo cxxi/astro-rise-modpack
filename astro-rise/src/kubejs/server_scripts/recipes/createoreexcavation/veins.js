@@ -1,5 +1,23 @@
 ServerEvents.recipes(event => {
 
+	event.remove({ id: 'createoreexcavation:ore_vein_type/quartz' })
+
+	event.recipes.createoreexcavation.vein('{"text": "Raw Quartz"}', 'astro_rise:raw_quartz')
+		.placement(400, 96, 58423695)
+		.veinSize(4, 8)
+		.id('astro_rise:ore_vein_type/quartz')
+		.alwaysInfinite()
+		.biomeWhitelist('minecraft:is_nether')
+
+	event.remove({ id: 'createoreexcavation:ore_vein_type/lapis' })
+
+	event.recipes.createoreexcavation.vein('{"text": "Raw Lapis Lazuli"}', 'astro_rise:raw_lapis')
+		.placement(500, 128, 56813486)
+		.veinSize(4, 6)
+		.id('astro_rise:ore_vein_type/lapis')
+		.alwaysInfinite()
+		.biomeWhitelist('minecraft:is_overworld')
+
 	event.remove({ id: 'createoreexcavation:ore_vein_type/nether_gold' })
 	event.remove({ id: 'createoreexcavation:ore_vein_type/gold' })
 

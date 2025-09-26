@@ -2,6 +2,43 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'createoreexcavation:drilling/nether_gold' })
 
+	event.remove({ id: 'createoreexcavation:drilling/quartz' })
+
+	event.recipes.createoreexcavation.drilling([
+			Item.of('astro_rise:raw_quartz').withChance(0.40),
+			Item.of('minecraft:netherrack').withChance(0.40),
+			Item.of('minecraft:gold_nugget').withChance(0.20)
+		], 'astro_rise:ore_vein_type/quartz', 1200)
+		.stress(64)
+		.id("astro_rise:drilling/quartz")
+
+	event.remove({ id: 'createoreexcavation:drilling/emerald' })
+
+	event.recipes.createoreexcavation.drilling([
+			Item.of('createoreexcavation:raw_emerald'),
+			Item.of('minecraft:emerald').withChance(0.10),
+		], 'createoreexcavation:ore_vein_type/emerald', 1200)
+		.stress(96)
+		.id("astro_rise:drilling/emerald")
+
+	event.remove({ id: 'createoreexcavation:drilling/redstone' })
+
+	event.recipes.createoreexcavation.drilling([
+			Item.of('createoreexcavation:raw_redstone'),
+			Item.of('minecraft:redstone').withChance(0.10),
+		], 'createoreexcavation:ore_vein_type/redstone', 600)
+		.stress(96)
+		.id("astro_rise:drilling/redstone")
+
+	event.remove({ id: 'createoreexcavation:drilling/lapis' })
+
+	event.recipes.createoreexcavation.drilling([
+			Item.of('astro_rise:raw_lapis_lazuli'),
+			Item.of('minecraft:lapis_lazuli').withChance(0.10),
+		], 'astro_rise:ore_vein_type/lapis', 600)
+		.stress(96)
+		.id("astro_rise:drilling/lapis")
+
 	event.remove({ id: 'createoreexcavation:drilling/netherite' })
 
 	event.recipes.createoreexcavation.drilling([
