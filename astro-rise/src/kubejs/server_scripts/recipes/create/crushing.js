@@ -25,6 +25,17 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'create:crushing/gilded_blackstone' })
 	event.remove({ id: 'create:crushing/prismarine_crystals' })
 	event.remove({ id: 'create:crushing/netherrack' })
+
+	event.custom({
+		type: 'create:crushing',
+		ingredients: [
+			{ item : 'astro_rise:raw_lapis_lazuli' }
+		],
+		processingTime: 150,
+		results: [
+			{ item: 'mekanism:dust_lapis_lazuli', count: 3 }
+		]
+	})
 	
 	event.custom({
 		type: 'create:crushing',

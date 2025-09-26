@@ -15,8 +15,6 @@ https://www.curseforge.com/minecraft/mc-mods/roost-re-hatched
 https://www.curseforge.com/minecraft/mc-mods/better-archeology
 https://www.curseforge.com/minecraft/mc-mods/mutant-monsters
 
-ores
-
 coal
 
 iron
