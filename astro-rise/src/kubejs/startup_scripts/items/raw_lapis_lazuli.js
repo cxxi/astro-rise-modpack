@@ -1,4 +1,4 @@
-raw_lapisStartupEvents.registry('item', event => {
+StartupEvents.registry('item', event => {
 
 	event
 		.create('astro_rise:raw_lapis_lazuli')
