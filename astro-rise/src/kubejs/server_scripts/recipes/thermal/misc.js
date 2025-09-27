@@ -4,13 +4,15 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'thermal:rubber_from_vine' })
 	event.remove({ id: 'thermal:rubber_from_dandelion' })
 
-	// event.remove({ id: 'thermal:earth_charge/sulfur_dust_from_sulfur' })
-	// event.remove({ id: 'thermal:earth_charge/niter_dust_from_niter' })
-
 	event.remove({ input: 'thermal:earth_charge' })
+	event.remove({ id: /thermal:fire_charge\/.*/ })
 
 	event.remove({ id: 'thermal:enderium_dust_2' })
-	event.remove({ id: /thermal:fire_charge\/.*/ })
+	event.remove({ id: 'thermal:constantan_dust_2' })
+	event.remove({ id: 'thermal:invar_dust_3' })
+	event.remove({ id: 'thermal:signalum_dust_4' })
+	event.remove({ id: 'thermal:lumium_dust_4' })
+	event.remove({ id: 'thermal:bronze_dust_4' })
 
     // kelp to rubber
 

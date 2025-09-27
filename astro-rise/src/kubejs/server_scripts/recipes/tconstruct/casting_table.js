@@ -1,23 +1,31 @@
 ServerEvents.recipes(event => {
 
-	// gold_bars
+
+	const withAllCast = (event, recipe) => {
+
+		recipe.cast = { tag: 'tconstruct:casts/single_use/gear' }
+		recipe.cast_consumed: true
+
+		event.custom(recipe)
+
+		recipe.cast: { tag: 'tconstruct:casts/multi_use/gear' }
+	    recipe.cast_consumed: false
+
+	    event.custom(recipe)
+	}
+
+	// bars
 
 	event.remove({ id: 'tconstruct:smeltery/casting/metal/gold/bars' })
-
-  	// iron_bars
-
   	event.remove({ id: 'tconstruct:smeltery/casting/metal/iron/bars' })
 	
-	// iron_gear
+	// gear
 	
 	event.remove({ id: 'tconstruct:smeltery/casting/metal/iron/gear_sand_cast' })
+	event.remove({ id: 'tconstruct:smeltery/casting/metal/iron/gear_gold_cast' })
 
-	event.custom({
+	withAllCast(event, {
 	    type: 'tconstruct:casting_table',
-	    cast: {
-	    	tag: 'tconstruct:casts/single_use/gear'
-	    },
-	    cast_consumed: true,
 	    fluid: {
 	    	fluid: 'tconstruct:molten_steel',
 	    	amount: 360
@@ -28,22 +36,18 @@ ServerEvents.recipes(event => {
 	    cooling_time: 40
 	})
 
-	event.remove({ id: 'tconstruct:smeltery/casting/metal/iron/gear_gold_cast' })
+	// fluix_crystal
 
-	event.custom({
+	withAllCast(event, {
 	    type: 'tconstruct:casting_table',
-	    cast: {
-	    	tag: 'tconstruct:casts/multi_use/gear'
-	    },
-	    cast_consumed: false,
 	    fluid: {
-	    	fluid: 'tconstruct:molten_steel',
-	    	amount: 360
+	    	fluid: 'astro_rise:molten_fluix',
+	    	amount: 100
 	    },
 	    result: {
-	    	item: 'enderio:iron_gear'
+	    	item: 'ae2:fluix_crystal'
 	    },
-	    cooling_time: 40
+	    cooling_time: 100
 	})
 
 	// wither_skeleton_skull
@@ -78,72 +82,6 @@ ServerEvents.recipes(event => {
 	    },
 	    result: {
 	    	item: 'tconstruct:necrotic_bone'
-	    },
-	    cooling_time: 100
-	})
-
-	// andesite_alloy
-
-	event.custom({
-	    type: 'tconstruct:casting_basin',
-	    cast: {
-	    	item: 'minecraft:andesite'
-	    },
-	    cast_consumed: true,
-	    fluid: {
-	    	fluid: 'tconstruct:molten_aluminum',
-	    	amount: 10
-	    },
-	    result: {
-	    	item: 'create:andesite_alloy'
-	    },
-	    cooling_time: 20
-	})
-
-	// sculk
-
-	event.custom({
-	    type: 'tconstruct:casting_basin',
-	    fluid: {
-	    	fluid: 'astro_rise:liquid_sculk',
-	    	amount: 1000
-	    },
-	    result: {
-	    	item: 'minecraft:sculk'
-	    },
-	    cooling_time: 60
-	})
-
-	// fluix_crystal
-
-	event.custom({
-	    type: 'tconstruct:casting_table',
-	    cast: {
-	    	tag: 'tconstruct:casts/single_use/gem'
-	    },
-	    cast_consumed: true,
-	    fluid: {
-	    	fluid: 'astro_rise:molten_fluix',
-	    	amount: 100
-	    },
-	    result: {
-	    	item: 'ae2:fluix_crystal'
-	    },
-	    cooling_time: 100
-	})
-
-	event.custom({
-	    type: 'tconstruct:casting_table',
-	    cast: {
-	    	tag: 'tconstruct:casts/multi_use/gem'
-	    },
-	    cast_consumed: false,
-	    fluid: {
-	    	fluid: 'astro_rise:molten_fluix',
-	    	amount: 100
-	    },
-	    result: {
-	    	item: 'ae2:fluix_crystal'
 	    },
 	    cooling_time: 100
 	})

@@ -1,16 +1,26 @@
 ServerEvents.recipes(event => {
 
-	// molten_electrum
+	// molten_enderium
 
-	// event.recipes.tconstruct.alloy(
-	//     { fluid: "tconstruct:molten_electrum", amount: 90 },
-	//     [
-	//     	{ fluid: "tconstruct:molten_gold", amount: 360 },
-	//     	{ fluid: "tconstruct:molten_quartz", amount: 300 },
-	//     	{ fluid: "tconstruct:molten_ender", amount: 250 },
-	//     	{ fluid: "tconstruct:molten_uranium", amount: 90 }
-	//     ],
-	//     1500
-	// )
+	event.remove({ id: 'tconstruct:smeltery/alloys/molten_enderium' })
+
+	event.recipes.tconstruct.alloy(
+	    { fluid: "tconstruct:molten_enderium", amount: 180 },
+	    [
+	    	{ fluid: "tconstruct:molten_lead", amount: 270 },
+	    	{ fluid: "tconstruct:molten_diamond", amount: 100 },
+	    	{ fluid: "thermal:ender", amount: 500 }
+	    ],
+	    1350
+	)
+
+	event.recipes.tconstruct.alloy(
+	    { fluid: "thermal:ender", amount: 180 },
+	    [
+	    	{ fluid: "tconstruct:molten_ender", amount: 270 },
+	    	{ fluid: "astro_rise:liquid_sculk", amount: 270 }
+	    ],
+	    1350
+	)
 
 })
