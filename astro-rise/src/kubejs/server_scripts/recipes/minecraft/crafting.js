@@ -55,6 +55,8 @@ ServerEvents.recipes(event => {
 
 	// enderchest
 
+	event.remove('minecraft:ender_chest')
+
 	event.shaped('minecraft:ender_chest', [
 	    'ABA', 
 	    'BCB',

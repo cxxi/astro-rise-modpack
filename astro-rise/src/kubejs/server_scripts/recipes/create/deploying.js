@@ -1,5 +1,41 @@
 ServerEvents.recipes(event => {
 
+	// osmium casing
+
+	event.custom({
+		type: "create:deploying",
+		ingredients: [
+		    {
+		    	item: 'mekanism:block_osmium'
+		    },
+		    {
+		    	item: 'create:brass_ingot'
+		    }
+		],
+		results: [
+			{
+				item: 'astro_rise:osmium_casing'
+			}
+		]
+	})
+
+	event.custom({
+		type: "create:item_application",
+		ingredients: [
+		    {
+		    	item: 'mekanism:block_osmium'
+		    },
+		    {
+		    	item: 'create:brass_ingot'
+		    }
+		],
+		results: [
+			{
+				item: 'astro_rise:osmium_casing'
+			}
+		]
+	})
+
 	// steel casing
 
 	event.remove({ id: 'mekanism:steel_casing' })
@@ -8,7 +44,7 @@ ServerEvents.recipes(event => {
 		type: "create:deploying",
 		ingredients: [
 		    {
-		    	item: 'mekanism:block_osmium'
+		    	item: 'astro_rise:osmium_casing'
 		    },
 		    {
 		    	item: 'mekanism:ingot_steel'
@@ -25,7 +61,7 @@ ServerEvents.recipes(event => {
 		type: "create:item_application",
 		ingredients: [
 		    {
-		    	item: 'mekanism:block_osmium'
+		    	item: 'astro_rise:osmium_casing'
 		    },
 		    {
 		    	item: 'mekanism:ingot_steel'
