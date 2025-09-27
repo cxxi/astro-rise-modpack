@@ -4,12 +4,12 @@ ServerEvents.recipes(event => {
 	const withAllCast = (event, recipe) => {
 
 		recipe.cast = { tag: 'tconstruct:casts/single_use/gear' }
-		recipe.cast_consumed: true
+		recipe.cast_consumed = true
 
 		event.custom(recipe)
 
-		recipe.cast: { tag: 'tconstruct:casts/multi_use/gear' }
-	    recipe.cast_consumed: false
+		recipe.cast = { tag: 'tconstruct:casts/multi_use/gear' }
+	    recipe.cast_consumed = false
 
 	    event.custom(recipe)
 	}
