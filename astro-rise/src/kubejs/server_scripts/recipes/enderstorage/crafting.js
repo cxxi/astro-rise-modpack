@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
 	    A: 'createaddition:electrum_rod', 
 	    B: '#mekanism:colorable/wool',
 	    C: 'create:item_vault',
-	    D: 'thermal:enderium_ingot',
+	    D: 'astro_rise:ender_mechanism',
 	    E: 'bedrockbreakers:pure_obsidian'
 	})
 
@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
 	    A: 'createaddition:electrum_rod', 
 	    B: '#mekanism:colorable/wool',
 	    C: 'create:fluid_tank',
-	    D: 'thermal:enderium_ingot',
+	    D: 'astro_rise:ender_mechanism',
 	    E: 'bedrockbreakers:pure_obsidian'
 	})
 
