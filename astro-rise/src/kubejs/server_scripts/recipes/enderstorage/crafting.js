@@ -7,9 +7,9 @@ ServerEvents.recipes(event => {
 	    'ECE',
 	    'ADA'  
 	],{
-	    A: 'createaddition:electrum_rod', 
+	    A: 'createaddition:electrum_sheet', 
 	    B: '#mekanism:colorable/wool',
-	    C: 'create:item_vault',
+	    C: 'minecraft:ender_chest',
 	    D: 'astro_rise:ender_mechanism',
 	    E: 'bedrockbreakers:pure_obsidian'
 	})
@@ -21,11 +21,11 @@ ServerEvents.recipes(event => {
 	    'ECE',
 	    'ADA'  
 	],{
-	    A: 'createaddition:electrum_rod', 
+	    A: 'bedrockbreakers:pure_obsidian', 
 	    B: '#mekanism:colorable/wool',
-	    C: 'create:fluid_tank',
+	    C: 'tconstruct:scorched_fuel_tank',
 	    D: 'astro_rise:ender_mechanism',
-	    E: 'bedrockbreakers:pure_obsidian'
+	    E: 'createaddition:electrum_rod'
 	})
 
 })

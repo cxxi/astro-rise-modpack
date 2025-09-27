@@ -53,6 +53,18 @@ ServerEvents.recipes(event => {
 	    B: 'minecraft:glass_bottle'
 	})
 
+	// enderchest
+
+	event.shaped('minecraft:ender_chest', [
+	    'ABA', 
+	    'BCB',
+	    'ABA'  
+	], {
+	    A: 'thermal:enderium_ingot', 
+	    B: 'minecraft:obsidian',
+	    C: 'minecraft:ender_eye'
+	})
+
 	// nugget|ingot
 
 	event.remove({ id: 'crateaddition:crafting/electrum_ingot' })
