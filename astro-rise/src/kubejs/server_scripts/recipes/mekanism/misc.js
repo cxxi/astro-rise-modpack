@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
 
 	event.shaped('mekanism:basic_universal_cable', [
 		'   ', 
-	    'ABA',
+	    'BAB',
 	    '   ' 
 	], {
 		A: 'createaddition:electrum_spool',
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
 
 	event.shaped('mekanism:basic_mechanical_pipe', [
 		'   ', 
-	    'ABA',
+	    'BAB',
 	    '   '  
 	], {
 		A: 'create:fluid_pipe',
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
 
 	event.shaped('mekanism:basic_pressurized_tube', [
 		'   ', 
-	    'ABA',
+	    'BAB',
 	    '   ' 
 	], {
 		A: '#enderio:clear_glass',
@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
 
 	event.shaped('mekanism:basic_logistical_transporter', [
 		'   ', 
-	    'ABA',
+	    'BAB',
 	    '   ' 
 	], {
 		A: 'create:belt_connector',
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
 
 	event.shaped('mekanism:basic_thermodynamic_conductor', [
 		'   ', 
-	    'ABA',
+	    'BAB',
 	    '   ' 
 	], {
 		A: 'createaddition:copper_spool',
