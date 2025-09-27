@@ -27,6 +27,71 @@ ServerEvents.recipes(event => {
 		B: 'ad_astra:steel_plate'
 	})
 
+	// basic universal cable
+
+	event.remove({ id: 'mekanism:transmitter/universal_cable/basic' })
+
+	event.shaped('mekanism:basic_universal_cable', [
+		'   ', 
+	    'ABA',
+	    '   ' 
+	], {
+		A: 'createaddition:electrum_spool',
+		B: 'mekanism:ingot_steel'
+	})
+
+	// basic mechanical pipe
+
+	event.remove({ id: 'mekanism:transmitter/mechanical_pipe/basic' })
+
+	event.shaped('mekanism:basic_mechanical_pipe', [
+		'   ', 
+	    'ABA',
+	    '   '  
+	], {
+		A: 'create:fluid_pipe',
+		B: 'mekanism:ingot_steel'
+	})
+
+	// basic pressurized tube
+
+	event.remove({ id: 'mekanism:transmitter/pressurized_tube/basic' })
+
+	event.shaped('mekanism:basic_pressurized_tube', [
+		'   ', 
+	    'ABA',
+	    '   ' 
+	], {
+		A: '#enderio:clear_glass',
+		B: 'mekanism:ingot_steel'
+	})
+
+	// basic logistical transporter
+
+	event.remove({ id: 'mekanism:transmitter/logistical_transporter/basic' })
+
+	event.shaped('mekanism:basic_logistical_transporter', [
+		'   ', 
+	    'ABA',
+	    '   ' 
+	], {
+		A: 'create:belt_connector',
+		B: 'mekanism:ingot_steel'
+	})
+
+	// basic thermodynamic conductor
+
+	event.remove({ id: 'mekanism:transmitter/thermodynamic_conductor/basic' })
+
+	event.shaped('mekanism:basic_thermodynamic_conductor', [
+		'   ', 
+	    'ABA',
+	    '   ' 
+	], {
+		A: 'createaddition:copper_spool',
+		B: 'mekanism:ingot_steel'
+	})
+
 	// sawdust
 
 	event.replaceInput({}, 'thermal:sawdust', 'mekanism:sawdust')
