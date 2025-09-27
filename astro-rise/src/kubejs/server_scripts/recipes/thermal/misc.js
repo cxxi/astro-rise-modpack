@@ -7,6 +7,7 @@ ServerEvents.recipes(event => {
 	event.remove({ input: 'thermal:earth_charge' })
 	event.remove({ id: /thermal:fire_charge\/.*/ })
 
+	event.remove({ id: 'thermal:electrum_dust_2' })
 	event.remove({ id: 'thermal:enderium_dust_2' })
 	event.remove({ id: 'thermal:constantan_dust_2' })
 	event.remove({ id: 'thermal:invar_dust_3' })

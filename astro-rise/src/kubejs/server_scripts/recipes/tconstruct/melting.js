@@ -1,5 +1,35 @@
 ServerEvents.recipes(event => {
 
+	// destabilized redstone
+
+	event.custom({
+	    type: 'tconstruct:melting',
+	    ingredient: { 
+	    	item: 'minecraft:redstone' 
+		},
+	    result: {
+		    amount: 100,
+		    fluid: 'thermal:redstone'
+		},
+	    temperature: 800,
+	    time: 150
+	})
+
+	// energized glowstone
+
+	event.custom({
+	    type: 'tconstruct:melting',
+	    ingredient: { 
+	    	item: 'minecraft:glowstone_dust' 
+		},
+	    result: {
+		    amount: 100,
+		    fluid: 'thermal:glowstone'
+		},
+	    temperature: 800,
+	    time: 150
+	})
+
 	// molten_necrotic_bone
 
 	event.custom({

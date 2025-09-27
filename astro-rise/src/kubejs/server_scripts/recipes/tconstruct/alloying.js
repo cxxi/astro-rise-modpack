@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
 	event.recipes.tconstruct.alloy(
 	    { fluid: "thermal:ender", amount: 250 },
 	    [
-	    	{ fluid: "tconstruct:molten_ender", amount: 290 },
+	    	{ fluid: "tconstruct:molten_ender", amount: 250 },
 	    	{ fluid: "astro_rise:liquid_sculk", amount: 500 }
 	    ],
 	    1350
