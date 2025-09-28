@@ -665,17 +665,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["3F47A99467F017FF"]
-			id: "6B6D5FCC6AD2540C"
-			tasks: [{
-				id: "6E001270EC4AFFA4"
-				item: "create_winery:apple_juice"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 9.0d
-		}
-		{
 			dependencies: ["2AD7DE559C31F3CE"]
 			id: "3F47A99467F017FF"
 			tasks: [{
@@ -684,17 +673,6 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 8.0d
-		}
-		{
-			dependencies: ["3F47A99467F017FF"]
-			id: "2672EEB06A15B622"
-			tasks: [{
-				id: "2B6E43A0EBAAF847"
-				item: "create_winery:grape_juice"
-				type: "item"
-			}]
-			x: -3.0d
 			y: 8.0d
 		}
 		{
@@ -768,8 +746,8 @@
 				item: "create:builders_tea"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 6.5d
+			x: -3.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["2AD7DE559C31F3CE"]

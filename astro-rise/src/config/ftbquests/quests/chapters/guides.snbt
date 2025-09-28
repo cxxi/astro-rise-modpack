@@ -26,7 +26,7 @@
 			}]
 			title: "Apply Energestic Guide"
 			x: 5.5d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
 			can_repeat: true
@@ -46,7 +46,7 @@
 			}]
 			title: "Animal Dictionary"
 			x: -0.5d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
 			can_repeat: true
@@ -187,6 +187,66 @@
 			title: "Quest Book"
 			x: 2.5d
 			y: -7.0d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "bigreactors:erguide"
+				}
+			}
+			id: "503F53766D54C0E2"
+			rewards: [{
+				id: "7777AB3FC39C1EDF"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "bigreactors:erguide"
+					}
+				}
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "0CB0D66366B6A054"
+				title: "Extrem Reactor"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "ad_astra:astrodux"
+				}
+			}
+			id: "7BE86F0B8CE44DF5"
+			rewards: [{
+				id: "2B5B87528BA58477"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "ad_astra:astrodux"
+					}
+				}
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "25ADC109B1D8726A"
+				title: "Ad Astra"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: -3.0d
 		}
 	]
 	title: "Guides"
