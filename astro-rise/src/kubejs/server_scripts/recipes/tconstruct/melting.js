@@ -41,11 +41,11 @@ ServerEvents.recipes(event => {
 					},
 					rate: 'metal',
 					result: {
-						amount: type.amount,
+						amount: type.data.amount,
 						fluid: `${ns}:molten_${metal}`
 					},
-					temperature: type.temperature ?? 1250,
-					time: type.time
+					temperature: type?.data.temperature ?? 1250,
+					time: type.data.time
 				})
 
 			})
