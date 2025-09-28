@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'tconstruct:molten_aluminum',
-	    	amount: 250
+	    	amount: 360
 	    },
 	    result: {
 	    	item: 'astro_rise:mold'
