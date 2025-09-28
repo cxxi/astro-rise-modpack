@@ -282,7 +282,7 @@ ServerEvents.recipes(event => {
 		rate: 'metal',
 		result: {
 			amount: 10,
-			tag: 'astro_rise:molten_desh'
+			fluid: 'astro_rise:molten_desh'
 		},
 		temperature: 1250,
 		time: 20
@@ -296,7 +296,7 @@ ServerEvents.recipes(event => {
 		rate: 'metal',
 		result: {
 			amount: 90,
-			tag: 'astro_rise:molten_desh'
+			fluid: 'astro_rise:molten_desh'
 		},
 		temperature: 1250,
 		time: 180
@@ -310,7 +310,7 @@ ServerEvents.recipes(event => {
 		rate: 'metal',
 		result: {
 			amount: 90,
-			tag: 'astro_rise:molten_desh'
+			fluid: 'astro_rise:molten_desh'
 		},
 		temperature: 1250,
 		time: 180
@@ -324,7 +324,7 @@ ServerEvents.recipes(event => {
 		rate: 'metal',
 		result: {
 			amount: 90,
-			tag: 'astro_rise:molten_desh'
+			fluid: 'astro_rise:molten_desh'
 		},
 		temperature: 1250,
 		time: 180
@@ -338,7 +338,7 @@ ServerEvents.recipes(event => {
 		rate: 'metal',
 		result: {
 			amount: 90,
-			tag: 'astro_rise:molten_desh'
+			fluid: 'astro_rise:molten_desh'
 		},
 		temperature: 1250,
 		time: 180
@@ -352,7 +352,7 @@ ServerEvents.recipes(event => {
 		rate: 'metal',
 		result: {
 			amount: 810,
-			tag: 'astro_rise:molten_desh'
+			fluid: 'astro_rise:molten_desh'
 		},
 		temperature: 1250,
 		time: 1620
