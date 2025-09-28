@@ -129,7 +129,9 @@
 		"Platinum-v1.3.1.jar",
 		"simplemetals-aluminum-2.1.jar",
 		"FluxNetworks-1.20.1-7.2.1.15.jar",
-		"Patchouli-1.20.1-84.1-FORGE.jar"
+		"Patchouli-1.20.1-84.1-FORGE.jar",
+		"BotanyTrees-Forge-1.20.1-9.0.18.jar",
+		"BotanyPots-Forge-1.20.1-13.0.41.jar"
 	],
 	"datapacks": [],
 	"resourcepacks": []
