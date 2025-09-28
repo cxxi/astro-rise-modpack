@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
 	event.recipes.tconstruct.alloy(
 	    { fluid: "tconstruct:molten_signalum", amount: 180 },
 	    [
-	    	{ fluid: "astro_rise:molten_calorite", amount: 270 },
+	    	{ fluid: "astro_rise:molten_desh", amount: 270 },
 	    	{ fluid: "astro_rise:molten_ostrum", amount: 100 },
 	    	{ fluid: "thermal:redstone", amount: 500 }
 	    ],

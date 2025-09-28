@@ -272,4 +272,102 @@ ServerEvents.recipes(event => {
 		time: 361
 	})
 
+	// molten_desh
+
+	event.custom({
+		type: 'tconstruct:ore_melting',
+		ingredient: {
+			tag: 'forge:nuggets/desh'
+		},
+		rate: 'metal',
+		result: {
+			amount: 10,
+			tag: 'astro_rise:molten_desh'
+		},
+		temperature: 1250,
+		time: 20
+	})
+
+	event.custom({
+		type: 'tconstruct:ore_melting',
+		ingredient: {
+			tag: 'forge:raw_materials/desh'
+		},
+		rate: 'metal',
+		result: {
+			amount: 90,
+			tag: 'astro_rise:molten_desh'
+		},
+		temperature: 1250,
+		time: 180
+	})
+
+	event.custom({
+		type: 'tconstruct:ore_melting',
+		ingredient: {
+			tag: 'forge:dusts/desh'
+		},
+		rate: 'metal',
+		result: {
+			amount: 90,
+			tag: 'astro_rise:molten_desh'
+		},
+		temperature: 1250,
+		time: 180
+	})
+
+	event.custom({
+		type: 'tconstruct:ore_melting',
+		ingredient: {
+			tag: 'forge:ingots/desh'
+		},
+		rate: 'metal',
+		result: {
+			amount: 90,
+			tag: 'astro_rise:molten_desh'
+		},
+		temperature: 1250,
+		time: 180
+	})
+
+	event.custom({
+		type: 'tconstruct:ore_melting',
+		ingredient: {
+			tag: 'forge:plates/desh'
+		},
+		rate: 'metal',
+		result: {
+			amount: 90,
+			tag: 'astro_rise:molten_desh'
+		},
+		temperature: 1250,
+		time: 180
+	})
+
+	event.custom({
+		type: 'tconstruct:ore_melting',
+		ingredient: {
+			tag: 'forge:storage_blocks/desh'
+		},
+		rate: 'metal',
+		result: {
+			amount: 810,
+			tag: 'astro_rise:molten_desh'
+		},
+		temperature: 1250,
+		time: 1620
+	})
+
+	// molten_ostrum
+	
+	
+
+	// molten_calorite
+
+	
+
+	// molten_aerolyte
+
+	
+
 })

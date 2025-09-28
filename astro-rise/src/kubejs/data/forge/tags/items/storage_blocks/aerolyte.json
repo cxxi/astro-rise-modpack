@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "astro_rise:raw_aerolyte_block",
+    "astro_rise:aerolyte_block"   
+  ]
+}
