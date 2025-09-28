@@ -1,5 +1,62 @@
 ServerEvents.recipes(event => {
 
+	const metalMelting = (event, ns, metal) => {
+
+		const recipeTypes = [
+			{
+				tags: ['forge:nuggets/'],
+				data: {
+					amount: 10,
+					time: 20
+				}
+			},
+			{
+				tags: [
+					'forge:raw_materials/',
+					'forge:dusts/',
+					'forge:ingots/',
+					'forge:plates/'
+				],
+				data: {
+					amount: 90,
+					time: 180
+				}
+			},
+			{
+				tags: ['forge:storage_blocks/'],
+				data: {
+					amount: 810,
+					time: 1620
+				}
+			}
+		]
+ 
+		recipeTypes.forEach(type => {
+			type.tags.forEach(tag => {
+
+				event.custom({
+					type: 'tconstruct:ore_melting',
+					ingredient: {
+						tag: tag + metal
+					},
+					rate: 'metal',
+					result: {
+						amount: type.amount,
+						fluid: `${ns}:molten_${metal}`
+					},
+					temperature: type.temperature ?? 1250,
+					time: type.time
+				})
+
+			})
+		})
+	}
+
+	metalMelting(event, 'astro_rise', 'desh')
+	metalMelting(event, 'astro_rise', 'ostrum')
+	metalMelting(event, 'astro_rise', 'calorite')
+	metalMelting(event, 'astro_rise', 'aerolyte')
+
 	event.custom({
 	    type: 'tconstruct:melting',
 	    ingredient: { 
@@ -271,103 +328,5 @@ ServerEvents.recipes(event => {
 		temperature: 800,
 		time: 361
 	})
-
-	// molten_desh
-
-	event.custom({
-		type: 'tconstruct:ore_melting',
-		ingredient: {
-			tag: 'forge:nuggets/desh'
-		},
-		rate: 'metal',
-		result: {
-			amount: 10,
-			fluid: 'astro_rise:molten_desh'
-		},
-		temperature: 1250,
-		time: 20
-	})
-
-	event.custom({
-		type: 'tconstruct:ore_melting',
-		ingredient: {
-			tag: 'forge:raw_materials/desh'
-		},
-		rate: 'metal',
-		result: {
-			amount: 90,
-			fluid: 'astro_rise:molten_desh'
-		},
-		temperature: 1250,
-		time: 180
-	})
-
-	event.custom({
-		type: 'tconstruct:ore_melting',
-		ingredient: {
-			tag: 'forge:dusts/desh'
-		},
-		rate: 'metal',
-		result: {
-			amount: 90,
-			fluid: 'astro_rise:molten_desh'
-		},
-		temperature: 1250,
-		time: 180
-	})
-
-	event.custom({
-		type: 'tconstruct:ore_melting',
-		ingredient: {
-			tag: 'forge:ingots/desh'
-		},
-		rate: 'metal',
-		result: {
-			amount: 90,
-			fluid: 'astro_rise:molten_desh'
-		},
-		temperature: 1250,
-		time: 180
-	})
-
-	event.custom({
-		type: 'tconstruct:ore_melting',
-		ingredient: {
-			tag: 'forge:plates/desh'
-		},
-		rate: 'metal',
-		result: {
-			amount: 90,
-			fluid: 'astro_rise:molten_desh'
-		},
-		temperature: 1250,
-		time: 180
-	})
-
-	event.custom({
-		type: 'tconstruct:ore_melting',
-		ingredient: {
-			tag: 'forge:storage_blocks/desh'
-		},
-		rate: 'metal',
-		result: {
-			amount: 810,
-			fluid: 'astro_rise:molten_desh'
-		},
-		temperature: 1250,
-		time: 1620
-	})
-
-	// molten_ostrum
-	
-	
-
-	// molten_calorite
-
-	
-
-	// molten_aerolyte
-
-	
 
 })
