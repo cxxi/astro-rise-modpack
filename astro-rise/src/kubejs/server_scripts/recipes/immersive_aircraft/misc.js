@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
 	    'BCB',
 	    'DED'  
 	], {
-	    A: 'create:precision_mechanism', 
+	    A: 'astro_rise:sky_mechanism', 
 	    B: 'createdieselgenerators:diesel_engine',
 	    C: 'create:blaze_burner',
 	    D: 'createaddition:electrum_ingot',
