@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
 	    B: 'alexsmobs:raccoon_tameables',
 	    C: 'create:item_vault',
 	    D: 'create:brass_sheet',
-	    E: 'astro_rise:ichor_mechanism'
+	    E: 'astro_rise:earth_mechanism'
 	})
 
 })
