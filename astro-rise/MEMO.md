@@ -12,11 +12,8 @@ https://www.curseforge.com/minecraft/mc-mods/modulargolems
 https://www.curseforge.com/minecraft/mc-mods/extra-golems
 https://www.curseforge.com/minecraft/mc-mods/ancient-golems
 
-// createaddition/immersivecraft -> sky
-// creatediesel/immersivecraft -> ichor
 // createexcavation/createchicken -> heart
 // enderstorage/elevator -> ender
-// gate mekanism -> sculk
 
 coal
 
