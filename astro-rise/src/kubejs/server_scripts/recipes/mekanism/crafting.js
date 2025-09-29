@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+	event.remove({ id: 'mekanism:crushing/venus_sandstone_to_venus_sand' })
+
 	// metallurgic_infuser
 
 	event.remove({ id: 'mekanism:metallurgic_infuser' })
