@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
 	    'DED'  
 	], {
 	    A: 'astro_rise:ichor_mechanism', 
-	    B: 'createdieselgenerators:engine',
+	    B: 'createdieselgenerators:engine_piston',
 	    C: 'create:brass_block',
 	    D: 'minecraft:polished_blackstone_slab',
 	    E: 'create:fluid_tank'
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
 	    'EFE'  
 	], {
 	    A: 'create:andesite_alloy', 
-	    B: 'create:ichor_mechanism',
+	    B: 'astro_rise:ichor_mechanism',
 	    C: 'create:brass_sheet',
 	    D: 'create:steam_engine',
 	    E: 'create:fluid_pipe',

@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
 	    'DED'  
 	], {
 	    A: 'thermal:constantan_gear', 
-	    B: 'alexsmobs:raccoon_tameables',
+	    B: '#alexsmobs:raccoon_tameables',
 	    C: 'create:item_vault',
 	    D: 'create:brass_sheet',
 	    E: 'astro_rise:earth_mechanism'
