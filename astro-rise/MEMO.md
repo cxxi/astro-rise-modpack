@@ -12,8 +12,6 @@ https://www.curseforge.com/minecraft/mc-mods/modulargolems
 https://www.curseforge.com/minecraft/mc-mods/extra-golems
 https://www.curseforge.com/minecraft/mc-mods/ancient-golems
 
-// enderstorage/elevator -> ender
-
 coal
 
 iron
