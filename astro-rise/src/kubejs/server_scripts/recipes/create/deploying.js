@@ -2,22 +2,22 @@ ServerEvents.recipes(event => {
 
 	// osmium casing
 
-	event.custom({
-		type: "create:deploying",
-		ingredients: [
-		    {
-		    	item: 'mekanism:block_osmium'
-		    },
-		    {
-		    	item: 'create:brass_ingot'
-		    }
-		],
-		results: [
-			{
-				item: 'astro_rise:osmium_casing'
-			}
-		]
-	})
+	// event.custom({
+	// 	type: "create:deploying",
+	// 	ingredients: [
+	// 	    {
+	// 	    	item: 'mekanism:block_osmium'
+	// 	    },
+	// 	    {
+	// 	    	item: 'create:brass_ingot'
+	// 	    }
+	// 	],
+	// 	results: [
+	// 		{
+	// 			item: 'astro_rise:osmium_casing'
+	// 		}
+	// 	]
+	// })
 
 	event.custom({
 		type: "create:item_application",
@@ -40,22 +40,22 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'mekanism:steel_casing' })
 
-	event.custom({
-		type: "create:deploying",
-		ingredients: [
-		    {
-		    	item: 'astro_rise:osmium_casing'
-		    },
-		    {
-		    	item: 'mekanism:ingot_steel'
-		    }
-		],
-		results: [
-			{
-				item: 'mekanism:steel_casing'
-			}
-		]
-	})
+	// event.custom({
+	// 	type: "create:deploying",
+	// 	ingredients: [
+	// 	    {
+	// 	    	item: 'astro_rise:osmium_casing'
+	// 	    },
+	// 	    {
+	// 	    	item: 'mekanism:ingot_steel'
+	// 	    }
+	// 	],
+	// 	results: [
+	// 		{
+	// 			item: 'mekanism:steel_casing'
+	// 		}
+	// 	]
+	// })
 
 	event.custom({
 		type: "create:item_application",
@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
 		    	item: 'astro_rise:quartz_steel_mechanism'
 		    },
 		    {
-		    	item: 'tconstruct:ichor_slime_crystal'
+		    	item: 'tconstruct:ichor_slime_crystal_block'
 		    }
 		],
 		results: [
@@ -140,7 +140,7 @@ ServerEvents.recipes(event => {
 		    	item: 'astro_rise:quartz_steel_mechanism'
 		    },
 		    {
-		    	item: 'tconstruct:earth_slime_crystal'
+		    	item: 'tconstruct:earth_slime_crystal_block'
 		    }
 		],
 		results: [
@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
 		    	item: 'astro_rise:quartz_steel_mechanism'
 		    },
 		    {
-		    	item: 'tconstruct:ender_slime_crystal'
+		    	item: 'tconstruct:ender_slime_crystal_block'
 		    }
 		],
 		results: [
@@ -216,7 +216,7 @@ ServerEvents.recipes(event => {
 		    	item: 'astro_rise:quartz_steel_mechanism'
 		    },
 		    {
-		    	item: 'tconstruct:sky_slime_crystal'
+		    	item: 'tconstruct:sky_slime_crystal_block'
 		    }
 		],
 		results: [
@@ -232,7 +232,7 @@ ServerEvents.recipes(event => {
 		type: "create:deploying",
 		ingredients: [
 		    {
-		    	item: 'astro_rise:quartz_mechanism'
+		    	item: 'astro_rise:quartz_steel_mechanism'
 		    },
 		    {
 		    	item: 'ae2:charged_certus_quartz_crystal'
@@ -240,7 +240,7 @@ ServerEvents.recipes(event => {
 		],
 		results: [
 			{
-				item: 'astro_rise:certus_mechanism'
+				item: 'astro_rise:certus_steel_mechanism'
 			}
 		]
 	})

@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
 		type: "create:filling",
 		ingredients: [
 		    {
-		    	item: 'astro_rise:certus_mechanism'
+		    	item: 'astro_rise:certus_steel_mechanism'
 		    },
 		    {
 		    	amount: 400,
@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
 		],
 		results: [
 			{
-				item: 'astro_rise:fluix_mechanism'
+				item: 'astro_rise:fluix_steel_mechanism'
 			}
 		]
 	})
