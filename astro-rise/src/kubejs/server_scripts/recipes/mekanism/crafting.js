@@ -206,7 +206,7 @@ ServerEvents.recipes(event => {
 		    'CDC',
 		    'ABA' 
 		], {
-			A: 'enderio:pulsating_alloy_ingot',
+			A: 'enderio:pulsating_crystal',
 			B: 'mekanism:elite_control_circuit',
 			C: 'astro_rise:sky_steel_mechanism',
 			D: `mekanism:advanced_${type}_factory`
