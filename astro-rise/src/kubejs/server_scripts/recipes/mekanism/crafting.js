@@ -142,4 +142,92 @@ ServerEvents.recipes(event => {
 	    '9x mekanism:sawdust' 
 	])
 
+	// factory
+
+	const factoryTypes = {
+		smelting: 'mekanism:energized_smelter',
+		enriching: 'mekanism:enrichment_chamber',
+		crushing: 'mekanism:crusher',
+		compressing: 'mekanism:osmium_compressor',
+		combining: 'mekanism:combiner',
+		purifying: 'mekanism:purification_chamber',
+		injecting: 'mekanism:chemical_injection_chamber',
+		infusing: 'mekanism:metallurgic_infuser',
+		sawing: 'mekanism:precision_sawmill'
+	}
+
+	// const factoryRanks = [
+	// 	'basic',
+	// 	'advanced',
+	// 	'elite',
+	// 	'ultimate'
+	// ]
+
+	Object.entries(factoryTypes).forEach(([type, base]) => {
+
+		event.remove({ id: `mekanism:factory/basic/${type}` })
+
+		event.shaped(`mekanism:basic_${type}_factory`, [
+			'ABA', 
+		    'CDC',
+		    'ABA' 
+		], {
+			A: 'enderio:vibrant_alloy_ingot',
+			B: 'mekanism:basic_control_circuit',
+			C: 'astro_rise:earth_steel_mechanism',
+			D: base
+		})
+
+	})
+
+	Object.keys(factoryTypes).forEach(type => {
+
+		event.remove({ id: `mekanism:factory/advanced/${type}` })
+
+		event.shaped(`mekanism:advanced_${type}_factory`, [
+			'ABA', 
+		    'CDC',
+		    'ABA' 
+		], {
+			A: 'enderio:redstone_alloy_ingot',
+			B: 'mekanism:advanced_control_circuit',
+			C: 'astro_rise:ichor_steel_mechanism',
+			D: `mekanism:basic_${type}_factory`
+		})
+
+	})
+
+	Object.keys(factoryTypes).forEach(type => {
+
+		event.remove({ id: `mekanism:factory/elite/${type}` })
+
+		event.shaped(`mekanism:elite_${type}_factory`, [
+			'ABA', 
+		    'CDC',
+		    'ABA' 
+		], {
+			A: 'enderio:pulsating_alloy_ingot',
+			B: 'mekanism:elite_control_circuit',
+			C: 'astro_rise:sky_steel_mechanism',
+			D: `mekanism:advanced_${type}_factory`
+		})
+
+	})
+
+	Object.keys(factoryTypes).forEach(type => {
+
+		event.remove({ id: `mekanism:factory/ultimate/${type}` })
+
+		event.shaped(`mekanism:ultimate_${type}_factory`, [
+			'ABA', 
+		    'CDC',
+		    'ABA' 
+		], {
+			A: 'enderio:weather_crystal',
+			B: 'mekanism:ultimate_control_circuit',
+			C: 'astro_rise:ender_steel_mechanism',
+			D: `mekanism:elite_${type}_factory`
+		})
+
+	})
 })

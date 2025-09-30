@@ -100,24 +100,4 @@ ServerEvents.recipes(event => {
 		]
 	})
 
-	// fluix_steel_mechanism
-
-	// event.custom({
-	// 	type: "create:filling",
-	// 	ingredients: [
-	// 	    {
-	// 	    	item: 'astro_rise:steel_mechanism'
-	// 	    },
-	// 	    {
-	// 	    	amount: 400,
-	// 	    	fluid: 'astro_rise:molten_fluix'
-	// 	    }
-	// 	],
-	// 	results: [
-	// 		{
-	// 			item: 'astro_rise:fluix_steel_mechanism'
-	// 		}
-	// 	]
-	// })
-
 })
