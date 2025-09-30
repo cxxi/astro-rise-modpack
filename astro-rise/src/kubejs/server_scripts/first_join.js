@@ -1,9 +1,10 @@
 PlayerEvents.loggedIn(event => {
+    
+    let player = event.player
 
-    if (!event.player.persistentData.firstJoin) {
-        event.player.persistentData.firstJoin = true
-        event.player.inventory.clear()
-        event.player.inventory.set(0, Item.of('ftbquests:book'))
+    if (!player.persistentData.firstJoin) {
+        player.persistentData.firstJoin = true
+        player.inventory.clear()
+        player.give(Item.of('ftbquests:book'))
     }
-
 })

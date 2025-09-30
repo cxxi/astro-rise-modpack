@@ -20,6 +20,26 @@ ServerEvents.recipes(event => {
 		]
 	})
 
+	// sculk_steel_mechanism
+
+	event.custom({
+		type: "create:filling",
+		ingredients: [
+		    {
+		    	item: 'astro_rise:steel_mechanism'
+		    },
+		    {
+		    	amount: 500,
+		    	fluid: 'astro_rise:liquid_sculk'
+		    }
+		],
+		results: [
+			{
+				item: 'astro_rise:sculk_steel_mechanism'
+			}
+		]
+	})
+
 	// quartz_mechanism
 	
 	event.custom({
@@ -36,6 +56,26 @@ ServerEvents.recipes(event => {
 		results: [
 			{
 				item: 'astro_rise:quartz_mechanism'
+			}
+		]
+	})
+
+	// quartz_steel_mechanism
+
+	event.custom({
+		type: "create:filling",
+		ingredients: [
+		    {
+		    	item: 'astro_rise:steel_mechanism'
+		    },
+		    {
+		    	amount: 400,
+		    	fluid: 'tconstruct:molten_quartz'
+		    }
+		],
+		results: [
+			{
+				item: 'astro_rise:quartz_steel_mechanism'
 			}
 		]
 	})
@@ -59,5 +99,25 @@ ServerEvents.recipes(event => {
 			}
 		]
 	})
+
+	// fluix_steel_mechanism
+
+	// event.custom({
+	// 	type: "create:filling",
+	// 	ingredients: [
+	// 	    {
+	// 	    	item: 'astro_rise:steel_mechanism'
+	// 	    },
+	// 	    {
+	// 	    	amount: 400,
+	// 	    	fluid: 'astro_rise:molten_fluix'
+	// 	    }
+	// 	],
+	// 	results: [
+	// 		{
+	// 			item: 'astro_rise:fluix_steel_mechanism'
+	// 		}
+	// 	]
+	// })
 
 })
