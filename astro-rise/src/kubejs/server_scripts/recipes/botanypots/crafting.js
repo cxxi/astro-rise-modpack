@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
 
 		event.shapeless(`botanypots:${color}_glazed_terracotta_botany_pot`, [
 			'#botanypots:basic_botany_pots',
-	   		`minecraft:${color}}_glazed_terracotta`
+	   		`minecraft:${color}_glazed_terracotta`
 		])
 
 		// `${color}_terracotta`
