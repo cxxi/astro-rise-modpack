@@ -156,13 +156,6 @@ ServerEvents.recipes(event => {
 		sawing: 'mekanism:precision_sawmill'
 	}
 
-	// const factoryRanks = [
-	// 	'basic',
-	// 	'advanced',
-	// 	'elite',
-	// 	'ultimate'
-	// ]
-
 	Object.entries(factoryTypes).forEach(([type, base]) => {
 
 		event.remove({ id: `mekanism:factory/basic/${type}` })

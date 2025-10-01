@@ -4,5 +4,4 @@ StartupEvents.registry('fluid', event => {
         .thickTexture(0x1F1F1F)
         .bucketColor(0x1F1F1F)
         .displayName('Molten Necrotic Bone')
-        .noBlock()
 })
