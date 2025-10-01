@@ -1,14 +1,14 @@
 ServerEvents.recipes(event => {
 
 
-	const withAllCast = (event, recipe) => {
+	const withAllCast = (event, recipe, castType) => {
 
-		recipe.cast = { tag: 'tconstruct:casts/single_use/gear' }
+		recipe.cast = { tag: `tconstruct:casts/single_use/${castType}` }
 		recipe.cast_consumed = true
 
 		event.custom(recipe)
 
-		recipe.cast = { tag: 'tconstruct:casts/multi_use/gear' }
+		recipe.cast = { tag: `tconstruct:casts/multi_use/${castType}` }
 	    recipe.cast_consumed = false
 
 	    event.custom(recipe)
@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:iron_gear'
 	    },
 	    cooling_time: 40
-	})
+	}, 'gear')
 
 	// fluix_crystal
 
@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
 	    	item: 'ae2:fluix_crystal'
 	    },
 	    cooling_time: 100
-	})
+	}, 'gem')
 
 	// copper_alloy
 
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:copper_alloy_nugget'
 	    },
 	    cooling_time: 20
-	})
+	}, 'nugget')
 
 	withAllCast(event, {
 	    type: 'tconstruct:casting_table',
@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:copper_alloy_ingot'
 	    },
 	    cooling_time: 180
-	})
+	}, 'ingot')
 
 	// energetic_alloy
 
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:energetic_alloy_nugget'
 	    },
 	    cooling_time: 20
-	})
+	}, 'nugget')
 
 	withAllCast(event, {
 	    type: 'tconstruct:casting_table',
@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:energetic_alloy_ingot'
 	    },
 	    cooling_time: 180
-	})
+	}, 'ingot')
 
 	// vibrant_alloy
 
@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:vibrant_alloy_nugget'
 	    },
 	    cooling_time: 20
-	})
+	}, 'nugget')
 
 	withAllCast(event, {
 	    type: 'tconstruct:casting_table',
@@ -126,7 +126,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:vibrant_alloy_ingot'
 	    },
 	    cooling_time: 180
-	})
+	}, 'ingot')
 
 	// redstone_alloy
 
@@ -140,7 +140,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:redstone_alloy_nugget'
 	    },
 	    cooling_time: 20
-	})
+	}, 'nugget')
 
 	withAllCast(event, {
 	    type: 'tconstruct:casting_table',
@@ -152,7 +152,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:redstone_alloy_ingot'
 	    },
 	    cooling_time: 180
-	})
+	}, 'ingot')
 
 	// conductive_alloy
 
@@ -166,7 +166,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:conductive_alloy_nugget'
 	    },
 	    cooling_time: 20
-	})
+	}, 'nugget')
 
 	withAllCast(event, {
 	    type: 'tconstruct:casting_table',
@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:conductive_alloy_ingot'
 	    },
 	    cooling_time: 180
-	})
+	}, 'ingot')
 
 	// pulsating_alloy
 
@@ -192,7 +192,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:pulsating_alloy_nugget'
 	    },
 	    cooling_time: 20
-	})
+	}, 'nugget')
 
 	withAllCast(event, {
 	    type: 'tconstruct:casting_table',
@@ -204,7 +204,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:pulsating_alloy_ingot'
 	    },
 	    cooling_time: 180
-	})
+	}, 'ingot')
 
 	// dark_steel
 
@@ -218,7 +218,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:dark_steel_nugget'
 	    },
 	    cooling_time: 20
-	})
+	}, 'nugget')
 
 	withAllCast(event, {
 	    type: 'tconstruct:casting_table',
@@ -230,7 +230,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:dark_steel_ingot'
 	    },
 	    cooling_time: 180
-	})
+	}, 'ingot')
 
 	// end_steel
 
@@ -244,7 +244,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:end_steel_nugget'
 	    },
 	    cooling_time: 20
-	})
+	}, 'nugget')
 
 	withAllCast(event, {
 	    type: 'tconstruct:casting_table',
@@ -256,7 +256,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:end_steel_ingot'
 	    },
 	    cooling_time: 180
-	})
+	}, 'ingot')
 
 	// soularium
 
@@ -270,7 +270,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:soularium_nugget'
 	    },
 	    cooling_time: 20
-	})
+	}, 'nugget')
 
 	withAllCast(event, {
 	    type: 'tconstruct:casting_table',
@@ -282,7 +282,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:soularium_ingot'
 	    },
 	    cooling_time: 180
-	})
+	}, 'ingot')
 
 	// wither_skeleton_skull
 
