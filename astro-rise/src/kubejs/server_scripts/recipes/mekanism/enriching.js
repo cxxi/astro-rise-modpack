@@ -219,6 +219,12 @@ ServerEvents.recipes(event => {
 
 	event.custom({
 		type: 'mekanism:enriching',
+		input: { ingredient: { item: 'thermal:slag' }},
+		output: { count: 1, item: 'thermal:rich_slag' }
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
 		input: { ingredient: { item: 'farmersdelight:rich_soil' }},
 		output: { count: 1, item: 'thermal:compost' }
 	})
