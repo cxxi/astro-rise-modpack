@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
 
 	// alloy
 
-	event.shaped('enderio:energic_alloy_ingot', [
+	event.shaped('enderio:energetic_alloy_ingot', [
 	    'CAC', 
 	    'ABA',
 	    'CAC'   
@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
 	    C: 'twilightforest:carminite'
 	})
 
-	event.shaped('enderio:end_steel_alloy_ingot', [
+	event.shaped('enderio:end_steel_ingot', [
 	    'CAC', 
 	    'ABA',
 	    'CAC'   

@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
 	event.recipes.tconstruct.alloy(
 	    { fluid: "astro_rise:molten_pulsating_alloy", amount: 180 },
 	    [
-	    	{ fluid: "astro_rise:molten_energic_alloy", amount: 500 },
+	    	{ fluid: "astro_rise:molten_energetic_alloy", amount: 500 },
 	    	{ fluid: "tconstruct:molten_uranium", amount: 270 },
 	    	{ fluid: "thermal:glowstone", amount: 250 }
 	    ],
@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
 	event.recipes.tconstruct.alloy(
 	    { fluid: "astro_rise:molten_vibrant_alloy", amount: 180 },
 	    [
-	    	{ fluid: "aastro_rise:molten_pulsating_alloy", amount: 270 },
+	    	{ fluid: "astro_rise:molten_pulsating_alloy", amount: 270 },
 	    	{ fluid: "tconstruct:molten_enderium", amount: 270 }
 	    ],
 	    1350
