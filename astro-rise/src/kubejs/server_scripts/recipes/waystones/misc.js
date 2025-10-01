@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-	event.remove({ input: 'waystones:warp_dust' })
+	event.remove({ id: 'waystones:warp_dust' })
 
 	event.shaped('waystones:warp_dust', [
 	    'CAC', 
