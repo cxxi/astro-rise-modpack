@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
 	
-	// event.remove({ output: /extendedcrafting:.*/ })
+	event.remove({ output: /extendedcrafting:.*/ })
 
 })
