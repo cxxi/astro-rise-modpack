@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "astro_rise:item/molten_etrium_bucket"
+  }
+}
