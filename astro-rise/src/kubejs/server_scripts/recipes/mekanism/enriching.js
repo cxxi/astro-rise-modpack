@@ -181,12 +181,6 @@ ServerEvents.recipes(event => {
 		output: { count: 2, item: 'astro_rise:dust_platinum' }
 	})
 
-	// event.custom({
-	// 	type: 'mekanism:enriching',
-	// 	input: { ingredient: { item: 'thermal:ender_pearl_dust' }},
-	// 	output: { count: 1, item: 'thermal:enderium_dust' }
-	// })
-
 	event.custom({
 		type: 'mekanism:enriching',
 		input: { ingredient: { item: 'mekanism:dust_sulfur'}},
@@ -221,6 +215,12 @@ ServerEvents.recipes(event => {
 		type: 'mekanism:enriching',
 		input: { ingredient: { item: 'thermal:sapphire_dust'}},
 		output: { count: 1, item: 'thermal:sapphire'}
+	})
+
+	event.custom({
+		type: 'mekanism:enriching',
+		input: { ingredient: { item: 'farmersdelight:rich_soil' }},
+		output: { count: 1, item: 'thermal:compost' }
 	})
 
 })

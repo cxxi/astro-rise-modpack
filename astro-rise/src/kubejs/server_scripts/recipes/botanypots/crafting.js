@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
 	    'ABA'  
 	],{
 	    A: 'enderio:dark_steel_nugget', 
-	    B: 'thermal:compost',
+	    B: 'thermal:phytogro',
 	    C: 'minecraft:flower_pot'
 	})
 
