@@ -25,6 +25,85 @@ ServerEvents.recipes(event => {
 	    1350
 	)
 
+	// molten conductive alloy
+
+	event.recipes.tconstruct.alloy(
+	    { fluid: "astro_rise:molten_conductive_alloy", amount: 180 },
+	    [
+	    	{ fluid: "tconstruct:molten_constantan", amount: 270 },
+	    	{ fluid: "tconstruct:molten_quartz", amount: 270 }
+	    ],
+	    1350
+	)
+
+	// molten copper alloy
+
+	event.recipes.tconstruct.alloy(
+	    { fluid: "astro_rise:molten_copper_alloy", amount: 180 },
+	    [
+	    	{ fluid: "astro_rise:molten_conductive_alloy", amount: 180 },
+	    	{ fluid: "tconstruct:molten_copper", amount: 500 }
+	    ],
+	    1350
+	)
+
+	// molten redstone alloy
+
+	event.recipes.tconstruct.alloy(
+	    { fluid: "astro_rise:molten_redstone_alloy", amount: 180 },
+	    [
+	    	{ fluid: "astro_rise:molten_conductive_alloy", amount: 270 },
+	    	{ fluid: "thermal:redstone", amount: 500 }
+	    ],
+	    1350
+	)
+
+	// molten pulsating alloy
+
+	event.recipes.tconstruct.alloy(
+	    { fluid: "astro_rise:molten_pulsating_alloy", amount: 180 },
+	    [
+	    	{ fluid: "astro_rise:molten_energic_alloy", amount: 500 },
+	    	{ fluid: "tconstruct:molten_uranium", amount: 270 },
+	    	{ fluid: "thermal:glowstone", amount: 250 }
+	    ],
+	    1350
+	)
+
+	// molten vibrant alloy
+
+	event.recipes.tconstruct.alloy(
+	    { fluid: "astro_rise:molten_vibrant_alloy", amount: 180 },
+	    [
+	    	{ fluid: "aastro_rise:molten_pulsating_alloy", amount: 270 },
+	    	{ fluid: "tconstruct:molten_enderium", amount: 270 }
+	    ],
+	    1350
+	)
+
+	// molten dark steel
+
+	event.recipes.tconstruct.alloy(
+	    { fluid: "astro_rise:molten_dark_steel", amount: 180 },
+	    [
+	    	{ fluid: "tconstruct:molten_steel", amount: 500 },
+	    	{ fluid: "tconstruct:molten_netherite", amount: 270 },
+	    	{ fluid: "astro_rise:liquid_infinity", amount: 270 }
+	    ],
+	    1350
+	)
+
+	// molten soularium
+
+	event.recipes.tconstruct.alloy(
+	    { fluid: "astro_rise:molten_soularium", amount: 180 },
+	    [
+	    	{ fluid: "tconstruct:liquid_soul", amount: 500 },
+	    	{ fluid: "tconstruct:molten_hepatizon", amount: 270 }
+	    ],
+	    1350
+	)
+
 	// molten signalum
 
 	event.remove('tconstruct:smeltery/alloys/molten_signalum')

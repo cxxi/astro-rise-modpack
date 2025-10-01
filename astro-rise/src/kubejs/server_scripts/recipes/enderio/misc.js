@@ -69,4 +69,26 @@ ServerEvents.recipes(event => {
 	    B: 'enderio:pulsating_crystal',
 	    C: 'mekanism:teleporter'
 	})
+
+	// alloy
+
+	event.shaped('enderio:energic_alloy_ingot', [
+	    'CAC', 
+	    'ABA',
+	    'CAC'   
+	], {
+	    A: 'mekanism:dust_fluorite', 
+	    B: 'enderio:conductive_alloy_ingot',
+	    C: 'twilightforest:carminite'
+	})
+
+	event.shaped('enderio:end_steel_alloy_ingot', [
+	    'CAC', 
+	    'ABA',
+	    'CAC'   
+	], {
+	    A: 'minecraft:end_stone', 
+	    B: 'enderio:dark_steel_ingot',
+	    C: 'platinum_mod:dragon_charge'
+	})
 })

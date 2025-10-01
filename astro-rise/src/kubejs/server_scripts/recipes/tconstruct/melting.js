@@ -111,6 +111,34 @@ ServerEvents.recipes(event => {
 	    time: 171
 	})
 
+	// liquid_infinity
+
+	event.custom({
+	    type: 'tconstruct:melting',
+	    ingredient: { 
+	    	item: 'enderio:grains_of_infinity' 
+		},
+	    result: {
+		    amount: 100,
+		    fluid: 'astro_rise:liquid_infinity'
+		},
+	    temperature: 1350,
+	    time: 171
+	})
+
+	event.custom({
+	    type: 'tconstruct:melting',
+	    ingredient: { 
+	    	item: 'enderio:infinity_rod' 
+		},
+	    result: {
+		    amount: 200,
+		    fluid: 'astro_rise:liquid_infinity'
+		},
+	    temperature: 1350,
+	    time: 342
+	})
+
 	// molten_fluix
 
 	event.custom({
