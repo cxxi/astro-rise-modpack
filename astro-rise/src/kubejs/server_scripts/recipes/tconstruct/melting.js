@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-	const metalMelting = (event, ns, metal) => {
+	const adAstraMetalMelting = (event, ns, metal) => {
 
 		const recipeTypes = [
 			{
@@ -52,10 +52,60 @@ ServerEvents.recipes(event => {
 		})
 	}
 
-	metalMelting(event, 'astro_rise', 'desh')
-	metalMelting(event, 'astro_rise', 'ostrum')
-	metalMelting(event, 'astro_rise', 'calorite')
-	metalMelting(event, 'astro_rise', 'aerolyte')
+	adAstraMetalMelting(event, 'astro_rise', 'desh')
+	adAstraMetalMelting(event, 'astro_rise', 'ostrum')
+	adAstraMetalMelting(event, 'astro_rise', 'calorite')
+	adAstraMetalMelting(event, 'astro_rise', 'aerolyte')
+
+	const enderIoMetalMelting = (event, ns, metal) => {
+
+		const recipeTypes = [
+			{
+				tags: ['forge:nuggets/'],
+				data: {
+					amount: 10,
+					time: 20
+				}
+			},
+			{
+				tags: ['forge:ingots/'],
+				data: {
+					amount: 90,
+					time: 180
+				}
+			}
+		]
+ 
+		recipeTypes.forEach(type => {
+			type.tags.forEach(tag => {
+
+				event.custom({
+					type: 'tconstruct:ore_melting',
+					ingredient: {
+						tag: tag + metal
+					},
+					rate: 'metal',
+					result: {
+						amount: type.data.amount,
+						fluid: `${ns}:molten_${metal}`
+					},
+					temperature: type?.data.temperature ?? 1250,
+					time: type.data.time
+				})
+
+			})
+		})
+	}
+
+	enderIoMetalMelting(event, 'astro_rise', 'copper_alloy')
+	enderIoMetalMelting(event, 'astro_rise', 'energetic_alloy')
+	enderIoMetalMelting(event, 'astro_rise', 'vibrant_alloy')
+	enderIoMetalMelting(event, 'astro_rise', 'redstone_alloy')
+	enderIoMetalMelting(event, 'astro_rise', 'conductive_alloy')
+	enderIoMetalMelting(event, 'astro_rise', 'pulsating_alloy')
+	enderIoMetalMelting(event, 'astro_rise', 'dark_steel')
+	enderIoMetalMelting(event, 'astro_rise', 'end_steel')
+	enderIoMetalMelting(event, 'astro_rise', 'soularium')
 
 	event.custom({
 	    type: 'tconstruct:melting',
