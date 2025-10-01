@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 	
-	event.remove({ id: /botanypots:.*/ })
+	event.remove({ output: /botanypots:.*/ })
 
 	event.shaped('botanypots:terracotta_botany_pot', [
 	    'ABA', 
@@ -34,9 +34,35 @@ ServerEvents.recipes(event => {
 	   		`minecraft:${color}_glazed_terracotta`
 		])
 
-		// `${color}_terracotta`
-		// `${color}_concrete`
-		// `${color}_glazed_terracotta`
+		event.shapeless(`botanypots:${color}_terracotta_hopper_botany_pot`, [
+	   		'#botanypots:hopper_botany_pots',
+	   		`minecraft:${color}_terracotta`
+		])
+
+		event.shapeless(`botanypots:${color}_concrete_hopper_botany_pot`, [
+			'#botanypots:hopper_botany_pots',
+	   		`minecraft:${color}_concrete`
+		])
+
+		event.shapeless(`botanypots:${color}_glazed_terracotta_hopper_botany_pot`, [
+			'#botanypots:hopper_botany_pots',
+	   		`minecraft:${color}_glazed_terracotta`
+		])
+
+		event.shapeless(`botanypots:${color}_terracotta_hopper_botany_pot`, [
+	   		`botanypots:${color}_terracotta_botany_pot`,
+	   		'minecraft:hopper'
+		])
+
+		event.shapeless(`botanypots:${color}_concrete_hopper_botany_pot`, [
+			`botanypots:${color}_concrete_botany_pot`,
+	   		'minecraft:hopper'
+		])
+
+		event.shapeless(`botanypots:${color}_glazed_terracotta_hopper_botany_pot`, [
+			`botanypots:${color}_glazed_terracotta_botany_pot`,
+	   		'minecraft:hopper'
+		])
 	})
 
 })
