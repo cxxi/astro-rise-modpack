@@ -132,7 +132,9 @@
 		"Patchouli-1.20.1-84.1-FORGE.jar",
 		"Bookshelf-Forge-1.20.1-20.2.13.jar",
 		"BotanyTrees-Forge-1.20.1-9.0.18.jar",
-		"BotanyPots-Forge-1.20.1-13.0.41.jar"
+		"BotanyPots-Forge-1.20.1-13.0.41.jar",
+		"Cucumber-1.20.1-7.0.15.jar",
+		"ExtendedCrafting-1.20.1-6.0.10.jar"
 	],
 	"datapacks": [],
 	"resourcepacks": []
