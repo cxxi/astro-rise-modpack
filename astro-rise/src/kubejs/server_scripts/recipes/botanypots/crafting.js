@@ -2,7 +2,20 @@ ServerEvents.recipes(event => {
 	
 	event.remove({ id: /botanypots:.*/ })
 
-	// terracotta
+	event.shaped('botanypots:terracotta_botany_pot', [
+	    'ABA', 
+	    'BCB',
+	    'ABA'  
+	],{
+	    A: 'enderio:dark_steel_nugget', 
+	    B: 'thermal:compost',
+	    C: 'minecraft:flower_pot'
+	})
+
+	event.shapeless('botanypots:terracotta_hopper_botany_pot', [
+   		'botanypots:terracotta_botany_pot',
+   		'minecraft:hopper'
+   	])
 
 	global.COLORS.forEach(color => {
 

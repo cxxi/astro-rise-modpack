@@ -24,4 +24,8 @@ ServerEvents.recipes(event => {
 	})
 
 	event.replaceInput({ id: 'createdieselgenerators:crafting/pumpjack_head' }, "minecraft:dried_kelp", "thermal:cured_rubber")
+
+	event.remove({ input: 'thermal:niter_dust', output: 'thermal:phytogro' })
+	event.replaceInput({ output: 'thermal:phytogro' }, 'thermal:niter', 'thermal:compost')
+	
 })
