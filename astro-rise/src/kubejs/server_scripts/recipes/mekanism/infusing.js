@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
 		type: 'mekanism:metallurgic_infusing',
 		chemicalInput: {
 			amount: 10,
-			tag: 'mekanism:redstone'
+			infuse_type: 'mekanism:fluorite'
 		},
 		itemInput: {
 			ingredient: {
@@ -17,6 +17,22 @@ ServerEvents.recipes(event => {
 		},
 		output: {
 			item: 'mekanism:alloy_infused'
+		}
+	})
+
+	event.custom({
+		type: 'mekanism:metallurgic_infusing',
+		chemicalInput: {
+			// amount: 10,
+			// tag: 'mekanism:redstone'
+		},
+		itemInput: {
+			ingredient: {
+				item: 'mekanism:ingot_refined_glowstone'
+			}
+		},
+		output: {
+			item: 'extendedcrafting:luminessence'
 		}
 	})
 
