@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
 			{ item: "minecraft:potato" }
 		],
 		result: {
-			id: "minecraft:stone"
+			item: "minecraft:stone"
 		}
 	})
 
