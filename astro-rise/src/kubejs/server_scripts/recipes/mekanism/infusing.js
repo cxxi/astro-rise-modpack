@@ -20,20 +20,20 @@ ServerEvents.recipes(event => {
 		}
 	})
 
-	event.custom({
-		type: 'mekanism:metallurgic_infusing',
-		chemicalInput: {
-			amount: 10,
-			tag: 'mekanism:fluorite'
-		},
-		itemInput: {
-			ingredient: {
-				item: 'mekanism:ingot_refined_glowstone'
-			}
-		},
-		output: {
-			item: 'extendedcrafting:luminessence'
-		}
-	})
+	// event.custom({
+	// 	type: 'mekanism:metallurgic_infusing',
+	// 	chemicalInput: {
+	// 		amount: 10,
+	// 		infuse_type: 'mekanism:fluorite'
+	// 	},
+	// 	itemInput: {
+	// 		ingredient: {
+	// 			item: 'mekanism:ingot_refined_glowstone'
+	// 		}
+	// 	},
+	// 	output: {
+	// 		item: 'extendedcrafting:luminessence'
+	// 	}
+	// })
 
 })
