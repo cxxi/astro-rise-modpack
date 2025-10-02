@@ -1,0 +1,8 @@
+{
+  "texture": "mekanism:pigment/base",
+  "tint": "#6532A8",
+  "color_representation": 3319890,
+  "attributes": {
+    "radioactivity": 1.0
+  }
+}
