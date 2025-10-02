@@ -32,4 +32,18 @@ ServerEvents.recipes(event => {
 	    cooling_time: 60
 	})
 
+	// destabilized redstone
+
+	event.custom({
+	    type: 'tconstruct:casting_basin',
+	    fluid: {
+	    	fluid: 'thermal:redstone',
+	    	amount: 8100
+	    },
+	    result: {
+	    	item: 'extendedcrafting:redstone_ingot_block'
+	    },
+	    cooling_time: 1620
+	})
+
 })
