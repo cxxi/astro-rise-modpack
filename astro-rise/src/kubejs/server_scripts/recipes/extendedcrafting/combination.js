@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
 
 	event.custom({
 		type: "extendedcrafting:combination",
-		power_cost: 400000,
+		powerCost: 400000,
 		input: {
 		  item: "minecraft:iron_ingot"
 		},
