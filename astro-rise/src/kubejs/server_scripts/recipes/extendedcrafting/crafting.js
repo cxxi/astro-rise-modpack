@@ -1,6 +1,7 @@
 ServerEvents.recipes(event => {
 
 	event.remove({ id: 'extendedcrafting:redstone_ingot' })
+	event.remove({ id: 'extendedcrafting:ender_ingot' })
 	
 	// black_iron_ingot
 

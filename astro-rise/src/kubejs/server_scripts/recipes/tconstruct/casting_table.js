@@ -284,7 +284,7 @@ ServerEvents.recipes(event => {
 	    cooling_time: 180
 	}, 'ingot')
 
-	// destabilized redstone
+	// redstone_ingot
 
 	withAllCast(event, {
 	    type: 'tconstruct:casting_table',
@@ -308,6 +308,32 @@ ServerEvents.recipes(event => {
 	    	item: 'extendedcrafting:redstone_ingot'
 	    },
 	    cooling_time: 180
+	}, 'ingot')
+
+	// ender_ingot
+
+	withAllCast(event, {
+	    type: 'tconstruct:casting_table',
+	    fluid: {
+	    	fluid: 'tconstruct:molten_ender',
+	    	amount: 28
+	    },
+	    result: {
+	    	item: 'extendedcrafting:ender_nugget'
+	    },
+	    cooling_time: 80
+	}, 'nugget')
+
+	withAllCast(event, {
+	    type: 'tconstruct:casting_table',
+	    fluid: {
+	    	fluid: 'tconstruct:molten_ender',
+	    	amount: 250
+	    },
+	    result: {
+	    	item: 'extendedcrafting:ender_ingot'
+	    },
+	    cooling_time: 9
 	}, 'ingot')
 
 	// wither_skeleton_skull
