@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
 		type: 'mekanism:metallurgic_infusing',
 		chemicalInput: {
 			amount: 10,
-			infuse_type: 'mekanism:fluorite'
+			tag: 'mekanism:redstone'
 		},
 		itemInput: {
 			ingredient: {
@@ -23,8 +23,8 @@ ServerEvents.recipes(event => {
 	event.custom({
 		type: 'mekanism:metallurgic_infusing',
 		chemicalInput: {
-			// amount: 10,
-			// tag: 'mekanism:redstone'
+			amount: 10,
+			infuse_type: 'mekanism:fluorite'
 		},
 		itemInput: {
 			ingredient: {
