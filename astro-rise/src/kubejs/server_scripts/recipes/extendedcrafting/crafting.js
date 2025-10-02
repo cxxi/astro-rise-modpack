@@ -14,4 +14,13 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'extendedcrafting:luminessence' })
 
+	event.shaped('extendedcrafting:luminessence', [
+	    'AAA', 
+	    'ABA',
+	    'AAA'  
+	], {
+		A: 'mekanism:dust_fluorite',
+	    B: 'mekanism:ingot_refined_glowstone'
+	})
+
 })
