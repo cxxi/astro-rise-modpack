@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
 		type: 'mekanism:metallurgic_infusing',
 		chemicalInput: {
 			amount: 10,
-			tag: 'mekanism:fluorite'
+			infuse_type: 'mekanism:fluorite'
 		},
 		itemInput: {
 			ingredient: {
