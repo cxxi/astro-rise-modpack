@@ -1,13 +1,13 @@
 ServerEvents.recipes(event => {
 	
-	event.remove({ id: 'twilighforest:material/carminite' })
+	event.remove({ id: 'twilightforest:material/carminite' })
 
-	event.shaped('twilighforest:carminite', [
+	event.shaped('twilightforest:carminite', [
 	    'ABA', 
 	    'BCB',
 	    'ABA'  
 	],{
-	    A: 'twilighforest:borer_essence', 
+	    A: 'twilightforest:borer_essence', 
 	    B: 'thermal:cinnabar',
 	    C: 'minecraft:ghast_tear'
 	})
