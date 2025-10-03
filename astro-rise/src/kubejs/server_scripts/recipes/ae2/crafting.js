@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'ae2:network/blocks/inscribers' })
 
-	event.recipes.create.mechanical_crafting('ae2:inscriber', [
+	global.craft(event, 'ae2:inscriber', [
 		'ABCBA',
 		'DEFED',
 		'GH HG',
