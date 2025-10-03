@@ -1,9 +1,9 @@
 StartupEvents.registry('item', event => {
 
 	event
-		.displayName('Nickel Crystal')
 		.create('astro_rise:crystal_nickel')
 		.texture('astro_rise:item/crystal_nickel')
+		.displayName('Nickel Crystal')
 		.tagBlock("mekanism:crystals")                      
 	    .tagBlock("mekanism:crystals/nickel")
 	    .tagItem("mekanism:crystals")                      

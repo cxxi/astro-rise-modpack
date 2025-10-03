@@ -1,9 +1,9 @@
 StartupEvents.registry('item', event => {
 
 	event
-		.displayName('Aerolyte Crystal')
 		.create('astro_rise:crystal_aerolyte')
 		.texture('astro_rise:item/crystal_aerolyte')
+		.displayName('Aerolyte Crystal')
 		.tagBlock("mekanism:crystals")                      
 	    .tagBlock("mekanism:crystals/aerolyte")
 	    .tagItem("mekanism:crystals")                      

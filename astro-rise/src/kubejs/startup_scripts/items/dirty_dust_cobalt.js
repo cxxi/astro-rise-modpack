@@ -1,9 +1,9 @@
 StartupEvents.registry('item', event => {
 
 	event
-		.displayName('Dirty Cobalt Dust')
 		.create('astro_rise:dirty_dust_cobalt')
 		.texture('astro_rise:item/dirty_dust_cobalt')
+		.displayName('Dirty Cobalt Dust')
 		.tagBlock("mekanism:dirty_dusts")                      
 	    .tagBlock("mekanism:dirty_dusts/cobalt")
 	    .tagItem("mekanism:dirty_dusts")                      
