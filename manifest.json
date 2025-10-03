@@ -134,7 +134,9 @@
 		"BotanyTrees-Forge-1.20.1-9.0.18.jar",
 		"BotanyPots-Forge-1.20.1-13.0.41.jar",
 		"Cucumber-1.20.1-7.0.15.jar",
-		"ExtendedCrafting-1.20.1-6.0.10.jar"
+		"ExtendedCrafting-1.20.1-6.0.10.jar",
+		"MoreMekanismProcessing-1.20.1-4.4.jar",
+		"constructionwand-1.20.1-2.11.jar"
 	],
 	"datapacks": [],
 	"resourcepacks": []
