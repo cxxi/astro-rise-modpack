@@ -7,7 +7,7 @@
     "ad_astra:star_crawler",
     "ad_astra:martian_raptor",
     "ad_astra:lunarian",
-    "ad_astra:blitz",
-    "ad_astra:blizz"
+    "thermal:blitz",
+    "thermal:blizz"
   ]
 }
