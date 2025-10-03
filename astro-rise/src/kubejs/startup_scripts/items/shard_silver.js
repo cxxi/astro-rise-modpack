@@ -4,7 +4,7 @@ StartupEvents.registry('item', event => {
 		.create('astro_rise:shard_silver')
 		.texture('astro_rise:item/shard_silver')
 		.displayName('Silver Shard')
-	    .tagItem("mekanism:shards")                      
-	    .tagItem("mekanism:shards/silver")
+	    .tag("mekanism:shards")                      
+	    .tag("mekanism:shards/silver")
 
 })

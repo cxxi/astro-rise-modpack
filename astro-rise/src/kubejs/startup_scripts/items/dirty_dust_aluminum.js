@@ -4,7 +4,7 @@ StartupEvents.registry('item', event => {
 		.create('astro_rise:dirty_dust_aluminum')
 		.texture('astro_rise:item/dirty_dust_aluminum')
 		.displayName('Dirty Aluminum Dust')
-	    .tagItem("mekanism:dirty_dusts")                      
-	    .tagItem("mekanism:dirty_dusts/aluminum")
+	    .tag("mekanism:dirty_dusts")                      
+	    .tag("mekanism:dirty_dusts/aluminum")
 
 })

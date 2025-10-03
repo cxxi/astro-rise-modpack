@@ -4,7 +4,7 @@ StartupEvents.registry('item', event => {
 		.create('astro_rise:clump_calorite')
 		.texture('astro_rise:item/clump_calorite')
 		.displayName('Calorite Clump')
-	    .tagItem("mekanism:clumps")                      
-	    .tagItem("mekanism:clumps/calorite")
+	    .tag("mekanism:clumps")                      
+	    .tag("mekanism:clumps/calorite")
 
 })
