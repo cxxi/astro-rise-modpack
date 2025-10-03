@@ -74,10 +74,10 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:modifier',
 	    inputs: [
 	    	{ item: 'thermal:xp_crystal' },
+	    	{ item: 'extendedcrafting:ender_star' },
 	    	{ item: 'thermal:xp_crystal' },
 	    	{ item: 'thermal:xp_crystal' },
-	    	{ item: 'thermal:xp_crystal' },
-	    	{ item: 'extendedcrafting:ender_star' }
+	    	{ item: 'thermal:xp_crystal' }
 	    ],
 	    tools: {
 	    	tag: 'tconstruct:modifiable'
