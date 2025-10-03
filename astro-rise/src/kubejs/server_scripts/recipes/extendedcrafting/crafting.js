@@ -44,4 +44,39 @@ ServerEvents.recipes(event => {
 		G: 'astro_rise:ender_mechanism'
 	})
 
+	// advanced table
+
+	event.remove({ id: 'extendedcrafting:advanced_table' })
+
+	const advancedTablePatterns = [
+		' ABA ',
+		'ACDCA',
+		'ED DF',
+		'ACDCA',
+		' AGA '
+	]
+
+	const advancedTableKeys = {
+		A: 'extendedcrafting:advanced_component',
+		B: 'astro_rise:earth_steel_mechanism',
+		C: 'extendedcrafting:advanced_catalyst',
+		D: 'extendedcrafting:basic_table',
+		E: 'astro_rise:sky_steel_mechanism',
+		F: 'astro_rise:ichor_steel_mechanism',
+		G: 'astro_rise:ender_steel_mechanism'
+	}
+
+	event.recipes.create.mechanical_crafting(
+		'extendedcrafting:advanced_table', 
+		advancedTablePatterns, 
+		advancedTableKeys
+	)
+
+	event.custom({
+		type: 'extendedcrafting:shaped_table',
+		pattern: advancedTablePatterns,
+		key: advancedTableKeys,
+		result: { item: 'extendedcrafting:advanced_table' }
+	})
+
 })
