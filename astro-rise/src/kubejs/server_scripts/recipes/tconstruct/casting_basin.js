@@ -48,6 +48,20 @@ ServerEvents.recipes(event => {
 	    cooling_time: 720
 	})
 
+	// infinity_block
+
+	event.custom({
+	    type: 'tconstruct:casting_basin',
+	    fluid: {
+	    	fluid: 'astro_rise:liquid_infinity',
+	    	amount: 810
+	    },
+	    result: {
+	    	item: 'astro_rise:infinity_block'
+	    },
+	    cooling_time: 720
+	})
+
 	// ender_ingot_block
 
 	event.custom({

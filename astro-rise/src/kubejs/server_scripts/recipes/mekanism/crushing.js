@@ -35,5 +35,7 @@ ServerEvents.recipes(event => {
 	event.recipes.mekanismCrushing('enderio:withering_powder', 'minecraft:wither_skeleton_skull')
 	event.recipes.mekanismCrushing('deeperdarker:soul_dust', 'create_deep_dark:echo_ingot')
 	event.recipes.mekanismCrushing('thermal:enderium_dust', 'thermal:enderium_ingot')
+	event.recipes.mekanismCrushing('enderio:grains_of_infinity', 'astro_rise:infinity_ingot')
+
 
 })

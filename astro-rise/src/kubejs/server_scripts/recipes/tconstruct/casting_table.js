@@ -336,6 +336,20 @@ ServerEvents.recipes(event => {
 	    cooling_time: 9
 	}, 'ingot')
 
+	// infinity_ingot
+
+	withAllCast(event, {
+	    type: 'tconstruct:casting_table',
+	    fluid: {
+	    	fluid: 'astro_rise:liquid_infinity',
+	    	amount: 90
+	    },
+	    result: {
+	    	item: 'astro_rise:infinity_ingot'
+	    },
+	    cooling_time: 80
+	}, 'ingot')
+
 	// ender_pearl
 
 	event.remove({ id: 'tconstruct:smeltery/casting/ender/pearl' })
