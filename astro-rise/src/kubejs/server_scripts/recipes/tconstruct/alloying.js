@@ -14,6 +14,34 @@ ServerEvents.recipes(event => {
 	    1350
 	)
 
+	// molten manyullyn
+
+	event.remove({ id: 'tconstruct:smeltery/alloys/molten_manyullyn' })
+
+	event.recipes.tconstruct.alloy(
+	    { fluid: "tconstruct:molten_manyullyn", amount: 450 },
+	    [
+	    	{ fluid: "tconstruct:molten_cobalt", amount: 180 },
+	    	{ fluid: "astro_rise:molten_redstone_alloy", amount: 180 },
+	    	{ fluid: "astro_rise:molten_end_steel", amount: 90 }
+	    ],
+	    1400
+	)
+
+	// molten hepatizon
+
+	event.remove({ id: 'tconstruct:smeltery/alloys/molten_hepatizon' })
+
+	event.recipes.tconstruct.alloy(
+	    { fluid: "tconstruct:molten_hepatizon", amount: 450 },
+	    [
+	    	{ fluid: "tconstruct:molten_cobalt", amount: 180 },
+	    	{ fluid: "astro_rise:molten_redstone_alloy", amount: 180 },
+	    	{ fluid: "tconstruct:molten_netherite", amount: 90 }
+	    ],
+	    1400
+	)
+
 	// molten ender
 
 	event.recipes.tconstruct.alloy(

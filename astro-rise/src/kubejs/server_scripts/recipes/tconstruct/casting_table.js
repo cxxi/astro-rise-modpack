@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_copper_alloy',
-	    	amount: 100
+	    	amount: 10
 	    },
 	    result: {
 	    	item: 'enderio:copper_alloy_nugget'
@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_copper_alloy',
-	    	amount: 900
+	    	amount: 90
 	    },
 	    result: {
 	    	item: 'enderio:copper_alloy_ingot'
@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_energetic_alloy',
-	    	amount: 100
+	    	amount: 10
 	    },
 	    result: {
 	    	item: 'enderio:energetic_alloy_nugget'
@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_energetic_alloy',
-	    	amount: 900
+	    	amount: 90
 	    },
 	    result: {
 	    	item: 'enderio:energetic_alloy_ingot'
@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_vibrant_alloy',
-	    	amount: 100
+	    	amount: 10
 	    },
 	    result: {
 	    	item: 'enderio:vibrant_alloy_nugget'
@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_vibrant_alloy',
-	    	amount: 900
+	    	amount: 90
 	    },
 	    result: {
 	    	item: 'enderio:vibrant_alloy_ingot'
@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_redstone_alloy',
-	    	amount: 100
+	    	amount: 10
 	    },
 	    result: {
 	    	item: 'enderio:redstone_alloy_nugget'
@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_redstone_alloy',
-	    	amount: 900
+	    	amount: 90
 	    },
 	    result: {
 	    	item: 'enderio:redstone_alloy_ingot'
@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_conductive_alloy',
-	    	amount: 100
+	    	amount: 10
 	    },
 	    result: {
 	    	item: 'enderio:conductive_alloy_nugget'
@@ -172,7 +172,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_conductive_alloy',
-	    	amount: 900
+	    	amount: 90
 	    },
 	    result: {
 	    	item: 'enderio:conductive_alloy_ingot'
@@ -186,7 +186,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_pulsating_alloy',
-	    	amount: 100
+	    	amount: 10
 	    },
 	    result: {
 	    	item: 'enderio:pulsating_alloy_nugget'
@@ -198,7 +198,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_pulsating_alloy',
-	    	amount: 900
+	    	amount: 90
 	    },
 	    result: {
 	    	item: 'enderio:pulsating_alloy_ingot'
@@ -212,7 +212,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_dark_steel',
-	    	amount: 100
+	    	amount: 10
 	    },
 	    result: {
 	    	item: 'enderio:dark_steel_nugget'
@@ -224,7 +224,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_dark_steel',
-	    	amount: 900
+	    	amount: 90
 	    },
 	    result: {
 	    	item: 'enderio:dark_steel_ingot'
@@ -238,7 +238,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_end_steel',
-	    	amount: 100
+	    	amount: 10
 	    },
 	    result: {
 	    	item: 'enderio:end_steel_nugget'
@@ -250,7 +250,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_end_steel',
-	    	amount: 900
+	    	amount: 90
 	    },
 	    result: {
 	    	item: 'enderio:end_steel_ingot'
@@ -264,7 +264,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_soularium',
-	    	amount: 100
+	    	amount: 10
 	    },
 	    result: {
 	    	item: 'enderio:soularium_nugget'
@@ -276,7 +276,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_soularium',
-	    	amount: 900
+	    	amount: 90
 	    },
 	    result: {
 	    	item: 'enderio:soularium_ingot'
@@ -290,7 +290,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'thermal:redstone',
-	    	amount: 100
+	    	amount: 10
 	    },
 	    result: {
 	    	item: 'extendedcrafting:redstone_nugget'
@@ -302,7 +302,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'thermal:redstone',
-	    	amount: 900
+	    	amount: 90
 	    },
 	    result: {
 	    	item: 'extendedcrafting:redstone_ingot'
@@ -335,6 +335,22 @@ ServerEvents.recipes(event => {
 	    },
 	    cooling_time: 9
 	}, 'ingot')
+
+	// ender_pearl
+
+	event.remove({ id: 'tconstruct:smeltery/casting/ender/pearl' })
+
+	event.custom({
+	    type: 'tconstruct:casting_table',
+	    fluid: {
+	    	fluid: 'tconstruct:molten_ender',
+	    	amount: 250
+	    },
+	    result: {
+	    	item: 'minecraft:ender_pearl'
+	    },
+	    cooling_time: 80
+	})
 
 	// wither_skeleton_skull
 

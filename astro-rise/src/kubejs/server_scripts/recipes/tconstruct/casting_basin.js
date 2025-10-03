@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_basin',
 	    fluid: {
 	    	fluid: 'thermal:redstone',
-	    	amount: 8100
+	    	amount: 810
 	    },
 	    result: {
 	    	item: 'extendedcrafting:redstone_ingot_block'
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_basin',
 	    fluid: {
 	    	fluid: 'tconstruct:molten_ender',
-	    	amount: 2250
+	    	amount: 810
 	    },
 	    result: {
 	    	item: 'extendedcrafting:ender_ingot_block'
