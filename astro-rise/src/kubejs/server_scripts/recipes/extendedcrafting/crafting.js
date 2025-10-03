@@ -2,7 +2,8 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'extendedcrafting:redstone_ingot' })
 	event.remove({ id: 'extendedcrafting:ender_ingot' })
-	
+	event.remove({ id: 'extendedcrafting:luminessence' })
+
 	// black_iron_ingot
 
 	event.remove({ id: 'extendedcrafting:black_iron_ingot' })
@@ -15,15 +16,13 @@ ServerEvents.recipes(event => {
 
 	// luminessence
 
-	event.remove({ id: 'extendedcrafting:luminessence' })
-
-	event.shaped('extendedcrafting:luminessence', [
-	    'AAA', 
-	    'ABA',
-	    'AAA'  
-	], {
-		A: 'mekanism:dust_fluorite',
-	    B: 'mekanism:ingot_refined_glowstone'
-	})
+	// event.shaped('extendedcrafting:luminessence', [
+	//     'AAA', 
+	//     'ABA',
+	//     'AAA'  
+	// ], {
+	// 	A: 'mekanism:dust_fluorite',
+	//     B: 'mekanism:ingot_refined_glowstone'
+	// })
 
 })

@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
 			}
 		},
 		output: {
-			amount: 10,
+			amount: 90,
 			infuse_type: "astro_rise:fluorite"
 		}
 	})
