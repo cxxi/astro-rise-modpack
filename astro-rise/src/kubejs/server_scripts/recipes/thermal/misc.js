@@ -30,4 +30,18 @@ ServerEvents.recipes(event => {
 	event.replaceInput({ output: 'thermal:phytogro' }, 'thermal:niter', 'thermal:compost')
 	event.replaceInput({ output: 'thermal:phytogro' }, 'thermal:niter_dust', 'thermal:compost')
 
+	// xp crystal
+
+	event.remove({ id: 'thermal:tools/xp_crystal' })
+
+	event.shaped('thermal:xp_crystal', [
+	    ' A ', 
+	    'BCB',
+	    ' A '  
+	],{
+	    A: 'enderio:pulsating_crystal', 
+	    B: 'enderio:vibrant_crystal',
+	    C: 'minecraft:experience_bottle'
+	})
+
 })

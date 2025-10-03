@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+	event.remove({ id: 'tconstruct:smeltery/casting/obsidian/chest' })
+
 	// andesite_alloy
 
 	event.custom({
