@@ -19,21 +19,21 @@ global.COLORS = [
 ]
 
 global.ORES = [
-	'iron'
-	'copper'
-	'gold'
-	'tin'
-	'lead'
-	'osmium'
-	'uranium'
-	'zinc'
-	'cobalt'
-	'silver'
-	'nickel'
-	'aluminum'
-	'platinum'
-	'desh'
-	'ostrum'
-	'calorite'
+	'iron',
+	'copper',
+	'gold',
+	'tin',
+	'lead',
+	'osmium',
+	'uranium',
+	'zinc',
+	'cobalt',
+	'silver',
+	'nickel',
+	'aluminum',
+	'platinum',
+	'desh',
+	'ostrum',
+	'calorite',
 	'aerolyte'
 ]
