@@ -24,17 +24,22 @@ ServerEvents.recipes(event => {
    		'2x minecraft:iron_ingot'
 	])
 
-	// basic table
+	// tables
 
 	event.remove({ id: 'extendedcrafting:basic_table' })
+	event.remove({ id: 'extendedcrafting:advanced_table' })
 
-	event.recipes.create.mechanical_crafting('extendedcrafting:basic_table', [
+	const tablePatterns = [
 		' ABA ',
 		'ACDCA',
 		'ED DF',
 		'ACDCA',
 		' AGA '
-	], {
+	]
+
+	// basic
+
+	const basicTableKeys = {
 		A: 'extendedcrafting:basic_component',
 		B: 'astro_rise:earth_mechanism',
 		C: 'extendedcrafting:basic_catalyst',
@@ -42,19 +47,22 @@ ServerEvents.recipes(event => {
 		E: 'astro_rise:sky_mechanism',
 		F: 'astro_rise:ichor_mechanism',
 		G: 'astro_rise:ender_mechanism'
+	}
+
+	event.recipes.create.mechanical_crafting(
+		'extendedcrafting:basic_table', 
+		tablePatterns, 
+		basicTableKeys
+	)
+
+	event.custom({
+		type: 'extendedcrafting:shaped_table',
+		pattern: tablePatterns,
+		key: basicTableKeys,
+		result: { item: 'extendedcrafting:basic_table' }
 	})
 
-	// advanced table
-
-	event.remove({ id: 'extendedcrafting:advanced_table' })
-
-	const advancedTablePatterns = [
-		' ABA ',
-		'ACDCA',
-		'ED DF',
-		'ACDCA',
-		' AGA '
-	]
+	// advanced
 
 	const advancedTableKeys = {
 		A: 'extendedcrafting:advanced_component',
@@ -68,13 +76,13 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.mechanical_crafting(
 		'extendedcrafting:advanced_table', 
-		advancedTablePatterns, 
+		tablePatterns, 
 		advancedTableKeys
 	)
 
 	event.custom({
 		type: 'extendedcrafting:shaped_table',
-		pattern: advancedTablePatterns,
+		pattern: tablePatterns,
 		key: advancedTableKeys,
 		result: { item: 'extendedcrafting:advanced_table' }
 	})
