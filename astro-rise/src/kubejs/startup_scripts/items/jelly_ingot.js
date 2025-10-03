@@ -5,6 +5,6 @@ StartupEvents.registry('item', event => {
 		.texture('astro_rise:item/jelly_ingot')
 		.displayName('Jelly Ingot')
 	    .tag("forge:ingots")                      
-	    .tag("forge:ingots/jelly_ingot")
+	    .tag("forge:ingots/jelly")
 
 })
