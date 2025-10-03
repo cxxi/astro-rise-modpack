@@ -14,28 +14,30 @@ https://www.curseforge.com/minecraft/mc-mods/ancient-golems
 
 coal
 
+netherite
+
 iron
 copper
-zinc
 gold
-cobalt
-silver
-nickel
 tin
 lead
 osmium
 uranium
+zinc
+cobalt
+silver
+nickel
 aluminum
 platinum
 
-netherite
+desh
+ostrum
+calorite
+aerolyte
 
 redstone
 lapis
 quartz
-
-anglesite
-benitoite
 
 emerald
 diamond
@@ -45,14 +47,12 @@ fluorite
 apatite
 cinnabar
 
+anglesite
+benitoite
+
 niter
 sulfur
 ice_shard
-
-desh
-ostrum
-calorite
-aerolyte
 
 
 ```js
