@@ -96,12 +96,36 @@ ServerEvents.recipes(event => {
    		'astro_rise:ingot_aerolyte'
    	])
 
+   	event.shapeless('astro_rise:aerolyte_block', [
+   		'9x astro_rise:ingot_aerolyte'
+   	])
+
+   	event.shapeless('9x astro_rise:ingot_aerolyte', [
+   		'astro_rise:aerolyte_block'
+   	])
+
    	event.shapeless('ad_astra:etrium_ingot', [
    		'9x ad_astra:etrium_nugget'
    	])
 
    	event.shapeless('9x ad_astra:etrium_nugget', [
    		'ad_astra:etrium_ingot'
+   	])
+
+   	event.shapeless('ad_astra:etrium_block', [
+   		'9x ad_astra:etrium_ingot'
+   	])
+
+   	event.shapeless('9x ad_astra:etrium_ingot', [
+   		'ad_astra:etrium_block'
+   	])
+
+   	event.shapeless('astro_rise:infinity_block', [
+   		'9x astro_rise:infinity_ingot'
+   	])
+
+   	event.shapeless('9x astro_rise:infinity_ingot', [
+   		'astro_rise:infinity_block'
    	])
 
 	// shulker_shell
