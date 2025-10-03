@@ -26,6 +26,32 @@ ServerEvents.recipes(event => {
    		'thermal:cinnabar'
    	])
 
+   	event.remove({ id: 'createaddition:crafting/capacitor_1' })
+
+	event.shaped('createaddition:capacitor', [
+	    ' A ', 
+	    ' B ',
+	    'CDC'  
+	], {
+	    A: 'create:copper_sheet', 
+	    B: 'createaddition:zinc_sheet',
+	    C: 'minecraft:redstone_torch',
+	    D: 'thermal:cinnabar'
+	})
+
+   	event.remove({ id: 'createaddition:crafting/capacitor_2' })
+
+	event.shaped('createaddition:capacitor', [
+	    ' A ', 
+	    ' B ',
+	    'CDC'  
+	], {
+	    A: 'createaddition:zinc_sheet', 
+	    B: 'create:copper_sheet',
+	    C: 'minecraft:redstone_torch',
+	    D: 'thermal:cinnabar'
+	})
+
 	event.remove({ id: 'createaddition:mechanical_crafting/electric_motor' })
 
 	event.recipes.create.mechanical_crafting('createaddition:electric_motor', [
