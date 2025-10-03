@@ -1,4 +1,5 @@
 {
+  "type": "mekanism:infuse_type",
   "texture": "mekanism:infuse_type/base",
   "tint": "#6532A8"
 }
