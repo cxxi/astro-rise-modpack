@@ -1,8 +1,5 @@
 ServerEvents.recipes(event => {
 
-	event.remove({ output: /twilightforest:hollow_.*/ })
-	event.remove({ id: 'twilightforest:carminite_reactor' })
-
 	// ores cleaning
 
 	event.remove({ input: 'ad_astra:deepslate_desh_ore' })
@@ -36,4 +33,5 @@ ServerEvents.recipes(event => {
 	event.remove({ input: 'thermal:deepslate_sulfur_ore' })
 	event.remove({ input: 'deeperdarker:sculk_stone_redstone_ore' })
 	event.remove({ input: 'deeperdarker:gloomslate_redstone_ore' })
+	
 })

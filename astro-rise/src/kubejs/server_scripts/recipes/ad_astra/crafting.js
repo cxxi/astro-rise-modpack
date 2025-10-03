@@ -4,19 +4,20 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals' })
 
-	// permafrost
-
-	event.shapeless('ad_astra:permafrost', [
-   		'9x ad_astra:ice_shard'
-   	])
-
-   	// coal_generator
+	// coal_generator
 
 	event.remove({ id: 'ad_astra:coal_generator' })
 
 	// etrionic_blast_furnace
 
 	event.remove({ id: 'ad_astra:etrionic_blast_furnace' })
+
+
+	// permafrost
+
+	event.shapeless('ad_astra:permafrost', [
+   		'9x ad_astra:ice_shard'
+   	])
 
 	// compressor
 

@@ -38,6 +38,7 @@ aerolyte
 redstone
 lapis
 quartz
+ametyst
 
 emerald
 diamond
