@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
 	    { fluid: "astro_rise:molten_soularium", amount: 180 },
 	    [
 	    	{ fluid: "tconstruct:liquid_soul", amount: 500 },
-	    	{ fluid: "tconstruct:molten_hepatizon", amount: 270 }
+	    	{ fluid: "tconstruct:molten_netherite", amount: 270 }
 	    ],
 	    1350
 	)
