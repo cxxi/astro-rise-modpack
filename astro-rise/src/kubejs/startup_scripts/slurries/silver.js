@@ -1,11 +1,11 @@
 StartupEvents.registry('mekanism:slurry', event => {
 
-	event.create('astro_rise:dirty_cobalt')
+	event.create('astro_rise:dirty_silver')
 		.texture('mekanism:slurry/dirty')
-		.color(0x1133BA)
+		.color(0xA8A8A8)
     
-	event.create('astro_rise:clean_cobalt')
+	event.create('astro_rise:clean_silver')
 		.texture('mekanism:slurry/clean')
-		.color(0x1133BA)
+		.color(0xA8A8A8)
 
 })
