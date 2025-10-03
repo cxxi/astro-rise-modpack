@@ -179,6 +179,32 @@ ServerEvents.recipes(event => {
 	event.custom({
 	    type: 'tconstruct:melting',
 	    ingredient: { 
+	    	item: 'astro_rise:infinity_ingot' 
+		},
+	    result: {
+		    amount: 90,
+		    fluid: 'astro_rise:liquid_infinity'
+		},
+	    temperature: 1350,
+	    time: 171
+	})
+
+	event.custom({
+	    type: 'tconstruct:melting',
+	    ingredient: { 
+	    	item: 'astro_rise:infinity_block' 
+		},
+	    result: {
+		    amount: 810,
+		    fluid: 'astro_rise:liquid_infinity'
+		},
+	    temperature: 1350,
+	    time: 1539
+	})
+
+	event.custom({
+	    type: 'tconstruct:melting',
+	    ingredient: { 
 	    	item: 'enderio:infinity_rod' 
 		},
 	    result: {
