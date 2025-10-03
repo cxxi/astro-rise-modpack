@@ -73,15 +73,18 @@ ServerEvents.recipes(event => {
 	event.custom({
 	    type: 'tconstruct:modifier',
 	    inputs: [
-	    	{ item: 'extendedcrafting:ender_star' },
 	    	{ item: 'thermal:xp_crystal' },
 	    	{ item: 'thermal:xp_crystal' },
 	    	{ item: 'thermal:xp_crystal' },
-	    	{ item: 'thermal:xp_crystal' }
+	    	{ item: 'thermal:xp_crystal' },
+	    	{ item: 'extendedcrafting:ender_star' }
 	    ],
 	    tools: {
 	    	tag: 'tconstruct:modifiable'
 	    },
+	    slots: {
+		    abilities: 1
+		},
 	    level: 1,
 	    result: "tinkerslevellingaddon:improvable"
 	})
