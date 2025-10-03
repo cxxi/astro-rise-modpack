@@ -14,15 +14,34 @@ ServerEvents.recipes(event => {
    		'enderio:grains_of_infinity'
 	])
 
-	// luminessence
+	// basic component
 
-	// event.shaped('extendedcrafting:luminessence', [
-	//     'AAA', 
-	//     'ABA',
-	//     'AAA'  
-	// ], {
-	// 	A: 'mekanism:dust_fluorite',
-	//     B: 'mekanism:ingot_refined_glowstone'
-	// })
+	event.remove({ id: 'extendedcrafting:basic_component' })
+
+	event.shapeless('extendedcrafting:basic_component', [
+		'extendedcrafting:black_iron_slate',
+		'astro_rise:quartz_mechanism',
+   		'2x minecraft:iron_ingot'
+	])
+
+	// basic table
+
+	event.remove({ id: 'extendedcrafting:basic_table' })
+
+	event.recipes.create.mechanical_crafting('extendedcrafting:basic_table', [
+		' ABA ',
+		'ACDCA',
+		'ED DF',
+		'ACDCA',
+		' AGA '
+	], {
+		A: 'extendedcrafting:basic_component',
+		B: 'astro_rise:earth_mechanism',
+		C: 'extendedcrafting:basic_catalyst',
+		D: 'minecraft:crafting_table',
+		E: 'astro_rise:sky_mechanism',
+		F: 'astro_rise:ichor_mechanism',
+		G: 'astro_rise:ender_mechanism'
+	})
 
 })
