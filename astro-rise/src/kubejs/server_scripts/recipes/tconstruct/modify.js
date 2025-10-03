@@ -66,4 +66,24 @@ ServerEvents.recipes(event => {
 	    result: "tconstruct:harmonious"
 	})
 
+	// improvable
+
+	event.remove({id: 'tinkerslevellingaddon:tools/modifiers/ability/improvable'})
+	  
+	event.custom({
+	    type: 'tconstruct:modifier',
+	    inputs: [
+	    	{ item: 'extendedcrafting:ender_star' },
+	    	{ item: 'thermal:xp_crystal' },
+	    	{ item: 'thermal:xp_crystal' },
+	    	{ item: 'thermal:xp_crystal' },
+	    	{ item: 'thermal:xp_crystal' }
+	    ],
+	    tools: {
+	    	tag: 'tconstruct:modifiable'
+	    },
+	    level: 1,
+	    result: "tinkerslevellingaddon:improvable"
+	})
+
 })
