@@ -34,13 +34,14 @@ ServerEvents.loaded(event => {
     // const LootItem = Java.loadClass("net.minecraft.world.level.storage.loot.entries.LootItem")
 
     let entityLootTableLocation
+    let entityKey
 
     console.log("List of all creature entity types:")
 
     for (const entityType of BuiltInRegistries.ENTITY_TYPE) {
         if (entityType.getCategory() !== MobCategory.MISC) {
 
-            const entityKey = BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString()
+            entityKey = BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString()
             console.log(entityKey)
 
             entityLootTableLocation = entityType.getDefaultLootTable()
