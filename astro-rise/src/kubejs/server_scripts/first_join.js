@@ -80,58 +80,58 @@ PlayerEvents.loggedIn(event => {
 
 // })
 
-ServerEvents.loaded(event => {
+// ServerEvents.loaded(event => {
 
-    const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
-    const MobCategory = Java.loadClass("net.minecraft.world.entity.MobCategory");
-    const LootItemClass = Java.loadClass("net.minecraft.world.level.storage.loot.entries.LootItem");
+//     const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
+//     const MobCategory = Java.loadClass("net.minecraft.world.entity.MobCategory");
+//     const LootItemClass = Java.loadClass("net.minecraft.world.level.storage.loot.entries.LootItem");
     
-    const lootData = event.server.getLootData();
-    const fieldItem = LootItemClass.getDeclaredField("item");
-    fieldItem.setAccessible(true);
+//     const lootData = event.server.getLootData();
+//     const fieldItem = LootItemClass.getDeclaredField("item");
+//     fieldItem.setAccessible(true);
 
-    console.log("=== List of all creature entity loot items ===");
+//     console.log("=== List of all creature entity loot items ===");
 
-    let lootTableId
-    let lootTable
-    let pools
-    let entries
-    let entryClass
-    let item
-    let name
+//     let lootTableId
+//     let lootTable
+//     let pools
+//     let entries
+//     let entryClass
+//     let item
+//     let name
 
-    for (const entityType of BuiltInRegistries.ENTITY_TYPE) {
-        if (entityType.getCategory() !== MobCategory.MISC) {
+//     for (const entityType of BuiltInRegistries.ENTITY_TYPE) {
+//         if (entityType.getCategory() !== MobCategory.MISC) {
 
-            lootTableId = entityType.getDefaultLootTable();
-            lootTable = lootData.getLootTable(lootTableId);
-            if (!lootTable) continue;
+//             lootTableId = entityType.getDefaultLootTable();
+//             lootTable = lootData.getLootTable(lootTableId);
+//             if (!lootTable) continue;
 
-            console.log("Entity:", BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString());
+//             console.log("Entity:", BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString());
 
-            pools = lootTable.pools || [];
-            for (const pool of pools) {
-                entries = pool.entries || [];
-                for (const entry of entries) {
-                    entryClass = entry.getClass().getSimpleName();
+//             pools = lootTable.pools || [];
+//             for (const pool of pools) {
+//                 entries = pool.entries || [];
+//                 for (const entry of entries) {
+//                     entryClass = entry.getClass().getSimpleName();
 
-                    if (entryClass === "LootItem") {
-                        try {
-                            item = fieldItem.get(entry);
-                            name = item ? item.toString() : "null";
-                            console.log(`  Loot item: ${name}`);
-                        } catch (err) {
-                            console.log("  [ERR]", err);
-                        }
-                    } else {
-                        // Autres types de loot : tables, alternatives, etc.
-                        console.log(`  (${entryClass})`);
-                    }
-                }
-            }
-        }
-    }
-});
+//                     if (entryClass === "LootItem") {
+//                         try {
+//                             item = fieldItem.get(entry);
+//                             name = item ? item.toString() : "null";
+//                             console.log(`  Loot item: ${name}`);
+//                         } catch (err) {
+//                             console.log("  [ERR]", err);
+//                         }
+//                     } else {
+//                         // Autres types de loot : tables, alternatives, etc.
+//                         console.log(`  (${entryClass})`);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// });
 
 // ServerEvents.loaded(event => {
 //     const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
