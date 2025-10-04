@@ -9,14 +9,17 @@ PlayerEvents.loggedIn(event => {
     
 })
 
-// ServerEvents.started(event => {
-//     const Registry = Java.loadClass("net.minecraft.core.Registry");
+ServerEvents.load(event => {
 
-//     // Tous les types d'entités
-//     const entityRegistry = Registry.ENTITY_TYPE;
+    const Registries = Java.type("net.minecraft.core.registries.Registries");
+    const RegistryAccess = event.server.registryAccess();
+    const entityRegistryOptional = RegistryAccess.registry(Registries.ENTITY_TYPE);
 
-//     entityRegistry.keySet().forEach(key => {
-//         console.log(key.toString()); // Ex: "minecraft:zombie"
-//     });
+    if (entityRegistryOptional.isPresent()) {
+        const entityRegistry = entityRegistryOptional.get();
+        entityRegistry.forEach(entityType => {
+            console.log(entityType.getDescriptionId());
+        });
+    }
     
-// });
+});

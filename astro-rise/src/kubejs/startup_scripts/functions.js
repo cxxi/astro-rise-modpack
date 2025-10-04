@@ -49,19 +49,3 @@ global.withAllCast = (event, recipe, castType) => {
 
     event.custom(recipe)
 }
-
-
-
-StartupEvents.serverStarted(event => {
-    // On importe les classes Java nécessaires
-    const Registries = Java.type("net.minecraft.core.registries.Registries");
-    const RegistryAccess = event.server.registryAccess();
-    const entityRegistryOptional = RegistryAccess.registry(Registries.ENTITY_TYPE);
-
-    if (entityRegistryOptional.isPresent()) {
-        const entityRegistry = entityRegistryOptional.get();
-        entityRegistry.forEach(entityType => {
-            console.log(entityType.getDescriptionId());
-        });
-    }
-});
