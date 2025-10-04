@@ -6,7 +6,8 @@ ServerEvents.recipes(event => {
 			type: 'mekanism:washing',
 			fluidInput: {
 				amount: 5,
-				tag: 'minecraft:water'
+				ingredient: { tag: 'minecraft:water' }
+				// tag: 'minecraft:water'
 			},
 			output: {
 				amount: 1,
