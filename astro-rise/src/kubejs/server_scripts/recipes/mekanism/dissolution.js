@@ -19,16 +19,42 @@ ServerEvents.recipes(event => {
 
 	slurries.forEach(([ns, slurry]) => {
 
-		event.recipes.mekanismDissolution(
-			`astro_rise:dirty_${slurry}`, 
-			{ amount: 200, gas: 'mekanism:sulfuric_acid' },
-			`${ns}:raw_${slurry}_block`
-		)
+		event.custom({
+			type: 'mekanism:dissolution',
+			gasInput: {
+				amount: 2,
+				gas: 'mekanism:sulfuric_acid'
+			},
+			itemInput: {
+				ingredient: {
+					tag: `forge:storage_blocks/raw_${slurry}`
+				}
+			},
+			output: {
+				amount: 6000,
+				chemicalType: 'slurry',
+				slurry: `${ns}:dirty_${slurry}`
+			}
+		})
 
-		event.recipes.mekanismDissolution(
-			`astro_rise:dirty_${slurry}`, 
-			{ amount: 100, gas: 'mekanism:sulfuric_acid' },
-			`3x ${ns}:raw_${slurry}`
-		)
+		event.custom({
+			type: 'mekanism:dissolution',
+			gasInput: {
+				amount: 1,
+				gas: 'mekanism:sulfuric_acid'
+			},
+			itemInput: {
+				amount: 3,
+				ingredient: {
+					tag: `forge:raw_materials/${slurry}`
+				}
+			},
+			output: {
+				amount: 2000,
+				chemicalType: 'slurry',
+				slurry: `${ns}:dirty_${slurry}`
+			}
+		})
+
 	})
 })
