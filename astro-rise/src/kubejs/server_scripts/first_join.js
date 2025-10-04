@@ -25,17 +25,17 @@ PlayerEvents.loggedIn(event => {
 // })
 
 ServerEvents.loaded(event => {
+
     const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
     const MobCategory = Java.loadClass("net.minecraft.world.entity.MobCategory");
     const LootTable = Java.loadClass("net.minecraft.world.level.storage.loot.LootTable");
     
     const lootDataManager = event.server.getLootData();
     const entityTypeRegistry = BuiltInRegistries.ENTITY_TYPE;
+    const entityIds = Array.from(entityTypeRegistry.keySet());
 
     console.log("List of all creature entity types (1 = has loot, 0 = no loot):");
-    const iterator = entityTypeRegistry.keySet().iterator();
-    while (iterator.hasNext()) {
-        const entityId = iterator.next();
+    for (const entityId of entityIds) {
         const entityType = entityTypeRegistry.get(entityId);
         if (entityType.getCategory() !== MobCategory.MISC) {
             const lootTableLocation = entityType.getDefaultLootTable();
@@ -45,6 +45,7 @@ ServerEvents.loaded(event => {
             console.log(`${prefix} ${entityId}`);
         }
     }
+    console.log('end')
 });
 
 // minecraft:allay
