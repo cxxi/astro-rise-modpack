@@ -30,6 +30,7 @@ ServerEvents.loaded(event => {
     const MobCategory = Java.loadClass("net.minecraft.world.entity.MobCategory")
     const ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation")
     const JsonParser = Java.loadClass("com.google.gson.JsonParser")
+    const InputStreamReader = Java.loadClass("java.io.InputStreamReader")
     // const LootTable = Java.loadClass("net.minecraft.world.level.storage.loot.LootTable")
     // const LootItem = Java.loadClass("net.minecraft.world.level.storage.loot.entries.LootItem")
 
@@ -63,7 +64,7 @@ ServerEvents.loaded(event => {
                 }
 
                 // Lit le contenu JSON
-                reader = new java.io.InputStreamReader(resource.getInputStream())
+                reader = new InputStreamReader(resource.getInputStream())
                 json = JsonParser.parseReader(reader).getAsJsonObject()
                 reader.close()
 
