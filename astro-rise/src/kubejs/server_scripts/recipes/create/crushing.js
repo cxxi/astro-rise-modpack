@@ -63,198 +63,53 @@ ServerEvents.recipes(event => {
 
 	event.remove({ type: 'create:crushing',  input: /.*_ore/ })
 
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/coal' }
-		],
-		processingTime: 150,
-		results: [
-			{ item: 'minecraft:coal' },
-			{ item: 'minecraft:coal', chance: 0.75 }
-		]
-	})
+	const oreGems = [
+		['minecraft', 'coal', 0],
+		['minecraft', 'redstone', 1],
+		['minecraft', 'lapis_lazuli', 1],
+		['minecraft', 'quartz', 1],
+		['minecraft', 'emerald', 2],
+		['minecraft', 'diamond', 2],
+		['mekanism', 'fluorite', 2],
+		['thermal', 'apatite', 2],
+		['thermal', 'cinnabar', 2],
+		['thermal', 'sapphire', 2],
+		['thermal', 'ruby', 2],
+		['thermal', 'niter', 2],
+		['thermal', 'sulfur', 2],
+		['ad_astra', 'ice_shard', 2]
+	]
 
-	// redstone
+	oreGems.forEach(([ns, gem, difficulty]) => {
 
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/redstone' }
-		],
-		processingTime: 200,
-		results: [
-			{ item: 'minecraft:redstone', count: 6 },
-			{ item: 'minecraft:redstone', count: 3, chance: 0.50 }
-		]
-	})
+		const processingTime = d => switch(d) {
+			case 0: return 150
+			case 1: return 200
+			case 2: return 500
+		}
 
-	// lapis
+		const chance = d => switch(d) {
+			case 0: return 0.75
+			case 1: return 0.50
+			case 2: return 0.25
+		}
 
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/lapis' }
-		],
-		processingTime: 200,
-		results: [
-			{ item: 'minecraft:lapis_lazuli', count: 6 },
-			{ item: 'minecraft:lapis_lazuli', count: 3, chance: 0.50 }
-		]
-	})
+		event.custom({
+			type: 'create:crushing',
+			ingredients: [
+				{ 
+					tag: ['lapis_lazuli', 'fluorite_gem'].includes(gem)
+						? `forge:ores/${gem.split('_')[0]}`
+						: `forge:ores/${gem}`
+				}
+			],
+			processingTime: processingTime(difficulty),
+			results: [
+				{ item: `${ns}:${gem}`, count: difficulty === 1 ? 6 : 1 },
+				{ item: `${ns}:${gem}`, count: difficulty === 1 ? 3 : 1, chance: chance(difficulty) }
+			]
+		})
 
-	// quartz
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/quartz' }
-		],
-		processingTime: 200,
-		results: [
-			{ item: 'minecraft:quartz', count: 6 },
-			{ item: 'minecraft:quartz', count: 3, chance: 0.50 }
-		]
-	})
-
-	// emerald
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/emerald' }
-		],
-		processingTime: 500,
-		results: [
-			{ item: 'minecraft:emerald' },
-			{ item: 'minecraft:emerald', chance: 0.25 }
-		]
-	})
-
-	// diamond
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/diamond' }
-		],
-		processingTime: 500,
-		results: [
-			{ item: 'minecraft:diamond' },
-			{ item: 'minecraft:diamond', chance: 0.25 }
-		]
-	})
-
-	// fluorite
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/fluorite' }
-		],
-		processingTime: 500,
-		results: [
-			{ item: 'mekanism:fluorite_gem' },
-			{ item: 'mekanism:fluorite_gem', chance: 0.25 }
-		]
-	})
-
-		// apatite
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/apatite' }
-		],
-		processingTime: 500,
-		results: [
-			{ item: 'thermal:apatite' },
-			{ item: 'thermal:apatite', chance: 0.25 }
-		]
-	})
-
-	// cinnabar
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/cinnabar' }
-		],
-		processingTime: 500,
-		results: [
-			{ item: 'thermal:cinnabar' },
-			{ item: 'thermal:cinnabar', chance: 0.25 }
-		]
-	})
-
-	// sapphire
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/sapphire' }
-		],
-		processingTime: 500,
-		results: [
-			{ item: 'thermal:sapphire' },
-			{ item: 'thermal:sapphire', chance: 0.25 }
-		]
-	})
-
-	// ruby
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/ruby' }
-		],
-		processingTime: 500,
-		results: [
-			{ item: 'thermal:ruby' },
-			{ item: 'thermal:ruby', chance: 0.25 }
-		]
-	})
-
-	// niter
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/niter' }
-		],
-		processingTime: 250,
-		results: [
-			{ item: 'thermal:niter' },
-			{ item: 'thermal:niter', chance: 0.25 }
-		]
-	})
-
-	// sulfur
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/sulfur' }
-		],
-		processingTime: 250,
-		results: [
-			{ item: 'thermal:sulfur' },
-			{ item: 'thermal:sulfur', chance: 0.25 }
-		]
-	})
-
-	// ice shard
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/ice_shard' }
-		],
-		processingTime: 250,
-		results: [
-			{ item: 'ad_astra:ice_shard' },
-			{ item: 'ad_astra:ice_shard', chance: 0.25 }
-		]
 	})
 
 	global.ORES.forEach(([ns, ore]) => {
