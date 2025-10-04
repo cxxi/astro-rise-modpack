@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
 	
 	event.remove({ output: /botanypots:.*/ })
 
-	event.shaped('botanypots:terracotta_botany_pot', [
+	global.craft(event, 'botanypots:terracotta_botany_pot', [
 	    'ABA', 
 	    'BCB',
 	    'ABA'  
@@ -12,69 +12,36 @@ ServerEvents.recipes(event => {
 	    C: 'minecraft:flower_pot'
 	})
 
-	event.shapeless('botanypots:terracotta_hopper_botany_pot', [
+	global.craft(event, 'botanypots:terracotta_hopper_botany_pot', [
    		'botanypots:terracotta_botany_pot',
    		'minecraft:hopper'
    	])
 
 	global.COLORS.forEach(color => {
 
-		// basic terracotta
+		const materials = ['terracotta', 'glazed_terracotta', 'concrete']
 
-	   	event.shapeless(`botanypots:${color}_terracotta_botany_pot`, [
-	   		'#botanypots:basic_botany_pots',
-	   		`minecraft:${color}_terracotta`
-		])
+		materials.forEach(material => {
 
-		// basic concrete
+			global.craft(event, `botanypots:${color}_${material}_botany_pot`, [
+		   		'#botanypots:basic_botany_pots',
+		   		`minecraft:${color}_${material}`
+			])
+		})
 
-		event.shapeless(`botanypots:${color}_concrete_botany_pot`, [
-			'#botanypots:basic_botany_pots',
-	   		`minecraft:${color}_concrete`
-		])
+		materials.forEach(material => {
 
-		// basic glazed terracotta
+			global.craft(event, `botanypots:${color}_${material}_hopper_botany_pot`, [
+		   		'#botanypots:hopper_botany_pots',
+		   		`minecraft:${color}_${material}`
+			])
 
-		event.shapeless(`botanypots:${color}_glazed_terracotta_botany_pot`, [
-			'#botanypots:basic_botany_pots',
-	   		`minecraft:${color}_glazed_terracotta`
-		])
-
-		// hopper terracotta
-
-		event.shapeless(`botanypots:${color}_terracotta_hopper_botany_pot`, [
-	   		'#botanypots:hopper_botany_pots',
-	   		`minecraft:${color}_terracotta`
-		])
-
-		event.shapeless(`botanypots:${color}_terracotta_hopper_botany_pot`, [
-	   		`botanypots:${color}_terracotta_botany_pot`,
-	   		'minecraft:hopper'
-		])
-
-		// hopper concrete
-
-		event.shapeless(`botanypots:${color}_concrete_hopper_botany_pot`, [
-			'#botanypots:hopper_botany_pots',
-	   		`minecraft:${color}_concrete`
-		])
-
-		event.shapeless(`botanypots:${color}_concrete_hopper_botany_pot`, [
-			`botanypots:${color}_concrete_botany_pot`,
-	   		'minecraft:hopper'
-		])
-
-		// hopper glazed terracotta
-
-		event.shapeless(`botanypots:${color}_glazed_terracotta_hopper_botany_pot`, [
-			'#botanypots:hopper_botany_pots',
-	   		`minecraft:${color}_glazed_terracotta`
-		])		
-
-		event.shapeless(`botanypots:${color}_glazed_terracotta_hopper_botany_pot`, [
-			`botanypots:${color}_glazed_terracotta_botany_pot`,
-	   		'minecraft:hopper'
-		])
+			global.craft(event, `botanypots:${color}_${material}_hopper_botany_pot`, [
+		   		`botanypots:${color}_${material}_botany_pot`,
+		   		'minecraft:hopper'
+			])
+		})
+		
 	})
 
 })
