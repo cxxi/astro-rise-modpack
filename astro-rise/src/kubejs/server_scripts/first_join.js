@@ -40,7 +40,7 @@ ServerEvents.loaded(event => {
             const lootTable = lootDataManager.getLootTable(lootTableLocation);
 
             console.log(BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString())
-            console.log(lootTable.toString())
+            console.log(lootTable !== LootTable.EMPTY ? "1" : "0")
         }
     }
 
