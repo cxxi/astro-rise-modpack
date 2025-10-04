@@ -50,6 +50,16 @@ global.withAllCast = (event, recipe, castType) => {
     event.custom(recipe)
 }
 
-StartupEvents.registry('entity_type', event => {
-    console.log(JSON.stringify(event.toJson()))
-})
+
+
+const { Registries } = JavaImporter(
+  net.minecraft.core.registries.Registries,
+  net.minecraft.world.entity.EntityType
+);
+
+StartupEvents.serverStarted(event => {
+  const registry = event.server.registryAccess().registry(Registries.ENTITY_TYPE).get();
+  registry.forEach((entityType) => {
+    console.log(entityType.getDescriptionId())  // par ex. "entity.minecraft.zombie"
+  });
+});
