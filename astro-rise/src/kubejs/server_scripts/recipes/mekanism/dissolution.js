@@ -5,19 +5,19 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'mekanism:processing/gold/slurry/dirty/from_ore' })
 
 	const slurries = [
-		['astro_rise', 'aerolyte'],
-		['simplemetals_aluminum', 'aluminum'],
-		['ad_astra', 'calorite'],
-		['tconstruct', 'cobalt'],
-		['ad_astra', 'desh'],
-		['thermal', 'nickel'],
-		['ad_astra', 'ostrum'],
-		['platinum_mod', 'platinum'],
-		['thermal', 'silver'],
-		['create', 'zinc']
+		'aerolyte',
+		'aluminum',
+		'calorite',
+		'cobalt',
+		'desh',
+		'nickel',
+		'ostrum',
+		'platinum',
+		'silver',
+		'zinc'
 	]
 
-	slurries.forEach(([ns, slurry]) => {
+	slurries.forEach(slurry => {
 
 		event.custom({
 			type: 'mekanism:dissolution',
