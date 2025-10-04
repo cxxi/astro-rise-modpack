@@ -39,5 +39,19 @@ ServerEvents.recipes(event => {
 	event.recipes.mekanismCrushing('thermal:enderium_dust', 'thermal:enderium_ingot')
 	event.recipes.mekanismCrushing('enderio:grains_of_infinity', 'astro_rise:infinity_ingot')
 
+	global.CUSTOM_SLURRIES.forEach(slurry => {
 
+		event.custom({
+			type: 'mekanism:crushing',
+			input: {
+				ingredient: {
+					tag: `mekanism:clumps/${slurry}`
+				}
+			},
+			output: {
+				item: `astro_rise:dirty_dust_${slurry}`
+			}
+		})
+
+	})
 })

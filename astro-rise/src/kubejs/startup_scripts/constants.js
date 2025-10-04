@@ -54,3 +54,16 @@ global.ORE_GEMS = [
 	['thermal', 'sulfur', 2],
 	['ad_astra', 'ice_shard', 2]
 ]
+
+global.CUSTOM_SLURRIES = [
+	'aerolyte',
+	'aluminum',
+	'calorite',
+	'cobalt',
+	'desh',
+	'nickel',
+	'ostrum',
+	'platinum',
+	'silver',
+	'zinc'
+]

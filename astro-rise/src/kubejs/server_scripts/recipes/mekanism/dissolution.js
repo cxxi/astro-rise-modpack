@@ -4,20 +4,7 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'mekanism:processing/iron/slurry/dirty/from_ore' })
 	event.remove({ id: 'mekanism:processing/gold/slurry/dirty/from_ore' })
 
-	const slurries = [
-		'aerolyte',
-		'aluminum',
-		'calorite',
-		'cobalt',
-		'desh',
-		'nickel',
-		'ostrum',
-		'platinum',
-		'silver',
-		'zinc'
-	]
-
-	slurries.forEach(slurry => {
+	global.CUSTOM_SLURRIES.forEach(slurry => {
 
 		event.custom({
 			type: 'mekanism:dissolution',
