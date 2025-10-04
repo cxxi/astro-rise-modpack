@@ -82,17 +82,17 @@ ServerEvents.recipes(event => {
 
 	oreGems.forEach(([ns, gem, difficulty]) => {
 
-		const processingTime = d => switch(d) {
+		const processingTime = d => { switch(d) {
 			case 0: return 150
 			case 1: return 200
 			case 2: return 500
-		}
+		}}
 
-		const chance = d => switch(d) {
+		const chance = d => { switch(d) {
 			case 0: return 0.75
 			case 1: return 0.50
 			case 2: return 0.25
-		}
+		}}
 
 		event.custom({
 			type: 'create:crushing',
