@@ -10,97 +10,76 @@ PlayerEvents.loggedIn(event => {
 })
 
 // ServerEvents.loaded(event => {
-//     const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
-//     console.log("List of all entity types:");
+
+//     const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
+//     const MobCategory = Java.loadClass("net.minecraft.world.entity.MobCategory")
+
+//     console.log("List of all creature entity types:")
+
 //     for (const entityType of BuiltInRegistries.ENTITY_TYPE) {
-//         console.log(BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString());
+//         if (entityType.getCategory() !== MobCategory.MISC) {
+//             console.log(BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString())
+//         }
 //     }
-// });
+
+// })
 
 ServerEvents.loaded(event => {
+    const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
+    const MobCategory = Java.loadClass("net.minecraft.world.entity.MobCategory");
+    const LootTable = Java.loadClass("net.minecraft.world.level.storage.loot.LootTable");
 
-    const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
-    const MobCategory = Java.loadClass("net.minecraft.world.entity.MobCategory")
+    const lootDataManager = event.server.getLootData();
 
-    console.log("List of all creature entity types:")
-
+    console.log("List of all creature entity types (1 = has loot, 0 = no loot):");
     for (const entityType of BuiltInRegistries.ENTITY_TYPE) {
         if (entityType.getCategory() !== MobCategory.MISC) {
-            console.log(BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString())
+            const lootTableLocation = entityType.getDefaultLootTable();
+            const lootTable = lootDataManager.get(lootTableLocation);
+            const hasLoot = lootTable !== LootTable.EMPTY;
+            const prefix = hasLoot ? "1" : "0";
+            const entityId = BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString();
+            console.log(`${prefix} ${entityId}`);
         }
     }
-
-})
+});
 
 // minecraft:allay
-// minecraft:area_effect_cloud
-// minecraft:armor_stand
-// minecraft:arrow
 // minecraft:axolotl
 // minecraft:bat
 // minecraft:bee
 // minecraft:blaze
-// minecraft:block_display
-// minecraft:boat
 // minecraft:camel
 // minecraft:cat
 // minecraft:cave_spider
-// minecraft:chest_boat
-// minecraft:chest_minecart
 // minecraft:chicken
 // minecraft:cod
-// minecraft:command_block_minecart
 // minecraft:cow
 // minecraft:creeper
 // minecraft:dolphin
 // minecraft:donkey
-// minecraft:dragon_fireball
 // minecraft:drowned
-// minecraft:egg
 // minecraft:elder_guardian
-// minecraft:end_crystal
 // minecraft:ender_dragon
-// minecraft:ender_pearl
 // minecraft:enderman
 // minecraft:endermite
 // minecraft:evoker
-// minecraft:evoker_fangs
-// minecraft:experience_bottle
-// minecraft:experience_orb
-// minecraft:eye_of_ender
-// minecraft:falling_block
-// minecraft:firework_rocket
 // minecraft:fox
 // minecraft:frog
-// minecraft:furnace_minecart
 // minecraft:ghast
 // minecraft:giant
-// minecraft:glow_item_frame
 // minecraft:glow_squid
 // minecraft:goat
 // minecraft:guardian
 // minecraft:hoglin
-// minecraft:hopper_minecart
 // minecraft:horse
 // minecraft:husk
 // minecraft:illusioner
-// minecraft:interaction
-// minecraft:iron_golem
-// minecraft:item
-// minecraft:item_display
-// minecraft:item_frame
-// minecraft:fireball
-// minecraft:leash_knot
-// minecraft:lightning_bolt
 // minecraft:llama
-// minecraft:llama_spit
 // minecraft:magma_cube
-// minecraft:marker
-// minecraft:minecart
 // minecraft:mooshroom
 // minecraft:mule
 // minecraft:ocelot
-// minecraft:painting
 // minecraft:panda
 // minecraft:parrot
 // minecraft:phantom
@@ -109,103 +88,46 @@ ServerEvents.loaded(event => {
 // minecraft:piglin_brute
 // minecraft:pillager
 // minecraft:polar_bear
-// minecraft:potion
 // minecraft:pufferfish
 // minecraft:rabbit
 // minecraft:ravager
 // minecraft:salmon
 // minecraft:sheep
 // minecraft:shulker
-// minecraft:shulker_bullet
 // minecraft:silverfish
 // minecraft:skeleton
 // minecraft:skeleton_horse
 // minecraft:slime
-// minecraft:small_fireball
 // minecraft:sniffer
-// minecraft:snow_golem
-// minecraft:snowball
-// minecraft:spawner_minecart
-// minecraft:spectral_arrow
 // minecraft:spider
 // minecraft:squid
 // minecraft:stray
 // minecraft:strider
 // minecraft:tadpole
-// minecraft:text_display
-// minecraft:tnt
-// minecraft:tnt_minecart
 // minecraft:trader_llama
-// minecraft:trident
 // minecraft:tropical_fish
 // minecraft:turtle
 // minecraft:vex
-// minecraft:villager
 // minecraft:vindicator
 // minecraft:wandering_trader
 // minecraft:warden
 // minecraft:witch
 // minecraft:wither
 // minecraft:wither_skeleton
-// minecraft:wither_skull
 // minecraft:wolf
 // minecraft:zoglin
 // minecraft:zombie
 // minecraft:zombie_horse
 // minecraft:zombie_villager
 // minecraft:zombified_piglin
-// minecraft:player
-// minecraft:fishing_bobber
-// ae2:tiny_tnt_primed
-// immersive_aircraft:gyrodyne
-// immersive_aircraft:biplane
-// immersive_aircraft:airship
-// immersive_aircraft:cargo_airship
-// immersive_aircraft:warship
-// immersive_aircraft:quadrocopter
-// immersive_aircraft:bamboo_hopper
-// immersive_aircraft:bullet
-// immersive_aircraft:tiny_tnt
-// sophisticatedbackpacks:everlasting_backpack_item
-// createdieselgenerators:chemical_sprayer_projectile
-// tconstruct:fancy_item_frame
-// tconstruct:glow_ball
-// tconstruct:efln_ball
-// tconstruct:quartz_shuriken
-// tconstruct:flint_shuriken
 // tconstruct:sky_slime
 // tconstruct:ender_slime
 // tconstruct:terracube
-// tconstruct:fluid_spit
-// tconstruct:indestructible_item
-// tconstruct:crystalshot
-// farmersdelight:rotten_tomato
-// create:contraption
-// create:stationary_contraption
-// create:gantry_contraption
-// create:carriage_contraption
-// create:super_glue
-// create:crafting_blueprint
-// create:potato_projectile
-// create:seat
-// create:package
-// mekanism:flame
-// mekanism:robit
-// mekaweapons:meka_arrow
 // mekanismadditions:baby_creeper
 // mekanismadditions:baby_enderman
 // mekanismadditions:baby_skeleton
 // mekanismadditions:baby_stray
 // mekanismadditions:baby_wither_skeleton
-// mekanismadditions:balloon
-// mekanismadditions:obsidian_tnt
-// ad_astra:air_vortex
-// ad_astra:tier_1_rover
-// ad_astra:tier_1_rocket
-// ad_astra:tier_2_rocket
-// ad_astra:tier_3_rocket
-// ad_astra:tier_4_rocket
-// ad_astra:lander
 // ad_astra:lunarian
 // ad_astra:corrupted_lunarian
 // ad_astra:star_crawler
@@ -218,27 +140,19 @@ ServerEvents.loaded(event => {
 // ad_astra:lunarian_wandering_trader
 // ad_astra:sulfur_creeper
 // ad_astra:glacian_ram
-// ad_astra:ice_spit
-// corpse:corpse
 // twilightforest:adherent
 // twilightforest:alpha_yeti
 // twilightforest:armored_giant
 // twilightforest:bighorn_sheep
 // twilightforest:blockchain_goblin
 // twilightforest:boar
-// twilightforest:boat
 // twilightforest:carminite_broodling
 // twilightforest:carminite_ghastguard
 // twilightforest:carminite_ghastling
 // twilightforest:carminite_golem
-// twilightforest:chain_block
-// twilightforest:charm_effect
-// twilightforest:chest_boat
-// twilightforest:cube_of_annihilation
 // twilightforest:death_tome
 // twilightforest:deer
 // twilightforest:dwarf_rabbit
-// twilightforest:falling_ice
 // twilightforest:fire_beetle
 // twilightforest:giant_miner
 // twilightforest:harbinger_cube
@@ -246,17 +160,11 @@ ServerEvents.loaded(event => {
 // twilightforest:helmet_crab
 // twilightforest:hostile_wolf
 // twilightforest:hydra
-// twilightforest:hydra_mortar
-// twilightforest:ice_arrow
-// twilightforest:thrown_ice
 // twilightforest:ice_crystal
-// twilightforest:ice_snowball
 // twilightforest:king_spider
 // twilightforest:knight_phantom
 // twilightforest:kobold
 // twilightforest:lich
-// twilightforest:lich_bolt
-// twilightforest:lich_bomb
 // twilightforest:lich_minion
 // twilightforest:lower_goblin_knight
 // twilightforest:loyal_zombie
@@ -264,46 +172,33 @@ ServerEvents.loaded(event => {
 // twilightforest:minoshroom
 // twilightforest:minotaur
 // twilightforest:mist_wolf
-// twilightforest:moonworm_shot
 // twilightforest:mosquito_swarm
 // twilightforest:naga
-// twilightforest:nature_bolt
-// twilightforest:magic_painting
 // twilightforest:penguin
 // twilightforest:pinch_beetle
 // twilightforest:plateau_boss
-// twilightforest:protection_box
 // twilightforest:quest_ram
 // twilightforest:raven
 // twilightforest:redcap
 // twilightforest:redcap_sapper
 // twilightforest:rising_zombie
 // twilightforest:roving_cube
-// twilightforest:seeker_arrow
 // twilightforest:skeleton_druid
-// twilightforest:slider
 // twilightforest:slime_beetle
-// twilightforest:slime_blob
 // twilightforest:snow_guardian
 // twilightforest:snow_queen
 // twilightforest:squirrel
 // twilightforest:stable_ice_core
 // twilightforest:swarm_spider
-// twilightforest:thrown_block
-// twilightforest:thrown_wep
 // twilightforest:tiny_bird
-// twilightforest:tome_bolt
 // twilightforest:towerwood_borer
 // twilightforest:troll
-// twilightforest:wand_bolt
 // twilightforest:unstable_ice_core
 // twilightforest:upper_goblin_knight
 // twilightforest:ur_ghast
 // twilightforest:winter_wolf
 // twilightforest:wraith
 // twilightforest:yeti
-// deeperdarker:boat
-// deeperdarker:chest_boat
 // deeperdarker:angler_fish
 // deeperdarker:sculk_centipede
 // deeperdarker:sculk_leech
@@ -324,18 +219,13 @@ ServerEvents.loaded(event => {
 // alexsmobs:sunbird
 // alexsmobs:gorilla
 // alexsmobs:crimson_mosquito
-// alexsmobs:mosquito_spit
 // alexsmobs:rattlesnake
 // alexsmobs:endergrade
 // alexsmobs:hammerhead_shark
-// alexsmobs:shark_tooth_arrow
 // alexsmobs:lobster
 // alexsmobs:komodo_dragon
 // alexsmobs:capuchin_monkey
-// alexsmobs:tossed_item
 // alexsmobs:centipede_head
-// alexsmobs:centipede_body
-// alexsmobs:centipede_tail
 // alexsmobs:warped_toad
 // alexsmobs:moose
 // alexsmobs:mimicube
@@ -343,7 +233,6 @@ ServerEvents.loaded(event => {
 // alexsmobs:blobfish
 // alexsmobs:seal
 // alexsmobs:cockroach
-// alexsmobs:cockroach_egg
 // alexsmobs:shoebill
 // alexsmobs:elephant
 // alexsmobs:soul_vulture
@@ -354,48 +243,35 @@ ServerEvents.loaded(event => {
 // alexsmobs:mungus
 // alexsmobs:mantis_shrimp
 // alexsmobs:guster
-// alexsmobs:sand_shot
-// alexsmobs:gust
 // alexsmobs:warped_mosco
-// alexsmobs:hemolymph
 // alexsmobs:straddler
 // alexsmobs:stradpole
-// alexsmobs:straddleboard
 // alexsmobs:emu
-// alexsmobs:emu_egg
 // alexsmobs:platypus
 // alexsmobs:dropbear
 // alexsmobs:tasmanian_devil
 // alexsmobs:kangaroo
 // alexsmobs:cachalot_whale
-// alexsmobs:cachalot_echo
 // alexsmobs:leafcutter_ant
 // alexsmobs:enderiophage
-// alexsmobs:enderiophage_rocket
 // alexsmobs:bald_eagle
 // alexsmobs:tiger
 // alexsmobs:tarantula_hawk
 // alexsmobs:void_worm
 // alexsmobs:void_worm_part
-// alexsmobs:void_worm_shot
-// alexsmobs:void_portal
 // alexsmobs:frilled_shark
 // alexsmobs:mimic_octopus
 // alexsmobs:seagull
 // alexsmobs:froststalker
-// alexsmobs:ice_shard
 // alexsmobs:tusklin
 // alexsmobs:laviathan
 // alexsmobs:cosmaw
 // alexsmobs:toucan
 // alexsmobs:maned_wolf
 // alexsmobs:anaconda
-// alexsmobs:anaconda_part
-// alexsmobs:vine_lasso
 // alexsmobs:anteater
 // alexsmobs:rocky_roller
 // alexsmobs:flutter
-// alexsmobs:pollen_ball
 // alexsmobs:gelada_monkey
 // alexsmobs:jerboa
 // alexsmobs:terrapin
@@ -404,7 +280,6 @@ ServerEvents.loaded(event => {
 // alexsmobs:bunfungus
 // alexsmobs:bison
 // alexsmobs:giant_squid
-// alexsmobs:squid_grapple
 // alexsmobs:sea_bear
 // alexsmobs:devils_hole_pupfish
 // alexsmobs:catfish
@@ -413,7 +288,6 @@ ServerEvents.loaded(event => {
 // alexsmobs:rain_frog
 // alexsmobs:potoo
 // alexsmobs:mudskipper
-// alexsmobs:mud_ball
 // alexsmobs:rhinoceros
 // alexsmobs:sugar_glider
 // alexsmobs:farseer
@@ -421,46 +295,11 @@ ServerEvents.loaded(event => {
 // alexsmobs:underminer
 // alexsmobs:murmur
 // alexsmobs:murmur_head
-// alexsmobs:tendon_segment
 // alexsmobs:skunk
-// alexsmobs:fart
 // alexsmobs:banana_slug
 // alexsmobs:blue_jay
 // alexsmobs:caiman
 // alexsmobs:triops
-// gateways:normal_gateway
-// gateways:endless_gateway
-// enderio:painted_sand
-// cofh_core:knife
-// cofh_core:electric_field
-// cofh_core:frost_field
-// thermal:rubberwood_boat
-// thermal:rubberwood_chest_boat
 // thermal:basalz
 // thermal:blizz
 // thermal:blitz
-// thermal:basalz_projectile
-// thermal:blizz_projectile
-// thermal:blitz_projectile
-// thermal:florb
-// thermal:explosive_grenade
-// thermal:ender_grenade
-// thermal:glowstone_grenade
-// thermal:redstone_grenade
-// thermal:slime_grenade
-// thermal:fire_grenade
-// thermal:ice_grenade
-// thermal:lightning_grenade
-// thermal:earth_grenade
-// thermal:phyto_grenade
-// thermal:nuke_grenade
-// thermal:ender_tnt
-// thermal:glowstone_tnt
-// thermal:redstone_tnt
-// thermal:slime_tnt
-// thermal:fire_tnt
-// thermal:ice_tnt
-// thermal:lightning_tnt
-// thermal:earth_tnt
-// thermal:phyto_tnt
-// thermal:nuke_tnt
