@@ -1,6 +1,7 @@
+{ 
   "replace": false,
   "values": [
     "platinum_mod:raw_platinum",
-    "platinum_mod:raw_platinum_block"   
+    "platinum_mod:raw_platinum_block"
   ]
 }
