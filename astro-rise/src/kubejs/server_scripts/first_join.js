@@ -81,9 +81,14 @@ PlayerEvents.loggedIn(event => {
 // })
 
 ServerEvents.loaded(event => {
-    const lootData = event.server.getLootData();
+
     const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
     const MobCategory = Java.loadClass("net.minecraft.world.entity.MobCategory");
+    const LootItemClass = Java.loadClass("net.minecraft.world.level.storage.loot.entries.LootItem");
+    
+    const lootData = event.server.getLootData();
+    const fieldItem = LootItemClass.getDeclaredField("item");
+    fieldItem.setAccessible(true);
 
     console.log("=== List of all creature entity loot items ===");
 
@@ -91,14 +96,15 @@ ServerEvents.loaded(event => {
     let lootTable
     let pools
     let entries
+    let entryClass
     let item
     let name
 
     for (const entityType of BuiltInRegistries.ENTITY_TYPE) {
         if (entityType.getCategory() !== MobCategory.MISC) {
+
             lootTableId = entityType.getDefaultLootTable();
             lootTable = lootData.getLootTable(lootTableId);
-
             if (!lootTable) continue;
 
             console.log("Entity:", BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString());
@@ -107,15 +113,19 @@ ServerEvents.loaded(event => {
             for (const pool of pools) {
                 entries = pool.entries || [];
                 for (const entry of entries) {
-                    if (entry.getClass().getSimpleName() === "LootItem") {
-                        item = entry.getItem();
-                        name = "unknown";
+                    entryClass = entry.getClass().getSimpleName();
+
+                    if (entryClass === "LootItem") {
                         try {
-                            name = item.getRegistryName().toString();
+                            item = fieldItem.get(entry);
+                            name = item ? item.toString() : "null";
+                            console.log(`  Loot item: ${name}`);
                         } catch (err) {
-                            name = item.toString();
+                            console.log("  [ERR]", err);
                         }
-                        console.log("  Loot item:", name);
+                    } else {
+                        // Autres types de loot : tables, alternatives, etc.
+                        console.log(`  (${entryClass})`);
                     }
                 }
             }
