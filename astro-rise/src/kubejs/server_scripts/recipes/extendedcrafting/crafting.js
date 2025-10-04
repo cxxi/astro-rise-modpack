@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
    		'enderio:grains_of_infinity'
 	])
 
-	// basic component
+	// component
 
 	event.remove({ id: 'extendedcrafting:basic_component' })
 
@@ -23,6 +23,23 @@ ServerEvents.recipes(event => {
 		'astro_rise:quartz_mechanism',
    		'2x minecraft:iron_ingot'
 	])
+
+	const componentTypes = [
+		'basic',
+		'advanced',
+		'elite',
+		'ultimate',
+		'redstone',
+		'enhanced_redstone',
+		'ender',
+		'enhanced_ender',
+		'crystaltine',
+		'the_ultimate'
+	]
+
+	componentTypes.forEach(type => {
+		event.replaceInput({ output: `extendedcrafting:${type}_component` }, 'extendedcrafting:black_iron_slate', 'astro_rise:base_component')
+	})
 
 	// tables
 
