@@ -40,7 +40,8 @@ ServerEvents.loaded(event => {
     for (const entityType of BuiltInRegistries.ENTITY_TYPE) {
         if (entityType.getCategory() !== MobCategory.MISC) {
 
-            console.log(BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString())
+            const entityKey = BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString()
+            console.log(entityKey)
 
             entityLootTableLocation = entityType.getDefaultLootTable()
             if (!entityLootTableLocation) continue
