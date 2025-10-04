@@ -28,17 +28,18 @@ ServerEvents.loaded(event => {
     const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
     const MobCategory = Java.loadClass("net.minecraft.world.entity.MobCategory");
     const LootTable = Java.loadClass("net.minecraft.world.level.storage.loot.LootTable");
-
+    
     const lootDataManager = event.server.getLootData();
+    const entityTypeRegistry = BuiltInRegistries.ENTITY_TYPE;
 
     console.log("List of all creature entity types (1 = has loot, 0 = no loot):");
-    for (const entityType of BuiltInRegistries.ENTITY_TYPE) {
+    for (const entityId of entityTypeRegistry.keySet()) {
+        const entityType = entityTypeRegistry.get(entityId);
         if (entityType.getCategory() !== MobCategory.MISC) {
             const lootTableLocation = entityType.getDefaultLootTable();
             const lootTable = lootDataManager.getLootTable(lootTableLocation);
             const hasLoot = lootTable !== LootTable.EMPTY;
             const prefix = hasLoot ? "1" : "0";
-            const entityId = BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString();
             console.log(`${prefix} ${entityId}`);
         }
     }
