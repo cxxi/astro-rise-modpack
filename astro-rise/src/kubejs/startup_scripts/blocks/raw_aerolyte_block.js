@@ -10,5 +10,5 @@ StartupEvents.registry('block', event => {
 	    .tagBlock("mineable/pickaxe")                    
 	    .tagBlock("minecraft:needs_diamond_tool")           
 	    .tagBlock("forge:storage_blocks")                      
-	    .tagBlock("forge:storage_blocks/aerolyte")
+	    .tagBlock("forge:storage_blocks/raw_aerolyte")
 })
