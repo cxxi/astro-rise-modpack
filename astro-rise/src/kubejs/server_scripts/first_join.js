@@ -33,25 +33,22 @@ ServerEvents.loaded(event => {
     // const LootTable = Java.loadClass("net.minecraft.world.level.storage.loot.LootTable")
     // const LootItem = Java.loadClass("net.minecraft.world.level.storage.loot.entries.LootItem")
 
-    const lootDataManager = event.server.getLootData();
+    let entityLootTableLocation
 
     console.log("List of all creature entity types:")
 
     for (const entityType of BuiltInRegistries.ENTITY_TYPE) {
         if (entityType.getCategory() !== MobCategory.MISC) {
 
-            // const lootTableLocation = entityType.getDefaultLootTable()
-            // const lootTable = lootDataManager.getLootTable(lootTableLocation)
-
             console.log(BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString())
 
-            const lootTableLocation = entityType.getDefaultLootTable()
-            if (!lootTableLocation) continue
+            entityLootTableLocation = entityType.getDefaultLootTable()
+            if (!entityLootTableLocation) continue
 
             try
             {
                 // Crée un ResourceLocation pour la loot table
-                const path = `data/${lootTableLocation.getNamespace()}/loot_tables/${lootTableLocation.getPath()}.json`
+                const path = `data/${entityLootTableLocation.getNamespace()}/loot_tables/${entityLootTableLocation.getPath()}.json`
                 const resource = event.server.getResourceManager().getResource(new ResourceLocation(path))
 
                 if (!resource) {
