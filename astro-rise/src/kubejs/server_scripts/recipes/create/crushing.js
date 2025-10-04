@@ -75,123 +75,6 @@ ServerEvents.recipes(event => {
 		]
 	})
 
-	// iron
-
-	event.remove({ id: 'create:crushing/raw_iron_block' })
-	event.remove({ id: 'create:crushing/raw_iron' })
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/iron' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_iron' },
-			{ item: 'create:crushed_raw_iron', chance: 0.75 }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'minecraft:raw_iron' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_iron' }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'minecraft:raw_iron_block' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_iron', count: 9 }
-		]
-	})
-
-	// copper
-
-	event.remove({ id: 'create:crushing/raw_copper_block' })
-	event.remove({ id: 'create:crushing/raw_copper' })
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/copper' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_copper' },
-			{ item: 'create:crushed_raw_copper', chance: 0.75 }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'minecraft:raw_copper' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_copper' }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'minecraft:raw_copper_block' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_copper', count: 9 }
-		]
-	})
-
-	// gold
-
-	event.remove({ id: 'create:crushing/raw_gold_block' })
-	event.remove({ id: 'create:crushing/raw_gold' })
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/gold' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_gold' },
-			{ item: 'create:crushed_raw_gold', chance: 0.75 }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'minecraft:raw_gold' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_gold' }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'minecraft:raw_gold_block' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_gold', count: 9 }
-		]
-	})
-
 	// redstone
 
 	event.custom({
@@ -262,240 +145,6 @@ ServerEvents.recipes(event => {
 		]
 	})
 
-	// zinc
-
-	event.remove({ id: 'create:crushing/raw_zinc_block' })
-	event.remove({ id: 'create:crushing/raw_zinc' })
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/zinc' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_zinc' },
-			{ item: 'create:crushed_raw_zinc', chance: 0.75 }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'create:raw_zinc' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_zinc' }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'create:raw_zinc_block' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_zinc', count: 9 }
-		]
-	})
-
-	// silver
-
-	event.remove({ id: 'create:crushing/raw_silver_block' })
-	event.remove({ id: 'create:crushing/raw_silver' })
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/silver' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_silver' },
-			{ item: 'create:crushed_raw_silver', chance: 0.75 }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'thermal:raw_silver' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_silver' }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'thermal:raw_silver_block' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_silver', count: 9 }
-		]
-	})
-
-	// nickel
-
-	event.remove({ id: 'create:crushing/raw_nickel_block' })
-	event.remove({ id: 'create:crushing/raw_nickel' })
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/nickel' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_nickel' },
-			{ item: 'create:crushed_raw_nickel', chance: 0.75 }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'thermal:raw_nickel' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_nickel' }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'thermal:raw_nickel_block' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_nickel', count: 9 }
-		]
-	})
-
-	// tin
-
-	event.remove({ id: 'create:crushing/raw_tin_block' })
-	event.remove({ id: 'create:crushing/raw_tin' })
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/tin' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_tin' },
-			{ item: 'create:crushed_raw_tin', chance: 0.75 }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'mekanism:raw_tin' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_tin' }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'mekanism:block_raw_tin' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_tin', count: 9 }
-		]
-	})
-
-	// lead
-
-	event.remove({ id: 'create:crushing/raw_lead_block' })
-	event.remove({ id: 'create:crushing/raw_lead' })
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/lead' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_lead' },
-			{ item: 'create:crushed_raw_lead', chance: 0.75 }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'mekanism:raw_lead' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_lead' }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'mekanism:block_raw_lead' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_lead', count: 9 }
-		]
-	})
-
-	// osmium
-
-	event.remove({ id: 'create:crushing/raw_osmium_block' })
-	event.remove({ id: 'create:crushing/raw_osmium' })
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/osmium' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_osmium' },
-			{ item: 'create:crushed_raw_osmium', chance: 0.75 }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'mekanism:raw_osmium' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_osmium' }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'mekanism:block_raw_osmium' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_osmium', count: 9 }
-		]
-	})
-
 	// fluorite
 
 	event.custom({
@@ -510,46 +159,7 @@ ServerEvents.recipes(event => {
 		]
 	})
 
-	// uranium
-
-	event.remove({ id: 'create:crushing/raw_uranium_block' })
-	event.remove({ id: 'create:crushing/raw_uranium' })
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/uranium' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_uranium' },
-			{ item: 'create:crushed_raw_uranium', chance: 0.75 }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'mekanism:raw_uranium' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_uranium' }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'mekanism:block_raw_uranium' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_uranium', count: 9 }
-		]
-	})
-
-	// apatite
+		// apatite
 
 	event.custom({
 		type: 'create:crushing',
@@ -633,81 +243,6 @@ ServerEvents.recipes(event => {
 		]
 	})
 
-	// aluminum
-
-	event.remove({ id: 'create:crushing/raw_aluminum_block' })
-	event.remove({ id: 'create:crushing/raw_aluminum' })
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/aluminum' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_aluminum' },
-			{ item: 'create:crushed_raw_aluminum', chance: 0.75 }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'simplemetals_aluminum:raw_aluminum' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_aluminum' }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'simplemetals_aluminum:raw_aluminum_block' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_aluminum', count: 9 }
-		]
-	})
-
-	// platinum
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/platinum' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_platinum' },
-			{ item: 'create:crushed_raw_platinum', chance: 0.75 }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'platinum_mod:raw_platinum' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_platinum' }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'platinum_mod:raw_platinum_block' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create:crushed_raw_platinum', count: 9 }
-		]
-	})
-
 	// ice shard
 
 	event.custom({
@@ -722,193 +257,67 @@ ServerEvents.recipes(event => {
 		]
 	})
 
-	// desh
+	global.ORES.forEach(([ns, ore]) => {
 
-	event.remove({ id: 'create_ad_astra_compat:crushing/desh/raw_desh_ore' })
-	event.remove({ id: 'create_ad_astra_compat:crushing/desh/raw_desh_block' })
+		let crushedOre
 
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/desh' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create_ad_astra_compat:crushed_desh_ore' },
-			{ item: 'create_ad_astra_compat:crushed_desh_ore', chance: 0.75 }
-		]
-	})
+		if (ns === 'ad_astra') {
 
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'ad_astra:raw_desh' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create_ad_astra_compat:crushed_desh_ore' }
-		]
-	})
+			event.remove({ id: `create_ad_astra_compat:crushing/${ore}/raw_${ore}_ore` })
+			event.remove({ id: `create_ad_astra_compat:crushing/${ore}/raw_${ore}_block` })
 
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'ad_astra:raw_desh_block' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create_ad_astra_compat:crushed_desh_ore', count: 9 }
-		]
-	})
+			crushedOre = `create_ad_astra_compat:crushed_${ore}_ore`
 
-	// ostrum
+		} else if (['astro_rise', 'tconstruct'].includes(ns)) {
 
-	event.remove({ id: 'create_ad_astra_compat:crushing/ostrum/raw_ostrum_ore' })
-	event.remove({ id: 'create_ad_astra_compat:crushing/ostrum/raw_ostrum_block' })
+			crushedOre = `astro_rise:crushed_raw_${ore}`
 
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/ostrum' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create_ad_astra_compat:crushed_ostrum_ore' },
-			{ item: 'create_ad_astra_compat:crushed_ostrum_ore', chance: 0.75 }
-		]
-	})
+		} else {
 
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'ad_astra:raw_ostrum' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create_ad_astra_compat:crushed_ostrum_ore' }
-		]
-	})
+			event.remove({ id: `create:crushing/raw_${ore}_block` })
+			event.remove({ id: `create:crushing/raw_${ore}` })
 
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'ad_astra:raw_ostrum_block' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create_ad_astra_compat:crushed_ostrum_ore', count: 9 }
-		]
-	})
+			crushedOre = `create:crushed_raw_${ore}`
+		}
 
-	// calorite
+		event.custom({
+			type: 'create:crushing',
+			ingredients: [
+				{ tag : `forge:ores/${ore}` }
+			],
+			processingTime: 350,
+			results: [
+				{ item: crushedOre },
+				{ item: crushedOre, chance: 0.75 }
+			]
+		})
 
-	event.remove({ id: 'create_ad_astra_compat:crushing/calorite/raw_calorite_ore' })
-	event.remove({ id: 'create_ad_astra_compat:crushing/calorite/raw_calorite_block' })
+		event.custom({
+			type: 'create:crushing',
+			ingredients: [
+				{ item : `${ns}:raw_${ore}` }
+			],
+			processingTime: 350,
+			results: [
+				{ item: crushedOre }
+			]
+		})
 
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/calorite' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create_ad_astra_compat:crushed_calorite_ore' },
-			{ item: 'create_ad_astra_compat:crushed_calorite_ore', chance: 0.75 }
-		]
-	})
+		event.custom({
+			type: 'create:crushing',
+			ingredients: [
+				{ 
+					item: ns === 'mekanism' 
+						? `${ns}:block_raw_${ore}`
+						: `${ns}:raw_${ore}_block`
+				}
+			],
+			processingTime: 350,
+			results: [
+				{ item: crushedOre, count: 9 }
+			]
+		})
 
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'ad_astra:raw_calorite' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create_ad_astra_compat:crushed_calorite_ore' }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'ad_astra:raw_calorite_block' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'create_ad_astra_compat:crushed_calorite_ore', count: 9 }
-		]
-	})
-
-	// aerolyte
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/aerolyte' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'astro_rise:crushed_raw_aerolyte' },
-			{ item: 'astro_rise:crushed_raw_aerolyte', chance: 0.75 }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'astro_rise:raw_aerolyte' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'astro_rise:crushed_raw_aerolyte' }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'astro_rise:raw_aerolyte_block' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'astro_rise:crushed_raw_aerolyte', count: 9 }
-		]
-	})
-
-	// cobalt
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ tag : 'forge:ores/cobalt' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'astro_rise:crushed_raw_cobalt' },
-			{ item: 'astro_rise:crushed_raw_cobalt', chance: 0.75 }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'tconstruct:raw_cobalt' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'astro_rise:crushed_raw_cobalt' }
-		]
-	})
-
-	event.custom({
-		type: 'create:crushing',
-		ingredients: [
-			{ item : 'tconstruct:raw_cobalt_block' }
-		],
-		processingTime: 350,
-		results: [
-			{ item: 'astro_rise:crushed_raw_cobalt', count: 9 }
-		]
 	})
 
 })

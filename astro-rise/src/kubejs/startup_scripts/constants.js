@@ -19,21 +19,21 @@ global.COLORS = [
 ]
 
 global.ORES = [
-	'iron',
-	'copper',
-	'gold',
-	'tin',
-	'lead',
-	'osmium',
-	'uranium',
-	'zinc',
-	'cobalt',
-	'silver',
-	'nickel',
-	'aluminum',
-	'platinum',
-	'desh',
-	'ostrum',
-	'calorite',
-	'aerolyte'
+	['minecraft', 'iron'],
+	['minecraft', 'copper'],
+	['minecraft', 'gold'],
+	['create', 'zinc'],
+	['thermal', 'silver'],
+	['thermal', 'nickel'],
+	['mekanism', 'tin'],
+	['mekanism', 'lead'],
+	['mekanism', 'osmium'],
+	['mekanism', 'uranium'],
+	['simplemetals_aluminum', 'aluminum'],
+	['platinum_mod', 'platinum'],
+	['ad_astra', 'desh'],
+	['ad_astra', 'ostrum'],
+	['ad_astra', 'calorite'],
+	['astro_rise', 'aerolyte'],
+	['tconstruct', 'cobalt']
 ]
