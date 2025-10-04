@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
 	// reversible ores
 
 	global.reversibleCraft(event, 'minecraft:andesite', '4x astro_rise:andesite_nugget')
-   	global.reversibleCraft(event, 'platinum_mod:platinum', '9x astro_rise:platinum_nugget')
+   	// global.reversibleCraft(event, 'platinum_mod:platinum', '9x astro_rise:platinum_nugget')
    	global.reversibleCraft(event, 'astro_rise:ingot_aerolyte', '9x astro_rise:aerolyte_nugget')
    	global.reversibleCraft(event, 'astro_rise:aerolyte_block', '9x astro_rise:ingot_aerolyte')
    	global.reversibleCraft(event, 'ad_astra:etrium_ingot', '9x ad_astra:etrium_nugget')
