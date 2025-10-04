@@ -2,22 +2,25 @@ ServerEvents.recipes(event => {
 
 	global.CUSTOM_SLURRIES.forEach(slurry => {
 
-		event.custom({
-			type: 'mekanism:washing',
-			fluidInput: {
-				amount: 5,
-				ingredient: { tag: 'minecraft:water' }
-				// tag: 'minecraft:water'
-			},
-			output: {
-				amount: 1,
-				slurry: `astro_rise:clean_${slurry}`
-			},
-			slurryInput: {
-				amount: 1,
-				slurry: `astro_rise:dirty_${slurry}`
-			}
-		})
+		const recipe = {
+            type: 'mekanism:washing',
+            slurryInput: {
+                amount: 1,
+                slurry: `astro_rise:dirty_${slurry}`
+            },
+            output: {
+                amount: 1,
+                slurry: `astro_rise:clean_${slurry}`
+            },
+            fluidInput: {
+                amount: 5,
+                tag: 'minecraft:water'
+            }
+        }
+
+        console.log(JSON.stringify(recipe, null, 2))
+
+        event.custom(recipe)
 
 	})
 
