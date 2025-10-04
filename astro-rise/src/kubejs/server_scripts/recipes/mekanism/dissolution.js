@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
 			output: {
 				amount: 6000,
 				chemicalType: 'slurry',
-				slurry: `${ns}:dirty_${slurry}`
+				slurry: `astro_rise:dirty_${slurry}`
 			}
 		})
 
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
 			output: {
 				amount: 2000,
 				chemicalType: 'slurry',
-				slurry: `${ns}:dirty_${slurry}`
+				slurry: `astro_rise:dirty_${slurry}`
 			}
 		})
 
