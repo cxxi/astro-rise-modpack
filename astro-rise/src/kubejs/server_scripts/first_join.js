@@ -28,8 +28,10 @@ ServerEvents.loaded(event => {
 
     const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
     const MobCategory = Java.loadClass("net.minecraft.world.entity.MobCategory")
-    const LootTable = Java.loadClass("net.minecraft.world.level.storage.loot.LootTable")
-    const LootItem = Java.loadClass("net.minecraft.world.level.storage.loot.entries.LootItem")
+    const ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation")
+    const JsonParser = Java.loadClass("com.google.gson.JsonParser")
+    // const LootTable = Java.loadClass("net.minecraft.world.level.storage.loot.LootTable")
+    // const LootItem = Java.loadClass("net.minecraft.world.level.storage.loot.entries.LootItem")
 
     const lootDataManager = event.server.getLootData();
 
@@ -38,16 +40,37 @@ ServerEvents.loaded(event => {
     for (const entityType of BuiltInRegistries.ENTITY_TYPE) {
         if (entityType.getCategory() !== MobCategory.MISC) {
 
-            const lootTableLocation = entityType.getDefaultLootTable()
-            const lootTable = lootDataManager.getLootTable(lootTableLocation)
+            // const lootTableLocation = entityType.getDefaultLootTable()
+            // const lootTable = lootDataManager.getLootTable(lootTableLocation)
 
             console.log(BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString())
 
-            // if (lootTable !== LootTable.EMPTY) {
-            //     const pools = lootTable.pools.toArray();
-            // }
+            const lootTableLocation = entityType.getDefaultLootTable()
+            if (!lootTableLocation) continue
 
-            console.log(lootTable.toString(), lootTable.pools.toString(), lootTable.pools.toArray())
+            try
+            {
+                // Crée un ResourceLocation pour la loot table
+                const path = `data/${lootTableLocation.getNamespace()}/loot_tables/${lootTableLocation.getPath()}.json`
+                const resource = event.server.getResourceManager().getResource(new ResourceLocation(path))
+
+                if (!resource) {
+                    console.log(`${entityKey} -> loot table not found`)
+                    continue
+                }
+
+                // Lit le contenu JSON
+                const reader = new java.io.InputStreamReader(resource.getInputStream())
+                const json = JsonParser.parseReader(reader).getAsJsonObject()
+                reader.close()
+
+                console.log(`Loot table for ${entityKey}:`)
+                console.log(JSON.stringify(json, null, 2)) // JSON lisible dans la console
+            } catch (e) {
+                console.log(`Failed to read loot table for ${entityKey}: ${e}`)
+            }
+
+            // console.log(lootTable.toString(), lootTable.pools.toString(), lootTable.pools.toArray())
         }
     }
 
