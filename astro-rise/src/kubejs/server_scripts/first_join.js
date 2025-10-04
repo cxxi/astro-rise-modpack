@@ -35,7 +35,7 @@ ServerEvents.loaded(event => {
     for (const entityType of BuiltInRegistries.ENTITY_TYPE) {
         if (entityType.getCategory() !== MobCategory.MISC) {
             const lootTableLocation = entityType.getDefaultLootTable();
-            const lootTable = lootDataManager.get(lootTableLocation);
+            const lootTable = lootDataManager.getLootTable(lootTableLocation);
             const hasLoot = lootTable !== LootTable.EMPTY;
             const prefix = hasLoot ? "1" : "0";
             const entityId = BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString();
