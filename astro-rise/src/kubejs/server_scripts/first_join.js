@@ -43,25 +43,11 @@ ServerEvents.loaded(event => {
 
             console.log(BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString())
 
-            let firstItemId = 'minecraft:air'
-            let found = false
+            // if (lootTable !== LootTable.EMPTY) {
+            //     const pools = lootTable.pools.toArray();
+            // }
 
-            if (lootTable !== LootTable.EMPTY) {
-                for (const pool of lootTable.pools) {
-                    for (const entry of pool.entries) {
-                        if (entry instanceof LootItem) {
-                            const itemHolder = entry.item
-                            const item = itemHolder.value()
-                            firstItemId = BuiltInRegistries.ITEM.getKey(item).toString()
-                            found = true
-                            break
-                        }
-                    }
-                    if (found) break
-                }
-            }
-
-            console.log(firstItemId)
+            console.log(lootTable.pools.toArray().join(','))
         }
     }
 
