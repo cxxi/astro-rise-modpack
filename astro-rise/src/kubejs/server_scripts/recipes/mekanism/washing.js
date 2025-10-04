@@ -1,8 +1,40 @@
 ServerEvents.recipes(event => {
 
+	const mekanismSlurries = [
+		'iron',
+		'copper',
+		'gold',
+		'tin',
+		'lead',
+		'osmium',
+		'uranium'
+	]
+
+	mekanismSlurries.forEach(slurry => {
+
+		event.remove({ id: `mekanism:processing/${slurry}/slurry/clean` })
+
+		event.custom({
+            type: 'mekanism:washing',
+            slurryInput: {
+                amount: 1,
+                slurry: `mekanism:dirty_${slurry}`
+            },
+            output: {
+                amount: 1,
+                slurry: `mekanism:clean_${slurry}`
+            },
+            fluidInput: {
+                amount: 5,
+                fluid: 'minecraft:water'
+            }
+        })
+
+	})
+
 	global.CUSTOM_SLURRIES.forEach(slurry => {
 
-		const recipe = {
+		event.custom({
             type: 'mekanism:washing',
             slurryInput: {
                 amount: 1,
@@ -16,11 +48,7 @@ ServerEvents.recipes(event => {
                 amount: 5,
                 fluid: 'minecraft:water'
             }
-        }
-
-        console.log(JSON.stringify(recipe, null, 2))
-
-        event.custom(recipe)
+        })
 
 	})
 

@@ -55,6 +55,9 @@ niter
 sulfur
 ice_shard
 
+```js
+console.log(JSON.stringify(recipe, null, 2))
+```
 
 ```js
 Ingredient.of({tag: 'minecraft:flowers'}).getItemIds().forEach(flower => {
