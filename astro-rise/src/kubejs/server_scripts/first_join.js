@@ -33,7 +33,9 @@ ServerEvents.loaded(event => {
     const entityTypeRegistry = BuiltInRegistries.ENTITY_TYPE;
 
     console.log("List of all creature entity types (1 = has loot, 0 = no loot):");
-    for (const entityId of entityTypeRegistry.keySet()) {
+    const iterator = entityTypeRegistry.keySet().iterator();
+    while (iterator.hasNext()) {
+        const entityId = iterator.next();
         const entityType = entityTypeRegistry.get(entityId);
         if (entityType.getCategory() !== MobCategory.MISC) {
             const lootTableLocation = entityType.getDefaultLootTable();
