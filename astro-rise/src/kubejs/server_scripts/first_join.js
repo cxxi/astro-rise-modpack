@@ -9,17 +9,10 @@ PlayerEvents.loggedIn(event => {
     
 })
 
-ServerEvents.load(event => {
-
-    const Registries = Java.type("net.minecraft.core.registries.Registries");
-    const RegistryAccess = event.server.registryAccess();
-    const entityRegistryOptional = RegistryAccess.registry(Registries.ENTITY_TYPE);
-
-    if (entityRegistryOptional.isPresent()) {
-        const entityRegistry = entityRegistryOptional.get();
-        entityRegistry.forEach(entityType => {
-            console.log(entityType.getDescriptionId());
-        });
-    }
-    
-});
+ServerEvents.loaded(event => {
+    const entityTypes = event.server.registryAccess().registry("minecraft:entity_type").get()
+    console.log("List of all entity types:")
+    entityTypes.forEach(entityType => {
+        console.log(entityType.arch$registryName())
+    })
+})
