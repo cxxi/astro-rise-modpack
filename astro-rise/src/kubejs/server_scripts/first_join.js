@@ -47,7 +47,7 @@ ServerEvents.loaded(event => {
             //     const pools = lootTable.pools.toArray();
             // }
 
-            console.log(lootTable.pools.toArray().join(','))
+            console.log(lootTable.toString(), lootTable.pools.toString(), lootTable.pools.toArray())
         }
     }
 
