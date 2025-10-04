@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
 			},
 			output: {
 				count: 4,
-				item: `astro_rise:shard_${ore}`
+				item: `mekanism:shard_${ore}`
 			}
 		})
 
