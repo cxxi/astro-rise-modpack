@@ -89,6 +89,7 @@ ServerEvents.loaded(event => {
 
     let lootTableId
     let lootTable
+    let pools
     let entries
     let item
     let name
