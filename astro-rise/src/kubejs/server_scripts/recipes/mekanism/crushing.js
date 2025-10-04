@@ -41,17 +41,17 @@ ServerEvents.recipes(event => {
 
 	global.CUSTOM_SLURRIES.forEach(slurry => {
 
-		// event.custom({
-		// 	type: 'mekanism:crushing',
-		// 	input: {
-		// 		ingredient: {
-		// 			tag: `mekanism:clumps/${slurry}`
-		// 		}
-		// 	},
-		// 	output: {
-		// 		item: `astro_rise:dirty_dust_${slurry}`
-		// 	}
-		// })
+		event.custom({
+			type: 'mekanism:crushing',
+			input: {
+				ingredient: {
+					tag: `mekanism:clumps/${slurry}`
+				}
+			},
+			output: {
+				item: `astro_rise:dirty_dust_${slurry}`
+			}
+		})
 
 	})
 })
