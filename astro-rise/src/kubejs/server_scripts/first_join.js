@@ -35,6 +35,10 @@ ServerEvents.loaded(event => {
 
     let entityLootTableLocation
     let entityKey
+    let path
+    let resource
+    let reader
+    let json
 
     console.log("List of all creature entity types:")
 
@@ -50,8 +54,8 @@ ServerEvents.loaded(event => {
             try
             {
                 // Crée un ResourceLocation pour la loot table
-                const path = `data/${entityLootTableLocation.getNamespace()}/loot_tables/${entityLootTableLocation.getPath()}.json`
-                const resource = event.server.getResourceManager().getResource(new ResourceLocation(path))
+                path = `data/${entityLootTableLocation.getNamespace()}/loot_tables/${entityLootTableLocation.getPath()}.json`
+                resource = event.server.getResourceManager().getResource(new ResourceLocation(path))
 
                 if (!resource) {
                     console.log(`${entityKey} -> loot table not found`)
@@ -59,8 +63,8 @@ ServerEvents.loaded(event => {
                 }
 
                 // Lit le contenu JSON
-                const reader = new java.io.InputStreamReader(resource.getInputStream())
-                const json = JsonParser.parseReader(reader).getAsJsonObject()
+                reader = new java.io.InputStreamReader(resource.getInputStream())
+                json = JsonParser.parseReader(reader).getAsJsonObject()
                 reader.close()
 
                 console.log(`Loot table for ${entityKey}:`)
