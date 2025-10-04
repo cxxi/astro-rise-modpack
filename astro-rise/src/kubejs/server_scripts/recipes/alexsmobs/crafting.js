@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
 
 	// warped_mixture
 
-	event.shaped('alexsmobs:warped_mixture', [
+	global.craft(event, 'alexsmobs:warped_mixture', [
 	    'ABA', 
 	    'CFD',
 	    'AEA'  

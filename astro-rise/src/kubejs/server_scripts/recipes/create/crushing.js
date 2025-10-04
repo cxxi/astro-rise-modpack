@@ -63,24 +63,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ type: 'create:crushing',  input: /.*_ore/ })
 
-	const oreGems = [
-		['minecraft', 'coal', 0],
-		['minecraft', 'redstone', 1],
-		['minecraft', 'lapis_lazuli', 1],
-		['minecraft', 'quartz', 1],
-		['minecraft', 'emerald', 2],
-		['minecraft', 'diamond', 2],
-		['mekanism', 'fluorite', 2],
-		['thermal', 'apatite', 2],
-		['thermal', 'cinnabar', 2],
-		['thermal', 'sapphire', 2],
-		['thermal', 'ruby', 2],
-		['thermal', 'niter', 2],
-		['thermal', 'sulfur', 2],
-		['ad_astra', 'ice_shard', 2]
-	]
-
-	oreGems.forEach(([ns, gem, difficulty]) => {
+	global.ORE_GEMS.forEach(([ns, gem, difficulty]) => {
 
 		const processingTime = d => { switch(d) {
 			case 0: return 150
