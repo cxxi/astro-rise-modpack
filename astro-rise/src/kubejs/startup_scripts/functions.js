@@ -49,3 +49,7 @@ global.withAllCast = (event, recipe, castType) => {
 
     event.custom(recipe)
 }
+
+StartupEvents.registry('entity_type', event => {
+    console.log(event.id)
+})
