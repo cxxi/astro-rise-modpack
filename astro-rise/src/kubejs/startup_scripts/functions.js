@@ -52,14 +52,16 @@ global.withAllCast = (event, recipe, castType) => {
 
 
 
-const { Registries } = JavaImporter(
-  net.minecraft.core.registries.Registries,
-  net.minecraft.world.entity.EntityType
-);
-
 StartupEvents.serverStarted(event => {
-  const registry = event.server.registryAccess().registry(Registries.ENTITY_TYPE).get();
-  registry.forEach((entityType) => {
-    console.log(entityType.getDescriptionId())  // par ex. "entity.minecraft.zombie"
-  });
+    // On importe les classes Java nécessaires
+    const Registries = Java.type("net.minecraft.core.registries.Registries");
+    const RegistryAccess = event.server.registryAccess();
+    const entityRegistryOptional = RegistryAccess.registry(Registries.ENTITY_TYPE);
+
+    if (entityRegistryOptional.isPresent()) {
+        const entityRegistry = entityRegistryOptional.get();
+        entityRegistry.forEach(entityType => {
+            console.log(entityType.getDescriptionId());
+        });
+    }
 });
