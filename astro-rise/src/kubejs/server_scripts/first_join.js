@@ -81,35 +81,40 @@ PlayerEvents.loggedIn(event => {
 // })
 
 ServerEvents.loaded(event => {
-    const lootData = event.server.getLootData()
-    const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
-    const MobCategory = Java.loadClass("net.minecraft.world.entity.MobCategory")
+    const lootData = event.server.getLootData();
+    const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
+    const MobCategory = Java.loadClass("net.minecraft.world.entity.MobCategory");
 
-    console.log("=== List of all creature entity loot items ===")
+    console.log("=== List of all creature entity loot items ===");
 
     for (const entityType of BuiltInRegistries.ENTITY_TYPE) {
-        if (entityType.getCategory() !== MobCategory.MISC) { // ignore les trucs non-créatures
-            const lootTableId = entityType.getDefaultLootTable()
-            const lootTable = lootData.getLootTable(lootTableId)
+        if (entityType.getCategory() !== MobCategory.MISC) {
+            const lootTableId = entityType.getDefaultLootTable();
+            const lootTable = lootData.getLootTable(lootTableId);
 
-            if (!lootTable) continue
+            if (!lootTable) continue;
 
-            console.log("Entity:", BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString())
-            
-            // Parcourir chaque pool
-            for (const pool of lootTable.pools) {
-                // Parcourir chaque entrée du pool
-                for (const entry of pool.entries) {
-                    // Si c'est un LootItem
+            console.log("Entity:", BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString());
+
+            const pools = lootTable.pools || [];
+            for (const pool of pools) {
+                const entries = pool.entries || [];
+                for (const entry of entries) {
                     if (entry.getClass().getSimpleName() === "LootItem") {
-                        const item = entry.getItem()
-                        console.log("  Loot item:", item.getRegistryName?.() ?? item.toString())
+                        const item = entry.getItem();
+                        let name = "unknown";
+                        try {
+                            name = item.getRegistryName().toString();
+                        } catch (err) {
+                            name = item.toString();
+                        }
+                        console.log("  Loot item:", name);
                     }
                 }
             }
         }
     }
-})
+});
 
 // ServerEvents.loaded(event => {
 //     const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
