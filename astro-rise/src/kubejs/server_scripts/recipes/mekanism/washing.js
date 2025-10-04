@@ -14,7 +14,9 @@ ServerEvents.recipes(event => {
             },
             fluidInput: {
                 amount: 5,
-                tag: 'minecraft:water'
+                ingredient: {
+                    tag: 'minecraft:water'
+                }
             }
         }
 
