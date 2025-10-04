@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'extendedcrafting:black_iron_ingot' })
 
-	event.shapeless('extendedcrafting:black_iron_ingot', [
+	global.craft(event, 'extendedcrafting:black_iron_ingot', [
 		'minecraft:iron_ingot',
 		'twilightforest:knightmetal_ingot',
    		'enderio:grains_of_infinity'
@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'extendedcrafting:basic_component' })
 
-	event.shapeless('extendedcrafting:basic_component', [
+	global.craft(event, 'extendedcrafting:basic_component', [
 		'extendedcrafting:black_iron_slate',
 		'astro_rise:quartz_mechanism',
    		'2x minecraft:iron_ingot'
@@ -37,9 +37,7 @@ ServerEvents.recipes(event => {
 		' AGA '
 	]
 
-	// basic
-
-	const basicTableKeys = {
+	global.craft(event, 'extendedcrafting:basic_table', tablePatterns, {
 		A: 'extendedcrafting:basic_component',
 		B: 'astro_rise:earth_mechanism',
 		C: 'extendedcrafting:basic_catalyst',
@@ -47,24 +45,9 @@ ServerEvents.recipes(event => {
 		E: 'astro_rise:sky_mechanism',
 		F: 'astro_rise:ichor_mechanism',
 		G: 'astro_rise:ender_mechanism'
-	}
-
-	event.recipes.create.mechanical_crafting(
-		'extendedcrafting:basic_table', 
-		tablePatterns, 
-		basicTableKeys
-	)
-
-	event.custom({
-		type: 'extendedcrafting:shaped_table',
-		pattern: tablePatterns,
-		key: basicTableKeys,
-		result: { item: 'extendedcrafting:basic_table' }
 	})
 
-	// advanced
-
-	const advancedTableKeys = {
+	global.craft(event, 'extendedcrafting:advanced_table', tablePatterns, {
 		A: 'extendedcrafting:advanced_component',
 		B: 'astro_rise:earth_steel_mechanism',
 		C: 'extendedcrafting:advanced_catalyst',
@@ -72,19 +55,6 @@ ServerEvents.recipes(event => {
 		E: 'astro_rise:sky_steel_mechanism',
 		F: 'astro_rise:ichor_steel_mechanism',
 		G: 'astro_rise:ender_steel_mechanism'
-	}
-
-	event.recipes.create.mechanical_crafting(
-		'extendedcrafting:advanced_table', 
-		tablePatterns, 
-		advancedTableKeys
-	)
-
-	event.custom({
-		type: 'extendedcrafting:shaped_table',
-		pattern: tablePatterns,
-		key: advancedTableKeys,
-		result: { item: 'extendedcrafting:advanced_table' }
 	})
 
 })

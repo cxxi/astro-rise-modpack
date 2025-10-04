@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+	// TODO : REFACT
+
 	const adAstraMetalMelting = (event, ns, metal) => {
 
 		const recipeTypes = [
@@ -154,7 +156,7 @@ ServerEvents.recipes(event => {
 	    	item: 'minecraft:sculk' 
 		},
 	    result: {
-		    amount: 1000,
+		    amount: 400,
 		    fluid: 'astro_rise:liquid_sculk'
 		},
 	    temperature: 800,

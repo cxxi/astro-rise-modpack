@@ -1,16 +1,24 @@
 ServerEvents.recipes(event => {
 
+	// electrum_ingot
+
+	event.remove({ id: 'crateaddition:crafting/electrum_ingot' })
+
+	// connector
+
 	event.remove({ id: 'createaddition:crafting/small_connector_copper' })
 
-	event.shapeless('3x createaddition:connector', [
+	global.craft(event, '3x createaddition:connector', [
    		'createaddition:copper_rod',
    		'create:andesite_alloy',
    		'thermal:cinnabar'
    	])
 
+   	// large_connector
+
    	event.remove({ id: 'createaddition:crafting/large_connector_gold' })
 
-	event.shapeless('2x createaddition:large_connector', [
+	global.craft(event, '2x createaddition:large_connector', [
    		'createaddition:gold_rod',
    		'create:andesite_alloy',
    		'create:andesite_alloy',
@@ -19,16 +27,18 @@ ServerEvents.recipes(event => {
 
    	event.remove({ id: 'createaddition:crafting/large_connector_electrum' })
 
-	event.shapeless('2x createaddition:large_connector', [
+	global.craft(event, '2x createaddition:large_connector', [
    		'createaddition:electrum_rod',
    		'create:andesite_alloy',
    		'create:andesite_alloy',
    		'thermal:cinnabar'
    	])
 
+   	// capacitor
+
    	event.remove({ id: 'createaddition:crafting/capacitor_1' })
 
-	event.shaped('createaddition:capacitor', [
+	global.craft(event, 'createaddition:capacitor', [
 	    ' A ', 
 	    ' B ',
 	    'CDC'  
@@ -41,7 +51,7 @@ ServerEvents.recipes(event => {
 
    	event.remove({ id: 'createaddition:crafting/capacitor_2' })
 
-	event.shaped('createaddition:capacitor', [
+	global.craft(event, 'createaddition:capacitor', [
 	    ' A ', 
 	    ' B ',
 	    'CDC'  
@@ -51,6 +61,8 @@ ServerEvents.recipes(event => {
 	    C: 'thermal:cinnabar',
 	    D: 'minecraft:redstone_torch'
 	})
+
+	// electric_motor
 
 	event.remove({ id: 'createaddition:mechanical_crafting/electric_motor' })
 
@@ -67,6 +79,8 @@ ServerEvents.recipes(event => {
 	    E: 'createaddition:capacitor'
 	})
 
+	// alternator
+
 	event.remove({ id: 'createaddition:mechanical_crafting/alternator' })
 
 	global.craft(event, 'createaddition:alternator', [
@@ -81,6 +95,8 @@ ServerEvents.recipes(event => {
 	    D: 'astro_rise:sky_mechanism',
 	    E: 'createaddition:capacitor'
 	})
+
+	// tesla_coil
 
 	event.remove({ id: 'createaddition:mechanical_crafting/tesla_coil' })
 

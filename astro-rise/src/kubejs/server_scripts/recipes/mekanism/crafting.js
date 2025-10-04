@@ -1,12 +1,10 @@
 ServerEvents.recipes(event => {
 
-	event.remove({ id: 'mekanism:crushing/venus_sandstone_to_venus_sand' })
-
 	// metallurgic_infuser
 
 	event.remove({ id: 'mekanism:metallurgic_infuser' })
 
-	event.shaped('mekanism:metallurgic_infuser', [
+	global.craft(event, 'mekanism:metallurgic_infuser', [
 	    'ABA', 
 	    'CDC',
 	    'AEA'  
@@ -22,7 +20,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'mekanismgenerators:generator/heat' })
 
-	event.shaped('mekanismgenerators:heat_generator', [
+	global.craft(event, 'mekanismgenerators:heat_generator', [
 		'AAA', 
 	    'BCB',
 	    'DED' 
@@ -38,7 +36,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'mekanism:fluid_tank/basic' })
 
-	event.shaped('mekanism:basic_fluid_tank', [
+	global.craft(event, 'mekanism:basic_fluid_tank', [
 		'ABA', 
 	    'BCB',
 	    'ABA' 
@@ -52,7 +50,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'mekanism:chemical_tank/basic' })
 
-	event.shaped('mekanism:basic_chemical_tank', [
+	global.craft(event, 'mekanism:basic_chemical_tank', [
 		'ABA', 
 	    'B B',
 	    'ABA' 
@@ -65,7 +63,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'mekanism:transmitter/universal_cable/basic' })
 
-	event.shaped('mekanism:basic_universal_cable', [
+	global.craft(event, 'mekanism:basic_universal_cable', [
 		'   ', 
 	    'BAB',
 	    '   ' 
@@ -78,7 +76,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'mekanism:transmitter/mechanical_pipe/basic' })
 
-	event.shaped('mekanism:basic_mechanical_pipe', [
+	global.craft(event, 'mekanism:basic_mechanical_pipe', [
 		'   ', 
 	    'BAB',
 	    '   '  
@@ -91,7 +89,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'mekanism:transmitter/pressurized_tube/basic' })
 
-	event.shaped('mekanism:basic_pressurized_tube', [
+	global.craft(event, 'mekanism:basic_pressurized_tube', [
 		'   ', 
 	    'BAB',
 	    '   ' 
@@ -104,7 +102,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'mekanism:transmitter/logistical_transporter/basic' })
 
-	event.shaped('mekanism:basic_logistical_transporter', [
+	global.craft(event, 'mekanism:basic_logistical_transporter', [
 		'   ', 
 	    'BAB',
 	    '   ' 
@@ -117,7 +115,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'mekanism:transmitter/thermodynamic_conductor/basic' })
 
-	event.shaped('mekanism:basic_thermodynamic_conductor', [
+	global.craft(event, 'mekanism:basic_thermodynamic_conductor', [
 		'   ', 
 	    'BAB',
 	    '   ' 
@@ -137,8 +135,8 @@ ServerEvents.recipes(event => {
 	event.remove({ output: 'thermal:sawdust_block' })
 
 	event.remove({ id: 'createdieselgenerators:crafting/chip_wood_block' })
-
-	event.shapeless('createdieselgenerators:chip_wood_block', [
+	
+	global.craft(event, 'createdieselgenerators:chip_wood_block', [
 	    '9x mekanism:sawdust' 
 	])
 
@@ -160,7 +158,7 @@ ServerEvents.recipes(event => {
 
 		event.remove({ id: `mekanism:factory/basic/${type}` })
 
-		event.shaped(`mekanism:basic_${type}_factory`, [
+		global.craft(event, `mekanism:basic_${type}_factory`, [
 			'ABA', 
 		    'CDC',
 		    'ABA' 
@@ -177,7 +175,7 @@ ServerEvents.recipes(event => {
 
 		event.remove({ id: `mekanism:factory/advanced/${type}` })
 
-		event.shaped(`mekanism:advanced_${type}_factory`, [
+		global.craft(event, `mekanism:advanced_${type}_factory`, [
 			'ABA', 
 		    'CDC',
 		    'ABA' 
@@ -194,7 +192,7 @@ ServerEvents.recipes(event => {
 
 		event.remove({ id: `mekanism:factory/elite/${type}` })
 
-		event.shaped(`mekanism:elite_${type}_factory`, [
+		global.craft(event, `mekanism:elite_${type}_factory`, [
 			'ABA', 
 		    'CDC',
 		    'ABA' 
@@ -211,7 +209,7 @@ ServerEvents.recipes(event => {
 
 		event.remove({ id: `mekanism:factory/ultimate/${type}` })
 
-		event.shaped(`mekanism:ultimate_${type}_factory`, [
+		global.craft(event, `mekanism:ultimate_${type}_factory`, [
 			'ABA', 
 		    'CDC',
 		    'ABA' 

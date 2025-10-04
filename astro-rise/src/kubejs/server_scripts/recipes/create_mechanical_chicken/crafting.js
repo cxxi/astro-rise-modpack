@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'create_mechanical_chicken:crafting/mechanical_chicken' })
 
-	event.shaped('create_mechanical_chicken:mechanical_chicken', [
+	global.craft(event, 'create_mechanical_chicken:mechanical_chicken', [
 	    ' A ', 
 	    'BCB',
 	    'DED'  

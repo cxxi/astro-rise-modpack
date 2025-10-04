@@ -29,7 +29,6 @@ ServerEvents.recipes(event => {
 		Item.of('mekanism:dust_tin').withChance(0.25)
 	], 'create:crushed_raw_silver')
 
-	// event.remove({ id: 'create:splashing/mekanism/crushed_raw_tin' })
 	event.remove({ id: 'create:splashing/thermal/crushed_raw_tin' })
 
 	event.recipes.create.splashing([

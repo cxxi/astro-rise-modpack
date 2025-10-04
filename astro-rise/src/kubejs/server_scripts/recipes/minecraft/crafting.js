@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
 
 	// bell
 
-	event.shaped('minecraft:bell', [
+	global.craft(event, 'minecraft:bell', [
 	    'AAA', 
 	    'BCB',
 	    ' D '  
@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
 
 	// saddle
 
-	event.shaped('minecraft:saddle', [
+	global.craft(event, 'minecraft:saddle', [
 	    'AAA', 
 	    'A A',
 	    'B B'  
@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
 
 	// gilded_blackstone
 
-	event.shaped('minecraft:gilded_blackstone', [
+	global.craft(event, 'minecraft:gilded_blackstone', [
 	    'ABA', 
 	    'BCB',
 	    'ABA'  
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
 
 	// experience_bottle
 
-	event.shaped('minecraft:experience_bottle', [
+	global.craft(event, 'minecraft:experience_bottle', [
 	    'AAA', 
 	    'ABA',
 	    'AAA'  
@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
 
 	event.remove('minecraft:ender_chest')
 
-	event.shaped('minecraft:ender_chest', [
+	global.craft(event, 'minecraft:ender_chest', [
 	    'ABA', 
 	    'BCB',
 	    'ABA'  
@@ -67,66 +67,16 @@ ServerEvents.recipes(event => {
 	    C: 'minecraft:ender_eye'
 	})
 
-	// nugget|ingot
+	// reversible ores
 
-	event.remove({ id: 'crateaddition:crafting/electrum_ingot' })
-	event.remove({ id: 'ad_astra:steel_ingot' })
-
-	event.shapeless('minecraft:andesite', [
-   		'4x astro_rise:andesite_nugget'
-   	])
-
-   	event.shapeless('4x astro_rise:andesite_nugget', [
-   		'minecraft:andesite'
-   	])
-
-   	event.shapeless('platinum_mod:platinum', [
-   		'9x astro_rise:platinum_nugget'
-   	])
-
-   	event.shapeless('9x astro_rise:platinum_nugget', [
-   		'platinum_mod:platinum'
-   	])
-
-   	event.shapeless('astro_rise:ingot_aerolyte', [
-   		'9x astro_rise:aerolyte_nugget'
-   	])
-
-   	event.shapeless('9x astro_rise:aerolyte_nugget', [
-   		'astro_rise:ingot_aerolyte'
-   	])
-
-   	event.shapeless('astro_rise:aerolyte_block', [
-   		'9x astro_rise:ingot_aerolyte'
-   	])
-
-   	event.shapeless('9x astro_rise:ingot_aerolyte', [
-   		'astro_rise:aerolyte_block'
-   	])
-
-   	event.shapeless('ad_astra:etrium_ingot', [
-   		'9x ad_astra:etrium_nugget'
-   	])
-
-   	event.shapeless('9x ad_astra:etrium_nugget', [
-   		'ad_astra:etrium_ingot'
-   	])
-
-   	event.shapeless('ad_astra:etrium_block', [
-   		'9x ad_astra:etrium_ingot'
-   	])
-
-   	event.shapeless('9x ad_astra:etrium_ingot', [
-   		'ad_astra:etrium_block'
-   	])
-
-   	event.shapeless('astro_rise:infinity_block', [
-   		'9x astro_rise:infinity_ingot'
-   	])
-
-   	event.shapeless('9x astro_rise:infinity_ingot', [
-   		'astro_rise:infinity_block'
-   	])
+	global.reversibleCraft(event, 'minecraft:andesite', '4x astro_rise:andesite_nugget')
+   	global.reversibleCraft(event, 'platinum_mod:platinum', '9x astro_rise:platinum_nugget')
+   	global.reversibleCraft(event, 'astro_rise:ingot_aerolyte', '9x astro_rise:aerolyte_nugget')
+   	global.reversibleCraft(event, 'astro_rise:aerolyte_block', '9x astro_rise:ingot_aerolyte')
+   	global.reversibleCraft(event, 'ad_astra:etrium_ingot', '9x ad_astra:etrium_nugget')
+   	global.reversibleCraft(event, 'ad_astra:etrium_block', '9x ad_astra:etrium_ingot')
+   	global.reversibleCraft(event, 'astro_rise:infinity_block', '9x astro_rise:infinity_ingot')
+   	global.reversibleCraft(event, 'minecraft:netherite_scrap', 'tconstruct:debris_nugget')
 
 	// shulker_shell
 

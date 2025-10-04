@@ -1,8 +1,10 @@
 ServerEvents.recipes(event => {
 
+	// oil barrel
+
 	event.remove({ id: 'createdieselgenerators:crafting/oil_barrel' })
 
-	event.shaped('createdieselgenerators:oil_barrel', [
+	global.craft(event, 'createdieselgenerators:oil_barrel', [
 	    '   ', 
 	    'ABA',
 	    '   '  
@@ -11,9 +13,11 @@ ServerEvents.recipes(event => {
 	    B: 'minecraft:barrel'
 	})
 
+	// diesel_engine
+
 	event.remove({ id: 'createdieselgenerators:crafting/diesel_engine' })
 
-	event.shaped('createdieselgenerators:diesel_engine', [
+	global.craft(event, 'createdieselgenerators:diesel_engine', [
 	    ' A ', 
 	    'BCB',
 	    'DED'  
@@ -25,9 +29,11 @@ ServerEvents.recipes(event => {
 	    E: 'create:fluid_tank'
 	})
 
+	// huge_diesel_engine
+
 	event.remove({ id: 'createdieselgenerators:crafting/huge_diesel_engine' })
 
-	event.shaped('createdieselgenerators:huge_diesel_engine', [
+	global.craft(event, 'createdieselgenerators:huge_diesel_engine', [
 	    'ABA', 
 	    'CDC',
 	    'EFE'  
@@ -40,9 +46,11 @@ ServerEvents.recipes(event => {
 	    F: 'create:brass_block'
 	})
 
+	// burner
+
 	event.remove({ id: 'createdieselgenerators:crafting/burner' })
 
-	event.shaped('createdieselgenerators:burner', [
+	global.craft(event, 'createdieselgenerators:burner', [
 	    'ABA', 
 	    ' C ',
 	    'DED'  

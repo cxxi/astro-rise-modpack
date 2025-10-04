@@ -1,8 +1,10 @@
 ServerEvents.recipes(event => {
 
+	// warp_dust
+
 	event.remove({ id: 'waystones:warp_dust' })
 
-	event.shaped('waystones:warp_dust', [
+	global.craft(event, 'waystones:warp_dust', [
 	    'CAC', 
 	    'BDB',
 	    'CAC'  
@@ -13,9 +15,11 @@ ServerEvents.recipes(event => {
 	    D: 'thermal:enderium_dust'
 	})
 
+	// return_scroll
+
 	event.remove({ id: 'waystones:return_scroll' })
 
-	event.shaped('waystones:return_scroll', [
+	global.craft(event, 'waystones:return_scroll', [
 	    '   ', 
 	    'ABA',
 	    'CCC'  
@@ -25,9 +29,11 @@ ServerEvents.recipes(event => {
 	    C: 'minecraft:paper'
 	})
 
+	// bound_scroll
+
 	event.remove({ id: 'waystones:bound_scroll' })
 
-	event.shaped('waystones:bound_scroll', [
+	global.craft(event, 'waystones:bound_scroll', [
 	    'DDD', 
 	    'ABA',
 	    'CCC'  
@@ -38,9 +44,11 @@ ServerEvents.recipes(event => {
 	    D: 'thermal:enderium_nugget'
 	})
 
+	// warp_scroll
+
 	event.remove({ id: 'waystones:warp_scroll' })
 
-	event.shaped('waystones:warp_scroll', [
+	global.craft(event, 'waystones:warp_scroll', [
 	    'DAD', 
 	    'ABA',
 	    'CCC'  

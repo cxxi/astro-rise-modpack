@@ -4,7 +4,7 @@ PlayerEvents.loggedIn(event => {
 
     if (!player.persistentData.firstJoin) {
         player.persistentData.firstJoin = true
-        player.inventory.clear()
         player.give(Item.of('ftbquests:book'))
     }
+    
 })

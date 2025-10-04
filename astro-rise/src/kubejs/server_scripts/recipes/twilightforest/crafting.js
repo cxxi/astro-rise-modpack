@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
 	
 	event.remove({ id: 'twilightforest:material/carminite' })
 
-	event.shaped('twilightforest:carminite', [
+	global.craft(event, 'twilightforest:carminite', [
 	    'ABA', 
 	    'BCB',
 	    'ABA'  

@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'naturescompass:natures_compass' })
 
-	event.shaped('naturescompass:naturescompass', [
+	global.craft(event, 'naturescompass:naturescompass', [
 	    'ABA', 
 	    'CDE',
 	    'AFA'  

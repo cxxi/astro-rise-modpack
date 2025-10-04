@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'farmersdelight:sweet_berry_cheesecake' })
 
-	event.shaped('farmersdelight:sweet_berry_cheesecake', [
+	global.craft(event, 'farmersdelight:sweet_berry_cheesecake', [
 	    'AAA', 
 	    'AAA',
 	    'BCB'  

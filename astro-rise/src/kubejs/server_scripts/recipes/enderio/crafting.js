@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'enderio:void_chassis' })
 
-	event.shaped('enderio:void_chassis', [
+	global.craft(event, 'enderio:void_chassis', [
 	    'ABA', 
 	    'BCB',
 	    'ABA'  
@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'enderio:ensouled_chassis' })
 
-	event.shaped('enderio:ensouled_chassis', [
+	global.craft(event, 'enderio:ensouled_chassis', [
 	    'ABA', 
 	    'BCB',
 	    'ABA'  
@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'enderio:fluid_tank' })
 
-	event.shaped('enderio:fluid_tank', [
+	global.craft(event, 'enderio:fluid_tank', [
 		'ABA', 
 	    'BCB',
 	    'ABA' 
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'enderio:basic_capacitor_bank' })
 
-	event.shaped('enderio:basic_capacitor_bank', [
+	global.craft(event, 'enderio:basic_capacitor_bank', [
 		'ABA', 
 	    'BCB',
 	    'ABA' 
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'enderio:travel_anchor' })
 
-	event.shaped('enderio:travel_anchor', [
+	global.craft(event, 'enderio:travel_anchor', [
 	    'ABA', 
 	    'BCB',
 	    'ABA'  
@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
 
 	// alloy
 
-	event.shaped('enderio:energetic_alloy_ingot', [
+	global.craft(event, 'enderio:energetic_alloy_ingot', [
 	    'CAC', 
 	    'ABA',
 	    'CAC'   
@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
 	    C: 'twilightforest:carminite'
 	})
 
-	event.shaped('enderio:end_steel_ingot', [
+	global.craft(event, 'enderio:end_steel_ingot', [
 	    'CAC', 
 	    'ABA',
 	    'CAC'   
@@ -91,4 +91,142 @@ ServerEvents.recipes(event => {
 	    B: 'enderio:dark_steel_ingot',
 	    C: 'platinum_mod:dragon_charge'
 	})
+
+	// cake
+
+	event.remove({ id: 'enderio:cake' })
+
+	// empty_soul_vial
+
+	event.remove({ id: 'enderio:empty_soul_vial' })
+
+	global.craft(event, 'enderio:empty_soul_vial', [
+	    ' A ', 
+	    'B B',
+	    ' B '
+	], {
+	    A: 'enderio:soularium_ingot', 
+	    B: 'tconstruct:soul_glass'
+	})
+
+	// pressurized_fluid_conduit
+
+	event.remove({ id: 'enderio:pressurized_fluid_conduit' })
+	
+	// ender_fluid_conduit
+
+	event.remove({ id: 'enderio:ender_fluid_conduit' })
+
+	// fluid_conduit
+
+	event.remove({ id: 'enderio:fluid_conduit' })
+
+	global.craft(event, 'enderio:fluid_conduit', [
+	    'AAA', 
+	    'BBB',
+	    'AAA'  
+	], {
+	    A: 'enderio:conduit_binder', 
+	    B: 'mekanism:ultimate_mechanical_pipe'
+	})
+
+	// item_conduit
+
+	event.remove({ id: 'enderio:item_conduit' })
+
+	global.craft(event, 'enderio:item_conduit', [
+	    'CAC', 
+	    'BBB',
+	    'CAC'  
+	], {
+	    A: 'enderio:conduit_binder', 
+	    B: 'mekanism:ultimate_logistical_transporter',
+	    C: 'enderio:pulsating_alloy_nugget'
+	})
+
+	// energy_conduit
+
+	event.remove({ id: 'enderio:energy_conduit' })
+
+	global.craft(event, 'enderio:energy_conduit', [
+	    'CAC', 
+	    'BBB',
+	    'CAC'  
+	], {
+	    A: 'enderio:conduit_binder', 
+	    B: 'mekanism:ultimate_universal_cable',
+	    C: 'enderio:conductive_alloy_ingot'
+	})
+
+	// wood_gear
+
+	event.remove({ id: 'enderio:wood_gear' })
+	event.remove({ id: 'enderio:wood_gear_corner' })
+
+	// stone_gear
+
+	event.remove({ id: 'enderio:stone_gear' })
+	event.remove({ id: 'enderio:stone_gear_upgrade' })
+
+	// iron_gear
+	
+	event.remove({ id: 'enderio:iron_gear' })
+
+	global.craft(event, 'enderio:iron_gear', [
+	    'ABA', 
+	    'BCB',
+	    'ABA'  
+	], {
+	    A: 'minecraft:iron_nugget', 
+	    B: 'mekanism:ingot_steel',
+	    C: 'enderio:grains_of_infinity'
+	})
+
+	// primitive_alloy_smelter & alloy_smelter
+
+	event.remove({ type: 'enderio:alloy_smelting' })
+
+	// crafter
+
+	event.remove({ id: 'enderio:crafter' })
+
+	global.craft(event, 'enderio:crafter', [
+	    'AAA', 
+	    'BCB',
+	    'DED'
+	], {
+	    A: 'mekanism:enriched_redstone', 
+	    B: 'mekanism:ingot_osmium',
+	    C: 'enderio:void_chassis',
+	    D: 'enderio:iron_gear',
+	    E: 'create:mechanical_crafter'
+	})
+
+	// yeta_wrench
+
+	event.remove({ id: 'enderio:yeta_wrench' })
+
+	global.craft(event, 'enderio:yeta_wrench', [
+		'A A', 
+	    ' B ',
+	    ' A ' 
+	], {
+		A: 'enderio:copper_alloy_ingot',
+		B: 'enderio:iron_gear'
+	})
+	
+	// staff_of_travelling
+
+	event.remove({ id: 'enderio:staff_of_travelling' })
+
+	global.craft(event, 'enderio:staff_of_travelling', [
+	    'CBC', 
+	    'BAB',
+	    'CBC'  
+	], {
+	    A: 'twilightforest:twilight_scepter', 
+	    B: 'mekanism:teleportation_core',
+	    C: 'alexsmobs:void_worm_mandible'
+	})
+
 })

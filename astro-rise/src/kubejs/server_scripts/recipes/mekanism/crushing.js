@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+	event.remove({ id: 'mekanism:crushing/venus_sandstone_to_venus_sand' })
+
 	event.recipes.mekanismCrushing('bigreactors:blutonium_dust', 'bigreactors:blutonium_ingot')	
 	event.recipes.mekanismCrushing('bigreactors:cyanite_dust', 'bigreactors:cyanite_ingot')
 	event.recipes.mekanismCrushing('bigreactors:magentite_dust', 'bigreactors:magentite_ingot')

@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'immersive_aircraft:engine' })
 
-	event.shaped('immersive_aircraft:engine', [
+	global.craft(event, 'immersive_aircraft:engine', [
 	    ' A ', 
 	    'BCB',
 	    'DED'  

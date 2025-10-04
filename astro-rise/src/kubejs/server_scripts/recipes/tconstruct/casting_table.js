@@ -1,18 +1,6 @@
 ServerEvents.recipes(event => {
 
-
-	const withAllCast = (event, recipe, castType) => {
-
-		recipe.cast = { tag: `tconstruct:casts/single_use/${castType}` }
-		recipe.cast_consumed = true
-
-		event.custom(recipe)
-
-		recipe.cast = { tag: `tconstruct:casts/multi_use/${castType}` }
-	    recipe.cast_consumed = false
-
-	    event.custom(recipe)
-	}
+	// TODO : REFACT
 
 	// bars
 
@@ -24,7 +12,7 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'tconstruct:smeltery/casting/metal/iron/gear_sand_cast' })
 	event.remove({ id: 'tconstruct:smeltery/casting/metal/iron/gear_gold_cast' })
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'tconstruct:molten_steel',
@@ -38,7 +26,7 @@ ServerEvents.recipes(event => {
 
 	// fluix_crystal
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_fluix',
@@ -52,7 +40,7 @@ ServerEvents.recipes(event => {
 
 	// copper_alloy
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_copper_alloy',
@@ -64,7 +52,7 @@ ServerEvents.recipes(event => {
 	    cooling_time: 20
 	}, 'nugget')
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_copper_alloy',
@@ -78,7 +66,7 @@ ServerEvents.recipes(event => {
 
 	// energetic_alloy
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_energetic_alloy',
@@ -90,7 +78,7 @@ ServerEvents.recipes(event => {
 	    cooling_time: 20
 	}, 'nugget')
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_energetic_alloy',
@@ -104,7 +92,7 @@ ServerEvents.recipes(event => {
 
 	// vibrant_alloy
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_vibrant_alloy',
@@ -116,7 +104,7 @@ ServerEvents.recipes(event => {
 	    cooling_time: 20
 	}, 'nugget')
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_vibrant_alloy',
@@ -130,7 +118,7 @@ ServerEvents.recipes(event => {
 
 	// redstone_alloy
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_redstone_alloy',
@@ -142,7 +130,7 @@ ServerEvents.recipes(event => {
 	    cooling_time: 20
 	}, 'nugget')
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_redstone_alloy',
@@ -156,7 +144,7 @@ ServerEvents.recipes(event => {
 
 	// conductive_alloy
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_conductive_alloy',
@@ -168,7 +156,7 @@ ServerEvents.recipes(event => {
 	    cooling_time: 20
 	}, 'nugget')
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_conductive_alloy',
@@ -182,7 +170,7 @@ ServerEvents.recipes(event => {
 
 	// pulsating_alloy
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_pulsating_alloy',
@@ -194,7 +182,7 @@ ServerEvents.recipes(event => {
 	    cooling_time: 20
 	}, 'nugget')
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_pulsating_alloy',
@@ -208,7 +196,7 @@ ServerEvents.recipes(event => {
 
 	// dark_steel
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_dark_steel',
@@ -220,7 +208,7 @@ ServerEvents.recipes(event => {
 	    cooling_time: 20
 	}, 'nugget')
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_dark_steel',
@@ -234,7 +222,7 @@ ServerEvents.recipes(event => {
 
 	// end_steel
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_end_steel',
@@ -246,7 +234,7 @@ ServerEvents.recipes(event => {
 	    cooling_time: 20
 	}, 'nugget')
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_end_steel',
@@ -260,7 +248,7 @@ ServerEvents.recipes(event => {
 
 	// soularium
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_soularium',
@@ -272,7 +260,7 @@ ServerEvents.recipes(event => {
 	    cooling_time: 20
 	}, 'nugget')
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:molten_soularium',
@@ -286,7 +274,7 @@ ServerEvents.recipes(event => {
 
 	// redstone_ingot
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'thermal:redstone',
@@ -298,7 +286,7 @@ ServerEvents.recipes(event => {
 	    cooling_time: 20
 	}, 'nugget')
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'thermal:redstone',
@@ -312,7 +300,7 @@ ServerEvents.recipes(event => {
 
 	// ender_ingot
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'tconstruct:molten_ender',
@@ -324,7 +312,7 @@ ServerEvents.recipes(event => {
 	    cooling_time: 80
 	}, 'nugget')
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'tconstruct:molten_ender',
@@ -338,7 +326,7 @@ ServerEvents.recipes(event => {
 
 	// infinity_ingot
 
-	withAllCast(event, {
+	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
 	    fluid: {
 	    	fluid: 'astro_rise:liquid_infinity',

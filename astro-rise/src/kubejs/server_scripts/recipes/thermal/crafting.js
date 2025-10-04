@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'thermal:tools/xp_crystal' })
 
-	event.shaped('thermal:xp_crystal', [
+	global.craft(event, 'thermal:xp_crystal', [
 	    ' A ', 
 	    'BCB',
 	    ' A '  

@@ -1,8 +1,10 @@
 ServerEvents.recipes(event => {
 
+	// ender_chest
+
 	event.remove({ id: 'enderstorage:ender_chest' })
 
-	event.shaped('enderstorage:ender_chest', [
+	global.craft(event, 'enderstorage:ender_chest', [
 	    'ABA', 
 	    'ECE',
 	    'ADA'  
@@ -14,9 +16,11 @@ ServerEvents.recipes(event => {
 	    E: 'bedrockbreakers:pure_obsidian'
 	})
 
+	// ender_tank
+
 	event.remove({ id: 'enderstorage:ender_tank' })
 
-	event.shaped('enderstorage:ender_tank', [
+	global.craft(event, 'enderstorage:ender_tank', [
 	    'ABA', 
 	    'ECE',
 	    'ADA'  

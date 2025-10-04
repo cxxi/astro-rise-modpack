@@ -1,7 +1,10 @@
 ServerEvents.recipes(event => {
 
-	event.remove({ id: 'mekanism:processing/coal/from_ore' })
+	// TODO : REFACT
+
 	event.remove({ id: 'mekanism:enriching/conversion/gunpowder_to_flint' })
+
+	event.remove({ id: 'mekanism:processing/coal/from_ore' })
 
 	event.custom({
 		type: 'mekanism:enriching',

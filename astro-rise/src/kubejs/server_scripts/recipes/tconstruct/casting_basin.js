@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+	// TODO : REFACT
+
 	event.remove({ id: 'tconstruct:smeltery/casting/obsidian/chest' })
 
 	// andesite_alloy
@@ -26,7 +28,7 @@ ServerEvents.recipes(event => {
 	    type: 'tconstruct:casting_basin',
 	    fluid: {
 	    	fluid: 'astro_rise:liquid_sculk',
-	    	amount: 1000
+	    	amount: 400
 	    },
 	    result: {
 	    	item: 'minecraft:sculk'

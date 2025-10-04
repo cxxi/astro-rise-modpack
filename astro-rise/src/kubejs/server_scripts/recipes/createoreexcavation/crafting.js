@@ -1,8 +1,10 @@
 ServerEvents.recipes(event => {
 
+	// vein_finder
+
 	event.remove({ id: 'createoreexcavation:vein_finder' })
 
-	event.shaped('createoreexcavation:vein_finder', [
+	global.craft(event, 'createoreexcavation:vein_finder', [
 	    ' BA', 
 	    ' DC',
 	    'D  '  
@@ -13,9 +15,11 @@ ServerEvents.recipes(event => {
 	    D: 'createaddition:brass_rod'
 	})
 
+	// drilling_machine
+
 	event.remove({ id: 'createoreexcavation:drilling_machine' })
 
-	event.recipes.create.mechanical_crafting('createoreexcavation:drilling_machine', [
+	global.craft(event, 'createoreexcavation:drilling_machine', [
 	    'ABCBA', 
 	    'BDEDB',
 	    'FGHGI',
@@ -34,9 +38,11 @@ ServerEvents.recipes(event => {
 	    J: 'create:sturdy_sheet'
 	})
 
+	// extractor
+
 	event.remove({ id: 'createoreexcavation:extractor' })
 
-	event.recipes.create.mechanical_crafting('createoreexcavation:extractor', [
+	global.craft(event, 'createoreexcavation:extractor', [
 	    'ABCBA', 
 	    'BDEDB',
 	    'FGHGI',
