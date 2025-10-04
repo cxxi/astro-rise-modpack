@@ -87,22 +87,28 @@ ServerEvents.loaded(event => {
 
     console.log("=== List of all creature entity loot items ===");
 
+    let lootTableId
+    let lootTable
+    let entries
+    let item
+    let name
+
     for (const entityType of BuiltInRegistries.ENTITY_TYPE) {
         if (entityType.getCategory() !== MobCategory.MISC) {
-            const lootTableId = entityType.getDefaultLootTable();
-            const lootTable = lootData.getLootTable(lootTableId);
+            lootTableId = entityType.getDefaultLootTable();
+            lootTable = lootData.getLootTable(lootTableId);
 
             if (!lootTable) continue;
 
             console.log("Entity:", BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString());
 
-            const pools = lootTable.pools || [];
+            pools = lootTable.pools || [];
             for (const pool of pools) {
-                const entries = pool.entries || [];
+                entries = pool.entries || [];
                 for (const entry of entries) {
                     if (entry.getClass().getSimpleName() === "LootItem") {
-                        const item = entry.getItem();
-                        let name = "unknown";
+                        item = entry.getItem();
+                        name = "unknown";
                         try {
                             name = item.getRegistryName().toString();
                         } catch (err) {
