@@ -38,7 +38,9 @@ ServerEvents.loaded(event => {
         if (entityType.getCategory() !== MobCategory.MISC) {
             const lootTableLocation = entityType.getDefaultLootTable();
             const lootTable = lootDataManager.getLootTable(lootTableLocation);
+
             console.log(BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString())
+            console.log(lootTable.toString())
         }
     }
 
