@@ -29,6 +29,7 @@ ServerEvents.loaded(event => {
     const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
     const MobCategory = Java.loadClass("net.minecraft.world.entity.MobCategory")
     const LootTable = Java.loadClass("net.minecraft.world.level.storage.loot.LootTable")
+    const LootItem = Java.loadClass("net.minecraft.world.level.storage.loot.entries.LootItem")
 
     const lootDataManager = event.server.getLootData();
 
@@ -36,11 +37,31 @@ ServerEvents.loaded(event => {
 
     for (const entityType of BuiltInRegistries.ENTITY_TYPE) {
         if (entityType.getCategory() !== MobCategory.MISC) {
-            const lootTableLocation = entityType.getDefaultLootTable();
-            const lootTable = lootDataManager.getLootTable(lootTableLocation);
+
+            const lootTableLocation = entityType.getDefaultLootTable()
+            const lootTable = lootDataManager.getLootTable(lootTableLocation)
 
             console.log(BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString())
-            console.log(lootTable !== LootTable.EMPTY ? "1" : "0")
+
+            let firstItemId = 'minecraft:air'
+            let found = false
+
+            if (lootTable !== LootTable.EMPTY) {
+                for (const pool of lootTable.pools) {
+                    for (const entry of pool.entries) {
+                        if (entry instanceof LootItem) {
+                            const itemHolder = entry.item
+                            const item = itemHolder.value()
+                            firstItemId = BuiltInRegistries.ITEM.getKey(item).toString()
+                            found = true
+                            break
+                        }
+                    }
+                    if (found) break
+                }
+            }
+
+            console.log(firstItemId)
         }
     }
 
