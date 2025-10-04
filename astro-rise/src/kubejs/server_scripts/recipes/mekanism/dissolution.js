@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
 	// event.remove({ id: 'mekanism:processing/iron/slurry/dirty/from_ore' })
 	// event.remove({ id: 'mekanism:processing/gold/slurry/dirty/from_ore' })
 
-	event.remove({ type: 'mekanism:dissolution',  })
+	// event.remove({ type: 'mekanism:dissolution',  })
 
 	global.CUSTOM_SLURRIES.forEach(slurry => {
 
