@@ -10,9 +10,9 @@ PlayerEvents.loggedIn(event => {
 })
 
 ServerEvents.loaded(event => {
-    const entityTypes = event.server.registryAccess().registry("minecraft:entity_type").get()
-    console.log("List of all entity types:")
-    entityTypes.forEach(entityType => {
-        console.log(entityType.arch$registryName())
-    })
-})
+    const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
+    console.log("List of all entity types:");
+    for (const entityType of BuiltInRegistries.ENTITY_TYPE) {
+        console.log(BuiltInRegistries.ENTITY_TYPE.getKey(entityType).toString());
+    }
+});
