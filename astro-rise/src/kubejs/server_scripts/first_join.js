@@ -8,3 +8,17 @@ PlayerEvents.loggedIn(event => {
     }
     
 })
+
+ServerEvents.ready(event => {
+
+    const Registry = Java.loadClass("net.minecraft.core.Registry");
+    const ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
+
+    // Registry.ENTITY_TYPE contient toutes les entités
+    const entityRegistry = Registry.ENTITY_TYPE;
+
+    entityRegistry.keySet().forEach(key => {
+        console.log(key.toString()); // Ex: "minecraft:zombie"
+    });
+
+});
