@@ -51,5 +51,5 @@ global.withAllCast = (event, recipe, castType) => {
 }
 
 StartupEvents.registry('entity_type', event => {
-    console.log(event.id)
+    console.log(JSON.stringify(event.toJson()))
 })
