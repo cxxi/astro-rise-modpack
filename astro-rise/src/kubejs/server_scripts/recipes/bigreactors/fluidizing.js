@@ -56,4 +56,32 @@ ServerEvents.recipes(event => {
 		}
 	})
 
+	event.custom({
+		type: 'bigreactors:fluidizersolid',
+		ingredient: {
+			ingredient: {
+				item: 'create:experience_nugget'
+			},
+			count: 1
+		},
+		result: {
+			fluid: 'sophisticatedcorexp:xp_still',
+			count: 250
+		}
+	})
+
+	event.custom({
+		type: 'bigreactors:fluidizersolid',
+		ingredient: {
+			ingredient: {
+				item: 'create:experience_block'
+			},
+			count: 1
+		},
+		result: {
+			fluid: 'sophisticatedcorexp:xp_still',
+			count: 2250
+		}
+	})
+
 })

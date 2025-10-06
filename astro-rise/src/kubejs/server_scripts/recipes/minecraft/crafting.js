@@ -42,17 +42,6 @@ ServerEvents.recipes(event => {
 	    C: 'minecraft:raw_gold'
 	})
 
-	// experience_bottle
-
-	global.craft(event, 'minecraft:experience_bottle', [
-	    'AAA', 
-	    'ABA',
-	    'AAA'  
-	], {
-	    A: 'create:experience_nugget', 
-	    B: 'minecraft:glass_bottle'
-	})
-
 	// enderchest
 
 	event.remove('minecraft:ender_chest')

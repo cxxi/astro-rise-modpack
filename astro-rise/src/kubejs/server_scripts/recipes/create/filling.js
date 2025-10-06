@@ -100,4 +100,24 @@ ServerEvents.recipes(event => {
 		]
 	})
 
+	// xp_bottle
+
+	event.custom({
+		type: "create:filling",
+		ingredients: [
+		    {
+		    	item: 'minecraft:glass_bottle'
+		    },
+		    {
+		    	amount: 250,
+		    	fluid: 'sophisticatedcorexp:xp_still'
+		    }
+		],
+		results: [
+			{
+				item: 'minecraft:experience_bottle'
+			}
+		]
+	})
+
 })

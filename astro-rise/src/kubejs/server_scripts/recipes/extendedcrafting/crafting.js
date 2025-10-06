@@ -71,11 +71,11 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'extendedcrafting:elite_table' })
 
 	global.craft(event, 'extendedcrafting:elite_table', [
-		'HABAH',
+		' ABA ',
 		'ACDCA',
-		'EDHDF',
+		'ED DF',
 		'ACDCA',
-		'HAGAH'
+		' AGA '
 	], {
 		A: 'extendedcrafting:elite_component',
 		B: 'astro_rise:earth_steel_mechanism',
@@ -83,8 +83,27 @@ ServerEvents.recipes(event => {
 		D: 'extendedcrafting:advanced_table',
 		E: 'astro_rise:sky_steel_mechanism',
 		F: 'astro_rise:ichor_steel_mechanism',
-		G: 'astro_rise:ender_steel_mechanism',
-		H: 'extendedcrafting:luminessence'
+		G: 'astro_rise:ender_steel_mechanism'
 	})
+
+	// event.remove({ id: 'extendedcrafting:ultimate_table' })
+
+	// global.craft(event, 'extendedcrafting:ultimate_table', [
+	// 	'       ',
+	// 	'  ABA  ',
+	// 	' ACDCA ',
+	// 	' ED DF ',
+	// 	' ACDCA ',
+	// 	'  AGA  ',
+	// 	'       '
+	// ], {
+	// 	A: 'extendedcrafting:ultimate_component',
+	// 	B: 'astro_rise:earth_steel_mechanism',
+	// 	C: 'extendedcrafting:ultimate_catalyst',
+	// 	D: 'extendedcrafting:elite_table',
+	// 	E: 'astro_rise:sky_steel_mechanism',
+	// 	F: 'astro_rise:ichor_steel_mechanism',
+	// 	G: 'astro_rise:ender_steel_mechanism'
+	// })
 
 })
