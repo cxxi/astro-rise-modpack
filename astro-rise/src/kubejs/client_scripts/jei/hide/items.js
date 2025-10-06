@@ -63,6 +63,8 @@ JEIEvents.hideItems(event => {
 	event.hide('enderio:slice_and_splice')
 	event.hide('enderio:soul_engine')
 	event.hide('enderio:drain')
+	event.hide('enderio:glider_wing')
+	event.hide('enderio:nutritious_stick')
 
 	event.hide('ad_astra:oil_bucket')
 	event.hide('ad_astra:coal_generator')

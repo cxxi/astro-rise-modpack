@@ -1,12 +1,16 @@
 ServerEvents.recipes(event => {
 
+	event.remove({ id: 'enderio:tank_fill/nutritious_stick' })
 	event.remove({ id: 'enderio:painting_machine' })
 	event.remove({ id: 'enderio:stirling_generator' })
 	event.remove({ id: 'enderio:slice_and_splice' })
 	event.remove({ id: 'enderio:soul_engine' })
 	event.remove({ id: 'enderio:drain' })
+	event.remove({ id: 'enderio:glider_wing' })
 	event.remove({ id: 'enderio:infinity_rod' })
 	event.remove({ id: 'enderio:conduit_binder_composite' })
+
+	event.remove({ output: /enderio:.*_grinding_ball/ })
 
 	// void_chassis
 
