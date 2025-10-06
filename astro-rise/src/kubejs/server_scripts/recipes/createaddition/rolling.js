@@ -32,7 +32,8 @@ ServerEvents.recipes(event => {
 	      	item: 'astro_rise:infinity_ingot'
 		},
 		result: {
-			item: '2x enderio:infinity_rod'
+			item: 'enderio:infinity_rod',
+			count: 2
 		}
 	})
 
@@ -42,7 +43,8 @@ ServerEvents.recipes(event => {
 	      	item: 'mekanism:ingot_steel'
 		},
 		result: {
-			item: '2x ad_astra:steel_rod'
+			item: 'ad_astra:steel_rod',
+			count: 2
 		}
 	})
 
@@ -52,7 +54,8 @@ ServerEvents.recipes(event => {
 	      	item: 'ad_astra:etrium_ingot'
 		},
 		result: {
-			item: '2x ad_astra:etrium_rod'
+			item: 'ad_astra:etrium_rod',
+			count: 2
 		}
 	})
 	
