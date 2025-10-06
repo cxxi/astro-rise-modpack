@@ -16,14 +16,6 @@ ServerEvents.recipes(event => {
 
 	// component
 
-	event.remove({ id: 'extendedcrafting:basic_component' })
-
-	global.craft(event, 'extendedcrafting:basic_component', [
-		'astro_rise:base_component',
-		'astro_rise:quartz_mechanism',
-   		'2x minecraft:iron_ingot'
-	])
-
 	const componentTypes = [
 		'basic',
 		'advanced',
@@ -38,7 +30,7 @@ ServerEvents.recipes(event => {
 	]
 
 	componentTypes.forEach(type => {
-		event.remove({ id: `extendedcrafting:crafting_${type}_component` })
+		event.remove({ id: `extendedcrafting:${type}_component` })
 	})
 
 	// tables
