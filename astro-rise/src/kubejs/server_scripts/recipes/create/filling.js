@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
 		    },
 		    {
 		    	amount: 250,
-		    	fluid: 'sophisticatedcorexp:xp_still'
+		    	fluid: 'enderio:xp_juice'
 		    }
 		],
 		results: [

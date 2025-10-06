@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
 			count: 1
 		},
 		result: {
-			fluid: 'sophisticatedcorexp:xp_still',
+			fluid: 'enderio:xp_juice',
 			count: 250
 		}
 	})
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
 			count: 1
 		},
 		result: {
-			fluid: 'sophisticatedcorexp:xp_still',
+			fluid: 'enderio:xp_juice',
 			count: 2250
 		}
 	})
