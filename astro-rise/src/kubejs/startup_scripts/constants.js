@@ -62,27 +62,27 @@ global.ASTRO_RISE_ORES = [
 	'aerolyte'
 ]
 
-global.ORES = [
-	...global.VANILLA_ORES.map(ore => ['minecraft', ore]),
-	...global.CREATE_ORES.map(ore => ['create', ore]),
-	...global.MEKANISM_ORES.map(ore => ['mekanism', ore]),
-	...global.THERMAL_ORES.map(ore => ['thermal', ore]),
-	...global.SIMPLEMETALS_ORES.map(ore => ['simplemetals_aluminum', ore]),
-	...global.PLATINUM_ORES.map(ore => ['platinum_mod', ore]),
-	...global.TCONSTRUCT_ORES.map(ore => ['tconstruct', ore]),
-	...global.AD_ASTRA_ORES.map(ore => ['ad_astra', ore]),
-	...global.ASTRO_RISE_ORES.map(ore => ['astro_rise', ore])
-]
+global.ORES = []
+	.concat(global.VANILLA_ORES.map(ore => ['minecraft', ore]))
+	.concat(global.CREATE_ORES.map(ore => ['create', ore]))
+	.concat(global.MEKANISM_ORES.map(ore => ['mekanism', ore]))
+	.concat(global.THERMAL_ORES.map(ore => ['thermal', ore]))
+	.concat(global.SIMPLEMETALS_ORES.map(ore => ['simplemetals_aluminum', ore]))
+	.concat(global.PLATINUM_ORES.map(ore => ['platinum_mod', ore]))
+	.concat(global.TCONSTRUCT_ORES.map(ore => ['tconstruct', ore]))
+	.concat(global.AD_ASTRA_ORES.map(ore => ['ad_astra', ore]))
+	.concat(global.ASTRO_RISE_ORES.map(ore => ['astro_rise', ore]))
 
-global.CUSTOM_SLURRIES = [
-	...global.SIMPLEMETALS_ORES,
-	...global.PLATINUM_ORES,
-	...global.TCONSTRUCT_ORES,
-	...global.AD_ASTRA_ORES,
-	...global.ASTRO_RISE_ORES,
-	...global.THERMAL_ORES,
-	...global.CREATE_ORES
-]
+
+global.CUSTOM_SLURRIES = []
+	.concat(global.SIMPLEMETALS_ORES)
+	.concat(global.PLATINUM_ORES)
+	.concat(global.TCONSTRUCT_ORES)
+	.concat(global.AD_ASTRA_ORES)
+	.concat(global.ASTRO_RISE_ORES)
+	.concat(global.THERMAL_ORES)
+	.concat(global.CREATE_ORES)
+
 
 // global.ORES = [
 // 	['minecraft', 'iron'],
