@@ -1,6 +1,6 @@
 JEIEvents.hideItems(event => {
 
-	event.hide(/.*:.*creative.*/)
+	// event.hide(/.*:.*creative.*/)
 
 	event.hide('ad_astra:deepslate_desh_ore')
 	event.hide('ad_astra:deepslate_ice_shard_ore')
