@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+	event.remove({ id: 'enderio:infinity_rod' })
+
 	// void_chassis
 
 	event.remove({ id: 'enderio:void_chassis' })

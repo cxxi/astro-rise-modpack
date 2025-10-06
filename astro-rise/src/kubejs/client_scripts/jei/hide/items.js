@@ -52,6 +52,7 @@ JEIEvents.hideItems(event => {
 	event.hide('enderio:stone_gear')
 	event.hide('enderio:silicon')
 	event.hide('enderio:light')
+	event.hide('enderio:cake_base')
 	event.hide('enderio:light_inverted')
 	event.hide('enderio:powered_light')
 	event.hide('enderio:powered_light_inverted')

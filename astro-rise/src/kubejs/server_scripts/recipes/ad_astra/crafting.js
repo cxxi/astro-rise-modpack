@@ -3,6 +3,8 @@ ServerEvents.recipes(event => {
 	// steel_ingot
 
 	event.remove({ id: 'ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals' })
+	event.remove({ id: 'ad_astra:iron_rod' })
+	event.remove({ id: 'ad_astra:steel_rod' })
 	event.remove({ id: 'ad_astra:steel_ingot' })
 
 	// coal_generator
@@ -12,7 +14,6 @@ ServerEvents.recipes(event => {
 	// etrionic_blast_furnace
 
 	event.remove({ id: 'ad_astra:etrionic_blast_furnace' })
-
 
 	// permafrost
 

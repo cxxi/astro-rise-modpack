@@ -210,7 +210,7 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:infinity_rod' 
 		},
 	    result: {
-		    amount: 180,
+		    amount: 90,
 		    fluid: 'astro_rise:liquid_infinity'
 		},
 	    temperature: 1350,

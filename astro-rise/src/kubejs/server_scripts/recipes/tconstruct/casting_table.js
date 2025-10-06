@@ -24,6 +24,81 @@ ServerEvents.recipes(event => {
 	    cooling_time: 40
 	}, 'gear')
 
+	// rod
+
+	global.withAllCast(event, {
+	    type: 'tconstruct:casting_table',
+	    fluid: {
+	    	fluid: 'astro_rise:molten_etrium',
+	    	amount: 45
+	    },
+	    result: {
+	    	item: 'ad_astra:etrium_rod'
+	    },
+	    cooling_time: 80
+	}, 'rod')
+
+	global.withAllCast(event, {
+	    type: 'tconstruct:casting_table',
+	    fluid: {
+	    	fluid: 'tconstruct:molten_copper',
+	    	amount: 45
+	    },
+	    result: {
+	    	item: 'createaddition:copper_rod'
+	    },
+	    cooling_time: 80
+	}, 'rod')
+
+	global.withAllCast(event, {
+	    type: 'tconstruct:casting_table',
+	    fluid: {
+	    	fluid: 'tconstruct:molten_gold',
+	    	amount: 45
+	    },
+	    result: {
+	    	item: 'createaddition:gold_rod'
+	    },
+	    cooling_time: 80
+	}, 'rod')
+
+	global.withAllCast(event, {
+	    type: 'tconstruct:casting_table',
+	    fluid: {
+	    	fluid: 'tconstruct:molten_electrum',
+	    	amount: 45
+	    },
+	    result: {
+	    	item: 'createaddition:electrum_rod'
+	    },
+	    cooling_time: 80
+	}, 'rod')
+
+	global.withAllCast(event, {
+	    type: 'tconstruct:casting_table',
+	    fluid: {
+	    	fluid: 'tconstruct:molten_brass',
+	    	amount: 45
+	    },
+	    result: {
+	    	item: 'createaddition:brass_rod'
+	    },
+	    cooling_time: 80
+	}, 'rod')
+
+	global.withAllCast(event, {
+	    type: 'tconstruct:casting_table',
+	    fluid: {
+	    	fluid: 'astro_rise:liquid_infinity',
+	    	amount: 45
+	    },
+	    result: {
+	    	item: 'enderio:infinity_rod'
+	    },
+	    cooling_time: 80
+	}, 'rod')
+
+
 	// fluix_crystal
 
 	global.withAllCast(event, {

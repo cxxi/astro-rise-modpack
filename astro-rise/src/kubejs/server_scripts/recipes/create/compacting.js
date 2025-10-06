@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+	event.remove({ id: 'create_ultimate_factory:compacting_blazepowder' })
+
 	// resonarium_plate
 	
 	event.remove({ id: 'deeperdarker:resonarium_plate' })
