@@ -2,30 +2,27 @@ ServerEvents.recipes(event => {
 
 	// ores
 
-	event.remove({
-		type: 'enderio:sag_milling',
-		input: '#forge:ores'
-	})
+	event.remove({ type: 'enderio:sag_milling' })
 
-	// coal
+	// // coal
 
-	event.remove({ id: 'enderio:sag_milling/coal' })
+	// event.remove({ id: 'enderio:sag_milling/coal' })
 	
-	// clay
+	// // clay
 
-	event.remove({ id: 'enderio:sag_milling/clay' })
+	// event.remove({ id: 'enderio:sag_milling/clay' })
 	
-	// sand
+	// // sand
 
-	event.remove({ id: 'enderio:sag_milling/sand' })
+	// event.remove({ id: 'enderio:sag_milling/sand' })
 
-	// cobalt_ingot
+	// // cobalt_ingot
 
-	event.recipes.enderio.sag_milling(
-      	[ "enderio:powdered_cobalt" ],
-      	"tconstruct:cobalt_ingot",
-      	2400,
-      	EnderIOBonusType.NONE
-  	)
+	// event.recipes.enderio.sag_milling(
+    //   	[ "enderio:powdered_cobalt" ],
+    //   	"tconstruct:cobalt_ingot",
+    //   	2400,
+    //   	EnderIOBonusType.NONE
+  	// )
 
 })
