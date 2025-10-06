@@ -248,6 +248,36 @@
 			x: 5.5d
 			y: -3.0d
 		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "extendedcrafting:guide"
+				}
+			}
+			id: "24F49758B4A4DB94"
+			rewards: [{
+				id: "3C8B1CDA538D449B"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "extendedcrafting:guide"
+					}
+				}
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "2F9EBB8886242EF7"
+				title: "ExtendedCrafting"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
 	]
 	title: "Guides"
 }

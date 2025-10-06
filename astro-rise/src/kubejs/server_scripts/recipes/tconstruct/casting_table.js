@@ -436,4 +436,39 @@ ServerEvents.recipes(event => {
 	    cooling_time: 77
 	})
 
+	// extendedCrafting components
+
+	const componentMapping = [
+		['basic', 'tconstruct:molten_aluminum'],
+		['advanced', 'tconstruct:molten_electrum'],
+		['elite', 'tconstruct:molten_platinum'],
+		['ultimate', 'astro_rise:molten_pulsating_alloy'],
+		// ['redstone', ''],
+		// ['enhanced_redstone', ''],
+		// ['ender', ''],
+		// ['enhanced_ender', ''],
+		// ['crystaltine', ''],
+		// ['the_ultimate', '']
+	]
+
+	componentMapping.forEach(([type, fluid]) => {
+
+		event.custom({
+		    type: 'tconstruct:casting_table',
+		    cast: {
+		    	item: 'astro_rise:base_component'
+		    },
+		    cast_consumed: true,
+		    fluid: {
+		    	fluid: fluid,
+				amount: 180
+		    },
+		    result: {
+		    	item: `extendedcrafting:${type}_component`
+		    },
+		    cooling_time: 80
+		})
+
+	})
+
 })

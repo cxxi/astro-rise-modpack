@@ -25,7 +25,7 @@ global.VANILLA_ORES = [
 ]
 
 global.CREATE_ORES = [
-	'create'
+	'zinc'
 ]
 
 global.MEKANISM_ORES = [
@@ -84,35 +84,15 @@ global.CUSTOM_SLURRIES = []
 	.concat(global.CREATE_ORES)
 
 
-// global.ORES = [
-// 	['minecraft', 'iron'],
-// 	['minecraft', 'copper'],
-// 	['minecraft', 'gold'],
-// 	['create', 'zinc'],
-// 	['thermal', 'silver'],
-// 	['thermal', 'nickel'],
-// 	['mekanism', 'tin'],
-// 	['mekanism', 'lead'],
-// 	['mekanism', 'osmium'],
-// 	['mekanism', 'uranium'],
-// 	['simplemetals_aluminum', 'aluminum'],
-// 	['platinum_mod', 'platinum'],
-// 	['ad_astra', 'desh'],
-// 	['ad_astra', 'ostrum'],
-// 	['ad_astra', 'calorite'],
-// 	['astro_rise', 'aerolyte'],
-// 	['tconstruct', 'cobalt']
-// ]
-
-// global.CUSTOM_SLURRIES = [
-// 	'aerolyte',
-// 	'aluminum',
-// 	'calorite',
-// 	'cobalt',
-// 	'desh',
-// 	'nickel',
-// 	'ostrum',
-// 	'platinum',
-// 	'silver',
-// 	'zinc'
-// ]
+global.EXTENDEDCRAFTING_COMPONENTS = [
+	'basic',
+	'advanced',
+	'elite',
+	'ultimate',
+	'redstone',
+	'enhanced_redstone',
+	'ender',
+	'enhanced_ender',
+	'crystaltine',
+	'the_ultimate'
+]
