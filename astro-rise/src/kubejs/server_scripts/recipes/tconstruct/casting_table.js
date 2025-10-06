@@ -524,6 +524,20 @@ ServerEvents.recipes(event => {
 	    cooling_time: 77
 	})
 
+	// experience_nugget
+
+	global.withAllCast(event, {
+	    type: 'tconstruct:casting_table',
+	    fluid: {
+	    	fluid: 'enderio:xp_juice',
+	    	amount: 250
+	    },
+	    result: {
+	    	item: 'create:experience_nugget'
+	    },
+	    cooling_time: 80
+	}, 'nugget')
+
 	// extendedCrafting components
 
 	const componentMapping = [

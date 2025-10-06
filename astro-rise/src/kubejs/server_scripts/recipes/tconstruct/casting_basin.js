@@ -78,4 +78,18 @@ ServerEvents.recipes(event => {
 	    cooling_time: 720
 	})
 
+	// ender_ingot_block
+
+	event.custom({
+	    type: 'tconstruct:casting_basin',
+	    fluid: {
+	    	fluid: 'enderio:xp_juice',
+	    	amount: 2250
+	    },
+	    result: {
+	    	item: 'create:experience_block'
+	    },
+	    cooling_time: 720
+	})
+
 })
