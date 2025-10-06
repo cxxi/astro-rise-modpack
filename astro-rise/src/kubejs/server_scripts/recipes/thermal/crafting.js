@@ -14,6 +14,10 @@ ServerEvents.recipes(event => {
 	event.remove({ output: 'thermal:fluid_tank_augment' })
 	event.remove({ output: 'thermal:item_filter_augment' })
 	event.remove({ output: 'thermal:fluid_filter_augment' })
+	event.remove({ output: 'thermal:red_print' })
+	event.remove({ output: 'thermal:rf_potato' })
+	event.remove({ output: 'thermal:satchel' })
+	event.remove({ output: 'thermal:lock' })
 
 	event.remove({ id: 'thermal:rubber_3' })
     event.remove({ id: 'thermal:rubber_from_vine' })
