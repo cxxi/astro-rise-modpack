@@ -58,6 +58,11 @@ JEIEvents.hideItems(event => {
 	event.hide('enderio:powered_light_inverted')
 	event.hide('enderio:powered_light_wireless')
 	event.hide('enderio:powered_light_inverted_wireless')
+	event.hide('enderio:painting_machine')
+	event.hide('enderio:stirling_generator')
+	event.hide('enderio:slice_and_splice')
+	event.hide('enderio:soul_engine')
+	event.hide('enderio:drain')
 
 	event.hide('ad_astra:oil_bucket')
 	event.hide('ad_astra:coal_generator')

@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
 
 	// industrial_insulation_block
 
-	global.craft(event, 'enderio:ensouled_chassis', [
+	global.craft(event, 'enderio:industrial_insulation_block', [
 	    'ABA', 
 	    'BAB',
 	    'ABA'  
