@@ -524,6 +524,38 @@ ServerEvents.recipes(event => {
 	    cooling_time: 77
 	})
 
+	event.custom({
+	    type: 'tconstruct:casting_table',
+	    cast: {
+	    	item: 'astro_rise:bar_mold'
+	    },
+	    cast_consumed: false,
+	    fluid: {
+	    	fluid: "astro_rise:molten_soularium",
+			amount: 250
+	    },
+	    result: {
+	    	item: 'enderio:soularium_grinding_ball'
+	    },
+	    cooling_time: 77
+	})
+
+	event.custom({
+	    type: 'tconstruct:casting_table',
+	    cast: {
+	    	item: 'astro_rise:bar_mold'
+	    },
+	    cast_consumed: false,
+	    fluid: {
+	    	fluid: "astro_rise:molten_dark_steel",
+			amount: 250
+	    },
+	    result: {
+	    	item: 'enderio:dark_steel_grinding_ball'
+	    },
+	    cooling_time: 77
+	})
+
 	// experience_nugget
 
 	global.withAllCast(event, {
