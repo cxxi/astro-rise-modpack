@@ -1,5 +1,10 @@
 ServerEvents.recipes(event => {
 
+	event.remove({ id: 'enderio:painting_machine' })
+	event.remove({ id: 'enderio:stirling_generator' })
+	event.remove({ id: 'enderio:slice_and_splice' })
+	event.remove({ id: 'enderio:soul_engine' })
+	event.remove({ id: 'enderio:drain' })
 	event.remove({ id: 'enderio:infinity_rod' })
 	event.remove({ id: 'enderio:conduit_binder_composite' })
 
@@ -29,6 +34,17 @@ ServerEvents.recipes(event => {
 	    A: 'astro_rise:soularium_plate', 
 	    B: 'enderio:infinity_rod',
 	    C: 'enderio:void_chassis'
+	})
+
+	// industrial_insulation_block
+
+	global.craft(event, 'enderio:ensouled_chassis', [
+	    'ABA', 
+	    'BAB',
+	    'ABA'  
+	], {
+	    A: 'minecraft:sponge', 
+	    B: 'astro_rise:infinity_block'
 	})
 
 	// fluid_tank
