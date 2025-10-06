@@ -24,7 +24,21 @@ ServerEvents.recipes(event => {
 	    cooling_time: 40
 	}, 'gear')
 
-	// rod
+	// plates
+
+	global.withAllCast(event, {
+	    type: 'tconstruct:casting_table',
+	    fluid: {
+	    	fluid: 'astro_rise:molten_soularium',
+	    	amount: 90
+	    },
+	    result: {
+	    	item: 'astro_rise:soularium_plate'
+	    },
+	    cooling_time: 60
+	}, 'plate')
+
+	// rods
 
 	global.withAllCast(event, {
 	    type: 'tconstruct:casting_table',
@@ -97,7 +111,6 @@ ServerEvents.recipes(event => {
 	    },
 	    cooling_time: 80
 	}, 'rod')
-
 
 	// fluix_crystal
 

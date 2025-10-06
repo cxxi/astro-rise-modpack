@@ -13,8 +13,8 @@ ServerEvents.recipes(event => {
 	    'ABA'  
 	], {
 	    A: 'ad_astra:steel_plate', 
-	    B: 'mekanism:alloy_atomic',
-	    C: 'enderio:grains_of_infinity'
+	    B: 'enderio:infinity_rod',
+	    C: 'mekanism:steel_casing'
 	})
 
 	// ensouled_chassis
@@ -26,8 +26,8 @@ ServerEvents.recipes(event => {
 	    'BCB',
 	    'ABA'  
 	], {
-	    A: 'enderio:soul_chain', 
-	    B: 'enderio:soularium_ingot',
+	    A: 'astro_rise:soularium_plate', 
+	    B: 'enderio:infinity_rod',
 	    C: 'enderio:void_chassis'
 	})
 

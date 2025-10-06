@@ -7,4 +7,11 @@ ServerEvents.recipes(event => {
 	    'minecraft:nether_wart'
 	)
 
+	// plate
+
+	event.recipes.create.pressing(
+	    'astro_rise:soularium_plate',
+	    'enderio:soularium_ingot'
+	)
+
 })
