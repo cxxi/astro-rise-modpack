@@ -38,4 +38,22 @@ ServerEvents.recipes(event => {
 		}
 	})
 
+	// conduit_binder_composite
+
+	event.custom({
+		type: 'mekanism:metallurgic_infusing',
+		chemicalInput: {
+			amount: 10,
+			tag: 'mekanism:coal'
+		},
+		itemInput: {
+			ingredient: {
+				item: 'tconstruct:grout'
+			}
+		},
+		output: {
+			item: 'enderio:conduit_binder_composite'
+		}
+	})
+	
 })

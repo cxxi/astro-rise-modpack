@@ -210,11 +210,11 @@ ServerEvents.recipes(event => {
 	    	item: 'enderio:infinity_rod' 
 		},
 	    result: {
-		    amount: 90,
+		    amount: 45,
 		    fluid: 'astro_rise:liquid_infinity'
 		},
 	    temperature: 1350,
-	    time: 342
+	    time: 80
 	})
 
 	// molten_fluix
