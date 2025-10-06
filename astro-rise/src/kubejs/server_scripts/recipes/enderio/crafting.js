@@ -61,6 +61,34 @@ ServerEvents.recipes(event => {
 		C: 'create:fluid_tank'
 	})
 
+	// pressurized_fluid_tank
+
+	event.remove({ id: 'enderio:pressurized_fluid_tank' })
+
+	global.craft(event, 'enderio:pressurized_fluid_tank', [
+		'ABA', 
+	    'BCB',
+	    'ABA' 
+	], {
+		A: 'enderio:dark_steel_ingot',
+		B: 'enderio:dark_steel_bars',
+		C: 'enderio:fluid_tank'
+	})
+
+	// fluid_tank
+
+	event.remove({ id: 'enderio:reinforced_obsidian_block' })
+
+	global.craft(event, 'enderio:reinforced_obsidian_block', [
+		'ABA', 
+	    'BCB',
+	    'ABA' 
+	], {
+		A: 'astro_rise:infinity_block',
+		B: 'enderio:dark_steel_bars',
+		C: 'bedrockbreakers:pure_obsidian'
+	})
+
 	// basic_capacitor_bank
 
 	event.remove({ id: 'enderio:basic_capacitor_bank' })
