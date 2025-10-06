@@ -82,17 +82,3 @@ global.CUSTOM_SLURRIES = []
 	.concat(global.ASTRO_RISE_ORES)
 	.concat(global.THERMAL_ORES)
 	.concat(global.CREATE_ORES)
-
-
-global.EXTENDEDCRAFTING_COMPONENTS = [
-	'basic',
-	'advanced',
-	'elite',
-	'ultimate',
-	'redstone',
-	'enhanced_redstone',
-	'ender',
-	'enhanced_ender',
-	'crystaltine',
-	'the_ultimate'
-]

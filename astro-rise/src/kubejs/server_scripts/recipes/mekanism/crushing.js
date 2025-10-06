@@ -52,6 +52,34 @@ ServerEvents.recipes(event => {
 				item: `astro_rise:dirty_dust_${slurry}`
 			}
 		})
+	
+	})
+
+	const crushedOres = []
+		.concat(global.VANILLA_ORES.map(ore => ['create', 'mekanism', ore]))
+		.concat(global.MEKANISM_ORES.map(ore => ['create', 'mekanism', ore]))
+		.concat(global.CREATE_ORES.map(ore => ['create', 'astro_rise', ore]))
+		.concat(global.THERMAL_ORES.map(ore => ['create', 'astro_rise', ore]))
+		.concat(global.SIMPLEMETALS_ORES.map(ore => ['create', 'astro_rise', ore]))
+		.concat(global.PLATINUM_ORES.map(ore => ['create', 'astro_rise', ore]))
+		.concat(global.TCONSTRUCT_ORES.map(ore => ['astro_rise', 'astro_rise', ore]))
+		.concat(global.ASTRO_RISE_ORES.map(ore => ['astro_rise', 'astro_rise', ore]))
+		.concat(global.AD_ASTRA_ORES.map(ore => ['create_ad_astra_compat', 'astro_rise', ore]))
+
+	crushedOres.forEach(([nsIn, nsOut, crushed]) => {
+
+		event.custom({
+			type: 'mekanism:crushing',
+			input: {
+				ingredient: {
+					tag: `${nsIn}:/${crushed}`
+				}
+			},
+			output: {
+				item: `${nsOut}:dirty_dust_${crushed}`
+			}
+		})
 
 	})
+
 })
