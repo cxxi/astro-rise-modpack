@@ -1,5 +1,20 @@
 ServerEvents.recipes(event => {
 
+	event.remove({ id: 'thermal:tinker_bench' })
+	event.remove({ id: 'thermal:redstone_servo' })
+	event.remove({ input: 'thermal:rf_coil' })
+	event.remove({ output: 'thermal:rf_coil' })
+	event.remove({ input: 'thermal:upgrade_augment_1' })
+	event.remove({ output: 'thermal:upgrade_augment_1' })
+	event.remove({ input: 'thermal:upgrade_augment_2' })
+	event.remove({ output: 'thermal:upgrade_augment_2' })
+	event.remove({ input: 'thermal:upgrade_augment_3' })
+	event.remove({ output: 'thermal:upgrade_augment_3' })
+	event.remove({ input: 'thermal:xp_storage_augment' })
+	event.remove({ input: 'thermal:fluid_tank_augment' })
+	event.remove({ input: 'thermal:item_filter_augment' })
+	event.remove({ input: 'thermal:fluid_filter_augment' })
+
 	event.remove({ id: 'thermal:rubber_3' })
     event.remove({ id: 'thermal:rubber_from_vine' })
 	event.remove({ id: 'thermal:rubber_from_dandelion' })
@@ -14,11 +29,6 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'thermal:signalum_dust_4' })
 	event.remove({ id: 'thermal:lumium_dust_4' })
 	event.remove({ id: 'thermal:bronze_dust_4' })
-
-	event.remove({ id: 'thermal:tinker_bench' })
-	event.remove({ id: 'thermal:redstone_servo' })
-	event.remove({ input: 'thermal:rf_coil' })
-	event.remove({ output: 'thermal:rf_coil' })
 
     // kelp to rubber
 
