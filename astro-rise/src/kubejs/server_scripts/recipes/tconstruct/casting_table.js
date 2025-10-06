@@ -527,7 +527,7 @@ ServerEvents.recipes(event => {
 	event.custom({
 	    type: 'tconstruct:casting_table',
 	    cast: {
-	    	item: 'astro_rise:bar_mold'
+	    	item: 'astro_rise:bowl_mold'
 	    },
 	    cast_consumed: false,
 	    fluid: {
@@ -543,7 +543,7 @@ ServerEvents.recipes(event => {
 	event.custom({
 	    type: 'tconstruct:casting_table',
 	    cast: {
-	    	item: 'astro_rise:bar_mold'
+	    	item: 'astro_rise:bowl_mold'
 	    },
 	    cast_consumed: false,
 	    fluid: {
