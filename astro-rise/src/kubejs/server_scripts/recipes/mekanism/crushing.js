@@ -72,7 +72,9 @@ ServerEvents.recipes(event => {
 			type: 'mekanism:crushing',
 			input: {
 				ingredient: {
-					item: `${nsIn}:crushed_raw_${crushed}`
+					item: nsIn === 'create_ad_astra_compat'
+						? `${nsIn}:crushed_${crushed}_ore`
+						: `${nsIn}:crushed_raw_${crushed}`
 				}
 			},
 			output: {
