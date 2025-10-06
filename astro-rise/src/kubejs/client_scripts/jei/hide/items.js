@@ -1,5 +1,7 @@
 JEIEvents.hideItems(event => {
 
+	event.hide(/.*:.*creative.*/)
+
 	event.hide('ad_astra:deepslate_desh_ore')
 	event.hide('ad_astra:deepslate_ice_shard_ore')
 	event.hide('ad_astra:mars_ice_shard_ore')
@@ -64,4 +66,24 @@ JEIEvents.hideItems(event => {
 	event.hide('thermal:sawdust_block')
 	event.hide('createdieselgenerators:wood_chip')
 
+	event.hide('thermal:tinker_bench')
+	event.hide('thermal:charge_bench')
+	event.hide('thermal:energy_cell')
+	event.hide('thermal:fluid_cell')
+	event.hide('thermal:machine_frame')
+	event.hide('thermal:energy_cell_frame')
+	event.hide('thermal:redstone_servo')
+	event.hide('thermal:rf_coil')
+	event.hide('thermal:upgrade_augment_1')
+	event.hide('thermal:upgrade_augment_2')
+	event.hide('thermal:upgrade_augment_3')
+	event.hide('thermal:xp_storage_augment')
+	event.hide('thermal:rf_coil_augment')
+	event.hide('thermal:rf_coil_storage_augment')
+	event.hide('thermal:rf_coil_xfer_augment')
+	// event.hide('thermal:rf_coil_creative_augment')
+	event.hide('thermal:fluid_tank_augment')
+	// event.hide('thermal:fluid_tank_creative_augment')
+	event.hide('thermal:item_filter_augment')
+	event.hide('thermal:fluid_filter_augment')
 })
