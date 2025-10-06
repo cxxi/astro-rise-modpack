@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'enderio:slice_and_splice' })
 	event.remove({ id: 'enderio:soul_engine' })
 	event.remove({ id: 'enderio:drain' })
+	event.remove({ id: 'enderio:sag_mill' })
 	event.remove({ id: 'enderio:glider_wing' })
 	event.remove({ id: 'enderio:infinity_rod' })
 	event.remove({ id: 'enderio:conduit_binder_composite' })
