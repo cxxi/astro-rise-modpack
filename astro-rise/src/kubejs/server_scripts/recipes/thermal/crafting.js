@@ -15,6 +15,10 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'thermal:lumium_dust_4' })
 	event.remove({ id: 'thermal:bronze_dust_4' })
 
+	event.remove({ id: 'thermal:tinker_bench' })
+	event.remove({ input: 'thermal:energy_cell' })
+	event.remove({ output: 'thermal:energy_cell' })
+
     // kelp to rubber
 
     const modList = ["create", "petrolsparts"]
