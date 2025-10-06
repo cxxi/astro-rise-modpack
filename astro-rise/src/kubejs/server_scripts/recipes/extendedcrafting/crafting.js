@@ -36,7 +36,6 @@ ServerEvents.recipes(event => {
 	// tables
 
 	event.remove({ id: 'extendedcrafting:basic_table' })
-	event.remove({ id: 'extendedcrafting:advanced_table' })
 
 	global.craft(event, 'extendedcrafting:basic_table', [
 		' ABA ',
@@ -50,6 +49,8 @@ ServerEvents.recipes(event => {
 		C: 'extendedcrafting:basic_catalyst',
 		D: 'minecraft:crafting_table'
 	})
+
+	event.remove({ id: 'extendedcrafting:advanced_table' })
 
 	global.craft(event, 'extendedcrafting:advanced_table', [
 		' ABA ',
@@ -65,6 +66,25 @@ ServerEvents.recipes(event => {
 		E: 'astro_rise:sky_mechanism',
 		F: 'astro_rise:ichor_mechanism',
 		G: 'astro_rise:ender_mechanism'
+	})
+
+	event.remove({ id: 'extendedcrafting:elite_table' })
+
+	global.craft(event, 'extendedcrafting:elite_table', [
+		'HABAH',
+		'ACDCA',
+		'EDHDF',
+		'ACDCA',
+		'HAGAH'
+	], {
+		A: 'extendedcrafting:elite_component',
+		B: 'astro_rise:earth_steel_mechanism',
+		C: 'extendedcrafting:elite_catalyst',
+		D: 'extendedcrafting:advanced_table',
+		E: 'astro_rise:sky_steel_mechanism',
+		F: 'astro_rise:ichor_steel_mechanism',
+		G: 'astro_rise:ender_steel_mechanism',
+		H: 'extendedcrafting:luminessence'
 	})
 
 })
