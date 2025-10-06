@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'extendedcrafting:basic_component' })
 
 	global.craft(event, 'extendedcrafting:basic_component', [
-		'extendedcrafting:black_iron_slate',
+		'astro_rise:base_component',
 		'astro_rise:quartz_mechanism',
    		'2x minecraft:iron_ingot'
 	])
