@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
 		type: 'mekanism:metallurgic_infusing',
 		chemicalInput: {
 			amount: 10,
-			tag: 'mekanism:coal'
+			tag: 'mekanism:carbon'
 		},
 		itemInput: {
 			ingredient: {
