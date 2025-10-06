@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
 			type: 'mekanism:crushing',
 			input: {
 				ingredient: {
-					tag: `${nsIn}:/${crushed}`
+					item: `${nsIn}:/${crushed}`
 				}
 			},
 			output: {
