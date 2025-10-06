@@ -16,8 +16,9 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'thermal:bronze_dust_4' })
 
 	event.remove({ id: 'thermal:tinker_bench' })
-	event.remove({ input: 'thermal:energy_cell' })
-	event.remove({ output: 'thermal:energy_cell' })
+	event.remove({ id: 'thermal:redstone_servo' })
+	event.remove({ input: 'thermal:rf_coil' })
+	event.remove({ output: 'thermal:rf_coil' })
 
     // kelp to rubber
 
