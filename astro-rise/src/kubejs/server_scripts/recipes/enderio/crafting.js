@@ -52,6 +52,37 @@ ServerEvents.recipes(event => {
 	    B: 'astro_rise:infinity_block'
 	})
 
+	// enchanter
+
+	event.remove({ id: 'enderio:enchanter' })
+
+	global.craft(event, 'enderio:enchanter', [
+	    'ABA', 
+	    'CDC',
+	    'EEE'  
+	], {
+	    A: 'twilightforest:carminite', 
+	    B: 'minecraft:book',
+	    C: 'enderio:prescient_powder',
+	    D: 'minecraft:enchanting_table',
+	    E: 'enderio:dark_steel_ingot'
+	})
+
+	// wired_charger
+
+	event.remove({ id: 'enderio:wired_charger' })
+
+	global.craft(event, 'enderio:wired_charger', [
+	    'AAA', 
+	    'BCB',
+	    'ADA'  
+	], {
+	    A: 'enderio:copper_alloy_ingot', 
+	    B: 'thermal:constantan_gear',
+	    C: 'enderio:void_chassis',
+	    D: 'enderio:conductive_alloy_ingot'
+	})
+
 	// fluid_tank
 
 	event.remove({ id: 'enderio:fluid_tank' })
@@ -92,6 +123,38 @@ ServerEvents.recipes(event => {
 		A: 'astro_rise:infinity_block',
 		B: 'enderio:dark_steel_bars',
 		C: 'bedrockbreakers:pure_obsidian'
+	})
+
+	// soul_binder
+
+	event.remove({ id: 'enderio:soul_binder' })
+
+	global.craft(event, 'enderio:soul_binder', [
+		'ABA', 
+	    'CDC',
+	    'AEA' 
+	], {
+		A: 'enderio:soularium_ingot',
+		B: 'enderio:empty_soul_vial',
+		C: 'thermal:enderium_gear',
+		D: 'enderio:ensouled_chassis',
+		E: 'astro_rise:sculk_steel_mechanism'
+	})
+
+	// powered_spawner
+
+	event.remove({ id: 'enderio:powered_spawner' })
+
+	global.craft(event, 'enderio:powered_spawner', [
+		'ABA', 
+	    'ACA',
+	    'DED' 
+	], {
+		A: 'enderio:soularium_ingot',
+		B: 'enderio:broken_spawner',
+		C: 'enderio:ensouled_chassis',
+		D: 'enderio:vibrant_crystal',
+		E: 'enderio:redstone_alloy_ingot'
 	})
 
 	// basic_capacitor_bank
