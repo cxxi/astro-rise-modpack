@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
 	global.craft(event, 'enderio:experience_rod', [
 		' AB', 
 	    ' CA',
-	    'D ' 
+	    'D  ' 
 	], {
 		A: 'thermal:xp_crystal',
 		B: 'create:experience_nugget',
