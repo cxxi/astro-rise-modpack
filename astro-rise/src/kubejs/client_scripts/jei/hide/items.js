@@ -68,6 +68,10 @@ JEIEvents.hideItems(event => {
 	event.hide('enderio:nutritious_stick')
 	event.hide('enderio:plant_matter_brown')
 	event.hide('enderio:plant_matter_green')
+	event.hide('enderio:zombie_electrode')
+	event.hide('enderio:ender_resonator')
+	event.hide('enderio:skeletal_contractor')
+	event.hide('enderio:guardian_diode')
 
 	event.hide('enderio:conductive_alloy_grinding_ball')
 	event.hide('enderio:pulsating_alloy_grinding_ball')

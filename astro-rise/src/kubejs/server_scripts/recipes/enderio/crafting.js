@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
 
-	event.remove({ id: 'enderio:tank_fill/nutritious_stick' })
 	event.remove({ id: 'enderio:painting_machine' })
 	event.remove({ id: 'enderio:stirling_generator' })
 	event.remove({ id: 'enderio:slice_and_splice' })
@@ -12,6 +11,10 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'enderio:conduit_binder_composite' })
 
 	event.remove({ output: /enderio:.*_grinding_ball/ })
+
+	event.remove({ id: 'enderio:tank_fill/nutritious_stick' })
+	event.remove({ id: 'enderio:soulbinding/frank_n_zombie' })
+	event.remove({ id: 'enderio:soulbinding/sentient_ender' })
 
 	// void_chassis
 
