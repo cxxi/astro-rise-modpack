@@ -157,6 +157,51 @@ ServerEvents.recipes(event => {
 		E: 'enderio:redstone_alloy_ingot'
 	})
 
+	// vacuum_chest
+
+	event.remove({ id: 'enderio:vacuum_chest' })
+
+	global.craft(event, 'enderio:vacuum_chest', [
+		'ABA', 
+	    'BCB',
+	    'ADA' 
+	], {
+		A: 'enderio:dark_steel_ingot',
+		B: 'thermal:electrum_gear',
+		C: '#forge:chests',
+		D: 'mekanismgenerators:electromagnetic_coil'
+	})
+
+	// xp_vacuum
+
+	event.remove({ id: 'enderio:xp_vacuum' })
+
+	global.craft(event, 'enderio:xp_vacuum', [
+		'ABA', 
+	    'BCB',
+	    'ADA' 
+	], {
+		A: 'enderio:dark_steel_ingot',
+		B: 'thermal:electrum_gear',
+		C: 'enderio:experience_rod',
+		D: 'create:experience_block'
+	})
+
+	// experience_rod
+
+	event.remove({ id: 'enderio:experience_rod' })
+
+	global.craft(event, 'enderio:experience_rod', [
+		' AB', 
+	    ' CA',
+	    'D ' 
+	], {
+		A: 'thermal:xp_crystal',
+		B: 'create:experience_nugget',
+		C: 'ad_astra:steel_rod',
+		D: 'enderio:infinity_rod'
+	})
+
 	// basic_capacitor_bank
 
 	event.remove({ id: 'enderio:basic_capacitor_bank' })
@@ -180,7 +225,7 @@ ServerEvents.recipes(event => {
 	    'BCB',
 	    'ABA'  
 	], {
-	    A: 'enderio:conduit_binder', 
+	    A: 'enderio:dark_steel_ingot', 
 	    B: 'enderio:pulsating_crystal',
 	    C: 'mekanism:teleporter'
 	})
