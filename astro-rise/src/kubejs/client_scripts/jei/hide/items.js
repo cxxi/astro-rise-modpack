@@ -76,6 +76,10 @@ JEIEvents.hideItems(event => {
 	event.hide('enderio:sentient_ender')
 	event.hide('enderio:clayed_glowstone')
 	event.hide('enderio:z_logic_controller')
+	event.hide('enderio:nethercotta')
+	// event.hide('enderio:dark_bimetal_gear')
+	// event.hide('enderio:vibrant_gear')
+	// event.hide('enderio:energized_gear')
 
 	event.hide('enderio:conductive_alloy_grinding_ball')
 	event.hide('enderio:pulsating_alloy_grinding_ball')
@@ -83,7 +87,7 @@ JEIEvents.hideItems(event => {
 	event.hide('enderio:energetic_alloy_grinding_ball')
 	event.hide('enderio:vibrant_alloy_grinding_ball')
 	event.hide('enderio:copper_alloy_grinding_ball')
-	event.hide('enderio:end_steel_alloy_grinding_ball')
+	event.hide('enderio:end_steel_grinding_ball')
 
 	event.hide('ad_astra:oil_bucket')
 	event.hide('ad_astra:coal_generator')

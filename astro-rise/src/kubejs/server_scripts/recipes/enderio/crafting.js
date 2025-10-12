@@ -9,6 +9,9 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'enderio:glider_wing' })
 	event.remove({ id: 'enderio:infinity_rod' })
 	event.remove({ id: 'enderio:conduit_binder_composite' })
+	event.remove({ id: 'enderio:dark_bimetal_gear' })
+	event.remove({ id: 'enderio:vibrant_gear' })
+	event.remove({ id: 'enderio:energized_gear' })
 
 	event.remove({ output: /enderio:.*_grinding_ball/ })
 
@@ -416,7 +419,7 @@ ServerEvents.recipes(event => {
 	    'AAA'  
 	], {
 	    A: 'enderio:basic_item_filter', 
-	    C: 'minecraft:hopper'
+	    B: 'minecraft:hopper'
 	})
 
 	// basic_fluid_filter
@@ -454,7 +457,7 @@ ServerEvents.recipes(event => {
 	global.craft(event, 'enderio:redstone_filter_base', [
 	    'ABA', 
 	    'BCB',
-	    'ABA'  
+	    'ABA'
 	], {
 	    A: 'enderio:black_paper', 
 	    B: 'minecraft:paper',
