@@ -346,7 +346,7 @@ ServerEvents.recipes(event => {
 	    A: 'mekanism:enriched_redstone', 
 	    B: 'mekanism:ingot_osmium',
 	    C: 'enderio:void_chassis',
-	    D: 'enderio:iron_gear',
+	    D: 'thermal:invar_gear',
 	    E: 'create:mechanical_crafter'
 	})
 
@@ -360,7 +360,7 @@ ServerEvents.recipes(event => {
 	    ' A ' 
 	], {
 		A: 'enderio:copper_alloy_ingot',
-		B: 'enderio:iron_gear'
+		B: 'enderio:diamond_gear'
 	})
 	
 	// staff_of_travelling
