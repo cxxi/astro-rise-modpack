@@ -406,6 +406,19 @@ ServerEvents.recipes(event => {
 	    C: 'minecraft:hopper'
 	})
 
+	// advanced_item_filter
+
+	event.remove({ id: 'enderio:advanced_item_filter' })
+
+	global.craft(event, 'enderio:advanced_item_filter', [
+	    'AAA', 
+	    'ABA',
+	    'AAA'  
+	], {
+	    A: 'enderio:basic_item_filter', 
+	    C: 'minecraft:hopper'
+	})
+
 	// basic_fluid_filter
 
 	event.remove({ id: 'enderio:basic_fluid_filter' })
@@ -418,6 +431,34 @@ ServerEvents.recipes(event => {
 	    A: 'enderio:black_paper', 
 	    B: 'minecraft:paper',
 	    C: 'minecraft:bucket'
+	})
+
+	// entity_filter
+
+	event.remove({ id: 'enderio:entity_filter' })
+
+	global.craft(event, 'enderio:entity_filter', [
+	    'ABA', 
+	    'BCB',
+	    'ABA'  
+	], {
+	    A: 'enderio:black_paper', 
+	    B: 'minecraft:paper',
+	    C: 'enderio:empty_soul_vial'
+	})
+
+	// entity_filter
+
+	event.remove({ id: 'enderio:redstone_filter_base' })
+
+	global.craft(event, 'enderio:redstone_filter_base', [
+	    'ABA', 
+	    'BCB',
+	    'ABA'  
+	], {
+	    A: 'enderio:black_paper', 
+	    B: 'minecraft:paper',
+	    C: 'enderio:redstone_alloy_ingot'
 	})
 
 })
