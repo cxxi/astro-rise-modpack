@@ -199,8 +199,8 @@ ServerEvents.recipes(event => {
 	    ' CA',
 	    'D  ' 
 	], {
-		A: 'thermal:xp_crystal',
-		B: 'create:experience_nugget',
+		A: 'create:experience_nugget',
+		B: 'thermal:xp_crystal',
 		C: 'ad_astra:steel_rod',
 		D: 'enderio:infinity_rod'
 	})
@@ -390,6 +390,34 @@ ServerEvents.recipes(event => {
 	    A: 'twilightforest:twilight_scepter', 
 	    B: 'mekanism:teleportation_core',
 	    C: 'alexsmobs:void_worm_mandible'
+	})
+
+	// basic_item_filter
+
+	event.remove({ id: 'enderio:basic_item_filter' })
+
+	global.craft(event, 'enderio:basic_item_filter', [
+	    'ABA', 
+	    'BCB',
+	    'ABA'  
+	], {
+	    A: 'enderio:black_paper', 
+	    B: 'minecraft:paper',
+	    C: 'minecraft:hopper'
+	})
+
+	// basic_fluid_filter
+
+	event.remove({ id: 'enderio:basic_fluid_filter' })
+
+	global.craft(event, 'enderio:basic_fluid_filter', [
+	    'ABA', 
+	    'BCB',
+	    'ABA'  
+	], {
+	    A: 'enderio:black_paper', 
+	    B: 'minecraft:paper',
+	    C: 'minecraft:bucket'
 	})
 
 })

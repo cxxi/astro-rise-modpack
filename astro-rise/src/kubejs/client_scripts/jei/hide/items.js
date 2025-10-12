@@ -72,6 +72,10 @@ JEIEvents.hideItems(event => {
 	event.hide('enderio:ender_resonator')
 	event.hide('enderio:skeletal_contractor')
 	event.hide('enderio:guardian_diode')
+	event.hide('enderio:frank_n_zombie')
+	event.hide('enderio:sentient_ender')
+	event.hide('enderio:clayed_glowstone')
+	event.hide('enderio:z_logic_controller')
 
 	event.hide('enderio:conductive_alloy_grinding_ball')
 	event.hide('enderio:pulsating_alloy_grinding_ball')
