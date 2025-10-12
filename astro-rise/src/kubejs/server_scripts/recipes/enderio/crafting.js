@@ -9,6 +9,12 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'enderio:glider_wing' })
 	event.remove({ id: 'enderio:infinity_rod' })
 	event.remove({ id: 'enderio:conduit_binder_composite' })
+
+	event.remove({ id: 'enderio:wood_gear' })
+	event.remove({ id: 'enderio:wood_gear_corner' })
+	event.remove({ id: 'enderio:stone_gear' })
+	event.remove({ id: 'enderio:stone_gear_upgrade' })
+	event.remove({ id: 'enderio:iron_gear' })
 	event.remove({ id: 'enderio:dark_bimetal_gear' })
 	event.remove({ id: 'enderio:vibrant_gear' })
 	event.remove({ id: 'enderio:energized_gear' })
@@ -322,30 +328,6 @@ ServerEvents.recipes(event => {
 	    A: 'enderio:conduit_binder', 
 	    B: 'mekanism:ultimate_universal_cable',
 	    C: 'enderio:conductive_alloy_ingot'
-	})
-
-	// wood_gear
-
-	event.remove({ id: 'enderio:wood_gear' })
-	event.remove({ id: 'enderio:wood_gear_corner' })
-
-	// stone_gear
-
-	event.remove({ id: 'enderio:stone_gear' })
-	event.remove({ id: 'enderio:stone_gear_upgrade' })
-
-	// iron_gear
-	
-	event.remove({ id: 'enderio:iron_gear' })
-
-	global.craft(event, 'enderio:iron_gear', [
-	    'ABA', 
-	    'BCB',
-	    'ABA'  
-	], {
-	    A: 'minecraft:iron_nugget', 
-	    B: 'mekanism:ingot_steel',
-	    C: 'enderio:grains_of_infinity'
 	})
 
 	// primitive_alloy_smelter & alloy_smelter
