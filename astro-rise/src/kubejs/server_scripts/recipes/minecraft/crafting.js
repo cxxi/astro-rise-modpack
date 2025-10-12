@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
 
 	// shulker_shell
 
-	event.shapeless('minecraft:shulker_shell', [
+	global.craft(event, 'minecraft:shulker_shell', [
    		'9x astro_rise:shulker_scute'
    	])
 

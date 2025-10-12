@@ -16,4 +16,13 @@ ServerEvents.recipes(event => {
 	    E: 'immersive_aircraft:boiler'
 	})
 
+	// industrial_gears
+
+	event.remove({ id: 'immersive_aircraft:industrial_gears' })
+
+	global.craft(event, 'immersive_aircraft:industrial_gears', [
+   		'thermal:iron_gear',
+   		'thermal:copper_gear'
+   	])
+
 })
