@@ -12,18 +12,6 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'tconstruct:smeltery/casting/metal/iron/gear_sand_cast' })
 	event.remove({ id: 'tconstruct:smeltery/casting/metal/iron/gear_gold_cast' })
 
-	global.withAllCast(event, {
-	    type: 'tconstruct:casting_table',
-	    fluid: {
-	    	fluid: 'tconstruct:molten_steel',
-	    	amount: 360
-	    },
-	    result: {
-	    	item: 'enderio:iron_gear'
-	    },
-	    cooling_time: 40
-	}, 'gear')
-
 	// plates
 
 	global.withAllCast(event, {
