@@ -446,4 +446,26 @@ ServerEvents.recipes(event => {
 	    C: 'enderio:redstone_alloy_ingot'
 	})
 
+	// photovoltais_composite
+
+	event.remove({ id: 'enderio:photovoltais_composite' })
+
+	global.craft(event, 'enderio:photovoltais_composite', [
+		'enderio:conduit_binder', 
+	    'mekanism:dust_coal',
+	    'mekanism:dust_lapis_lazuli',
+	])
+	
+	// photovoltais_plate
+
+	event.remove({ id: 'enderio:photovoltais_plate' })
+
+	global.craft(event, 'enderio:photovoltais_plate', [
+		'AAA', 
+	    'BBB',
+	    'AAA',
+	], {
+		A: 'enderio:dark_steel_ingot',
+		B: 'enderio:photovoltais_plate'
+	})
 })
